@@ -77,7 +77,7 @@ jobs:
           TG_CHAT_10: ${{ secrets.TG_CHAT_10 }}
         run: |
           python -c "
-          import os, re, requests
+          import os, re, json, requests
           from datetime import datetime, timezone, timedelta
 
           bj_time = datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')
@@ -92,7 +92,6 @@ jobs:
               source_results.append('⚠️ 未在 sources_list.txt 中检测到有效订阅源。')
           else:
               for idx, line in enumerate(sources_raw, 1):
-                  # 使用正则精准提取行内的第一个 http/https 真实网址进行测试
                   urls = re.findall(r'https?://[^\s|]+', line)
                   if not urls:
                       source_results.append(f'📌 <b>源 [{idx}]</b>: {line}\n状态: ❌ 失败 (未在行中匹配到有效网址)\n时间: {bj_time}')
@@ -104,10 +103,18 @@ jobs:
                   try:
                       headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
                       res = requests.get(target_url, headers=headers, timeout=10)
+                      
                       if res.status_code == 200:
-                          source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ✅ 连通/更新成功\n时间: {bj_time}')
+                          # 核心升级：检查返回的内容是否真的是标准的 JSON 数据，而不是网页
+                          try:
+                              res.json()
+                              source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ✅ 成功 (获取到有效JSON数据)\n时间: {bj_time}')
+                          except json.JSONDecodeError:
+                              # 虽然状态码是200，但内容无法被解析为 JSON（比如你碰到的 HTML 页面）
+                              source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ❌ 失败 (HTTP 200 但返回了网页/非JSON数据)\n时间: {bj_time}')
                       else:
                           source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ❌ 失败 (HTTP 错误码: {res.status_code})\n时间: {bj_time}')
+                          
                   except requests.exceptions.ConnectionError:
                       source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ❌ 失败 (网络连接错误或域名不存在)\n时间: {bj_time}')
                   except requests.exceptions.Timeout:
@@ -116,7 +123,7 @@ jobs:
                       source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ❌ 失败 (异常: {str(e)})\n时间: {bj_time}')
 
           details_text = '\n\n'.join(source_results)
-          message = f'<b>📊 TVBox 助手运行与订阅源报告</b>\n\n{details_text}'
+          message = f'<b>📊 TVBox 助手运行与订阅源深度检测报告</b>\n\n{details_text}'
 
           for i in range(1, 11):
               token = os.getenv(f'TG_TOKEN_{i}')
