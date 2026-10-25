@@ -1,7 +1,10 @@
 name: TVBox Helper Auto Run
 
 on:
+  # 1. 允许手动点击按钮触发
   workflow_dispatch:
+  
+  # 2. 定时自动触发（每天 UTC 时间 0点和12点，即北京时间早上 8点和晚上 20点）
   schedule:
     - cron: '0 0,12 * * *'
 
@@ -10,50 +13,24 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      # 步骤一：检出仓库代码[cite: 7]
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      # 步骤二：配置 Python 环境[cite: 7]
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
+      # 步骤三：安装脚本依赖[cite: 7]
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run TVBox Helper
-        run: |
-          python -c "
-          import sys
-          from io import StringIO
-          import tvbox_helper
-
-          sys.stdin = StringIO('4\n0\n')
-
-          try:
-              tvbox_helper.main()
-          except SystemExit:
-              pass
-          "
-
-      - name: Commit and Push Changes
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.io'
-          git add -A
-          
-          if git diff --staged --quiet; then
-            echo "No changes detected, skipping commit."
-          else
-            git commit -m "Auto-update TVBox data via GitHub Actions"
-            git push
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Send Telegram Detailed Notifications
+      # 步骤四：智能备用源检测、自动切换、运行助手并发送多路 TG 通知
+      - name: Run TVBox Helper with Smart Fallback & Notifications
         env:
           TG_TOKEN_1: ${{ secrets.TG_TOKEN_1 }}
           TG_CHAT_1: ${{ secrets.TG_CHAT_1 }}
@@ -77,61 +54,98 @@ jobs:
           TG_CHAT_10: ${{ secrets.TG_CHAT_10 }}
         run: |
           python -c "
-          import os, re, json, requests
+          import os, re, json, requests, sys
           from datetime import datetime, timezone, timedelta
+          from io import StringIO
+          import tvbox_helper
 
           bj_time = datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')
 
           sources_raw = []
           if os.path.exists('sources_list.txt'):
               with open('sources_list.txt', 'r', encoding='utf-8') as f:
-                  sources_raw = [line.strip() for line in f if line.strip() and not line.startswith('#')]
+                  sources_raw = [line.strip() for line in f if line.strip()]
 
+          new_sources_lines = []
           source_results = []
-          if not sources_raw:
-              source_results.append('⚠️ 未在 sources_list.txt 中检测到有效订阅源。')
-          else:
-              for idx, line in enumerate(sources_raw, 1):
-                  urls = re.findall(r'https?://[^\s|]+', line)
-                  if not urls:
-                      source_results.append(f'📌 <b>源 [{idx}]</b>: {line}\n状态: ❌ 失败 (未在行中匹配到有效网址)\n时间: {bj_time}')
-                      continue
-                  
-                  target_url = urls[0]
-                  display_name = line.split(',')[0] if ',' in line else target_url
+          headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
+          for idx, line in enumerate(sources_raw, 1):
+              if line.startswith('#'):
+                  new_sources_lines.append(line)
+                  continue
+              
+              parts = line.split(',', 1)
+              name = parts[0].strip() if len(parts) > 1 else f'源{idx}'
+              url_part = parts[1] if len(parts) > 1 else line
+              
+              # 提取该行所有的 URL（支持用 | 或空格分隔的主地址和备用地址）
+              urls = [u.strip() for u in re.split(r'[|\s]+', url_part) if u.strip().startswith('http')]
+              
+              if not urls:
+                  source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ❌ 失败 (未在行中找到有效网址)\n时间: {bj_time}')
+                  new_sources_lines.append(line)
+                  continue
+                  
+              working_url = None
+              fail_details = []
+              
+              # 依次测试主地址和备用地址
+              for u_idx, url in enumerate(urls, 1):
+                  addr_type = '主地址' if u_idx == 1 else f'备用地址 {u_idx-1}'
                   try:
-                      headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
-                      res = requests.get(target_url, headers=headers, timeout=10)
-                      
+                      res = requests.get(url, headers=headers, timeout=10)
                       if res.status_code == 200:
-                          # 核心升级：检查返回的内容是否真的是标准的 JSON 数据，而不是网页
                           try:
                               res.json()
-                              source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ✅ 成功 (获取到有效JSON数据)\n时间: {bj_time}')
+                              working_url = url
+                              source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ✅ 成功 (通过 <b>{addr_type}</b> 连通)\n地址: {url}\n时间: {bj_time}')
+                              break
                           except json.JSONDecodeError:
-                              # 虽然状态码是200，但内容无法被解析为 JSON（比如你碰到的 HTML 页面）
-                              source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ❌ 失败 (HTTP 200 但返回了网页/非JSON数据)\n时间: {bj_time}')
+                              fail_details.append(f'{addr_type} ({url}): HTTP 200 但返回网页/非JSON')
                       else:
-                          source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ❌ 失败 (HTTP 错误码: {res.status_code})\n时间: {bj_time}')
-                          
+                          fail_details.append(f'{addr_type} ({url}): HTTP 错误码 {res.status_code}')
                   except requests.exceptions.ConnectionError:
-                      source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ❌ 失败 (网络连接错误或域名不存在)\n时间: {bj_time}')
+                      fail_details.append(f'{addr_type} ({url}): 网络连接/域名解析错误')
                   except requests.exceptions.Timeout:
-                      source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ❌ 失败 (请求超时)\n时间: {bj_time}')
+                      fail_details.append(f'{addr_type} ({url}): 请求超时')
                   except Exception as e:
-                      source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ❌ 失败 (异常: {str(e)})\n时间: {bj_time}')
+                      fail_details.append(f'{addr_type} ({url}): 异常 {str(e)}')
+                      
+              if not working_url:
+                  details_str = '\n  '.join(fail_details)
+                  source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ❌ <b>全部地址失效</b>\n  {details_str}\n时间: {bj_time}')
+                  new_sources_lines.append(line)
+              else:
+                  # 将成功的可用地址排在最前面，保障 tvbox_helper 能顺畅读取下载
+                  other_urls = [u for u in urls if u != working_url]
+                  reordered_urls = [working_url] + other_urls
+                  reordered_line = f'{name},' + ' | '.join(reordered_urls) if len(parts) > 1 else working_url
+                  new_sources_lines.append(reordered_line)
 
+          # 写回优化后的 sources_list.txt
+          with open('sources_list.txt', 'w', encoding='utf-8') as f:
+              f.write('\n'.join(new_sources_lines) + '\n')
+
+          # 模拟内部键盘输入运行原程序（先选 4 批量处理，再选 0 退出）[cite: 7]
+          sys.stdin = StringIO('4\n0\n')
+          try:
+              tvbox_helper.main()
+          except SystemExit:
+              pass
+
+          # 组合推送内容（每个源之间空一行，在 TG 中更加直观）
           details_text = '\n\n'.join(source_results)
-          message = f'<b>📊 TVBox 助手运行与订阅源深度检测报告</b>\n\n{details_text}'
+          message = f'<b>📊 TVBox 智能备用源检测与运行报告</b>\n\n{details_text}'
 
+          # 依次向 10 个 Telegram 机器人发送详细报告
           for i in range(1, 11):
               token = os.getenv(f'TG_TOKEN_{i}')
               chat_id = os.getenv(f'TG_CHAT_{i}')
               if token and chat_id:
-                  url = f'https://api.telegram.org/bot{token}/sendMessage'
+                  url_tg = f'https://api.telegram.org/bot{token}/sendMessage'
                   try:
-                      requests.post(url, json={
+                      requests.post(url_tg, json={
                           'chat_id': chat_id, 
                           'text': message, 
                           'parse_mode': 'HTML'
@@ -139,3 +153,20 @@ jobs:
                   except Exception as e:
                       print(f'Telegram Bot {i} 发送失败: {e}')
           "
+
+      # 步骤五：自动将脚本运行后生成/更新的文件提交并推送到仓库[cite: 7]
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.io'
+          git add -A
+          
+          # 检查是否有文件改动，若无改动则跳过提交
+          if git diff --staged --quiet; then
+            echo "No changes detected, skipping commit."
+          else
+            git commit -m "Auto-update TVBox data via GitHub Actions"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
