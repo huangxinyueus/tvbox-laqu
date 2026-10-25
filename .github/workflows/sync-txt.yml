@@ -1,10 +1,10 @@
-name: Sync TVBox Sources from TXT
+name: Sync TVBox Sources with Smart Status (10 Bots)
 
 on:
   schedule:
-    # 每 2 小时自动同步一次
+    # 每 12 小时自动同步一次
     - cron: '0 */12 * * *'
-  workflow_dispatch: # 支持手动点击立即触发
+  workflow_dispatch: # 支持手动触发
 
 jobs:
   sync:
@@ -16,7 +16,29 @@ jobs:
       - name: 检出仓库代码
         uses: actions/checkout@v4
 
-      - name: 读取 txt 并批量拉取
+      - name: 读取 txt 并智能拉取与状态判断
+        env:
+          # 配置 10 个机器人的密钥变量
+          BOT1_TOKEN: ${{ secrets.BOT1_TOKEN }}
+          BOT1_CHAT: ${{ secrets.BOT1_CHAT }}
+          BOT2_TOKEN: ${{ secrets.BOT2_TOKEN }}
+          BOT2_CHAT: ${{ secrets.BOT2_CHAT }}
+          BOT3_TOKEN: ${{ secrets.BOT3_TOKEN }}
+          BOT3_CHAT: ${{ secrets.BOT3_CHAT }}
+          BOT4_TOKEN: ${{ secrets.BOT4_TOKEN }}
+          BOT4_CHAT: ${{ secrets.BOT4_CHAT }}
+          BOT5_TOKEN: ${{ secrets.BOT5_TOKEN }}
+          BOT5_CHAT: ${{ secrets.BOT5_CHAT }}
+          BOT6_TOKEN: ${{ secrets.BOT6_TOKEN }}
+          BOT6_CHAT: ${{ secrets.BOT6_CHAT }}
+          BOT7_TOKEN: ${{ secrets.BOT7_TOKEN }}
+          BOT7_CHAT: ${{ secrets.BOT7_CHAT }}
+          BOT8_TOKEN: ${{ secrets.BOT8_TOKEN }}
+          BOT8_CHAT: ${{ secrets.BOT8_CHAT }}
+          BOT9_TOKEN: ${{ secrets.BOT9_TOKEN }}
+          BOT9_CHAT: ${{ secrets.BOT9_CHAT }}
+          BOT10_TOKEN: ${{ secrets.BOT10_TOKEN }}
+          BOT10_CHAT: ${{ secrets.BOT10_CHAT }}
         run: |
           mkdir -p json
           
@@ -26,29 +48,93 @@ jobs:
           fi
 
           index=1
+          error_msg=""
+          has_error=0
+
           while IFS= read -r url || [ -n "$url" ]; do
-            # 去除空格和回车，跳过空行或 # 开头的注释行
             url=$(echo "$url" | tr -d '\r' | xargs)
             if [[ -z "$url" || "$url" == \#* ]]; then
               continue
             fi
 
             echo "正在同步第 $index 个源 -> $url"
-            # 自动按顺序命名保存为 json/source_1.json, json/source_2.json ...
-            curl -s -L "$url" -o "json/source_${index}.json" || echo "警告: 第 $index 个源拉取失败"
+            
+            # 使用 curl 获取状态码，设置 10 秒超时（超时返回 000）
+            http_code=$(curl -s -L -w "%{http_code}" --connect-timeout 10 "$url" -o "json/source_${index}.json" || echo "000")
+            
+            if [ "$http_code" -ne 200 ]; then
+              has_error=1
+              reason=""
+              
+              # 智能分类错误原因
+              if [ "$http_code" -eq 404 ]; then
+                reason="HTTP 404（资源不存在，极可能是**源地址已失效或需要更换新地址**）"
+              elif [ "$http_code" -eq 000 ]; then
+                reason="网络连接超时 / DNS解析失败（**拉取失败**，服务器无法访问该网址）"
+              elif [ "$http_code" -ge 500 ]; then
+                reason="HTTP $http_code（目标源服务器自身发生内部错误）"
+              else
+                reason="HTTP 状态码异常: $http_code"
+              fi
+              
+              error_msg="${error_msg}%0A- *第 ${index} 个源*: \`${url}\`%0A  ❌ *失败原因*: ${reason}%0A"
+            fi
+            
             index=$((index + 1))
           done < sources.txt
 
-      - name: 检查并提交更改
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          git add json/
-          
-          if git diff --staged --quiet; then
-            echo "所有源内容均无变化，跳过提交。"
+          # 定义单个发送函数
+          send_tg() {
+            local token=$1
+            local chat=$2
+            local text=$3
+            if [ -n "$token" ] && [ -n "$chat" ]; then
+              curl -s -X POST "https://api.telegram.org/bot${token}/sendMessage" \
+                -d "chat_id=${chat}" \
+                -d "parse_mode=Markdown" \
+                -d "text=${text}" > /dev/null
+            fi
+          }
+
+          # 定义 10 个机器人群发包装函数（未填写的变量会自动跳过）
+          broadcast_tg() {
+            local text=$1
+            send_tg "$BOT1_TOKEN" "$BOT1_CHAT" "$text"
+            send_tg "$BOT2_TOKEN" "$BOT2_CHAT" "$text"
+            send_tg "$BOT3_TOKEN" "$BOT3_CHAT" "$text"
+            send_tg "$BOT4_TOKEN" "$BOT4_CHAT" "$text"
+            send_tg "$BOT5_TOKEN" "$BOT5_CHAT" "$text"
+            send_tg "$BOT6_TOKEN" "$BOT6_CHAT" "$text"
+            send_tg "$BOT7_TOKEN" "$BOT7_CHAT" "$text"
+            send_tg "$BOT8_TOKEN" "$BOT8_CHAT" "$text"
+            send_tg "$BOT9_TOKEN" "$BOT9_CHAT" "$text"
+            send_tg "$BOT10_TOKEN" "$BOT10_CHAT" "$text"
+          }
+
+          current_date=$(date +'%Y-%m-%d %H:%M:%S')
+
+          # ---------------- 情况 3：更新失败 ----------------
+          if [ "$has_error" -eq 1 ]; then
+            msg="❌ *TVBox 源更新失败警报*%0A%0A📅 *检测时间*: \`${current_date}\`%0A📋 *详细说明*:${error_msg}"
+            broadcast_tg "$msg"
+            exit 1 # 失败时中断
           else
-            git commit -m "Auto-sync sources from txt: $(date +'%Y-%m-%d %H:%M:%S')"
-            git push
+            # ---------------- 检查是否有内容变更 ----------------
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git add json/
+            
+            if git diff --staged --quiet; then
+              # ---------------- 情况 2：没更新（内容无变化） ----------------
+              echo "所有源内容均无变化，今天没更新。"
+              msg="🟡 *TVBox 源同步提示*%0A%0A📅 *检测时间*: \`${current_date}\`%0Aℹ️ *状态*: **今天没更新**（远程源内容与仓库一致，无变动）"
+              broadcast_tg "$msg"
+            else
+              # ---------------- 情况 1：成功更新并提交 ----------------
+              git commit -m "Auto-sync sources: ${current_date}"
+              git push
+              
+              msg="🟢 *TVBox 源更新成功通知*%0A%0A📅 *更新日期*: \`${current_date}\`%0A✅ *状态*: **今天已更新**（已成功拉取最新源并同步至仓库！）"
+              broadcast_tg "$msg"
+            fi
           fi
