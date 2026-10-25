@@ -53,7 +53,7 @@ jobs:
           TG_TOKEN_10: ${{ secrets.TG_TOKEN_10 }}
           TG_CHAT_10: ${{ secrets.TG_CHAT_10 }}
         run: |
-          python -c "
+          cat << 'EOF' > run_helper.py
           import os, re, requests, time, sys, json, hashlib
           from datetime import datetime, timezone, timedelta
           from io import StringIO
@@ -238,7 +238,8 @@ jobs:
                       }, timeout=10)
                   except Exception as e:
                       print(f'Telegram Bot {i} 发送失败: {e}')
-          "
+          EOF
+          python run_helper.py
 
       # 步骤五：自动将脚本运行后生成/更新的文件提交并推送到仓库
       - name: Commit and Push Changes
