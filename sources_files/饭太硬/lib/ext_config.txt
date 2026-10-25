@@ -154,6 +154,8 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/juqingpian/29870.html'>
+            空枪            </a></li>
                     <li><a href='/donghuapian/21958.html'>
             仙逆            </a></li>
                     <li><a href='/donghuapian/24756.html'>
@@ -192,8 +194,6 @@ document.getElementById(obj).style.display="none";
             野兽之心            </a></li>
                     <li><a href='/dongzuopian/29872.html'>
             街头霸王2026            </a></li>
-                    <li><a href='/juqingpian/29870.html'>
-            空枪            </a></li>
                   </ul>
         <ul class="hide">
                     <li><a href='/dianshiju/guoju/29866.html'>
@@ -238,6 +238,8 @@ document.getElementById(obj).style.display="none";
             人生复本 第二季            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/juqingpian/29870.html'>
+            空枪            </a></li>
                     <li><a href='/dianshiju/guoju/29866.html'>
             小城良方            </a></li>
                     <li><a href='/dianshiju/guoju/29789.html'>
@@ -266,8 +268,6 @@ document.getElementById(obj).style.display="none";
             野兽之心            </a></li>
                     <li><a href='/dongzuopian/29872.html'>
             街头霸王2026            </a></li>
-                    <li><a href='/juqingpian/29870.html'>
-            空枪            </a></li>
                     <li><a href='/aiqingpian/29869.html'>
             爱语            </a></li>
                     <li><a href='/dianshiju/oumeiju/23576.html'>
@@ -305,6 +305,31 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/juqingpian/29870.html" class="zoom" rel="bookmark" title="空枪">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4153.jpg" alt="空枪" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/juqingpian/29870.html" rel="bookmark" title="空枪">空枪</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　空枪◎译　　名:　V◎年　　代:　2026◎产　　地:　中国大陆 / 中国香港◎类　　别:　剧情 / 犯罪◎语　　言:　粤语 / 汉语普通话 / 英语◎上映日期:　2026                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-10-26</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/juqingpian/29870.html#respond" title="《空枪》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/dianshiju/guoju/29866.html" class="zoom" rel="bookmark" title="小城良方">
@@ -652,31 +677,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dongzuopian/29872.html#respond" title="《街头霸王2026》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/juqingpian/29870.html" class="zoom" rel="bookmark" title="空枪">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4153.jpg" alt="空枪" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/juqingpian/29870.html" rel="bookmark" title="空枪">空枪</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　空枪◎译　　名:　V◎年　　代:　2026◎产　　地:　中国大陆 / 中国香港◎类　　别:　剧情 / 犯罪◎语　　言:　粤语 / 汉语普通话 / 英语◎上映日期:　2026                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-10-23</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/juqingpian/29870.html#respond" title="《空枪》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
     				</div>
                </div>
     		</li><li class="post box row fixed-hight">

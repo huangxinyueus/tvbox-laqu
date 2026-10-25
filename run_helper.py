@@ -54,7 +54,7 @@ for idx, line in enumerate(sources_raw, 1):
         
         for attempt in range(2):
             try:
-                res = requests.get(url, headers=headers, timeout=60)
+                res = requests.get(url, headers=headers, timeout=20)
                 if res.status_code == 200:
                     fetched_content = res.content
                     success = True
@@ -93,7 +93,6 @@ for idx, line in enumerate(sources_raw, 1):
                 local_rel_path = 'spider.jar'
                 if spider_val:
                     spider_path_part = spider_val.split(';')[0].strip()
-                    # 严格检查：必须以 .jar 结尾才承认它是合法的 jar 路径，防止把壁纸/图标当成 jar
                     if spider_path_part.lower().endswith('.jar'):
                         if spider_path_part.startswith('http'):
                             parsed_url = urlparse(spider_path_part)
@@ -105,7 +104,6 @@ for idx, line in enumerate(sources_raw, 1):
                             if not local_rel_path:
                                 local_rel_path = 'spider.jar'
                     else:
-                        print(f"[WARNING] 字段 spider 不是以 .jar 结尾 ({spider_path_part})，已自动使用默认 spider.jar")
                         spider_val = './spider.jar'
                         local_rel_path = 'spider.jar'
                         parsed_json['spider'] = './spider.jar'
@@ -113,37 +111,49 @@ for idx, line in enumerate(sources_raw, 1):
                     parsed_json['spider'] = './spider.jar'
                     local_rel_path = 'spider.jar'
 
-                # 规范化基础目录 URL
-                if working_url.endswith('/'):
-                    base_dir_url = working_url
-                else:
-                    base_dir_url = working_url.rsplit('/', 1)[0] + '/'
-
-                parsed_w = urlparse(working_url)
-                domain_root = f"{parsed_w.scheme}://{parsed_w.netloc}"
                 jar_filename = os.path.basename(local_rel_path)
 
-                # 构造多路候选下载链接列表
+                # 遍历该源配置的所有主地址和备用地址，搜罗所有可能的下载链接
                 candidate_urls = []
                 if spider_val and spider_val.split(';')[0].strip().startswith('http') and spider_val.split(';')[0].strip().lower().endswith('.jar'):
                     candidate_urls.append(spider_val.split(';')[0].strip())
-                
-                candidate_urls.append(urljoin(base_dir_url, local_rel_path))
-                candidate_urls.append(urljoin(working_url, local_rel_path))
-                candidate_urls.append(f"{domain_root}/{local_rel_path}")
-                candidate_urls.append(f"{domain_root}/lib/{jar_filename}")
-                candidate_urls.append(f"{domain_root}/spider.jar")
-                candidate_urls.append(f"{domain_root}/fty.jar")
 
-                print(f"[DEBUG] 最终候选 Jar 下载链接: {candidate_urls}, 本地目标路径: {local_rel_path}")
+                for u in urls:
+                    parsed_u = urlparse(u)
+                    u_domain_root = f"{parsed_u.scheme}://{parsed_u.netloc}"
+                    if u.endswith('/'):
+                        u_base_dir = u
+                    else:
+                        u_base_dir = u.rsplit('/', 1)[0] + '/'
+
+                    if spider_val and not spider_val.split(';')[0].strip().startswith('http'):
+                        clean_path = spider_val.split(';')[0].strip().lstrip('./').lstrip('/')
+                        candidate_urls.append(urljoin(u_base_dir, clean_path))
+                        candidate_urls.append(urljoin(u, clean_path))
+
+                    candidate_urls.append(urljoin(u_base_dir, local_rel_path))
+                    candidate_urls.append(f"{u_domain_root}/{local_rel_path}")
+                    candidate_urls.append(f"{u_domain_root}/lib/{jar_filename}")
+                    candidate_urls.append(f"{u_domain_root}/spider.jar")
+                    candidate_urls.append(f"{u_domain_root}/fty.jar")
+
+                # 去重候选链接保持顺序
+                seen_cu = set()
+                unique_candidates = []
+                for cu in candidate_urls:
+                    if cu not in seen_cu:
+                        seen_cu.add(cu)
+                        unique_candidates.append(cu)
+                candidate_urls = unique_candidates
+
+                print(f"[DEBUG] 联动主备用地址的最终候选 Jar 链接列表: {candidate_urls}, 本地目标路径: {local_rel_path}")
 
                 # 开始尝试下载并进行内容校验
                 downloaded = False
                 for d_url in candidate_urls:
                     try:
                         s_res = requests.get(d_url, headers=headers, timeout=30)
-                        print(f"[DEBUG] 请求 {d_url} -> 状态码: {s_res.status_code}, 大小: {len(s_res.content)}")
-                        # 状态码200，且内容大于1KB，且不能包含html/png等误判
+                        print(f"[DEBUG] 请求备用/主地址 {d_url} -> 状态码: {s_res.status_code}, 大小: {len(s_res.content)}")
                         if s_res.status_code == 200 and len(s_res.content) > 1024:
                             content_sample = s_res.content[:50].lower()
                             if b'html' not in content_sample and b'png' not in content_sample and b'jpeg' not in content_sample:
@@ -153,15 +163,17 @@ for idx, line in enumerate(sources_raw, 1):
                                 with open(local_rel_path, 'wb') as sf:
                                     sf.write(s_res.content)
                                 jar_status_tip = f' | 📦 <b>{local_rel_path} 同步成功</b>'
-                                print(f"[SUCCESS] 成功保存 jar 到: {local_rel_path}")
+                                print(f"[SUCCESS] 从备用/主地址成功保存 jar 到: {local_rel_path}")
                                 downloaded = True
                                 break
                     except Exception as ex:
                         print(f"[ERROR] 下载异常: {ex}")
                         continue
                 
+                # 💡 如果遍历所有主备用地址后仍未下载成功，明确显示抓取失败
                 if not downloaded:
-                    jar_status_tip = f' | ⚠️ <b>{local_rel_path} 下载未命中</b>'
+                    jar_status_tip = f' | ❌ <b>抓取jar失败</b>'
+                    print(f"[WARNING] 源 [{name}] 的 jar 文件在所有主备用地址中均未命中，抓取失败。")
 
             normalized_str = json.dumps(parsed_json, sort_keys=True, ensure_ascii=False)
         except Exception as je:
