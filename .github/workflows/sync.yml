@@ -1,0 +1,53 @@
+name: TVBox Helper Auto Run
+
+on:
+  # 1. 允许手动点击按钮触发
+  workflow_dispatch:
+  
+  # 2. 定时自动触发（例如：每天 UTC 时间 0点和12点，即北京时间早上 8点和晚上 20点）
+  schedule:
+    - cron: '0 0,12 * * *'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 步骤一：检出仓库代码
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 步骤二：配置 Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # 步骤三：安装可能需要的依赖（如果你的脚本用到了 requests 等第三方库，可以在这里安装）
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # 如果有第三方库依赖，可以取消下面这行的注释并写上，例如：
+          # pip install requests
+
+      # 步骤四：运行你的主脚本（这里以 tvbox_helper.py 为例）
+      - name: Run TVBox Helper
+        run: |
+          python tvbox_helper.py
+
+      # 步骤五：自动将脚本运行后生成/更新的文件提交并推送到仓库
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.io'
+          git add -A
+          
+          # 检查是否有文件改动，若无改动则跳过提交
+          if git diff --staged --quiet; then
+            echo "No changes detected, skipping commit."
+          else
+            git commit -m "Auto-update TVBox data via GitHub Actions"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
