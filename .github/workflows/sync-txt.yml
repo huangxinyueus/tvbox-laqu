@@ -1,24 +1,22 @@
-name: Sync TVBox Sources with Failover & 10 Bots
+name: Sync TVBox Sources with Custom Names
 
 on:
   schedule:
-    # 每 12 小时自动同步一次
     - cron: '0 */12 * * *'
-  workflow_dispatch: # 支持手动触发
+  workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # 赋予写入权限
+      contents: write
 
     steps:
       - name: 检出仓库代码
         uses: actions/checkout@v4
 
-      - name: 读取 txt 并进行多备用源轮询与智能拉取
+      - name: 读取 txt 并按中文名字拉取保存
         env:
-          # 配置 10 个机器人的密钥变量
           BOT1_TOKEN: ${{ secrets.BOT1_TOKEN }}
           BOT1_CHAT: ${{ secrets.BOT1_CHAT }}
           BOT2_TOKEN: ${{ secrets.BOT2_TOKEN }}
@@ -40,60 +38,76 @@ jobs:
           BOT10_TOKEN: ${{ secrets.BOT10_TOKEN }}
           BOT10_CHAT: ${{ secrets.BOT10_CHAT }}
         run: |
-          mkdir -p json
+          mkdir -p sources_files
           
           if [ ! -f "sources.txt" ]; then
             echo "错误: sources.txt 文件不存在！"
             exit 1
           fi
 
-          index=1
           error_msg=""
           has_error=0
 
           while IFS= read -r line || [ -n "$line" ]; do
-            # 去除回车符
             line=$(echo "$line" | tr -d '\r' | xargs)
-            # 跳过空行和注释
             if [[ -z "$line" || "$line" == \#* ]]; then
               continue
             fi
 
-            echo "正在处理第 $index 组源..."
-            
-            # 以 | 分割同一行的多个备用网址
-            IFS='|' read -ra urls <<< "$line"
+            # 💡 核心解析：用逗号 `,` 分割“名称”和“网址群”
+            if [[ "$line" == *,* ]]; then
+              source_name="${line%%,*}"
+              source_urls="${line#*,}"
+            else
+              # 如果没写名字，默认用通用名称
+              source_name="source_unknown"
+              source_urls="$line"
+            fi
+
+            # 清理名称中的空格
+            source_name=$(echo "$source_name" | xargs)
+            echo "正在处理源: [$source_name]"
+
+            IFS='|' read -ra urls <<< "$source_urls"
             success=0
-            target_json="json/source_${index}.json"
 
             for url in "${urls[@]}"; do
-              url=$(echo "$url" | xargs) # 清理空格
+              url=$(echo "$url" | xargs)
               if [ -z "$url" ]; then
                 continue
               fi
 
-              echo "-> 尝试拉取: $url"
-              http_code=$(curl -s -L -w "%{http_code}" --connect-timeout 10 "$url" -o "$target_json" || echo "000")
+              # 自动提取远程文件的真实后缀（如 py, jar, json, txt）
+              ext="txt"
+              clean_url="${url%%\?*}"
+              if [[ "$clean_url" =~ \.([a-zA-Z0-9]+)$ ]]; then
+                ext="${BASH_REMATCH[1]}"
+              fi
+
+              # 💡 最终保存的文件名就是你在 sources.txt 里写的中文名！
+              target_file="sources_files/${source_name}.${ext}"
+
+              echo "-> 尝试拉取: $url (保存为: $target_file)"
+              http_code=$(curl -s -L -w "%{http_code}" --connect-timeout 15 "$url" -o "$target_file" || echo "000")
               
               if [ "$http_code" -eq 200 ]; then
-                echo "✅ 成功拉取！"
+                echo "✅ [$source_name] 成功拉取！"
                 success=1
-                break # 只要有一个成功，跳出当前组的备用源循环
+                break
               else
                 echo "⚠️ 该地址拉取失败 (HTTP 状态码: $http_code)，尝试下一个备用地址..."
+                rm -f "$target_file"
               fi
             done
 
-            # 如果这一行的所有备用地址都失败了
             if [ "$success" -eq 0 ]; then
               has_error=1
-              error_msg="${error_msg}%0A- *第 ${index} 组源*: 所有备用地址均失效%0A  ❌ *尝试过的链接*: \`${line}\`%0A"
+              error_msg="${error_msg}%0A- *源名*: \`${source_name}\` (所有备用地址失效)%0A"
             fi
             
-            index=$((index + 1))
           done < sources.txt
 
-          # 定义单个发送函数
+          # 定义发送函数
           send_tg() {
             local token=$1
             local chat=$2
@@ -106,7 +120,6 @@ jobs:
             fi
           }
 
-          # 10 个机器人群发包装函数
           broadcast_tg() {
             local text=$1
             send_tg "$BOT1_TOKEN" "$BOT1_CHAT" "$text"
@@ -123,24 +136,20 @@ jobs:
 
           current_date=$(date +'%Y-%m-%d %H:%M:%S')
 
-          # ---------------- 情况 3：全部尝试后依然更新失败 ----------------
           if [ "$has_error" -eq 1 ]; then
             msg="❌ *TVBox 源更新失败警报*%0A%0A📅 *检测时间*: \`${current_date}\`%0A📋 *详细说明*:${error_msg}"
             broadcast_tg "$msg"
-            exit 1 # 失败时中断
+            exit 1
           else
-            # ---------------- 检查是否有内容变更 ----------------
             git config --global user.name "github-actions[bot]"
             git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git add json/
+            git add sources_files/
             
             if git diff --staged --quiet; then
-              # ---------------- 情况 2：没更新（内容无变化） ----------------
               echo "所有源内容均无变化，今天没更新。"
               msg="🟡 *TVBox 源同步提示*%0A%0A📅 *检测时间*: \`${current_date}\`%0Aℹ️ *状态*: **今天没更新**（远程源内容与仓库一致，无变动）"
               broadcast_tg "$msg"
             else
-              # ---------------- 情况 1：成功更新并提交 ----------------
               git commit -m "Auto-sync sources: ${current_date}"
               git push
               
