@@ -110,7 +110,7 @@ jobs:
                   
                   for attempt in range(2):
                       try:
-                          res = requests.get(url, headers=headers, timeout=30)
+                          res = requests.get(url, headers=headers, timeout=60)
                           if res.status_code == 200:
                               fetched_content = res.content
                               success = True
@@ -118,7 +118,7 @@ jobs:
                           else:
                               last_err = f'HTTP 错误码 {res.status_code}'
                       except requests.exceptions.ConnectionError:
-                        last_err = '网络连接/域名解析错误（网站无法打开）'
+                          last_err = '网络连接/域名解析错误（网站无法打开）'
                       except requests.exceptions.Timeout:
                           last_err = '请求超时 (60s)'
                       except Exception as e:
@@ -146,26 +146,23 @@ jobs:
                       if isinstance(parsed_json, dict):
                           spider_val = parsed_json.get('spider', '')
                           if spider_val:
-                              # 提取路径部分（如去除 ;md5;... 后缀）
                               spider_path_part = spider_val.split(';')[0].strip()
                               
-                              # 确定真实的远程下载地址
                               if spider_path_part.startswith('http'):
                                   real_download_url = spider_path_part
                               else:
                                   real_download_url = urljoin(working_url, spider_path_part)
                               
-                              # 确定本地应该存放的相对路径
                               if spider_path_part.startswith('http'):
                                   parsed_url = urlparse(spider_path_part)
                                   path_name = parsed_url.path.lstrip('/')
                                   local_rel_path = path_name if path_name else 'spider.jar'
                               else:
-                                  local_rel_path = spider_path_part.lstrip('./').lstrip('/\\')
+                                  local_rel_path = spider_path_part.lstrip('./').lstrip('/')
+                                  local_rel_path = local_rel_path.replace('\\', '/')
                                   if not local_rel_path:
                                       local_rel_path = 'spider.jar'
                               
-                              # 自动创建目标文件夹并下载 jar 文件
                               try:
                                   s_res = requests.get(real_download_url, headers=headers, timeout=30)
                                   if s_res.status_code == 200:
@@ -178,7 +175,6 @@ jobs:
                               except Exception as je:
                                   print(f'Download jar error for {name}: {je}')
 
-                      # 标准化内容计算哈希
                       normalized_str = json.dumps(parsed_json, sort_keys=True, ensure_ascii=False)
                   except:
                       text_data = fetched_content.decode('utf-8', errors='ignore')
