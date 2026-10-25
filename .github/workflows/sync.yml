@@ -29,8 +29,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      # 步骤四：智能备用源检测（状态码200即成功、60秒超时与重试）、自动切换、运行助手并发送多路 TG 通知
-      - name: Run TVBox Helper with Smart Fallback & Retries
+      # 步骤四：智能备用源检测（含变动识别、更新时间、60秒超时与重试）、自动切换、运行助手并发送多路 TG 通知
+      - name: Run TVBox Helper with Change Detection & Smart Fallback
         env:
           TG_TOKEN_1: ${{ secrets.TG_TOKEN_1 }}
           TG_CHAT_1: ${{ secrets.TG_CHAT_1 }}
@@ -54,7 +54,7 @@ jobs:
           TG_CHAT_10: ${{ secrets.TG_CHAT_10 }}
         run: |
           python -c "
-          import os, re, requests, time, sys
+          import os, re, requests, time, sys, subprocess
           from datetime import datetime, timezone, timedelta
           from io import StringIO
           import tvbox_helper
@@ -99,8 +99,7 @@ jobs:
                   # 增加重试机制（最多尝试 2 次，超时时间设为 60 秒）
                   for attempt in range(2):
                       try:
-                          res = requests.get(url, headers=headers, timeout=30)
-                          # 核心调整：只要能正常打开返回 200，就判定为连通成功（支持网站导航、HTML及各种格式）
+                          res = requests.get(url, headers=headers, timeout=60)
                           if res.status_code == 200:
                               success = True
                               break
@@ -145,9 +144,19 @@ jobs:
           except SystemExit:
               pass
 
+          # 检查仓库是否有实际文件变动
+          git_status = subprocess.run(['git', 'status', '--porcelain'], capture_output=True, text=True).stdout.strip()
+          has_changes = bool(git_status)
+
+          # 根据是否有变化生成不同的头部状态提示
+          if has_changes:
+              status_header = f'✨ <b>状态：检测到内容有更新！</b>\n🕒 <b>更新时间：</b>{bj_time}'
+          else:
+              status_header = '🟢 <b>状态：检测完成，内容无变化 (保持最新)</b>'
+
           # 组合推送内容（每个源之间空一行，在 TG 中更直观）
           details_text = '\n\n'.join(source_results)
-          message = f'<b>📊 TVBox 智能备用源检测与运行报告</b>\n\n{details_text}'
+          message = f'<b>📊 TVBox 智能备用源检测与运行报告</b>\n\n{status_header}\n\n{details_text}'
 
           # 依次向 10 个 Telegram 机器人发送详细报告
           for i in range(1, 11):
