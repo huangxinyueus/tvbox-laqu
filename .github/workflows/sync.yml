@@ -110,7 +110,7 @@ jobs:
                   
                   for attempt in range(2):
                       try:
-                          res = requests.get(url, headers=headers, timeout=60)
+                          res = requests.get(url, headers=headers, timeout=10)
                           if res.status_code == 200:
                               fetched_content = res.content
                               success = True
