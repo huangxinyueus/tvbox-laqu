@@ -54,7 +54,7 @@ for idx, line in enumerate(sources_raw, 1):
         
         for attempt in range(2):
             try:
-                res = requests.get(url, headers=headers, timeout=30)
+                res = requests.get(url, headers=headers, timeout=20)
                 if res.status_code == 200:
                     fetched_content = res.content
                     success = True
@@ -82,21 +82,17 @@ for idx, line in enumerate(sources_raw, 1):
         source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ❌ <b>全部地址失效</b>\n  {details_str}')
         new_sources_lines.append(line)
     else:
-        # 智能解析 spider 字段并按其指定的目录下载对应 jar 文件
+        # 暴力多路候选 spider.jar 下载与路径解析逻辑
         jar_status_tip = ''
         try:
             text_data = fetched_content.decode('utf-8', errors='ignore')
             parsed_json = json.loads(text_data)
             if isinstance(parsed_json, dict):
                 spider_val = parsed_json.get('spider', '')
+                
+                # 确定本地保存的相对路径
                 if spider_val:
                     spider_path_part = spider_val.split(';')[0].strip()
-                    
-                    if spider_path_part.startswith('http'):
-                        real_download_url = spider_path_part
-                    else:
-                        real_download_url = urljoin(working_url, spider_path_part)
-                    
                     if spider_path_part.startswith('http'):
                         parsed_url = urlparse(spider_path_part)
                         path_name = parsed_url.path.lstrip('/')
@@ -106,18 +102,44 @@ for idx, line in enumerate(sources_raw, 1):
                         local_rel_path = local_rel_path.replace('\\', '/')
                         if not local_rel_path:
                             local_rel_path = 'spider.jar'
-                    
+                else:
+                    local_rel_path = 'spider.jar'
+                    parsed_json['spider'] = './spider.jar'
+
+                # 构造暴力下载候选 URL 列表
+                candidate_urls = []
+                if spider_val and spider_val.split(';')[0].strip().startswith('http'):
+                    candidate_urls.append(spider_val.split(';')[0].strip())
+                
+                if spider_val and not spider_val.split(';')[0].strip().startswith('http'):
+                    candidate_urls.append(urljoin(working_url, spider_val.split(';')[0].strip()))
+                
+                # 暴力启发式候选：结合当前源 URL 的同级目录及根目录
+                base_dir_url = working_url.rsplit('/', 1)[0]
+                candidate_urls.append(f"{base_dir_url}/spider.jar")
+                candidate_urls.append(f"{base_dir_url}/lib/spider.jar")
+                candidate_urls.append(urljoin(working_url, 'spider.jar'))
+                
+                # 开始暴力多路尝试下载
+                downloaded = False
+                for d_url in candidate_urls:
                     try:
-                        s_res = requests.get(real_download_url, headers=headers, timeout=30)
-                        if s_res.status_code == 200:
+                        s_res = requests.get(d_url, headers=headers, timeout=30)
+                        # 状态码200且内容长度大于200字节（排除网页错误提示）
+                        if s_res.status_code == 200 and len(s_res.content) > 200:
                             target_dir = os.path.dirname(os.path.abspath(local_rel_path))
                             if target_dir:
                                 os.makedirs(target_dir, exist_ok=True)
                             with open(local_rel_path, 'wb') as sf:
                                 sf.write(s_res.content)
                             jar_status_tip = f' | 📦 <b>{local_rel_path} 同步成功</b>'
-                    except Exception as je:
-                        print(f'Download jar error for {name}: {je}')
+                            downloaded = True
+                            break
+                    except:
+                        continue
+                
+                if not downloaded and spider_val:
+                    jar_status_tip = f' | ⚠️ <b>{local_rel_path} 下载未命中</b>'
 
             normalized_str = json.dumps(parsed_json, sort_keys=True, ensure_ascii=False)
         except:
