@@ -71,6 +71,18 @@ jobs:
                       except Exception as e:
                           print(f"Bot {i} 发送失败: {e}")
 
+          def format_url(raw_url):
+              """自动处理包含中文的网址，将其转换为标准编码格式"""
+              parsed = urllib.parse.urlparse(raw_url)
+              try:
+                  # 将中文域名转为 IDN (Punycode) 格式
+                  netloc = parsed.netloc.encode('idna').decode('utf-8')
+              except Exception:
+                  netloc = parsed.netloc
+              path = urllib.parse.quote(parsed.path)
+              query = urllib.parse.quote(parsed.query, safe='=&?/')
+              return urllib.parse.urlunparse((parsed.scheme, netloc, path, parsed.params, query, parsed.fragment))
+
           with open("sources.txt", "r", encoding="utf-8") as f:
               lines = f.readlines()
 
@@ -93,7 +105,8 @@ jobs:
               urls = [u.strip() for u in url_part.split("|") if u.strip()]
               success = False
 
-              for url in urls:
+              for raw_url in urls:
+                  url = format_url(raw_url)
                   clean_url = url.split("?")[0]
                   ext = "json" if "json" in clean_url else "txt"
                   match = re.search(r'\.([a-zA-Z0-9]+)$', clean_url)
@@ -113,14 +126,13 @@ jobs:
                               print(f"✅ [{name}] 主文件成功拉取并保存")
                               success = True
                               
-                              # 💡 核心功能：若为主 JSON 文件，自动深度解析并下载里面的 .jar / .py 依赖文件
+                              # 自动深度解析并下载里面的 .jar / .py 依赖文件
                               if ext.lower() == 'json':
                                   try:
                                       json_text = content.decode('utf-8', errors='ignore')
-                                      # 查找所有 http/https 链接
                                       potential_links = re.findall(r'https?://[^\s"\'<>\\#]+', json_text)
                                       for link in potential_links:
-                                          link = link.rstrip('\\"')
+                                          link = format_url(link.rstrip('\\"'))
                                           if any(link.lower().endswith(x) for x in ['.jar', '.py', '.txt', '.zip']):
                                               dep_filename = link.split('/')[-1].split('?')[0]
                                               if not dep_filename:
@@ -140,7 +152,7 @@ jobs:
                                       print(f"⚠️ 解析 JSON 依赖异常: {je}")
                               break
                   except Exception as e:
-                      print(f"⚠️ 地址访问异常 {url}: {e}")
+                      print(f"⚠️ 地址访问异常 {raw_url}: {e}")
 
               if not success:
                   has_error = True
