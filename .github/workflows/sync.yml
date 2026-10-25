@@ -29,8 +29,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      # 步骤四：智能备用源检测、带详细日志的 spider.jar 抓取、防抖哈希比对与 TG 多路通知
-      - name: Run TVBox Helper with Detailed Jar Logging & Tracking
+      # 步骤四：智能备用源检测、通用动态文件名与路径 Jar 下载器、防抖哈希比对与 TG 多路通知
+      - name: Run TVBox Helper with Universal Dynamic Jar Downloader & Tracking
         env:
           TG_TOKEN_1: ${{ secrets.TG_TOKEN_1 }}
           TG_CHAT_1: ${{ secrets.TG_CHAT_1 }}
@@ -144,76 +144,70 @@ jobs:
                       parsed_json = json.loads(text_data)
                       if isinstance(parsed_json, dict):
                           spider_val = parsed_json.get('spider', '')
-                          print(f"[DEBUG] 正在处理源 [{name}], 接口地址: {working_url}, 原始 spider 字段: {spider_val}")
+                          print(f"[DEBUG] 正在处理源 [{name}], 原始 spider 字段: {spider_val}")
                           
-                          # 1. 确定本地保存的相对路径
                           if spider_val:
+                              # 精准切分，完美剥离 ;md5;... 后缀，提取出任意文件名和路径
                               spider_path_part = spider_val.split(';')[0].strip()
-                              if spider_path_part.startswith('http'):
-                                  parsed_url = urlparse(spider_path_part)
-                                  path_name = parsed_url.path.lstrip('/')
-                                  local_rel_path = path_name if path_name else 'spider.jar'
+                              
+                              # 计算本地相对保存路径（支持任意子目录和任意文件名，如 fty.jar）
+                              local_rel_path = spider_path_part.lstrip('./').lstrip('/')
+                              local_rel_path = local_rel_path.replace('\\', '/')
+                              if not local_rel_path:
+                                  local_rel_path = 'spider.jar'
+
+                              # 规范化基础目录 URL
+                              if working_url.endswith('/'):
+                                  base_dir_url = working_url
                               else:
-                                  local_rel_path = spider_path_part.lstrip('./').lstrip('/')
-                                  local_rel_path = local_rel_path.replace('\\', '/')
-                                  if not local_rel_path:
-                                      local_rel_path = 'spider.jar'
-                          else:
-                              local_rel_path = 'spider.jar'
-                              parsed_json['spider'] = './spider.jar'
+                                  base_dir_url = working_url.rsplit('/', 1)[0] + '/'
 
-                          # 2. 收集所有可能的候选下载链接
-                          candidate_urls = []
-                          found_jars = re.findall(r'https?://[^\s\"<>]+?\.jar[^\s\"<>]*', text_data)
-                          for fj in found_jars:
-                              if fj not in candidate_urls:
-                                  candidate_urls.append(fj)
+                              parsed_w = urlparse(working_url)
+                              domain_root = f"{parsed_w.scheme}://{parsed_w.netloc}"
+                              jar_filename = os.path.basename(local_rel_path)
 
-                          if spider_val:
-                              clean_sp = spider_val.split(';')[0].strip()
-                              if clean_sp.startswith('http') and clean_sp not in candidate_urls:
-                                  candidate_urls.insert(0, clean_sp)
-                              elif not clean_sp.startswith('http'):
-                                  joined_sp = urljoin(working_url, clean_sp)
-                                  if joined_sp not in candidate_urls:
-                                      candidate_urls.append(joined_sp)
-                          
-                          # 补充暴力启发式路径
-                          base_dir_url = working_url.rsplit('/', 1)[0]
-                          candidate_urls.append(f"{base_dir_url}/spider.jar")
-                          candidate_urls.append(f"{base_dir_url}/lib/spider.jar")
-                          candidate_urls.append(urljoin(working_url, 'spider.jar'))
-                          candidate_urls.append(urljoin(working_url, './spider.jar'))
-                          
-                          print(f"[DEBUG] 候选下载链接列表: {candidate_urls}")
+                              # 构造多路候选下载链接列表
+                              candidate_urls = []
+                              if spider_path_part.startswith('http'):
+                                  candidate_urls.append(spider_path_part)
+                              else:
+                                  # 1. 尝试基于规范化的目录拼接原路径
+                                  candidate_urls.append(urljoin(base_dir_url, spider_path_part))
+                                  # 2. 尝试直接与 working_url 拼接
+                                  candidate_urls.append(urljoin(working_url, spider_path_part))
+                                  # 3. 尝试域名根目录下对应的目标路径
+                                  candidate_urls.append(f"{domain_root}/{local_rel_path}")
+                                  # 4. 尝试域名根目录下的同名文件
+                                  candidate_urls.append(f"{domain_root}/{jar_filename}")
 
-                          # 3. 尝试下载
-                          downloaded = False
-                          for d_url in candidate_urls:
-                              try:
-                                  s_res = requests.get(d_url, headers=headers, timeout=30)
-                                  print(f"[DEBUG] 尝试请求: {d_url} -> 状态码: {s_res.status_code}, 大小: {len(s_res.content)}")
-                                  if s_res.status_code == 200 and len(s_res.content) > 100:
-                                      target_dir = os.path.dirname(os.path.abspath(local_rel_path))
-                                      if target_dir:
-                                          os.makedirs(target_dir, exist_ok=True)
-                                      with open(local_rel_path, 'wb') as sf:
-                                          sf.write(s_res.content)
-                                      jar_status_tip = f' | 📦 <b>{local_rel_path} 同步成功</b>'
-                                      print(f"[SUCCESS] 成功下载 jar 文件到: {local_rel_path}")
-                                      downloaded = True
-                                      break
-                              except Exception as ex:
-                                  print(f"[ERROR] 请求 {d_url} 异常: {ex}")
-                                  continue
-                          
-                          if not downloaded:
-                              jar_status_tip = ' | ⚠️ <b>spider.jar 下载未命中</b>'
-                              print(f"[WARNING] 源 [{name}] 的 spider.jar 所有候选链接均下载失败。")
+                              print(f"[DEBUG] 候选下载链接: {candidate_urls}, 本地目标路径: {local_rel_path}")
+
+                              # 开始尝试下载
+                              downloaded = False
+                              for d_url in candidate_urls:
+                                  try:
+                                      s_res = requests.get(d_url, headers=headers, timeout=30)
+                                      print(f"[DEBUG] 请求 {d_url} -> 状态码: {s_res.status_code}, 大小: {len(s_res.content)}")
+                                      if s_res.status_code == 200 and len(s_res.content) > 100:
+                                          target_dir = os.path.dirname(os.path.abspath(local_rel_path))
+                                          if target_dir:
+                                              os.makedirs(target_dir, exist_ok=True)
+                                          with open(local_rel_path, 'wb') as sf:
+                                              sf.write(s_res.content)
+                                          jar_status_tip = f' | 📦 <b>{local_rel_path} 同步成功</b>'
+                                          print(f"[SUCCESS] 成功保存 jar 到: {local_rel_path}")
+                                          downloaded = True
+                                          break
+                                  except Exception as ex:
+                                      print(f"[ERROR] 下载异常: {ex}")
+                                      continue
+                              
+                              if not downloaded:
+                                  jar_status_tip = f' | ⚠️ <b>{local_rel_path} 下载未命中</b>'
 
                       normalized_str = json.dumps(parsed_json, sort_keys=True, ensure_ascii=False)
                   except Exception as je:
-                      print(f"[ERROR] 解析源 [{name}] JSON 失败: {je}")
+                      print(f"[ERROR] 解析 JSON 失败: {je}")
                       text_data = fetched_content.decode('utf-8', errors='ignore')
                       normalized_str = re.sub(r'\s+', '', text_data)
 
@@ -283,14 +277,14 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.io'
-          # 使用强制添加参数 -f，确保 .jar 文件即使被 .gitignore 拦截也能成功提交
+          # 使用强制添加参数 -f，确保所有 .jar 文件（任意目录、任意名称）即使被 .gitignore 拦截也能成功提交
           git add -f -A
           
           # 检查是否有文件改动，若无改动则跳过提交
           if git diff --staged --quiet; then
             echo "No changes detected, skipping commit."
           else
-            git commit -m "Auto-update TVBox data, spider jars and source status via GitHub Actions"
+            git commit -m "Auto-update TVBox data, custom jar files and source status via GitHub Actions"
             git push
           fi
         env:
