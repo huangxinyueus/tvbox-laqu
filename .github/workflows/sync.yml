@@ -99,7 +99,7 @@ jobs:
                   # 增加重试机制（最多尝试 2 次，超时时间设为 60 秒）
                   for attempt in range(2):
                       try:
-                          res = requests.get(url, headers=headers, timeout=60)
+                          res = requests.get(url, headers=headers, timeout=30)
                           # 核心调整：只要能正常打开返回 200，就判定为连通成功（支持网站导航、HTML及各种格式）
                           if res.status_code == 200:
                               success = True
