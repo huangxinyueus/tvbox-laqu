@@ -154,6 +154,20 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/kongbupian/29891.html'>
+            尸变            </a></li>
+                    <li><a href='/xijupian/29890.html'>
+            战邮1942            </a></li>
+                    <li><a href='/juqingpian/29889.html'>
+            宋家镇怪谈            </a></li>
+                    <li><a href='/dongzuopian/29888.html'>
+            虎影夺锋            </a></li>
+                    <li><a href='/dongzuopian/29887.html'>
+            宝莱坞双雄之战2            </a></li>
+                    <li><a href='/dongzuopian/29886.html'>
+            忍者战争 黑狐 VS 将军乃忍者            </a></li>
+                    <li><a href='/juqingpian/29822.html'>
+            杯雪·一战成名            </a></li>
                     <li><a href='/juqingpian/29870.html'>
             空枪            </a></li>
                     <li><a href='/donghuapian/21958.html'>
@@ -180,20 +194,6 @@ document.getElementById(obj).style.display="none";
             大力水手4：复活            </a></li>
                     <li><a href='/juqingpian/29883.html'>
             勿念            </a></li>
-                    <li><a href='/jilupian/29879.html'>
-            致命配对            </a></li>
-                    <li><a href='/jilupian/29878.html'>
-            定调            </a></li>
-                    <li><a href='/donghuapian/21341.html'>
-            斗罗大陆2：绝世唐门            </a></li>
-                    <li><a href='/donghuapian/21959.html'>
-            大主宰年番            </a></li>
-                    <li><a href='/donghuapian/21328.html'>
-            沧元图 第三季            </a></li>
-                    <li><a href='/dongzuopian/29873.html'>
-            野兽之心            </a></li>
-                    <li><a href='/dongzuopian/29872.html'>
-            街头霸王2026            </a></li>
                   </ul>
         <ul class="hide">
                     <li><a href='/dianshiju/guoju/29866.html'>
@@ -238,6 +238,12 @@ document.getElementById(obj).style.display="none";
             人生复本 第二季            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/kongbupian/29891.html'>
+            尸变            </a></li>
+                    <li><a href='/dongzuopian/29888.html'>
+            虎影夺锋            </a></li>
+                    <li><a href='/juqingpian/29822.html'>
+            杯雪·一战成名            </a></li>
                     <li><a href='/juqingpian/29870.html'>
             空枪            </a></li>
                     <li><a href='/dianshiju/guoju/29866.html'>
@@ -272,12 +278,6 @@ document.getElementById(obj).style.display="none";
             爱语            </a></li>
                     <li><a href='/dianshiju/oumeiju/23576.html'>
             人生复本 第二季            </a></li>
-                    <li><a href='/donghuapian/29868.html'>
-            眩晕            </a></li>
-                    <li><a href='/juqingpian/29822.html'>
-            杯雪·一战成名            </a></li>
-                    <li><a href='/kongbupian/29770.html'>
-            嗜血斑比            </a></li>
                   </ul>
       </div>
     </div>
@@ -305,6 +305,81 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/kongbupian/29891.html" class="zoom" rel="bookmark" title="尸变">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4194.jpg" alt="尸变" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/kongbupian/29891.html" rel="bookmark" title="尸变">尸变</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　The Cycle◎中 文 名:　尸变◎译　　名:　老爸的尸体◎年　　代:　2026◎产　　地:　英国◎类　　别:　惊悚 / 恐怖 / 犯罪◎语　　言:　英语◎上映日期:　2                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-10-26</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/kongbupian/29891.html#respond" title="《尸变》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/kongbupian/" title="查看恐怖片中的全部文章" rel="category tag">恐怖片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/29888.html" class="zoom" rel="bookmark" title="虎影夺锋">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4191.jpg" alt="虎影夺锋" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/29888.html" rel="bookmark" title="虎影夺锋">虎影夺锋</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+ ◎中 文 名:　虎影夺锋◎译　　名:　4 Tigers / 四只老虎◎年　　代:　2025◎产　　地:　泰国◎类　　别:　剧情 / 动作◎语　　言:　泰语◎上映日期:　2025-10-23(泰国)◎                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-10-26</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/29888.html#respond" title="《虎影夺锋》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/juqingpian/29822.html" class="zoom" rel="bookmark" title="杯雪·一战成名">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4042.jpg" alt="杯雪·一战成名" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/juqingpian/29822.html" rel="bookmark" title="杯雪·一战成名">杯雪·一战成名</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　杯雪&amp;amp;middot;一战成名◎译　　名:　A Better Jianghu / 一战成名 / 杯雪&amp;amp;middot;夜雨打金荷◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　犯罪 / 武                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-10-26</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/juqingpian/29822.html#respond" title="《杯雪·一战成名》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/juqingpian/29870.html" class="zoom" rel="bookmark" title="空枪">
@@ -677,81 +752,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dongzuopian/29872.html#respond" title="《街头霸王2026》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/aiqingpian/29869.html" class="zoom" rel="bookmark" title="爱语">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4154.jpg" alt="爱语" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/aiqingpian/29869.html" rel="bookmark" title="爱语">爱语</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　Love Language◎中 文 名:　爱语◎年　　代:　2026◎产　　地:　美国◎类　　别:　喜剧 / 爱情◎语　　言:　英语◎上映日期:　2026-03-16(西南偏南电影节)                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-10-23</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/aiqingpian/29869.html#respond" title="《爱语》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/aiqingpian/" title="查看爱情片中的全部文章" rel="category tag">爱情片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/23576.html" class="zoom" rel="bookmark" title="人生复本 第二季">
-                            
-								<img src="https://www.haibao123.xyz/01/3503.jpg" alt="人生复本 第二季" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/23576.html" rel="bookmark" title="人生复本 第二季">人生复本 第二季</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
- ◎译　　名　人生复本 第一季/暗物质◎片　　名　Dark Matter Season 1◎年　　代　2024◎产　　地　美国◎类　　别　剧情 / 科幻 / 惊悚◎语　　言　英语◎上映日期　202                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-10-23</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/23576.html#respond" title="《人生复本 第二季》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/donghuapian/29868.html" class="zoom" rel="bookmark" title="眩晕">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4139.jpg" alt="眩晕" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/donghuapian/29868.html" rel="bookmark" title="眩晕">眩晕</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
- ◎片　　名:　Le Vertige◎中 文 名:　眩晕◎译　　名:　Vertiginous / 人间坏格(台)◎年　　代:　2026◎产　　地:　法国◎类　　别:　剧情 / 喜剧 / 动画◎语　　言:　法                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-10-23</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/donghuapian/29868.html#respond" title="《眩晕》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/donghuapian/" title="查看动画片中的全部文章" rel="category tag">动画片</a></span> 
     				</div>
                </div>
     		</li>

@@ -54,7 +54,7 @@ for idx, line in enumerate(sources_raw, 1):
         
         for attempt in range(2):
             try:
-                res = requests.get(url, headers=headers, timeout=20)
+                res = requests.get(url, headers=headers, timeout=10)
                 if res.status_code == 200:
                     fetched_content = res.content
                     success = True
@@ -62,7 +62,7 @@ for idx, line in enumerate(sources_raw, 1):
                 else:
                     last_err = f'HTTP 错误码 {res.status_code}'
             except requests.exceptions.ConnectionError:
-                last_err = '网络连接/域名解析错误（网站无法打开）'
+              last_err = '网络连接/域名解析错误（网站无法打开）'
             except requests.exceptions.Timeout:
                 last_err = '请求超时 (60s)'
             except Exception as e:
@@ -90,28 +90,19 @@ for idx, line in enumerate(sources_raw, 1):
                 spider_val = parsed_json.get('spider', '')
                 print(f"[DEBUG] 正在处理源 [{name}], 原始 spider 字段: {spider_val}")
                 
-                local_rel_path = 'spider.jar'
+                base_jar_name = 'spider.jar'
                 if spider_val:
                     spider_path_part = spider_val.split(';')[0].strip()
                     if spider_path_part.lower().endswith('.jar'):
-                        if spider_path_part.startswith('http'):
-                            parsed_url = urlparse(spider_path_part)
-                            path_name = parsed_url.path.lstrip('/')
-                            local_rel_path = path_name if path_name else 'spider.jar'
-                        else:
-                            local_rel_path = spider_path_part.lstrip('./').lstrip('/')
-                            local_rel_path = local_rel_path.replace('\\', '/')
-                            if not local_rel_path:
-                                local_rel_path = 'spider.jar'
+                        base_jar_name = os.path.basename(spider_path_part)
                     else:
                         spider_val = './spider.jar'
-                        local_rel_path = 'spider.jar'
                         parsed_json['spider'] = './spider.jar'
                 else:
                     parsed_json['spider'] = './spider.jar'
-                    local_rel_path = 'spider.jar'
 
-                jar_filename = os.path.basename(local_rel_path)
+                # 💡 核心修改：让每个源自动保存到自定义文件夹 sources_files/源名称/ 中
+                local_rel_path = f"sources_files/{name}/{base_jar_name}"
 
                 # 遍历该源配置的所有主地址和备用地址，搜罗所有可能的下载链接
                 candidate_urls = []
@@ -131,9 +122,9 @@ for idx, line in enumerate(sources_raw, 1):
                         candidate_urls.append(urljoin(u_base_dir, clean_path))
                         candidate_urls.append(urljoin(u, clean_path))
 
-                    candidate_urls.append(urljoin(u_base_dir, local_rel_path))
-                    candidate_urls.append(f"{u_domain_root}/{local_rel_path}")
-                    candidate_urls.append(f"{u_domain_root}/lib/{jar_filename}")
+                    candidate_urls.append(urljoin(u_base_dir, base_jar_name))
+                    candidate_urls.append(f"{u_domain_root}/{base_jar_name}")
+                    candidate_urls.append(f"{u_domain_root}/lib/{base_jar_name}")
                     candidate_urls.append(f"{u_domain_root}/spider.jar")
                     candidate_urls.append(f"{u_domain_root}/fty.jar")
 
@@ -146,7 +137,7 @@ for idx, line in enumerate(sources_raw, 1):
                         unique_candidates.append(cu)
                 candidate_urls = unique_candidates
 
-                print(f"[DEBUG] 联动主备用地址的最终候选 Jar 链接列表: {candidate_urls}, 本地目标路径: {local_rel_path}")
+                print(f"[DEBUG] 联动主备用地址的最终候选 Jar 链接列表: {candidate_urls}, 自定义目标路径: {local_rel_path}")
 
                 # 开始尝试下载并进行内容校验
                 downloaded = False
@@ -162,15 +153,14 @@ for idx, line in enumerate(sources_raw, 1):
                                     os.makedirs(target_dir, exist_ok=True)
                                 with open(local_rel_path, 'wb') as sf:
                                     sf.write(s_res.content)
-                                jar_status_tip = f' | 📦 <b>{local_rel_path} 同步成功</b>'
-                                print(f"[SUCCESS] 从备用/主地址成功保存 jar 到: {local_rel_path}")
+                                jar_status_tip = f' | 📦 <b>{base_jar_name} 同步成功</b>'
+                                print(f"[SUCCESS] 成功保存 jar 到自定义目录: {local_rel_path}")
                                 downloaded = True
                                 break
                     except Exception as ex:
                         print(f"[ERROR] 下载异常: {ex}")
                         continue
                 
-                # 💡 如果遍历所有主备用地址后仍未下载成功，明确显示抓取失败
                 if not downloaded:
                     jar_status_tip = f' | ❌ <b>抓取jar失败</b>'
                     print(f"[WARNING] 源 [{name}] 的 jar 文件在所有主备用地址中均未命中，抓取失败。")
