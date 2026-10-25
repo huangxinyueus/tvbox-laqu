@@ -1,4 +1,4 @@
-name: Sync TVBox Sources with Smart Status (10 Bots)
+name: Sync TVBox Sources with Failover & 10 Bots
 
 on:
   schedule:
@@ -16,7 +16,7 @@ jobs:
       - name: 检出仓库代码
         uses: actions/checkout@v4
 
-      - name: 读取 txt 并智能拉取与状态判断
+      - name: 读取 txt 并进行多备用源轮询与智能拉取
         env:
           # 配置 10 个机器人的密钥变量
           BOT1_TOKEN: ${{ secrets.BOT1_TOKEN }}
@@ -51,33 +51,43 @@ jobs:
           error_msg=""
           has_error=0
 
-          while IFS= read -r url || [ -n "$url" ]; do
-            url=$(echo "$url" | tr -d '\r' | xargs)
-            if [[ -z "$url" || "$url" == \#* ]]; then
+          while IFS= read -r line || [ -n "$line" ]; do
+            # 去除回车符
+            line=$(echo "$line" | tr -d '\r' | xargs)
+            # 跳过空行和注释
+            if [[ -z "$line" || "$line" == \#* ]]; then
               continue
             fi
 
-            echo "正在同步第 $index 个源 -> $url"
+            echo "正在处理第 $index 组源..."
             
-            # 使用 curl 获取状态码，设置 10 秒超时（超时返回 000）
-            http_code=$(curl -s -L -w "%{http_code}" --connect-timeout 10 "$url" -o "json/source_${index}.json" || echo "000")
-            
-            if [ "$http_code" -ne 200 ]; then
-              has_error=1
-              reason=""
-              
-              # 智能分类错误原因
-              if [ "$http_code" -eq 404 ]; then
-                reason="HTTP 404（资源不存在，极可能是**源地址已失效或需要更换新地址**）"
-              elif [ "$http_code" -eq 000 ]; then
-                reason="网络连接超时 / DNS解析失败（**拉取失败**，服务器无法访问该网址）"
-              elif [ "$http_code" -ge 500 ]; then
-                reason="HTTP $http_code（目标源服务器自身发生内部错误）"
-              else
-                reason="HTTP 状态码异常: $http_code"
+            # 以 | 分割同一行的多个备用网址
+            IFS='|' read -ra urls <<< "$line"
+            success=0
+            target_json="json/source_${index}.json"
+
+            for url in "${urls[@]}"; do
+              url=$(echo "$url" | xargs) # 清理空格
+              if [ -z "$url" ]; then
+                continue
               fi
+
+              echo "-> 尝试拉取: $url"
+              http_code=$(curl -s -L -w "%{http_code}" --connect-timeout 10 "$url" -o "$target_json" || echo "000")
               
-              error_msg="${error_msg}%0A- *第 ${index} 个源*: \`${url}\`%0A  ❌ *失败原因*: ${reason}%0A"
+              if [ "$http_code" -eq 200 ]; then
+                echo "✅ 成功拉取！"
+                success=1
+                break # 只要有一个成功，跳出当前组的备用源循环
+              else
+                echo "⚠️ 该地址拉取失败 (HTTP 状态码: $http_code)，尝试下一个备用地址..."
+              fi
+            done
+
+            # 如果这一行的所有备用地址都失败了
+            if [ "$success" -eq 0 ]; then
+              has_error=1
+              error_msg="${error_msg}%0A- *第 ${index} 组源*: 所有备用地址均失效%0A  ❌ *尝试过的链接*: \`${line}\`%0A"
             fi
             
             index=$((index + 1))
@@ -96,7 +106,7 @@ jobs:
             fi
           }
 
-          # 定义 10 个机器人群发包装函数（未填写的变量会自动跳过）
+          # 10 个机器人群发包装函数
           broadcast_tg() {
             local text=$1
             send_tg "$BOT1_TOKEN" "$BOT1_CHAT" "$text"
@@ -113,7 +123,7 @@ jobs:
 
           current_date=$(date +'%Y-%m-%d %H:%M:%S')
 
-          # ---------------- 情况 3：更新失败 ----------------
+          # ---------------- 情况 3：全部尝试后依然更新失败 ----------------
           if [ "$has_error" -eq 1 ]; then
             msg="❌ *TVBox 源更新失败警报*%0A%0A📅 *检测时间*: \`${current_date}\`%0A📋 *详细说明*:${error_msg}"
             broadcast_tg "$msg"
