@@ -13,23 +13,23 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # 步骤一：检出仓库代码[cite: 7]
+      # 步骤一：检出仓库代码
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # 步骤二：配置 Python 环境[cite: 7]
+      # 步骤二：配置 Python 环境
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      # 步骤三：安装脚本依赖[cite: 7]
+      # 步骤三：安装脚本依赖
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests
 
-      # 步骤四：智能备用源检测（超时时间设为60秒，含重试）、自动切换、运行助手并发送多路 TG 通知
+      # 步骤四：智能备用源检测（状态码200即成功、60秒超时与重试）、自动切换、运行助手并发送多路 TG 通知
       - name: Run TVBox Helper with Smart Fallback & Retries
         env:
           TG_TOKEN_1: ${{ secrets.TG_TOKEN_1 }}
@@ -54,7 +54,7 @@ jobs:
           TG_CHAT_10: ${{ secrets.TG_CHAT_10 }}
         run: |
           python -c "
-          import os, re, json, requests, time, sys
+          import os, re, requests, time, sys
           from datetime import datetime, timezone, timedelta
           from io import StringIO
           import tvbox_helper
@@ -99,18 +99,15 @@ jobs:
                   # 增加重试机制（最多尝试 2 次，超时时间设为 60 秒）
                   for attempt in range(2):
                       try:
-                          res = requests.get(url, headers=headers, timeout=30)
+                          res = requests.get(url, headers=headers, timeout=60)
+                          # 核心调整：只要能正常打开返回 200，就判定为连通成功（支持网站导航、HTML及各种格式）
                           if res.status_code == 200:
-                              try:
-                                  res.json()
-                                  success = True
-                                  break
-                              except json.JSONDecodeError:
-                                  last_err = 'HTTP 200 但返回网页/非JSON'
+                              success = True
+                              break
                           else:
                               last_err = f'HTTP 错误码 {res.status_code}'
                       except requests.exceptions.ConnectionError:
-                          last_err = '网络连接/域名解析错误'
+                          last_err = '网络连接/域名解析错误（网站无法打开）'
                       except requests.exceptions.Timeout:
                           last_err = '请求超时 (60s)'
                       except Exception as e:
@@ -141,7 +138,7 @@ jobs:
           with open('sources_list.txt', 'w', encoding='utf-8') as f:
               f.write('\n'.join(new_sources_lines) + '\n')
 
-          # 模拟内部键盘输入运行原程序[cite: 7]
+          # 模拟内部键盘输入运行原程序
           sys.stdin = StringIO('4\n0\n')
           try:
               tvbox_helper.main()
@@ -168,7 +165,7 @@ jobs:
                       print(f'Telegram Bot {i} 发送失败: {e}')
           "
 
-      # 步骤五：自动将脚本运行后生成/更新的文件提交并推送到仓库[cite: 7]
+      # 步骤五：自动将脚本运行后生成/更新的文件提交并推送到仓库
       - name: Commit and Push Changes
         run: |
           git config --global user.name 'github-actions[bot]'
