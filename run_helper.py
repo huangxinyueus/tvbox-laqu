@@ -54,7 +54,7 @@ for idx, line in enumerate(sources_raw, 1):
         
         for attempt in range(2):
             try:
-                res = requests.get(url, headers=headers, timeout=20)
+                res = requests.get(url, headers=headers, timeout=60)
                 if res.status_code == 200:
                     fetched_content = res.content
                     success = True
@@ -88,6 +88,7 @@ for idx, line in enumerate(sources_raw, 1):
             parsed_json = json.loads(text_data)
             if isinstance(parsed_json, dict):
                 spider_val = parsed_json.get('spider', '')
+                print(f"[DEBUG] 正在处理源 [{name}], 接口地址: {working_url}, 原始 spider 字段: {spider_val}")
                 
                 # 1. 确定本地保存的相对路径
                 if spider_val:
@@ -105,7 +106,7 @@ for idx, line in enumerate(sources_raw, 1):
                     local_rel_path = 'spider.jar'
                     parsed_json['spider'] = './spider.jar'
 
-                # 2. 全局暴力搜寻所有候选下载链接（含正则全局匹配 .jar）
+                # 2. 收集所有可能的候选下载链接
                 candidate_urls = []
                 found_jars = re.findall(r'https?://[^\s\"<>]+?\.jar[^\s\"<>]*', text_data)
                 for fj in found_jars:
@@ -121,18 +122,21 @@ for idx, line in enumerate(sources_raw, 1):
                         if joined_sp not in candidate_urls:
                             candidate_urls.append(joined_sp)
                 
-                # 补充常用暴力启发式路径
+                # 补充暴力启发式路径
                 base_dir_url = working_url.rsplit('/', 1)[0]
                 candidate_urls.append(f"{base_dir_url}/spider.jar")
                 candidate_urls.append(f"{base_dir_url}/lib/spider.jar")
                 candidate_urls.append(urljoin(working_url, 'spider.jar'))
                 candidate_urls.append(urljoin(working_url, './spider.jar'))
                 
-                # 3. 开始依次尝试下载
+                print(f"[DEBUG] 候选下载链接列表: {candidate_urls}")
+
+                # 3. 尝试下载
                 downloaded = False
                 for d_url in candidate_urls:
                     try:
                         s_res = requests.get(d_url, headers=headers, timeout=30)
+                        print(f"[DEBUG] 尝试请求: {d_url} -> 状态码: {s_res.status_code}, 大小: {len(s_res.content)}")
                         if s_res.status_code == 200 and len(s_res.content) > 100:
                             target_dir = os.path.dirname(os.path.abspath(local_rel_path))
                             if target_dir:
@@ -140,16 +144,20 @@ for idx, line in enumerate(sources_raw, 1):
                             with open(local_rel_path, 'wb') as sf:
                                 sf.write(s_res.content)
                             jar_status_tip = f' | 📦 <b>{local_rel_path} 同步成功</b>'
+                            print(f"[SUCCESS] 成功下载 jar 文件到: {local_rel_path}")
                             downloaded = True
                             break
-                    except:
+                    except Exception as ex:
+                        print(f"[ERROR] 请求 {d_url} 异常: {ex}")
                         continue
                 
                 if not downloaded:
                     jar_status_tip = ' | ⚠️ <b>spider.jar 下载未命中</b>'
+                    print(f"[WARNING] 源 [{name}] 的 spider.jar 所有候选链接均下载失败。")
 
             normalized_str = json.dumps(parsed_json, sort_keys=True, ensure_ascii=False)
-        except:
+        except Exception as je:
+            print(f"[ERROR] 解析源 [{name}] JSON 失败: {je}")
             text_data = fetched_content.decode('utf-8', errors='ignore')
             normalized_str = re.sub(r'\s+', '', text_data)
 
