@@ -29,8 +29,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      # 步骤四：智能备用源检测（含变动识别、更新时间、60秒超时与重试）、自动切换、运行助手并发送多路 TG 通知
-      - name: Run TVBox Helper with Change Detection & Smart Fallback
+      # 步骤四：智能备用源检测（实现各源独立更新状态追踪与精准时间记录）
+      - name: Run TVBox Helper with Per-Source Change Tracking
         env:
           TG_TOKEN_1: ${{ secrets.TG_TOKEN_1 }}
           TG_CHAT_1: ${{ secrets.TG_CHAT_1 }}
@@ -54,13 +54,24 @@ jobs:
           TG_CHAT_10: ${{ secrets.TG_CHAT_10 }}
         run: |
           python -c "
-          import os, re, requests, time, sys, subprocess
+          import os, re, requests, time, sys, json, hashlib
           from datetime import datetime, timezone, timedelta
           from io import StringIO
           import tvbox_helper
 
           bj_time = datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')
+          state_file = '.source_state.json'
 
+          # 读取上一次保存各源状态的历史文件
+          old_state = {}
+          if os.path.exists(state_file):
+              try:
+                  with open(state_file, 'r', encoding='utf-8') as f:
+                      old_state = json.load(f)
+              except:
+                  pass
+
+          new_state = {}
           sources_raw = []
           if os.path.exists('sources_list.txt'):
               with open('sources_list.txt', 'r', encoding='utf-8') as f:
@@ -79,16 +90,16 @@ jobs:
               name = parts[0].strip() if len(parts) > 1 else f'源{idx}'
               url_part = parts[1] if len(parts) > 1 else line
               
-              # 提取该行所有的 URL
               urls = [u.strip() for u in re.split(r'[|\s]+', url_part) if u.strip().startswith('http')]
               
               if not urls:
-                  source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ❌ 失败 (未在行中找到有效网址)\n时间: {bj_time}')
+                  source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ❌ 失败 (未在行中找到有效网址)')
                   new_sources_lines.append(line)
                   continue
                   
               working_url = None
               fail_details = []
+              fetched_content = None
               
               # 依次测试主地址和备用地址
               for u_idx, url in enumerate(urls, 1):
@@ -96,11 +107,11 @@ jobs:
                   success = False
                   last_err = ''
                   
-                  # 增加重试机制（最多尝试 2 次，超时时间设为 60 秒）
                   for attempt in range(2):
                       try:
-                          res = requests.get(url, headers=headers, timeout=30)
+                          res = requests.get(url, headers=headers, timeout=60)
                           if res.status_code == 200:
+                              fetched_content = res.content
                               success = True
                               break
                           else:
@@ -113,25 +124,49 @@ jobs:
                           last_err = f'异常 {str(e)}'
                       
                       if attempt < 1:
-                          time.sleep(2) # 重试前等待 2 秒
+                          time.sleep(2)
                   
                   if success:
                       working_url = url
-                      source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ✅ 成功 (通过 <b>{addr_type}</b> 连通)\n地址: {url}\n时间: {bj_time}')
                       break
                   else:
                       fail_details.append(f'{addr_type} ({url}): {last_err}')
                       
               if not working_url:
                   details_str = '\n  '.join(fail_details)
-                  source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ❌ <b>全部地址失效</b>\n  {details_str}\n时间: {bj_time}')
+                  source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ❌ <b>全部地址失效</b>\n  {details_str}')
                   new_sources_lines.append(line)
               else:
-                  # 将成功的可用地址排在最前面
+                  # 计算当前源内容的 MD5 指纹
+                  content_hash = hashlib.md5(fetched_content).hexdigest()
+                  prev_info = old_state.get(name, {})
+                  prev_hash = prev_info.get('hash', '')
+                  prev_time = prev_info.get('time', bj_time)
+                  
+                  # 对比内容是否有变化
+                  if content_hash != prev_hash:
+                      update_status = '✨ 内容已更新'
+                      last_update_time = bj_time  # 有更新则记录当前最新时间
+                  else:
+                      update_status = '🟢 内容无变化'
+                      last_update_time = prev_time  # 无变化则保留历史最后一次更新时间
+                      
+                  # 记录新状态
+                  new_state[name] = {
+                      'hash': content_hash,
+                      'time': last_update_time
+                  }
+                  
+                  source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ✅ 成功 | {update_status}\n地址: {working_url}\n最后更新时间: {last_update_time}')
+                  
                   other_urls = [u for u in urls if u != working_url]
                   reordered_urls = [working_url] + other_urls
                   reordered_line = f'{name},' + ' | '.join(reordered_urls) if len(parts) > 1 else working_url
                   new_sources_lines.append(reordered_line)
+
+          # 保存源状态文件（会随 git commit 一起推送到仓库持久保存）
+          with open(state_file, 'w', encoding='utf-8') as f:
+              json.dump(new_state, f, ensure_ascii=False, indent=2)
 
           # 写回优化后的 sources_list.txt
           with open('sources_list.txt', 'w', encoding='utf-8') as f:
@@ -144,19 +179,9 @@ jobs:
           except SystemExit:
               pass
 
-          # 检查仓库是否有实际文件变动
-          git_status = subprocess.run(['git', 'status', '--porcelain'], capture_output=True, text=True).stdout.strip()
-          has_changes = bool(git_status)
-
-          # 根据是否有变化生成不同的头部状态提示
-          if has_changes:
-              status_header = f'✨ <b>状态：检测到内容有更新！</b>\n🕒 <b>更新时间：</b>{bj_time}'
-          else:
-              status_header = '🟢 <b>状态：检测完成，内容无变化 (保持最新)</b>'
-
           # 组合推送内容（每个源之间空一行，在 TG 中更直观）
           details_text = '\n\n'.join(source_results)
-          message = f'<b>📊 TVBox 智能备用源检测与运行报告</b>\n\n{status_header}\n\n{details_text}'
+          message = f'<b>📊 TVBox 智能备用源独立监控报告</b>\n\n{details_text}'
 
           # 依次向 10 个 Telegram 机器人发送详细报告
           for i in range(1, 11):
@@ -185,7 +210,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes detected, skipping commit."
           else
-            git commit -m "Auto-update TVBox data via GitHub Actions"
+            git commit -m "Auto-update TVBox data and source status via GitHub Actions"
             git push
           fi
         env:
