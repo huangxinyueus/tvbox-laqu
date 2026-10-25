@@ -82,7 +82,6 @@ for idx, line in enumerate(sources_raw, 1):
         source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ❌ <b>全部地址失效</b>\n  {details_str}')
         new_sources_lines.append(line)
     else:
-        # 暴力多路候选 spider.jar 下载与路径解析逻辑
         jar_status_tip = ''
         try:
             text_data = fetched_content.decode('utf-8', errors='ignore')
@@ -90,7 +89,7 @@ for idx, line in enumerate(sources_raw, 1):
             if isinstance(parsed_json, dict):
                 spider_val = parsed_json.get('spider', '')
                 
-                # 确定本地保存的相对路径
+                # 1. 确定本地保存的相对路径
                 if spider_val:
                     spider_path_part = spider_val.split(';')[0].strip()
                     if spider_path_part.startswith('http'):
@@ -106,27 +105,35 @@ for idx, line in enumerate(sources_raw, 1):
                     local_rel_path = 'spider.jar'
                     parsed_json['spider'] = './spider.jar'
 
-                # 构造暴力下载候选 URL 列表
+                # 2. 全局暴力搜寻所有候选下载链接（含正则全局匹配 .jar）
                 candidate_urls = []
-                if spider_val and spider_val.split(';')[0].strip().startswith('http'):
-                    candidate_urls.append(spider_val.split(';')[0].strip())
+                found_jars = re.findall(r'https?://[^\s\"<>]+?\.jar[^\s\"<>]*', text_data)
+                for fj in found_jars:
+                    if fj not in candidate_urls:
+                        candidate_urls.append(fj)
+
+                if spider_val:
+                    clean_sp = spider_val.split(';')[0].strip()
+                    if clean_sp.startswith('http') and clean_sp not in candidate_urls:
+                        candidate_urls.insert(0, clean_sp)
+                    elif not clean_sp.startswith('http'):
+                        joined_sp = urljoin(working_url, clean_sp)
+                        if joined_sp not in candidate_urls:
+                            candidate_urls.append(joined_sp)
                 
-                if spider_val and not spider_val.split(';')[0].strip().startswith('http'):
-                    candidate_urls.append(urljoin(working_url, spider_val.split(';')[0].strip()))
-                
-                # 暴力启发式候选：结合当前源 URL 的同级目录及根目录
+                # 补充常用暴力启发式路径
                 base_dir_url = working_url.rsplit('/', 1)[0]
                 candidate_urls.append(f"{base_dir_url}/spider.jar")
                 candidate_urls.append(f"{base_dir_url}/lib/spider.jar")
                 candidate_urls.append(urljoin(working_url, 'spider.jar'))
+                candidate_urls.append(urljoin(working_url, './spider.jar'))
                 
-                # 开始暴力多路尝试下载
+                # 3. 开始依次尝试下载
                 downloaded = False
                 for d_url in candidate_urls:
                     try:
                         s_res = requests.get(d_url, headers=headers, timeout=30)
-                        # 状态码200且内容长度大于200字节（排除网页错误提示）
-                        if s_res.status_code == 200 and len(s_res.content) > 200:
+                        if s_res.status_code == 200 and len(s_res.content) > 100:
                             target_dir = os.path.dirname(os.path.abspath(local_rel_path))
                             if target_dir:
                                 os.makedirs(target_dir, exist_ok=True)
@@ -138,8 +145,8 @@ for idx, line in enumerate(sources_raw, 1):
                     except:
                         continue
                 
-                if not downloaded and spider_val:
-                    jar_status_tip = f' | ⚠️ <b>{local_rel_path} 下载未命中</b>'
+                if not downloaded:
+                    jar_status_tip = ' | ⚠️ <b>spider.jar 下载未命中</b>'
 
             normalized_str = json.dumps(parsed_json, sort_keys=True, ensure_ascii=False)
         except:
