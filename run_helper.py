@@ -54,7 +54,7 @@ for idx, line in enumerate(sources_raw, 1):
         
         for attempt in range(2):
             try:
-                res = requests.get(url, headers=headers, timeout=20)
+                res = requests.get(url, headers=headers, timeout=60)
                 if res.status_code == 200:
                     fetched_content = res.content
                     success = True
@@ -90,49 +90,63 @@ for idx, line in enumerate(sources_raw, 1):
                 spider_val = parsed_json.get('spider', '')
                 print(f"[DEBUG] 正在处理源 [{name}], 原始 spider 字段: {spider_val}")
                 
+                local_rel_path = 'spider.jar'
                 if spider_val:
-                    # 精准切分，完美剥离 ;md5;... 后缀，提取出任意文件名和路径
                     spider_path_part = spider_val.split(';')[0].strip()
-                    
-                    # 计算本地相对保存路径（支持任意子目录和任意文件名，如 fty.jar）
-                    local_rel_path = spider_path_part.lstrip('./').lstrip('/')
-                    local_rel_path = local_rel_path.replace('\\', '/')
-                    if not local_rel_path:
+                    # 严格检查：必须以 .jar 结尾才承认它是合法的 jar 路径，防止把壁纸/图标当成 jar
+                    if spider_path_part.lower().endswith('.jar'):
+                        if spider_path_part.startswith('http'):
+                            parsed_url = urlparse(spider_path_part)
+                            path_name = parsed_url.path.lstrip('/')
+                            local_rel_path = path_name if path_name else 'spider.jar'
+                        else:
+                            local_rel_path = spider_path_part.lstrip('./').lstrip('/')
+                            local_rel_path = local_rel_path.replace('\\', '/')
+                            if not local_rel_path:
+                                local_rel_path = 'spider.jar'
+                    else:
+                        print(f"[WARNING] 字段 spider 不是以 .jar 结尾 ({spider_path_part})，已自动使用默认 spider.jar")
+                        spider_val = './spider.jar'
                         local_rel_path = 'spider.jar'
+                        parsed_json['spider'] = './spider.jar'
+                else:
+                    parsed_json['spider'] = './spider.jar'
+                    local_rel_path = 'spider.jar'
 
-                    # 规范化基础目录 URL
-                    if working_url.endswith('/'):
-                        base_dir_url = working_url
-                    else:
-                        base_dir_url = working_url.rsplit('/', 1)[0] + '/'
+                # 规范化基础目录 URL
+                if working_url.endswith('/'):
+                    base_dir_url = working_url
+                else:
+                    base_dir_url = working_url.rsplit('/', 1)[0] + '/'
 
-                    parsed_w = urlparse(working_url)
-                    domain_root = f"{parsed_w.scheme}://{parsed_w.netloc}"
-                    jar_filename = os.path.basename(local_rel_path)
+                parsed_w = urlparse(working_url)
+                domain_root = f"{parsed_w.scheme}://{parsed_w.netloc}"
+                jar_filename = os.path.basename(local_rel_path)
 
-                    # 构造多路候选下载链接列表
-                    candidate_urls = []
-                    if spider_path_part.startswith('http'):
-                        candidate_urls.append(spider_path_part)
-                    else:
-                        # 1. 尝试基于规范化的目录拼接原路径
-                        candidate_urls.append(urljoin(base_dir_url, spider_path_part))
-                        # 2. 尝试直接与 working_url 拼接
-                        candidate_urls.append(urljoin(working_url, spider_path_part))
-                        # 3. 尝试域名根目录下对应的目标路径
-                        candidate_urls.append(f"{domain_root}/{local_rel_path}")
-                        # 4. 尝试域名根目录下的同名文件
-                        candidate_urls.append(f"{domain_root}/{jar_filename}")
+                # 构造多路候选下载链接列表
+                candidate_urls = []
+                if spider_val and spider_val.split(';')[0].strip().startswith('http') and spider_val.split(';')[0].strip().lower().endswith('.jar'):
+                    candidate_urls.append(spider_val.split(';')[0].strip())
+                
+                candidate_urls.append(urljoin(base_dir_url, local_rel_path))
+                candidate_urls.append(urljoin(working_url, local_rel_path))
+                candidate_urls.append(f"{domain_root}/{local_rel_path}")
+                candidate_urls.append(f"{domain_root}/lib/{jar_filename}")
+                candidate_urls.append(f"{domain_root}/spider.jar")
+                candidate_urls.append(f"{domain_root}/fty.jar")
 
-                    print(f"[DEBUG] 候选下载链接: {candidate_urls}, 本地目标路径: {local_rel_path}")
+                print(f"[DEBUG] 最终候选 Jar 下载链接: {candidate_urls}, 本地目标路径: {local_rel_path}")
 
-                    # 开始尝试下载
-                    downloaded = False
-                    for d_url in candidate_urls:
-                        try:
-                            s_res = requests.get(d_url, headers=headers, timeout=30)
-                            print(f"[DEBUG] 请求 {d_url} -> 状态码: {s_res.status_code}, 大小: {len(s_res.content)}")
-                            if s_res.status_code == 200 and len(s_res.content) > 100:
+                # 开始尝试下载并进行内容校验
+                downloaded = False
+                for d_url in candidate_urls:
+                    try:
+                        s_res = requests.get(d_url, headers=headers, timeout=30)
+                        print(f"[DEBUG] 请求 {d_url} -> 状态码: {s_res.status_code}, 大小: {len(s_res.content)}")
+                        # 状态码200，且内容大于1KB，且不能包含html/png等误判
+                        if s_res.status_code == 200 and len(s_res.content) > 1024:
+                            content_sample = s_res.content[:50].lower()
+                            if b'html' not in content_sample and b'png' not in content_sample and b'jpeg' not in content_sample:
                                 target_dir = os.path.dirname(os.path.abspath(local_rel_path))
                                 if target_dir:
                                     os.makedirs(target_dir, exist_ok=True)
@@ -142,12 +156,12 @@ for idx, line in enumerate(sources_raw, 1):
                                 print(f"[SUCCESS] 成功保存 jar 到: {local_rel_path}")
                                 downloaded = True
                                 break
-                        except Exception as ex:
-                            print(f"[ERROR] 下载异常: {ex}")
-                            continue
-                    
-                    if not downloaded:
-                        jar_status_tip = f' | ⚠️ <b>{local_rel_path} 下载未命中</b>'
+                    except Exception as ex:
+                        print(f"[ERROR] 下载异常: {ex}")
+                        continue
+                
+                if not downloaded:
+                    jar_status_tip = f' | ⚠️ <b>{local_rel_path} 下载未命中</b>'
 
             normalized_str = json.dumps(parsed_json, sort_keys=True, ensure_ascii=False)
         except Exception as je:
