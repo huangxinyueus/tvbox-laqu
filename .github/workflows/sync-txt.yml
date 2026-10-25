@@ -75,7 +75,6 @@ jobs:
               """自动处理包含中文的网址，将其转换为标准编码格式"""
               parsed = urllib.parse.urlparse(raw_url)
               try:
-                  # 将中文域名转为 IDN (Punycode) 格式
                   netloc = parsed.netloc.encode('idna').decode('utf-8')
               except Exception:
                   netloc = parsed.netloc
@@ -86,8 +85,8 @@ jobs:
           with open("sources.txt", "r", encoding="utf-8") as f:
               lines = f.readlines()
 
-          has_error = False
-          error_msgs = []
+          success_sources = []
+          failed_sources = []
 
           for line in lines:
               line = line.strip()
@@ -154,30 +153,55 @@ jobs:
                   except Exception as e:
                       print(f"⚠️ 地址访问异常 {raw_url}: {e}")
 
-              if not success:
-                  has_error = True
-                  error_msgs.append(f"- *源名*: `{name}` (所有备用地址失效)")
+              if success:
+                  success_sources.append(name)
+              else:
+                  failed_sources.append(name)
 
           current_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-          if has_error:
-              err_str = "%0A".join(error_msgs)
-              msg = f"❌ *TVBox 源更新失败警报*%0A%0A📅 *检测时间*: `{current_date}`%0A📋 *详细说明*:{err_str}"
-              send_tg(msg)
-              exit(1)
+          # 无论是否有部分源失败，只要成功下载了文件，就先将所有成功的文件提交并推送到仓库
+          subprocess.run(["git", "config", "--global", "user.name", "github-actions[bot]"])
+          subprocess.run(["git", "config", "--global", "user.email", "github-actions[bot]@users.noreply.github.com"])
+          subprocess.run(["git", "add", "sources_files/"])
+          
+          diff_res = subprocess.run(["git", "diff", "--staged", "--quiet"])
+          is_changed = (diff_res.returncode != 0)
+
+          if is_changed:
+              subprocess.run(["git", "commit", "-m", f"Auto-sync sources & assets: {current_date}"])
+              subprocess.run(["git", "push"])
+              print("✅ 成功将已获取的源文件同步推送至 GitHub 仓库。")
           else:
-              subprocess.run(["git", "config", "--global", "user.name", "github-actions[bot]"])
-              subprocess.run(["git", "config", "--global", "user.email", "github-actions[bot]@users.noreply.github.com"])
-              subprocess.run(["git", "add", "sources_files/"])
-              
-              diff_res = subprocess.run(["git", "diff", "--staged", "--quiet"])
-              if diff_res.returncode == 0:
-                  print("所有源内容均无变化，今天没更新。")
-                  msg = f"🟡 *TVBox 源同步提示*%0A%0A📅 *检测时间*: `{current_date}`%0Aℹ️ *状态*: **今天没更新**（远程源内容与仓库一致，无变动）"
-                  send_tg(msg)
+              print("ℹ️ 仓库中的文件无实质变动。")
+
+          # 组装详细的 Telegram 状态报告
+          msg_lines = [f"📊 *TVBox 源同步报告*", f"📅 *时间*: `{current_date}`", ""]
+          
+          if success_sources:
+              msg_lines.append(f"🟢 *拉取成功的源 ({len(success_sources)})*:")
+              for s in success_sources:
+                  msg_lines.append(f"  - `{s}` (已同步至仓库)")
+              msg_lines.append("")
+
+          if failed_sources:
+              msg_lines.append(f"❌ *拉取失败的源 ({len(failed_sources)})*:")
+              for f_src in failed_sources:
+                  msg_lines.append(f"  - `{f_src}` (所有备用地址失效)")
+              msg_lines.append("")
+
+          if not failed_sources:
+              if is_changed:
+                msg_lines.append("✨ *状态*: **所有源全部更新成功并已同步！**")
               else:
-                  subprocess.run(["git", "commit", "-m", f"Auto-sync sources & assets: {current_date}"])
-                  subprocess.run(["git", "push"])
-                  msg = f"🟢 *TVBox 源更新成功通知*%0A%0A📅 *更新日期*: `{current_date}`%0A✅ *状态*: **今天已更新**（已成功拉取主源及关联的 .jar/.py 依赖文件！）"
-                  send_tg(msg)
+                msg_lines.append("ℹ️ *状态*: **所有源内容均无变化，今天没更新。**")
+          else:
+              msg_lines.append("⚠️ *状态*: **部分源同步失败，成功拉取的内容已正常入库。**")
+
+          final_msg = "%0A".join(msg_lines)
+          send_tg(final_msg)
+
+          # 如果有失败的源，最后让 Action 状态显示红叉（便于排查），但文件已经安全入库
+          if failed_sources:
+              exit(1)
           EOF
