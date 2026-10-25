@@ -154,6 +154,8 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/donghuapian/21958.html'>
+            仙逆            </a></li>
                     <li><a href='/donghuapian/24756.html'>
             牧神记            </a></li>
                     <li><a href='/donghuapian/29540.html'>
@@ -192,8 +194,6 @@ document.getElementById(obj).style.display="none";
             街头霸王2026            </a></li>
                     <li><a href='/juqingpian/29870.html'>
             空枪            </a></li>
-                    <li><a href='/aiqingpian/29869.html'>
-            爱语            </a></li>
                   </ul>
         <ul class="hide">
                     <li><a href='/dianshiju/guoju/29867.html'>
