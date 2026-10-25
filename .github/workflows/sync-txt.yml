@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: 运行智能同步与依赖解析脚本
+      - name: 运行智能同步与深度依赖解析脚本
         env:
           BOT1_TOKEN: ${{ secrets.BOT1_TOKEN }}
           BOT1_CHAT: ${{ secrets.BOT1_CHAT }}
@@ -107,13 +107,12 @@ jobs:
                   url = format_url(raw_url)
                   clean_url = url.split("?")[0]
                   
-                  # 默认后缀处理
                   ext = "txt"
                   match = re.search(r'\.([a-zA-Z0-9]+)$', clean_url)
                   if match:
                       ext = match.group(1)
                   elif "json" in clean_url or "/tv" in clean_url:
-                      ext = "json" # 将类似 /tv 的接口统一规范为 json 后缀
+                      ext = "json"
                   
                   target_file = os.path.join("sources_files", f"{name}.{ext}")
                   print(f"正在尝试拉取源 [{name}]: {url}")
@@ -128,18 +127,30 @@ jobs:
                               print(f"✅ [{name}] 主文件成功拉取并保存")
                               success = True
                               
-                              # 💡 核心升级：无论后缀是什么，只要下载成功，就自动扫描内容中的依赖链接
+                              # 💡 核心升级：解析绝对链接与相对路径（如 /lib/spider.jar）
                               try:
                                   file_text = content.decode('utf-8', errors='ignore')
-                                  potential_links = re.findall(r'https?://[^\s"\'<>\\#]+', file_text)
-                                  for link in potential_links:
+                                  parsed_base = urllib.parse.urlparse(url)
+                                  base_domain = f"{parsed_base.scheme}://{parsed_base.netloc}"
+
+                                  # 1. 收集所有完整的 http(s) 链接
+                                  links_to_download = set(re.findall(r'https?://[^\s"\'<>\\#]+', file_text))
+
+                                  # 2. 收集所有以 / 开头的相对路径（如 /lib/spider.jar, /lib/*.txt 等）
+                                  relative_paths = re.findall(r'(/lib/[^\s"\'<>\\#]+|/[a-zA-Z0-9_\-./]+\.(?:json|jar|js|txt))', file_text)
+                                  for rp in relative_paths:
+                                      full_l = urllib.parse.urljoin(base_domain, rp)
+                                      links_to_download.add(full_l)
+
+                                  # 3. 统一遍历并下载所有发现的依赖文件
+                                  for link in links_to_download:
                                       link = format_url(link.rstrip('\\"'))
-                                      if any(link.lower().endswith(x) for x in ['.jar', '.py', '.txt', '.zip']):
+                                      if any(link.lower().endswith(x) for x in ['.jar', '.py', '.txt', '.js', '.zip']):
                                           dep_filename = link.split('/')[-1].split('?')[0]
                                           if not dep_filename:
                                               continue
                                           dep_target = os.path.join("sources_files", f"{name}_{dep_filename}")
-                                          print(f"-> 发现关联依赖文件，正在顺藤摸瓜下载: {link}")
+                                          print(f"-> 发现依赖文件，正在顺藤摸瓜下载: {link}")
                                           try:
                                               dep_req = urllib.request.Request(link, headers={"User-Agent": UA})
                                               with urllib.request.urlopen(dep_req, timeout=15) as dep_resp:
@@ -170,9 +181,9 @@ jobs:
           is_changed = (diff_res.returncode != 0)
 
           if is_changed:
-              subprocess.run(["git", "commit", -m, f"Auto-sync sources & assets: {current_date}"])
+              subprocess.run(["git", "commit", "-m", f"Auto-sync sources & assets: {current_date}"])
               subprocess.run(["git", "push"])
-              print("✅ 成功将已获取的源文件同步推送至 GitHub 仓库。")
+              print("✅ 成功将已获取的源文件及所有关联源码同步推送至 GitHub 仓库。")
           else:
               print("ℹ️ 仓库中的文件无实质变动。")
 
@@ -181,7 +192,7 @@ jobs:
           if success_sources:
               msg_lines.append(f"🟢 *拉取成功的源 ({len(success_sources)})*:")
               for s in success_sources:
-                  msg_lines.append(f"  - `{s}` (已同步至仓库)")
+                  msg_lines.append(f"  - `{s}` (核心源码已完整入库)")
               msg_lines.append("")
 
           if failed_sources:
@@ -192,11 +203,11 @@ jobs:
 
           if not failed_sources:
               if is_changed:
-                msg_lines.append("✨ *状态*: **所有源全部更新成功并已同步！**")
+                msg_lines.append("✨ *状态*: **所有源及依赖源码全部更新成功并已同步！**")
               else:
                 msg_lines.append("ℹ️ *状态*: **所有源内容均无变化，今天没更新。**")
           else:
-              msg_lines.append("⚠️ *状态*: **部分源同步失败，成功拉取的内容已正常入库。**")
+              msg_lines.append("⚠️ *状态*: **部分源同步失败，成功拉取的内容及依赖已正常入库。**")
 
           final_msg = "%0A".join(msg_lines)
           send_tg(final_msg)
