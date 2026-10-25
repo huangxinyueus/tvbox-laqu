@@ -438,7 +438,7 @@
       "quickSearch": 0,
       "changeable": 0,
       "ext": {
-        "siteUrl": "https://so.252035.xyz/"
+        "siteUrl": "./lib/siteUrl.txt"
       },
       "indexs": 0,
       "style": {
