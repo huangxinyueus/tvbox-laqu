@@ -110,7 +110,7 @@ jobs:
                   
                   for attempt in range(2):
                       try:
-                          res = requests.get(url, headers=headers, timeout=10)
+                          res = requests.get(url, headers=headers, timeout=60)
                           if res.status_code == 200:
                               fetched_content = res.content
                               success = True
@@ -151,16 +151,15 @@ jobs:
                               spider_path_part = spider_val.split(';')[0].strip()
                               lower_part = spider_path_part.lower()
                               
-                              # 💡 核心升级：精准过滤图片链接（如 .png, .jpg 等），避免把壁纸当作 jar 报错
+                              # 智能过滤图片链接（如 .png, .jpg 等），避免把壁纸当作 jar 报错
                               is_image = any(lower_part.endswith(ext) for ext in ['.png', '.jpg', '.jpeg', '.gif', '.webp', '.bmp'])
                               
                               if is_image:
-                                  print(f"[INFO] 源 [{name}] 的 spider 字段为图片 ({spider_path_part)，无需下载 jar。")
+                                  print(f"[INFO] 源 [{name}] 的 spider 字段为图片 ({spider_path_part}), 无需下载 jar。")
                                   base_jar_name = None
                               elif lower_part.endswith('.jar'):
                                   base_jar_name = os.path.basename(spider_path_part)
                               else:
-                                  # 如果包含路径或文件名
                                   if '.' in spider_path_part and not spider_path_part.endswith('/'):
                                       base_jar_name = os.path.basename(spider_path_part)
                                   else:
@@ -317,7 +316,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes detected, skipping commit."
           else
-            git commit -m "Auto-update TVBox data, smart image filter and custom folder jar files via GitHub Actions"
+            git commit -m "Auto-update TVBox data, fix syntax error and support smart image filter"
             git push
           fi
         env:
