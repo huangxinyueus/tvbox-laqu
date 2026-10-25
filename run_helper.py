@@ -1,0 +1,184 @@
+import os, re, requests, time, sys, json, hashlib
+from datetime import datetime, timezone, timedelta
+from io import StringIO
+from urllib.parse import urljoin, urlparse
+import tvbox_helper
+
+bj_time = datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')
+state_file = '.source_state.json'
+
+# 读取上一次保存各源状态的历史文件
+old_state = {}
+if os.path.exists(state_file):
+    try:
+        with open(state_file, 'r', encoding='utf-8') as f:
+            old_state = json.load(f)
+    except:
+        pass
+
+new_state = {}
+sources_raw = []
+if os.path.exists('sources_list.txt'):
+    with open('sources_list.txt', 'r', encoding='utf-8') as f:
+        sources_raw = [line.strip() for line in f if line.strip()]
+
+new_sources_lines = []
+source_results = []
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+
+for idx, line in enumerate(sources_raw, 1):
+    if line.startswith('#'):
+        new_sources_lines.append(line)
+        continue
+    
+    parts = line.split(',', 1)
+    name = parts[0].strip() if len(parts) > 1 else f'源{idx}'
+    url_part = parts[1] if len(parts) > 1 else line
+    
+    urls = [u.strip() for u in re.split(r'[|\s]+', url_part) if u.strip().startswith('http')]
+    
+    if not urls:
+        source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ❌ 失败 (未在行中找到有效网址)')
+        new_sources_lines.append(line)
+        continue
+        
+    working_url = None
+    fail_details = []
+    fetched_content = None
+    
+    # 依次测试主地址和备用地址
+    for u_idx, url in enumerate(urls, 1):
+        addr_type = '主地址' if u_idx == 1 else f'备用地址 {u_idx-1}'
+        success = False
+        last_err = ''
+        
+        for attempt in range(2):
+            try:
+                res = requests.get(url, headers=headers, timeout=30)
+                if res.status_code == 200:
+                    fetched_content = res.content
+                    success = True
+                    break
+                else:
+                    last_err = f'HTTP 错误码 {res.status_code}'
+            except requests.exceptions.ConnectionError:
+                last_err = '网络连接/域名解析错误（网站无法打开）'
+            except requests.exceptions.Timeout:
+                last_err = '请求超时 (60s)'
+            except Exception as e:
+                last_err = f'异常 {str(e)}'
+            
+            if attempt < 1:
+                time.sleep(2)
+        
+        if success:
+            working_url = url
+            break
+        else:
+            fail_details.append(f'{addr_type} ({url}): {last_err}')
+            
+    if not working_url:
+        details_str = '\n  '.join(fail_details)
+        source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ❌ <b>全部地址失效</b>\n  {details_str}')
+        new_sources_lines.append(line)
+    else:
+        # 智能解析 spider 字段并按其指定的目录下载对应 jar 文件
+        jar_status_tip = ''
+        try:
+            text_data = fetched_content.decode('utf-8', errors='ignore')
+            parsed_json = json.loads(text_data)
+            if isinstance(parsed_json, dict):
+                spider_val = parsed_json.get('spider', '')
+                if spider_val:
+                    spider_path_part = spider_val.split(';')[0].strip()
+                    
+                    if spider_path_part.startswith('http'):
+                        real_download_url = spider_path_part
+                    else:
+                        real_download_url = urljoin(working_url, spider_path_part)
+                    
+                    if spider_path_part.startswith('http'):
+                        parsed_url = urlparse(spider_path_part)
+                        path_name = parsed_url.path.lstrip('/')
+                        local_rel_path = path_name if path_name else 'spider.jar'
+                    else:
+                        local_rel_path = spider_path_part.lstrip('./').lstrip('/')
+                        local_rel_path = local_rel_path.replace('\\', '/')
+                        if not local_rel_path:
+                            local_rel_path = 'spider.jar'
+                    
+                    try:
+                        s_res = requests.get(real_download_url, headers=headers, timeout=30)
+                        if s_res.status_code == 200:
+                            target_dir = os.path.dirname(os.path.abspath(local_rel_path))
+                            if target_dir:
+                                os.makedirs(target_dir, exist_ok=True)
+                            with open(local_rel_path, 'wb') as sf:
+                                sf.write(s_res.content)
+                            jar_status_tip = f' | 📦 <b>{local_rel_path} 同步成功</b>'
+                    except Exception as je:
+                        print(f'Download jar error for {name}: {je}')
+
+            normalized_str = json.dumps(parsed_json, sort_keys=True, ensure_ascii=False)
+        except:
+            text_data = fetched_content.decode('utf-8', errors='ignore')
+            normalized_str = re.sub(r'\s+', '', text_data)
+
+        content_hash = hashlib.md5(normalized_str.encode('utf-8')).hexdigest()
+        
+        prev_info = old_state.get(name, {})
+        prev_hash = prev_info.get('hash', '')
+        prev_time = prev_info.get('time', bj_time)
+        
+        if content_hash != prev_hash:
+            update_status = '✨ 内容已更新'
+            last_update_time = bj_time
+        else:
+            update_status = '🟢 内容无变化'
+            last_update_time = prev_time
+            
+        new_state[name] = {
+            'hash': content_hash,
+            'time': last_update_time
+        }
+        
+        source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ✅ 成功 | {update_status}{jar_status_tip}\n地址: {working_url}\n最后更新时间: {last_update_time}')
+        
+        other_urls = [u for u in urls if u != working_url]
+        reordered_urls = [working_url] + other_urls
+        reordered_line = f'{name},' + ' | '.join(reordered_urls) if len(parts) > 1 else working_url
+        new_sources_lines.append(reordered_line)
+
+# 保存状态文件
+with open(state_file, 'w', encoding='utf-8') as f:
+    json.dump(new_state, f, ensure_ascii=False, indent=2)
+
+# 写回优化后的 sources_list.txt
+with open('sources_list.txt', 'w', encoding='utf-8') as f:
+    f.write('\n'.join(new_sources_lines) + '\n')
+
+# 模拟内部键盘输入运行原程序
+sys.stdin = StringIO('4\n0\n')
+try:
+    tvbox_helper.main()
+except SystemExit:
+    pass
+
+# 组合推送内容（每个源之间空一行，在 TG 中更直观）
+details_text = '\n\n'.join(source_results)
+message = f'<b>📊 TVBox 智能备用源独立监控报告</b>\n\n{details_text}'
+
+# 依次向 10 个 Telegram 机器人发送详细报告
+for i in range(1, 11):
+    token = os.getenv(f'TG_TOKEN_{i}')
+    chat_id = os.getenv(f'TG_CHAT_{i}')
+    if token and chat_id:
+        url_tg = f'https://api.telegram.org/bot{token}/sendMessage'
+        try:
+            requests.post(url_tg, json={
+                'chat_id': chat_id, 
+                'text': message, 
+                'parse_mode': 'HTML'
+            }, timeout=10)
+        except Exception as e:
+            print(f'Telegram Bot {i} 发送失败: {e}')

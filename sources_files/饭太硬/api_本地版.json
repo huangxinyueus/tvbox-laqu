@@ -661,7 +661,7 @@
     {
       "name": "Kimentanm",
       "type": 0,
-      "url": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+      "url": "./live/iptv.m3u",
       "playerType": 2
     },
     {
