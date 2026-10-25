@@ -31,11 +31,11 @@ jobs:
           # 如果你的脚本还用到了其他库（如 beautifulsoup4 等），也可以在这里加：
           # pip install beautifulsoup4
 
-      # 步骤四：运行你的主脚本并自动传入选项（这里以自动输入数字 "4" 为例）
+      # 步骤四：使用 printf 自动传入选项并回车
       - name: Run TVBox Helper
         run: |
-          # 自动输入 4（批量处理），如果运行完需要按其他键或退出，可以根据需要调整
-          echo "4" | python tvbox_helper.py
+          # 如果选 4 之后还需要按回车确认或输入其他内容，可以多加几个 \n
+          printf "4\n\n" | python -u tvbox_helper.py
 
       # 步骤五：自动将脚本运行后生成/更新的文件提交并推送到仓库
       - name: Commit and Push Changes
