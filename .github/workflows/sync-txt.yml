@@ -1,4 +1,4 @@
-name: Sync TVBox Sources and Assets
+name: Sync TVBox Sources and Tree Structure
 
 on:
   schedule:
@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: 运行智能同步与深度依赖解析脚本
+      - name: 运行精准目录树同步脚本
         env:
           BOT1_TOKEN: ${{ secrets.BOT1_TOKEN }}
           BOT1_CHAT: ${{ secrets.BOT1_CHAT }}
@@ -53,7 +53,8 @@ jobs:
           from datetime import datetime
 
           UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-          os.makedirs("sources_files", exist_ok=True)
+          BASE_DIR = "sources_files"
+          os.makedirs(BASE_DIR, exist_ok=True)
 
           if not os.path.exists("sources.txt"):
               print("错误: sources.txt 文件不存在！")
@@ -77,7 +78,7 @@ jobs:
                   netloc = parsed.netloc.encode('idna').decode('utf-8')
               except Exception:
                   netloc = parsed.netloc
-              path = urllib.parse.quote(parsed.path)
+              path = urllib.parse.quote(parsed.path, safe='/')
               query = urllib.parse.quote(parsed.query, safe='=&?/')
               return urllib.parse.urlunparse((parsed.scheme, netloc, path, parsed.params, query, parsed.fragment))
 
@@ -105,16 +106,12 @@ jobs:
 
               for raw_url in urls:
                   url = format_url(raw_url)
-                  clean_url = url.split("?")[0]
                   
-                  ext = "txt"
-                  match = re.search(r'\.([a-zA-Z0-9]+)$', clean_url)
-                  if match:
-                      ext = match.group(1)
-                  elif "json" in clean_url or "/tv" in clean_url:
-                      ext = "json"
+                  # 每个源独立建立一个子文件夹，完美隔离并存放其专属的目录树
+                  source_dir = os.path.join(BASE_DIR, name)
+                  os.makedirs(source_dir, exist_ok=True)
                   
-                  target_file = os.path.join("sources_files", f"{name}.{ext}")
+                  target_file = os.path.join(source_dir, "api.json")
                   print(f"正在尝试拉取源 [{name}]: {url}")
                   
                   try:
@@ -124,44 +121,50 @@ jobs:
                               content = response.read()
                               with open(target_file, "wb") as out_f:
                                   out_f.write(content)
-                              print(f"✅ [{name}] 主文件成功拉取并保存")
+                              print(f"✅ [{name}] 主配置文件成功保存")
                               success = True
                               
-                              # 💡 核心升级：解析绝对链接与相对路径（如 /lib/spider.jar）
+                              # 💡 核心升级：深度解析文本，精准提取相对路径并重建目录树
                               try:
                                   file_text = content.decode('utf-8', errors='ignore')
                                   parsed_base = urllib.parse.urlparse(url)
                                   base_domain = f"{parsed_base.scheme}://{parsed_base.netloc}"
 
-                                  # 1. 收集所有完整的 http(s) 链接
-                                  links_to_download = set(re.findall(r'https?://[^\s"\'<>\\#]+', file_text))
-
-                                  # 2. 收集所有以 / 开头的相对路径（如 /lib/spider.jar, /lib/*.txt 等）
-                                  relative_paths = re.findall(r'(/lib/[^\s"\'<>\\#]+|/[a-zA-Z0-9_\-./]+\.(?:json|jar|js|txt))', file_text)
+                                  # 收集所有完整链接和以 /开头的相对路径
+                                  all_links = set(re.findall(r'https?://[^\s"\'<>\\#]+', file_text))
+                                  relative_paths = re.findall(r'(\/[a-zA-Z0-9_\-./]+\.(?:json|jar|js|txt))', file_text)
+                                  
                                   for rp in relative_paths:
                                       full_l = urllib.parse.urljoin(base_domain, rp)
-                                      links_to_download.add(full_l)
+                                      all_links.add(full_l)
 
-                                  # 3. 统一遍历并下载所有发现的依赖文件
-                                  for link in links_to_download:
+                                  for link in all_links:
                                       link = format_url(link.rstrip('\\"'))
-                                      if any(link.lower().endswith(x) for x in ['.jar', '.py', '.txt', '.js', '.zip']):
-                                          dep_filename = link.split('/')[-1].split('?')[0]
-                                          if not dep_filename:
+                                      # 严格筛选核心代码与配置文件，排除网页埋点等杂项
+                                      if any(link.lower().endswith(x) for x in ['.jar', '.py', '.txt', '.js', '.json', '.zip']):
+                                          if any(bad in link.lower() for bad in ['beacon', 'rocket-loader', 'cloudflare', 'tongji']):
                                               continue
-                                          dep_target = os.path.join("sources_files", f"{name}_{dep_filename}")
-                                          print(f"-> 发现依赖文件，正在顺藤摸瓜下载: {link}")
+                                          
+                                          # 提取相对路径结构（如 lib/spider.jar）
+                                          parsed_link = urllib.parse.urlparse(link)
+                                          path_part = parsed_link.path.lstrip('/')
+                                          if not path_part:
+                                              continue
+                                          
+                                          dep_target = os.path.join(source_dir, path_part)
+                                          os.makedirs(os.path.dirname(dep_target), exist_ok=True)
+                                          
+                                          print(f"-> 正在精准下载到目录树: {path_part}")
                                           try:
                                               dep_req = urllib.request.Request(link, headers={"User-Agent": UA})
                                               with urllib.request.urlopen(dep_req, timeout=15) as dep_resp:
                                                   if dep_resp.status == 200:
                                                       with open(dep_target, "wb") as dep_out:
                                                           dep_out.write(dep_resp.read())
-                                                      print(f"✅ 依赖文件下载成功: {dep_filename}")
                                           except Exception as de:
-                                              print(f"⚠️ 依赖文件下载失败跳过: {de}")
+                                              print(f"⚠️ 依赖文件下载跳过 {path_part}: {de}")
                               except Exception as je:
-                                  print(f"⚠️ 解析文件依赖异常: {je}")
+                                  print(f"⚠️ 解析目录树异常: {je}")
                               break
                   except Exception as e:
                       print(f"⚠️ 地址访问异常 {raw_url}: {e}")
@@ -181,18 +184,18 @@ jobs:
           is_changed = (diff_res.returncode != 0)
 
           if is_changed:
-              subprocess.run(["git", "commit", "-m", f"Auto-sync sources & assets: {current_date}"])
+              subprocess.run(["git", "commit", "-m", f"Auto-sync source tree: {current_date}"])
               subprocess.run(["git", "push"])
-              print("✅ 成功将已获取的源文件及所有关联源码同步推送至 GitHub 仓库。")
+              print("✅ 成功将完整的源目录树同步推送至 GitHub 仓库。")
           else:
               print("ℹ️ 仓库中的文件无实质变动。")
 
-          msg_lines = [f"📊 *TVBox 源同步报告*", f"📅 *时间*: `{current_date}`", ""]
+          msg_lines = [f"📊 *TVBox 目录树同步报告*", f"📅 *时间*: `{current_date}`", ""]
           
           if success_sources:
               msg_lines.append(f"🟢 *拉取成功的源 ({len(success_sources)})*:")
               for s in success_sources:
-                  msg_lines.append(f"  - `{s}` (核心源码已完整入库)")
+                  msg_lines.append(f"  - `{s}` (核心源码与子目录树已完整入库)")
               msg_lines.append("")
 
           if failed_sources:
@@ -203,11 +206,11 @@ jobs:
 
           if not failed_sources:
               if is_changed:
-                msg_lines.append("✨ *状态*: **所有源及依赖源码全部更新成功并已同步！**")
+                msg_lines.append("✨ *状态*: **所有源的目录树结构全部更新成功并已同步！**")
               else:
                 msg_lines.append("ℹ️ *状态*: **所有源内容均无变化，今天没更新。**")
           else:
-              msg_lines.append("⚠️ *状态*: **部分源同步失败，成功拉取的内容及依赖已正常入库。**")
+              msg_lines.append("⚠️ *状态*: **部分源同步失败，成功拉取的目录树已正常入库。**")
 
           final_msg = "%0A".join(msg_lines)
           send_tg(final_msg)
