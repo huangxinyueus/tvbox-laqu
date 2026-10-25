@@ -29,8 +29,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      # 步骤四：智能备用源检测、强制补齐 spider.jar、防抖哈希比对与 TG 多路通知
-      - name: Run TVBox Helper with Spider Force-Injection & Tracking
+      # 步骤四：智能备用源检测、按源配置路径智能下载 spider.jar、防抖哈希比对与 TG 多路通知
+      - name: Run TVBox Helper with Smart Spider Path Downloader & Tracking
         env:
           TG_TOKEN_1: ${{ secrets.TG_TOKEN_1 }}
           TG_CHAT_1: ${{ secrets.TG_CHAT_1 }}
@@ -57,6 +57,7 @@ jobs:
           import os, re, requests, time, sys, json, hashlib
           from datetime import datetime, timezone, timedelta
           from io import StringIO
+          from urllib.parse import urljoin, urlparse
           import tvbox_helper
 
           bj_time = datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')
@@ -109,7 +110,7 @@ jobs:
                   
                   for attempt in range(2):
                       try:
-                          res = requests.get(url, headers=headers, timeout=30)
+                          res = requests.get(url, headers=headers, timeout=60)
                           if res.status_code == 200:
                               fetched_content = res.content
                               success = True
@@ -117,7 +118,7 @@ jobs:
                           else:
                               last_err = f'HTTP 错误码 {res.status_code}'
                       except requests.exceptions.ConnectionError:
-                          last_err = '网络连接/域名解析错误（网站无法打开）'
+                        last_err = '网络连接/域名解析错误（网站无法打开）'
                       except requests.exceptions.Timeout:
                           last_err = '请求超时 (60s)'
                       except Exception as e:
@@ -137,17 +138,48 @@ jobs:
                   source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ❌ <b>全部地址失效</b>\n  {details_str}')
                   new_sources_lines.append(line)
               else:
-                  # 暴力强制补齐 spider 字段逻辑（若为 JSON 且缺少 spider 则自动注入）
+                  # 智能解析 spider 字段并按其指定的目录下载对应 jar 文件
+                  jar_status_tip = ''
                   try:
                       text_data = fetched_content.decode('utf-8', errors='ignore')
                       parsed_json = json.loads(text_data)
                       if isinstance(parsed_json, dict):
-                          # 强制赋予或对齐 spider 路径
-                          parsed_json['spider'] = './spider.jar'
-                          fetched_content = json.dumps(parsed_json, ensure_ascii=False, indent=2).encode('utf-8')
-                          normalized_str = json.dumps(parsed_json, sort_keys=True, ensure_ascii=False)
-                      else:
-                          normalized_str = re.sub(r'\s+', '', text_data)
+                          spider_val = parsed_json.get('spider', '')
+                          if spider_val:
+                              # 提取路径部分（如去除 ;md5;... 后缀）
+                              spider_path_part = spider_val.split(';')[0].strip()
+                              
+                              # 确定真实的远程下载地址
+                              if spider_path_part.startswith('http'):
+                                  real_download_url = spider_path_part
+                              else:
+                                  real_download_url = urljoin(working_url, spider_path_part)
+                              
+                              # 确定本地应该存放的相对路径
+                              if spider_path_part.startswith('http'):
+                                  parsed_url = urlparse(spider_path_part)
+                                  path_name = parsed_url.path.lstrip('/')
+                                  local_rel_path = path_name if path_name else 'spider.jar'
+                              else:
+                                  local_rel_path = spider_path_part.lstrip('./').lstrip('/\\')
+                                  if not local_rel_path:
+                                      local_rel_path = 'spider.jar'
+                              
+                              # 自动创建目标文件夹并下载 jar 文件
+                              try:
+                                  s_res = requests.get(real_download_url, headers=headers, timeout=30)
+                                  if s_res.status_code == 200:
+                                      target_dir = os.path.dirname(os.path.abspath(local_rel_path))
+                                      if target_dir:
+                                          os.makedirs(target_dir, exist_ok=True)
+                                      with open(local_rel_path, 'wb') as sf:
+                                          sf.write(s_res.content)
+                                      jar_status_tip = f' | 📦 <b>{local_rel_path} 同步成功</b>'
+                              except Exception as je:
+                                  print(f'Download jar error for {name}: {je}')
+
+                      # 标准化内容计算哈希
+                      normalized_str = json.dumps(parsed_json, sort_keys=True, ensure_ascii=False)
                   except:
                       text_data = fetched_content.decode('utf-8', errors='ignore')
                       normalized_str = re.sub(r'\s+', '', text_data)
@@ -170,7 +202,7 @@ jobs:
                       'time': last_update_time
                   }
                   
-                  source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ✅ 成功 | {update_status}\n地址: {working_url}\n最后更新时间: {last_update_time}')
+                  source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ✅ 成功 | {update_status}{jar_status_tip}\n地址: {working_url}\n最后更新时间: {last_update_time}')
                   
                   other_urls = [u for u in urls if u != working_url]
                   reordered_urls = [working_url] + other_urls
@@ -223,7 +255,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes detected, skipping commit."
           else
-            git commit -m "Auto-update TVBox data and source status via GitHub Actions"
+            git commit -m "Auto-update TVBox data, spider jars and source status via GitHub Actions"
             git push
           fi
         env:
