@@ -13,23 +13,23 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # 步骤一：检出仓库代码
+      # 步骤一：检出仓库代码[cite: 7]
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # 步骤二：配置 Python 环境
+      # 步骤二：配置 Python 环境[cite: 7]
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      # 步骤三：安装脚本依赖
+      # 步骤三：安装脚本依赖[cite: 7]
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests
 
-      # 步骤四：使用 Python 内部模拟输入，完美绕过云端无法交互的问题
+      # 步骤四：使用 Python 内部模拟输入，完美绕过云端无法交互的问题[cite: 7]
       - name: Run TVBox Helper
         run: |
           python -c "
@@ -46,7 +46,7 @@ jobs:
               pass
           "
 
-      # 步骤五：自动将脚本运行后生成/更新的文件提交并推送到仓库
+      # 步骤五：自动将脚本运行后生成/更新的文件提交并推送到仓库[cite: 7]
       - name: Commit and Push Changes
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -63,8 +63,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 步骤六：依次向 10 个 Telegram 机器人发送通知
-      - name: Send Telegram Notifications
+      # 步骤六：检测各个源状态并依次向 10 个 Telegram 机器人发送详细报告
+      - name: Send Telegram Detailed Notifications
         env:
           TG_TOKEN_1: ${{ secrets.TG_TOKEN_1 }}
           TG_CHAT_1: ${{ secrets.TG_CHAT_1 }}
@@ -89,15 +89,55 @@ jobs:
         run: |
           python -c "
           import os, requests
-          message = '✅ TVBox 助手已成功自动更新并推送最新数据！'
+          from datetime import datetime, timezone, timedelta
+
+          # 获取北京时间 (UTC+8)
+          bj_time = datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')
+
+          # 读取 sources_list.txt 中的源地址
+          sources = []
+          if os.path.exists('sources_list.txt'):
+              with open('sources_list.txt', 'r', encoding='utf-8') as f:
+                  sources = [line.strip() for line in f if line.strip() and not line.startswith('#')]
+
+          source_results = []
+          if not sources:
+              source_results.append('⚠️ 未在 sources_list.txt 中检测到有效订阅源。')
+          else:
+              for idx, src in enumerate(sources, 1):
+                  try:
+                      headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+                      res = requests.get(src, headers=headers, timeout=10)
+                      if res.status_code == 200:
+                          source_results.append(f'📌 <b>源 [{idx}]</b>: {src}\n状态: ✅ 推送/更新成功\n时间: {bj_time}')
+                      else:
+                          source_results.append(f'📌 <b>源 [{idx}]</b>: {src}\n状态: ❌ 失败 (HTTP 错误码: {res.status_code})\n时间: {bj_time}')
+                  except requests.exceptions.MissingSchema:
+                      source_results.append(f'📌 <b>源 [{idx}]</b>: {src}\n状态: ❌ 失败 (源码地址错误/格式无效)\n时间: {bj_time}')
+                  except requests.exceptions.ConnectionError:
+                      source_results.append(f'📌 <b>源 [{idx}]</b>: {src}\n状态: ❌ 失败 (网络连接错误或域名不存在)\n时间: {bj_time}')
+                  except requests.exceptions.Timeout:
+                      source_results.append(f'📌 <b>源 [{idx}]</b>: {src}\n状态: ❌ 失败 (请求超时)\n时间: {bj_time}')
+                  except Exception as e:
+                      source_results.append(f'📌 <b>源 [{idx}]</b>: {src}\n状态: ❌ 失败 (异常: {str(e)})\n时间: {bj_time}')
+
+          # 每个源码之间用双换行（空一行）隔开，在TG中显示更直观
+          details_text = '\n\n'.join(source_results)
+          message = f'<b>📊 TVBox 助手运行与订阅源报告</b>\n\n{details_text}'
+
+          # 向 10 个 Telegram 机器人依次发送
           for i in range(1, 11):
               token = os.getenv(f'TG_TOKEN_{i}')
               chat_id = os.getenv(f'TG_CHAT_{i}')
               if token and chat_id:
                   url = f'https://api.telegram.org/bot{token}/sendMessage'
                   try:
-                      res = requests.post(url, json={'chat_id': chat_id, 'text': message}, timeout=10)
-                      print(f'Telegram Bot {i} 状态: {res.status_code}')
+                      res = requests.post(url, json={
+                          'chat_id': chat_id, 
+                          'text': message, 
+                          'parse_mode': 'HTML'
+                      }, timeout=10)
+                      print(f'Telegram Bot {i} 发送状态: {res.status_code}')
                   except Exception as e:
                       print(f'Telegram Bot {i} 发送失败: {e}')
               else:
