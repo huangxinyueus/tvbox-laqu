@@ -29,8 +29,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      # 步骤四：智能备用源检测、自动切换、运行助手并发送多路 TG 通知
-      - name: Run TVBox Helper with Smart Fallback & Notifications
+      # 步骤四：智能备用源检测（超时时间设为60秒，含重试）、自动切换、运行助手并发送多路 TG 通知
+      - name: Run TVBox Helper with Smart Fallback & Retries
         env:
           TG_TOKEN_1: ${{ secrets.TG_TOKEN_1 }}
           TG_CHAT_1: ${{ secrets.TG_CHAT_1 }}
@@ -54,7 +54,7 @@ jobs:
           TG_CHAT_10: ${{ secrets.TG_CHAT_10 }}
         run: |
           python -c "
-          import os, re, json, requests, sys
+          import os, re, json, requests, time, sys
           from datetime import datetime, timezone, timedelta
           from io import StringIO
           import tvbox_helper
@@ -79,7 +79,7 @@ jobs:
               name = parts[0].strip() if len(parts) > 1 else f'源{idx}'
               url_part = parts[1] if len(parts) > 1 else line
               
-              # 提取该行所有的 URL（支持用 | 或空格分隔的主地址和备用地址）
+              # 提取该行所有的 URL
               urls = [u.strip() for u in re.split(r'[|\s]+', url_part) if u.strip().startswith('http')]
               
               if not urls:
@@ -93,31 +93,45 @@ jobs:
               # 依次测试主地址和备用地址
               for u_idx, url in enumerate(urls, 1):
                   addr_type = '主地址' if u_idx == 1 else f'备用地址 {u_idx-1}'
-                  try:
-                      res = requests.get(url, headers=headers, timeout=10)
-                      if res.status_code == 200:
-                          try:
-                              res.json()
-                              working_url = url
-                              source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ✅ 成功 (通过 <b>{addr_type}</b> 连通)\n地址: {url}\n时间: {bj_time}')
-                              break
-                          except json.JSONDecodeError:
-                              fail_details.append(f'{addr_type} ({url}): HTTP 200 但返回网页/非JSON')
-                      else:
-                          fail_details.append(f'{addr_type} ({url}): HTTP 错误码 {res.status_code}')
-                  except requests.exceptions.ConnectionError:
-                      fail_details.append(f'{addr_type} ({url}): 网络连接/域名解析错误')
-                  except requests.exceptions.Timeout:
-                      fail_details.append(f'{addr_type} ({url}): 请求超时')
-                  except Exception as e:
-                      fail_details.append(f'{addr_type} ({url}): 异常 {str(e)}')
+                  success = False
+                  last_err = ''
+                  
+                  # 增加重试机制（最多尝试 2 次，超时时间设为 60 秒）
+                  for attempt in range(2):
+                      try:
+                          res = requests.get(url, headers=headers, timeout=60)
+                          if res.status_code == 200:
+                              try:
+                                  res.json()
+                                  success = True
+                                  break
+                              except json.JSONDecodeError:
+                                  last_err = 'HTTP 200 但返回网页/非JSON'
+                          else:
+                              last_err = f'HTTP 错误码 {res.status_code}'
+                      except requests.exceptions.ConnectionError:
+                          last_err = '网络连接/域名解析错误'
+                      except requests.exceptions.Timeout:
+                          last_err = '请求超时 (60s)'
+                      except Exception as e:
+                          last_err = f'异常 {str(e)}'
+                      
+                      if attempt < 1:
+                          time.sleep(2) # 重试前等待 2 秒
+                  
+                  if success:
+                      working_url = url
+                      source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ✅ 成功 (通过 <b>{addr_type}</b> 连通)\n地址: {url}\n时间: {bj_time}')
+                      break
+                  else:
+                      fail_details.append(f'{addr_type} ({url}): {last_err}')
                       
               if not working_url:
                   details_str = '\n  '.join(fail_details)
                   source_results.append(f'📌 <b>源 [{idx}] ({name})</b>\n状态: ❌ <b>全部地址失效</b>\n  {details_str}\n时间: {bj_time}')
                   new_sources_lines.append(line)
               else:
-                  # 将成功的可用地址排在最前面，保障 tvbox_helper 能顺畅读取下载
+                  # 将成功的可用地址排在最前面
                   other_urls = [u for u in urls if u != working_url]
                   reordered_urls = [working_url] + other_urls
                   reordered_line = f'{name},' + ' | '.join(reordered_urls) if len(parts) > 1 else working_url
@@ -127,14 +141,14 @@ jobs:
           with open('sources_list.txt', 'w', encoding='utf-8') as f:
               f.write('\n'.join(new_sources_lines) + '\n')
 
-          # 模拟内部键盘输入运行原程序（先选 4 批量处理，再选 0 退出）[cite: 7]
+          # 模拟内部键盘输入运行原程序[cite: 7]
           sys.stdin = StringIO('4\n0\n')
           try:
               tvbox_helper.main()
           except SystemExit:
               pass
 
-          # 组合推送内容（每个源之间空一行，在 TG 中更加直观）
+          # 组合推送内容（每个源之间空一行，在 TG 中更直观）
           details_text = '\n\n'.join(source_results)
           message = f'<b>📊 TVBox 智能备用源检测与运行报告</b>\n\n{details_text}'
 
