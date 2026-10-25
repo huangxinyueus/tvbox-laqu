@@ -1,10 +1,7 @@
 name: TVBox Helper Auto Run
 
 on:
-  # 1. 允许手动点击按钮触发
   workflow_dispatch:
-  
-  # 2. 定时自动触发（每天 UTC 时间 0点和12点，即北京时间早上 8点和晚上 20点）
   schedule:
     - cron: '0 0,12 * * *'
 
@@ -13,23 +10,19 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # 步骤一：检出仓库代码[cite: 7]
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # 步骤二：配置 Python 环境[cite: 7]
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      # 步骤三：安装脚本依赖[cite: 7]
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests
 
-      # 步骤四：使用 Python 内部模拟输入，完美绕过云端无法交互的问题[cite: 7]
       - name: Run TVBox Helper
         run: |
           python -c "
@@ -37,7 +30,6 @@ jobs:
           from io import StringIO
           import tvbox_helper
 
-          # 模拟键盘自动输入：先输入 4（对应你的菜单选项），再输入 0（对应退出）
           sys.stdin = StringIO('4\n0\n')
 
           try:
@@ -46,14 +38,12 @@ jobs:
               pass
           "
 
-      # 步骤五：自动将脚本运行后生成/更新的文件提交并推送到仓库[cite: 7]
       - name: Commit and Push Changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.io'
           git add -A
           
-          # 检查是否有文件改动，若无改动则跳过提交
           if git diff --staged --quiet; then
             echo "No changes detected, skipping commit."
           else
@@ -63,7 +53,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 步骤六：检测各个源状态并依次向 10 个 Telegram 机器人发送详细报告
       - name: Send Telegram Detailed Notifications
         env:
           TG_TOKEN_1: ${{ secrets.TG_TOKEN_1 }}
@@ -88,58 +77,58 @@ jobs:
           TG_CHAT_10: ${{ secrets.TG_CHAT_10 }}
         run: |
           python -c "
-          import os, requests
+          import os, re, requests
           from datetime import datetime, timezone, timedelta
 
-          # 获取北京时间 (UTC+8)
           bj_time = datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')
 
-          # 读取 sources_list.txt 中的源地址
-          sources = []
+          sources_raw = []
           if os.path.exists('sources_list.txt'):
               with open('sources_list.txt', 'r', encoding='utf-8') as f:
-                  sources = [line.strip() for line in f if line.strip() and not line.startswith('#')]
+                  sources_raw = [line.strip() for line in f if line.strip() and not line.startswith('#')]
 
           source_results = []
-          if not sources:
+          if not sources_raw:
               source_results.append('⚠️ 未在 sources_list.txt 中检测到有效订阅源。')
           else:
-              for idx, src in enumerate(sources, 1):
+              for idx, line in enumerate(sources_raw, 1):
+                  # 使用正则精准提取行内的第一个 http/https 真实网址进行测试
+                  urls = re.findall(r'https?://[^\s|]+', line)
+                  if not urls:
+                      source_results.append(f'📌 <b>源 [{idx}]</b>: {line}\n状态: ❌ 失败 (未在行中匹配到有效网址)\n时间: {bj_time}')
+                      continue
+                  
+                  target_url = urls[0]
+                  display_name = line.split(',')[0] if ',' in line else target_url
+
                   try:
                       headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
-                      res = requests.get(src, headers=headers, timeout=10)
+                      res = requests.get(target_url, headers=headers, timeout=10)
                       if res.status_code == 200:
-                          source_results.append(f'📌 <b>源 [{idx}]</b>: {src}\n状态: ✅ 推送/更新成功\n时间: {bj_time}')
+                          source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ✅ 连通/更新成功\n时间: {bj_time}')
                       else:
-                          source_results.append(f'📌 <b>源 [{idx}]</b>: {src}\n状态: ❌ 失败 (HTTP 错误码: {res.status_code})\n时间: {bj_time}')
-                  except requests.exceptions.MissingSchema:
-                      source_results.append(f'📌 <b>源 [{idx}]</b>: {src}\n状态: ❌ 失败 (源码地址错误/格式无效)\n时间: {bj_time}')
+                          source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ❌ 失败 (HTTP 错误码: {res.status_code})\n时间: {bj_time}')
                   except requests.exceptions.ConnectionError:
-                      source_results.append(f'📌 <b>源 [{idx}]</b>: {src}\n状态: ❌ 失败 (网络连接错误或域名不存在)\n时间: {bj_time}')
+                      source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ❌ 失败 (网络连接错误或域名不存在)\n时间: {bj_time}')
                   except requests.exceptions.Timeout:
-                      source_results.append(f'📌 <b>源 [{idx}]</b>: {src}\n状态: ❌ 失败 (请求超时)\n时间: {bj_time}')
+                      source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ❌ 失败 (请求超时)\n时间: {bj_time}')
                   except Exception as e:
-                      source_results.append(f'📌 <b>源 [{idx}]</b>: {src}\n状态: ❌ 失败 (异常: {str(e)})\n时间: {bj_time}')
+                      source_results.append(f'📌 <b>源 [{idx}] ({display_name})</b>\n地址: {target_url}\n状态: ❌ 失败 (异常: {str(e)})\n时间: {bj_time}')
 
-          # 每个源码之间用双换行（空一行）隔开，在TG中显示更直观
           details_text = '\n\n'.join(source_results)
           message = f'<b>📊 TVBox 助手运行与订阅源报告</b>\n\n{details_text}'
 
-          # 向 10 个 Telegram 机器人依次发送
           for i in range(1, 11):
               token = os.getenv(f'TG_TOKEN_{i}')
               chat_id = os.getenv(f'TG_CHAT_{i}')
               if token and chat_id:
                   url = f'https://api.telegram.org/bot{token}/sendMessage'
                   try:
-                      res = requests.post(url, json={
+                      requests.post(url, json={
                           'chat_id': chat_id, 
                           'text': message, 
                           'parse_mode': 'HTML'
                       }, timeout=10)
-                      print(f'Telegram Bot {i} 发送状态: {res.status_code}')
                   except Exception as e:
                       print(f'Telegram Bot {i} 发送失败: {e}')
-              else:
-                  print(f'Telegram Bot {i} 未配置密钥，已跳过。')
           "
