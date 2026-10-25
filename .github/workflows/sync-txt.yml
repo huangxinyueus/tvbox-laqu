@@ -107,10 +107,10 @@ jobs:
               for raw_url in urls:
                   url = format_url(raw_url)
                   
-                  # 每个源独立建立一个子文件夹，完美隔离并存放其专属的目录树
                   source_dir = os.path.join(BASE_DIR, name)
                   os.makedirs(source_dir, exist_ok=True)
                   
+                  # 主配置文件保存为 api.json
                   target_file = os.path.join(source_dir, "api.json")
                   print(f"正在尝试拉取源 [{name}]: {url}")
                   
@@ -124,37 +124,42 @@ jobs:
                               print(f"✅ [{name}] 主配置文件成功保存")
                               success = True
                               
-                              # 💡 核心升级：深度解析文本，精准提取相对路径并重建目录树
+                              # 💡 核心升级：精准解析 JSON 内部以 ./lib/ 或 lib/ 开头的路径以及各类直链
                               try:
                                   file_text = content.decode('utf-8', errors='ignore')
                                   parsed_base = urllib.parse.urlparse(url)
                                   base_domain = f"{parsed_base.scheme}://{parsed_base.netloc}"
 
-                                  # 收集所有完整链接和以 /开头的相对路径
-                                  all_links = set(re.findall(r'https?://[^\s"\'<>\\#]+', file_text))
-                                  relative_paths = re.findall(r'(\/[a-zA-Z0-9_\-./]+\.(?:json|jar|js|txt))', file_text)
-                                  
-                                  for rp in relative_paths:
-                                      full_l = urllib.parse.urljoin(base_domain, rp)
+                                  all_links = set()
+
+                                  # 1. 提取所有标准 http(s) 链接
+                                  http_matches = re.findall(r'https?://[^\s"\'<>\\#]+', file_text)
+                                  for hm in http_matches:
+                                      # 如果链接带有 md5 签名后缀（如 spider.jar;md5;...），需要把分号后面的截断掉
+                                      clean_hm = hm.split(';')[0]
+                                      all_links.add(clean_hm)
+
+                                  # 2. 提取所有类似 ./lib/xxx 或 lib/xxx 的相对路径
+                                  rel_matches = re.findall(r'(?:\./)?(lib/[a-zA-Z0-9_\-./]+\.(?:jar|js|txt|json))', file_text)
+                                  for rm in rel_matches:
+                                      full_l = urllib.parse.urljoin(base_domain + "/", rm)
                                       all_links.add(full_l)
 
+                                  # 3. 开始遍历下载所有提取出来的依赖文件
                                   for link in all_links:
                                       link = format_url(link.rstrip('\\"'))
-                                      # 严格筛选核心代码与配置文件，排除网页埋点等杂项
                                       if any(link.lower().endswith(x) for x in ['.jar', '.py', '.txt', '.js', '.json', '.zip']):
-                                          if any(bad in link.lower() for bad in ['beacon', 'rocket-loader', 'cloudflare', 'tongji']):
-                                              continue
                                           
-                                          # 提取相对路径结构（如 lib/spider.jar）
+                                          # 计算出该文件在原版中的相对路径（例如 lib/spider.jar）
                                           parsed_link = urllib.parse.urlparse(link)
                                           path_part = parsed_link.path.lstrip('/')
-                                          if not path_part:
+                                          if not path_part or 'api.json' in path_part:
                                               continue
                                           
                                           dep_target = os.path.join(source_dir, path_part)
                                           os.makedirs(os.path.dirname(dep_target), exist_ok=True)
                                           
-                                          print(f"-> 正在精准下载到目录树: {path_part}")
+                                          print(f"-> 正在精准下载依赖到目录树: {path_part}")
                                           try:
                                               dep_req = urllib.request.Request(link, headers={"User-Agent": UA})
                                               with urllib.request.urlopen(dep_req, timeout=15) as dep_resp:
@@ -184,9 +189,9 @@ jobs:
           is_changed = (diff_res.returncode != 0)
 
           if is_changed:
-              subprocess.run(["git", "commit", "-m", f"Auto-sync source tree: {current_date}"])
+              subprocess.run(["git", "commit", "-m", f"Auto-sync exact source tree: {current_date}"])
               subprocess.run(["git", "push"])
-              print("✅ 成功将完整的源目录树同步推送至 GitHub 仓库。")
+              print("✅ 成功将完美的源目录树同步推送至 GitHub 仓库。")
           else:
               print("ℹ️ 仓库中的文件无实质变动。")
 
@@ -195,7 +200,7 @@ jobs:
           if success_sources:
               msg_lines.append(f"🟢 *拉取成功的源 ({len(success_sources)})*:")
               for s in success_sources:
-                  msg_lines.append(f"  - `{s}` (核心源码与子目录树已完整入库)")
+                  msg_lines.append(f"  - `{s}` (核心源码与 lib 目录树已完美复刻入库)")
               msg_lines.append("")
 
           if failed_sources:
