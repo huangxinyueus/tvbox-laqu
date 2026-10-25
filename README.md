@@ -4,5 +4,7 @@
 机器人添加变量：
 1 TG的ID
 TG_CHAT_1     TG_CHAT_2 
+
 2 TG的token
 
+TG_TOKEN_1   TG_TOKEN_2
