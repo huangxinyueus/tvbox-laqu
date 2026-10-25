@@ -154,6 +154,8 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/donghuapian/29892.html'>
+            小羊肖恩3：怪兽来袭            </a></li>
                     <li><a href='/kongbupian/29891.html'>
             尸变            </a></li>
                     <li><a href='/xijupian/29890.html'>
@@ -192,8 +194,6 @@ document.getElementById(obj).style.display="none";
             飞车闯埃及            </a></li>
                     <li><a href='/kongbupian/29884.html'>
             大力水手4：复活            </a></li>
-                    <li><a href='/juqingpian/29883.html'>
-            勿念            </a></li>
                   </ul>
         <ul class="hide">
                     <li><a href='/dianshiju/guoju/29866.html'>
@@ -238,6 +238,8 @@ document.getElementById(obj).style.display="none";
             人生复本 第二季            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/donghuapian/29892.html'>
+            小羊肖恩3：怪兽来袭            </a></li>
                     <li><a href='/kongbupian/29891.html'>
             尸变            </a></li>
                     <li><a href='/dongzuopian/29888.html'>
@@ -276,8 +278,6 @@ document.getElementById(obj).style.display="none";
             街头霸王2026            </a></li>
                     <li><a href='/aiqingpian/29869.html'>
             爱语            </a></li>
-                    <li><a href='/dianshiju/oumeiju/23576.html'>
-            人生复本 第二季            </a></li>
                   </ul>
       </div>
     </div>
@@ -305,6 +305,31 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/donghuapian/29892.html" class="zoom" rel="bookmark" title="小羊肖恩3：怪兽来袭">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4190.jpg" alt="小羊肖恩3：怪兽来袭" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/donghuapian/29892.html" rel="bookmark" title="小羊肖恩3：怪兽来袭">小羊肖恩3：怪兽来袭</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　Shaun the Sheep: The Beast of Mossy Bottom◎中 文 名:　小羊肖恩3：怪兽来袭◎译　　名:　小羊肖恩3：青苔农场的怪兽 / 小羊肖恩：苔藓谷的野兽 / 超级无敌羊                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-10-26</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/donghuapian/29892.html#respond" title="《小羊肖恩3：怪兽来袭》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/donghuapian/" title="查看动画片中的全部文章" rel="category tag">动画片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/kongbupian/29891.html" class="zoom" rel="bookmark" title="尸变">
@@ -726,31 +751,6 @@ document.getElementById(obj).style.display="none";
                         <span class="info_date info_ico">2026-10-23</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dongzuopian/29873.html#respond" title="《野兽之心》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dongzuopian/29872.html" class="zoom" rel="bookmark" title="街头霸王2026">
-                            
-								<img src="https://img.dytt-tupian.com/upload/vod/20261015-1/b5d256738c12722b8d5393c904d3d70f.jpg" alt="街头霸王2026" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/29872.html" rel="bookmark" title="街头霸王2026">街头霸王2026</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　Street Fighter◎中 文 名:　街头霸王◎译　　名:　快打旋风(台) / 街霸(港)◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 动作◎语　　言:　英                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-10-23</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/29872.html#respond" title="《街头霸王2026》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
     				</div>
                </div>
