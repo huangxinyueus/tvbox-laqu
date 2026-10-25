@@ -154,6 +154,10 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/donghuapian/24756.html'>
+            牧神记            </a></li>
+                    <li><a href='/donghuapian/29540.html'>
+            财神窦占龙            </a></li>
                     <li><a href='/donghuapian/29600.html'>
             灵境行者            </a></li>
                     <li><a href='/donghuapian/13804.html'>
@@ -190,12 +194,12 @@ document.getElementById(obj).style.display="none";
             空枪            </a></li>
                     <li><a href='/aiqingpian/29869.html'>
             爱语            </a></li>
-                    <li><a href='/donghuapian/29868.html'>
-            眩晕            </a></li>
-                    <li><a href='/juqingpian/29822.html'>
-            杯雪·一战成名            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/guoju/29867.html'>
+            莫语者            </a></li>
+                    <li><a href='/dianshiju/guoju/29803.html'>
+            玉簟秋            </a></li>
                     <li><a href='/dianshiju/guoju/29835.html'>
             嫁金钗            </a></li>
                     <li><a href='/dianshiju/guoju/29804.html'>
@@ -210,10 +214,6 @@ document.getElementById(obj).style.display="none";
             小城良方            </a></li>
                     <li><a href='/dianshiju/guoju/29789.html'>
             伟大的长征            </a></li>
-                    <li><a href='/dianshiju/guoju/29803.html'>
-            玉簟秋            </a></li>
-                    <li><a href='/dianshiju/guoju/29867.html'>
-            莫语者            </a></li>
                     <li><a href='/dianshiju/guoju/29882.html'>
             新手上路[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/29881.html'>
