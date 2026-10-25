@@ -72,7 +72,6 @@ jobs:
                           print(f"Bot {i} 发送失败: {e}")
 
           def format_url(raw_url):
-              """自动处理包含中文的网址，将其转换为标准编码格式"""
               parsed = urllib.parse.urlparse(raw_url)
               try:
                   netloc = parsed.netloc.encode('idna').decode('utf-8')
@@ -107,10 +106,14 @@ jobs:
               for raw_url in urls:
                   url = format_url(raw_url)
                   clean_url = url.split("?")[0]
-                  ext = "json" if "json" in clean_url else "txt"
+                  
+                  # 默认后缀处理
+                  ext = "txt"
                   match = re.search(r'\.([a-zA-Z0-9]+)$', clean_url)
                   if match:
                       ext = match.group(1)
+                  elif "json" in clean_url or "/tv" in clean_url:
+                      ext = "json" # 将类似 /tv 的接口统一规范为 json 后缀
                   
                   target_file = os.path.join("sources_files", f"{name}.{ext}")
                   print(f"正在尝试拉取源 [{name}]: {url}")
@@ -125,30 +128,29 @@ jobs:
                               print(f"✅ [{name}] 主文件成功拉取并保存")
                               success = True
                               
-                              # 自动深度解析并下载里面的 .jar / .py 依赖文件
-                              if ext.lower() == 'json':
-                                  try:
-                                      json_text = content.decode('utf-8', errors='ignore')
-                                      potential_links = re.findall(r'https?://[^\s"\'<>\\#]+', json_text)
-                                      for link in potential_links:
-                                          link = format_url(link.rstrip('\\"'))
-                                          if any(link.lower().endswith(x) for x in ['.jar', '.py', '.txt', '.zip']):
-                                              dep_filename = link.split('/')[-1].split('?')[0]
-                                              if not dep_filename:
-                                                  continue
-                                              dep_target = os.path.join("sources_files", f"{name}_{dep_filename}")
-                                              print(f"-> 发现关联依赖文件，正在顺藤摸瓜下载: {link}")
-                                              try:
-                                                  dep_req = urllib.request.Request(link, headers={"User-Agent": UA})
-                                                  with urllib.request.urlopen(dep_req, timeout=15) as dep_resp:
-                                                      if dep_resp.status == 200:
-                                                          with open(dep_target, "wb") as dep_out:
-                                                              dep_out.write(dep_resp.read())
-                                                          print(f"✅ 依赖文件下载成功: {dep_filename}")
-                                              except Exception as de:
-                                                  print(f"⚠️ 依赖文件下载失败跳过: {de}")
-                                  except Exception as je:
-                                      print(f"⚠️ 解析 JSON 依赖异常: {je}")
+                              # 💡 核心升级：无论后缀是什么，只要下载成功，就自动扫描内容中的依赖链接
+                              try:
+                                  file_text = content.decode('utf-8', errors='ignore')
+                                  potential_links = re.findall(r'https?://[^\s"\'<>\\#]+', file_text)
+                                  for link in potential_links:
+                                      link = format_url(link.rstrip('\\"'))
+                                      if any(link.lower().endswith(x) for x in ['.jar', '.py', '.txt', '.zip']):
+                                          dep_filename = link.split('/')[-1].split('?')[0]
+                                          if not dep_filename:
+                                              continue
+                                          dep_target = os.path.join("sources_files", f"{name}_{dep_filename}")
+                                          print(f"-> 发现关联依赖文件，正在顺藤摸瓜下载: {link}")
+                                          try:
+                                              dep_req = urllib.request.Request(link, headers={"User-Agent": UA})
+                                              with urllib.request.urlopen(dep_req, timeout=15) as dep_resp:
+                                                  if dep_resp.status == 200:
+                                                      with open(dep_target, "wb") as dep_out:
+                                                          dep_out.write(dep_resp.read())
+                                                      print(f"✅ 依赖文件下载成功: {dep_filename}")
+                                          except Exception as de:
+                                              print(f"⚠️ 依赖文件下载失败跳过: {de}")
+                              except Exception as je:
+                                  print(f"⚠️ 解析文件依赖异常: {je}")
                               break
                   except Exception as e:
                       print(f"⚠️ 地址访问异常 {raw_url}: {e}")
@@ -160,7 +162,6 @@ jobs:
 
           current_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-          # 无论是否有部分源失败，只要成功下载了文件，就先将所有成功的文件提交并推送到仓库
           subprocess.run(["git", "config", "--global", "user.name", "github-actions[bot]"])
           subprocess.run(["git", "config", "--global", "user.email", "github-actions[bot]@users.noreply.github.com"])
           subprocess.run(["git", "add", "sources_files/"])
@@ -169,13 +170,12 @@ jobs:
           is_changed = (diff_res.returncode != 0)
 
           if is_changed:
-              subprocess.run(["git", "commit", "-m", f"Auto-sync sources & assets: {current_date}"])
+              subprocess.run(["git", "commit", -m, f"Auto-sync sources & assets: {current_date}"])
               subprocess.run(["git", "push"])
               print("✅ 成功将已获取的源文件同步推送至 GitHub 仓库。")
           else:
               print("ℹ️ 仓库中的文件无实质变动。")
 
-          # 组装详细的 Telegram 状态报告
           msg_lines = [f"📊 *TVBox 源同步报告*", f"📅 *时间*: `{current_date}`", ""]
           
           if success_sources:
@@ -201,7 +201,6 @@ jobs:
           final_msg = "%0A".join(msg_lines)
           send_tg(final_msg)
 
-          # 如果有失败的源，最后让 Action 状态显示红叉（便于排查），但文件已经安全入库
           if failed_sources:
               exit(1)
           EOF
