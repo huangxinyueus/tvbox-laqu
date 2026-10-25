@@ -31,11 +31,22 @@ jobs:
           # 如果你的脚本还用到了其他库（如 beautifulsoup4 等），也可以在这里加：
           # pip install beautifulsoup4
 
-      # 步骤四：使用 printf 自动传入选项并回车
+      # 步骤四：使用 Python 内部模拟输入，完美绕过云端无法交互的问题
       - name: Run TVBox Helper
         run: |
-          # 如果选 4 之后还需要按回车确认或输入其他内容，可以多加几个 \n
-          printf "4\n\n" | python -u tvbox_helper.py
+          python -c "
+          import sys
+          from io import StringIO
+          import tvbox_helper
+
+          # 模拟键盘自动输入：先输入 4（对应你的菜单选项），再输入 0（对应退出）
+          sys.stdin = StringIO('4\n0\n')
+
+          try:
+              tvbox_helper.main()
+          except SystemExit:
+              pass
+          "
 
       # 步骤五：自动将脚本运行后生成/更新的文件提交并推送到仓库
       - name: Commit and Push Changes
