@@ -1,4 +1,4 @@
-import os, re, requests, time, sys, json, hashlib, shutil
+import os, re, requests, time, sys, json, hashlib, shutil, base64
 from datetime import datetime, timezone, timedelta
 from io import StringIO
 from urllib.parse import urljoin, urlparse
@@ -14,13 +14,23 @@ USER_AGENTS = [
     'TVBox/1.0.0 (Linux; Android 10)'
 ]
 
-# 万能智能解析器：通过正则自动从 PHP/HTML 杂音中剥离并精准提取纯 JSON 数据块
-def parse_tvbox_content(content_bytes):
-    # 严格图片流拦截（但如果字节流中明确包含 sites 关键字，则判定为误报并特批放行）
+# 增强型智能解析器：完美破解防盗链图片误判、PHP 编码及正则提取纯 JSON
+def parse_tvbox_content(content_bytes, target_url=''):
+    # 如果包含 sites 关键字，直接豁免图片拦截（针对防盗链服务器返回占位图但内含数据的情况）
     if (content_bytes.startswith(b'\x89\x50\x4e\x47') or content_bytes.startswith(b'\xff\xd8\xff') or content_bytes.startswith(b'GIF')) and b'sites' not in content_bytes:
-        raise ValueError('接口错误返回了图片文件而非JSON配置')
+        raise ValueError('接口防盗链错误返回了图片文件而非JSON配置')
     
-    text_data = content_bytes.decode('utf-8', errors='ignore')
+    text_data = content_bytes.decode('utf-8', errors='ignore').strip()
+    
+    # 尝试 Base64 解码兜底（应对部分加密的 PHP 接口）
+    if not text_data.startswith('{') and not text_data.startswith('['):
+        try:
+            decoded_bytes = base64.b64decode(text_data)
+            decoded_text = decoded_bytes.decode('utf-8', errors='ignore').strip()
+            if decoded_text.startswith('{') or decoded_text.startswith('['):
+                text_data = decoded_text
+        except Exception:
+            pass
     
     # 清洗注释与尾随逗号
     cleaned = re.sub(r'//.*', '', text_data)
@@ -28,11 +38,9 @@ def parse_tvbox_content(content_bytes):
     cleaned = re.sub(r',\s*([\]}])', r'\1', cleaned)
     
     parsed = None
-    # 1. 尝试直接解析
     try:
         parsed = json.loads(cleaned)
     except Exception:
-        # 2. 如果失败，使用正则精准提取第一个 { 到最后一个 } 之间的 JSON 内容（完美应对 PHP 包装或网页杂音）
         match = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', cleaned)
         if match:
             try:
@@ -40,7 +48,6 @@ def parse_tvbox_content(content_bytes):
             except Exception:
                 pass
     
-    # 3. 关键字保底兜底校验
     if not isinstance(parsed, dict):
         if 'sites' in text_data:
             parsed = {"sites": [], "spider": ""}
@@ -113,12 +120,19 @@ for idx, line in enumerate(sources_raw, 1):
         success = False
         last_err = ''
         
+        parsed_u = urlparse(url)
+        domain_referer = f"{parsed_u.scheme}://{parsed_u.netloc}/"
+        
         for ua in USER_AGENTS:
-            headers = {'User-Agent': ua}
+            # 核心：自动注入 Referer 防盗链来源头，完美破解 Kstore 及 PHP 拦截
+            headers = {
+                'User-Agent': ua,
+                'Referer': domain_referer
+            }
             for attempt in range(2):
                 try:
                     res = requests.get(url, headers=headers, timeout=60)
-                    parsed_json, raw_text = parse_tvbox_content(res.content)
+                    parsed_json, raw_text = parse_tvbox_content(res.content, url)
                     fetched_content = res.content
                     success = True
                     break
@@ -149,7 +163,7 @@ for idx, line in enumerate(sources_raw, 1):
     else:
         jar_status_tip = ''
         try:
-            parsed_json, text_data = parse_tvbox_content(fetched_content)
+            parsed_json, text_data = parse_tvbox_content(fetched_content, working_url)
             if isinstance(parsed_json, dict):
                 spider_val = parsed_json.get('spider', '')
                 base_jar_name = None
@@ -197,9 +211,11 @@ for idx, line in enumerate(sources_raw, 1):
 
                         downloaded = False
                         for d_url in unique_candidates:
+                            parsed_d = urlparse(d_url)
+                            d_referer = f"{parsed_d.scheme}://{parsed_d.netloc}/"
                             for ua in USER_AGENTS:
                                 try:
-                                    s_res = requests.get(d_url, headers={'User-Agent': ua}, timeout=60)
+                                    s_res = requests.get(d_url, headers={'User-Agent': ua, 'Referer': d_referer}, timeout=60)
                                     s_bytes = s_res.content
                                     if s_res.status_code == 200 and len(s_bytes) > 1024:
                                         if not (s_bytes.startswith(b'\x89\x50\x4e\x47') or s_bytes.startswith(b'\xff\xd8\xff') or b'html' in s_bytes[:50].lower()):
