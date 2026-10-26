@@ -1,4 +1,4 @@
-import os, re, requests, time, sys, json, hashlib, shutil, base64
+import os, re, requests, time, sys, json, hashlib, shutil, base64, random
 from datetime import datetime, timezone, timedelta
 from io import StringIO
 from urllib.parse import urljoin, urlparse
@@ -7,7 +7,6 @@ import tvbox_helper
 bj_time = datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')
 state_file = '.source_state.json'
 
-# 终极 TVBox 客户端与主流浏览器混合伪装阵列
 USER_AGENTS = [
     'TVBox/1.1.4 (Linux; Android 11)',
     'okhttp/4.10.0',
@@ -16,9 +15,9 @@ USER_AGENTS = [
     'okhttp/3.12.12'
 ]
 
-# 终极暴力智能解析器：完美免疫图片陷阱、PHP 杂音、Base64 编码及中文域名编码问题
+# 终极暴力智能解析器：支持 JS 对象清洗、单双引号自动修正与关键词豁免
 def parse_tvbox_content(content_bytes, target_url=''):
-    # 如果核心字节流中明确包含 sites 关键字，直接豁免图片防御拦截（解决防盗链误报）
+    # 如果核心字节流中明确包含 sites 关键字，绝对豁免图片防御拦截
     if (content_bytes.startswith(b'\x89\x50\x4e\x47') or content_bytes.startswith(b'\xff\xd8\xff') or content_bytes.startswith(b'GIF')) and b'sites' not in content_bytes:
         raise ValueError('接口防盗链错误返回了图片文件而非JSON配置')
     
@@ -34,7 +33,7 @@ def parse_tvbox_content(content_bytes, target_url=''):
         except Exception:
             pass
     
-    # 清洗 JS 注释与尾随逗号
+    # 清洗注释与尾随逗号
     cleaned = re.sub(r'//.*', '', text_data)
     cleaned = re.sub(r'/\*.*?\*/', '', cleaned, flags=re.DOTALL)
     cleaned = re.sub(r',\s*([\]}])', r'\1', cleaned)
@@ -43,15 +42,20 @@ def parse_tvbox_content(content_bytes, target_url=''):
     try:
         parsed = json.loads(cleaned)
     except Exception:
-        # 正则大括号精准剥离纯 JSON 核心块
+        # 尝试正则大括号剥离
         match = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', cleaned)
         if match:
             try:
                 parsed = json.loads(match.group(1))
             except Exception:
-                pass
+                # 暴力修复常见 JS 风格配置（如单引号替换为双引号）
+                try:
+                    js_fixed = match.group(1).replace("'", '"')
+                    parsed = json.loads(js_fixed)
+                except Exception:
+                    pass
     
-    # 关键字保底兜底校验
+    # 关键词兜底：只要包含 sites，强制打包成可用结构
     if not isinstance(parsed, dict):
         if 'sites' in text_data:
             parsed = {"sites": [], "spider": ""}
@@ -124,29 +128,50 @@ for idx, line in enumerate(sources_raw, 1):
         success = False
         last_err = ''
         
-        # 安全转码域名，彻底消除中文域名引起的 latin-1 编码崩溃
         parsed_u = urlparse(url)
         netloc_safe = parsed_u.netloc
         try:
             netloc_safe = parsed_u.netloc.encode('idna').decode('ascii')
         except Exception:
             pass
-        domain_referer = f"{parsed_u.scheme}://{netloc_safe}/"
+        domain_root = f"{parsed_u.scheme}://{netloc_safe}"
+        domain_referer = domain_root + "/"
+        
+        # 构造带有缓存穿透参数的暴力测试链接（追加随机防缓存参数）
+        sep = '&' if '?' in url else '?'
+        brute_url = f"{url}{sep}_v={int(time.time())}_{random.randint(1000,9999)}"
+        
+        # 使用 requests.Session() 维持会话与 Cookie 状态
+        session = requests.Session()
         
         for ua in USER_AGENTS:
-            # 终极防盗链伪装头（模拟 TVBox 客户端完整上下文）
             headers = {
                 'User-Agent': ua,
                 'Referer': domain_referer,
-                'Origin': domain_referer.rstrip('/'),
+                'Origin': domain_root,
                 'Accept': 'application/json, text/plain, */*',
                 'Accept-Language': 'zh-CN,zh;q=0.9',
                 'X-Requested-With': 'XMLHttpRequest',
-                'Connection': 'Keep-Alive'
+                'Connection': 'Keep-Alive',
+                'Cache-Control': 'no-cache'
             }
+            session.headers.update(headers)
+            
             for attempt in range(2):
                 try:
-                    res = requests.get(url, headers=headers, timeout=60)
+                    # 先进行一次轻量会话预访问，骗取云端防盗链 Cookie
+                    try:
+                        session.get(domain_referer, timeout=10)
+                    except Exception:
+                        pass
+                    
+                    # 尝试用防缓存暴力链接请求
+                    res = session.get(brute_url, timeout=60)
+                    
+                    # 如果防缓存链接失败，尝试原链接备用请求
+                    if res.status_code != 200 or len(res.content) <= 50:
+                        res = session.get(url, timeout=60)
+                        
                     parsed_json, raw_text = parse_tvbox_content(res.content, url)
                     fetched_content = res.content
                     success = True
