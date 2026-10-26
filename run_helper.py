@@ -8,18 +8,14 @@ bj_time = datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S
 state_file = '.source_state.json'
 
 USER_AGENTS = [
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 13; V2231A Build/TP1A.220624.014) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.43 Mobile Safari/537.36',
     'TVBox/1.1.4 (Linux; Android 11)',
-    'okhttp/4.10.0',
-    'Mozilla/5.0 (Linux; Android 12; M2012K11AC Build/SKQ1.220303.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.85 Mobile Safari/537.36',
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
-    'okhttp/3.12.12'
+    'okhttp/4.10.0'
 ]
 
-# 终极暴力破防解析器：支持任意 HTTP 状态码穿透、JSONP 剥离、JS 对象修复与关键字豁免
 def parse_tvbox_content(content_bytes, target_url=''):
     text_data = content_bytes.decode('utf-8', errors='ignore').strip()
-    
-    # 如果核心内容中明确包含 sites 关键字，绝对豁免图片及 HTML 防御拦截
     has_sites = 'sites' in text_data
     
     if not has_sites:
@@ -28,7 +24,6 @@ def parse_tvbox_content(content_bytes, target_url=''):
         if '<html' in text_data.lower() and '<body' in text_data.lower():
             raise ValueError('接口返回了HTML安全拦截页面')
 
-    # 尝试 Base64 解码兜底
     if not text_data.startswith('{') and not text_data.startswith('[') and not has_sites:
         try:
             decoded_bytes = base64.b64decode(text_data)
@@ -39,7 +34,6 @@ def parse_tvbox_content(content_bytes, target_url=''):
         except Exception:
             pass
     
-    # 清洗注释与尾随逗号
     cleaned = re.sub(r'//.*', '', text_data)
     cleaned = re.sub(r'/\*.*?\*/', '', cleaned, flags=re.DOTALL)
     cleaned = re.sub(r',\s*([\]}])', r'\1', cleaned)
@@ -48,20 +42,17 @@ def parse_tvbox_content(content_bytes, target_url=''):
     try:
         parsed = json.loads(cleaned)
     except Exception:
-        # 尝试正则大括号提取（剥离 PHP 或 JSONP 包装杂音）
         match = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', cleaned)
         if match:
             try:
                 parsed = json.loads(match.group(1))
             except Exception:
                 try:
-                    # 修复单引号配置
                     js_fixed = match.group(1).replace("'", '"')
                     parsed = json.loads(js_fixed)
                 except Exception:
                     pass
     
-    # 关键词最终兜底：只要包含 sites，直接强制打包为标准 TVBox 结构
     if not isinstance(parsed, dict):
         if has_sites:
             parsed = {"sites": [], "spider": ""}
@@ -149,13 +140,21 @@ for idx, line in enumerate(sources_raw, 1):
         session = requests.Session()
         
         for ua in USER_AGENTS:
+            # 注入完整浏览器指纹与安全标头
             headers = {
                 'User-Agent': ua,
                 'Referer': domain_referer,
                 'Origin': domain_root,
-                'Accept': 'application/json, text/plain, */*',
-                'Accept-Language': 'zh-CN,zh;q=0.9',
-                'X-Requested-With': 'XMLHttpRequest',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+                'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
+                'Sec-Ch-Ua': '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+                'Sec-Ch-Ua-Mobile': '?0',
+                'Sec-Ch-Ua-Platform': '"Windows"',
+                'Sec-Fetch-Dest': 'document',
+                'Sec-Fetch-Mode': 'navigate',
+                'Sec-Fetch-Site': 'same-origin',
+                'Sec-Fetch-User': '?1',
+                'Upgrade-Insecure-Requests': '1',
                 'Connection': 'Keep-Alive',
                 'Cache-Control': 'no-cache'
             }
@@ -163,21 +162,20 @@ for idx, line in enumerate(sources_raw, 1):
             
             for attempt in range(2):
                 try:
+                    # 会话预热：先访问根域名获取 Cookie 防护凭证
                     try:
                         session.get(domain_referer, timeout=10)
                     except Exception:
                         pass
                     
-                    # 尝试防缓存暴力链接
                     res = session.get(brute_url, timeout=60)
                     
-                    # 如果内容不含 sites，尝试原链接
                     if not res.content or b'sites' not in res.content:
                         res_orig = session.get(url, timeout=60)
                         if res_orig.content and b'sites' in res_orig.content:
                             res = res_orig
                     
-                    # 核心穿透：只要内容中包含 'sites'，不管 HTTP 状态码是多少（如 456、403），直接判定成功！
+                    # 任意状态码穿透：只要内容包含 sites 关键字，强制判定成功
                     if res.content and b'sites' in res.content:
                         parsed_json, raw_text = parse_tvbox_content(res.content, url)
                         fetched_content = res.content
@@ -339,7 +337,6 @@ try:
 except SystemExit:
     pass
 
-# 自动扫描并修复所有本地 JSON 文件的 spider 指向，统一修正为 ./lib/ 相对路径
 for root, dirs, files in os.walk('.'):
     for file in files:
         if file.endswith('.json') and not file.startswith('.'):
