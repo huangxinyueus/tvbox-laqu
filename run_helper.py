@@ -7,7 +7,7 @@ import tvbox_helper
 bj_time = datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')
 state_file = '.source_state.json'
 
-# 模拟真实 TVBox 客户端及浏览器的多套请求头（用于完美破解 .php 及防爬接口）
+# 模拟真实 TVBox 客户端及浏览器的多套请求头
 USER_AGENTS = [
     'okhttp/4.9.3',
     'Mozilla/5.0 (Linux; Android 11; V2049A Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36',
@@ -15,7 +15,7 @@ USER_AGENTS = [
     'TVBox/1.0.0 (Linux; Android 10)'
 ]
 
-# 辅助函数：保证 jar 文件同时存在于 lib 目录和根目录/源子目录中（双重容错）
+# 辅助函数：保证 jar 文件同时存在于 lib 目录和根目录/源子目录中
 def ensure_jar_in_lib(local_path, jar_filename):
     if not os.path.exists(local_path) or os.path.getsize(local_path) <= 1024:
         return
@@ -86,19 +86,30 @@ for idx, line in enumerate(sources_raw, 1):
         success = False
         last_err = ''
         
-        # 遍历多套 UA 进行防拦截暴力探测
         for ua in USER_AGENTS:
             headers = {'User-Agent': ua}
             for attempt in range(2):
                 try:
                     res = requests.get(url, headers=headers, timeout=60)
-                    # 智能判定：哪怕 HTTP 状态码非 200（如 456、403），只要返回内容里包含 TVBox 的标志性 JSON 键，即视为成功运行！
-                    if res.status_code == 200 or (res.content and (b'sites' in res.content or b'spider' in res.content)):
-                        fetched_content = res.content
+                    
+                    # 【核心增强】：严厉拦截图片/二进制文件，防止服务器返回错误图片被误存为json
+                    content_bytes = res.content
+                    if content_bytes.startswith(b'\x89\x50\x4e\x47') or content_bytes.startswith(b'\xff\xd8\xff') or content_bytes.startswith(b'GIF'):
+                        last_err = '接口错误返回了图片文件而非JSON配置'
+                        break
+                    
+                    # 严格 JSON 解码校验
+                    text_data = content_bytes.decode('utf-8', errors='ignore')
+                    parsed_test = json.loads(text_data)
+                    
+                    if isinstance(parsed_test, dict):
+                        fetched_content = content_bytes
                         success = True
                         break
                     else:
-                        last_err = f'HTTP 错误码 {res.status_code}'
+                        last_err = '返回的JSON根节点不是字典类型'
+                except json.JSONDecodeError:
+                    last_err = '返回内容不是有效的JSON格式'
                 except requests.exceptions.ConnectionError:
                     last_err = '网络连接/域名解析错误（网站无法打开）'
                 except requests.exceptions.Timeout:
@@ -135,11 +146,9 @@ for idx, line in enumerate(sources_raw, 1):
                     spider_path_part = spider_val.split(';')[0].strip()
                     lower_part = spider_path_part.lower()
                     
-                    # 智能过滤图片链接
                     is_image = any(lower_part.endswith(ext) for ext in ['.png', '.jpg', '.jpeg', '.gif', '.webp', '.bmp'])
                     
                     if is_image:
-                        print(f"[INFO] 源 [{name}] 的 spider 字段为图片 ({spider_path_part}), 无需下载 jar。")
                         base_jar_name = None
                     elif lower_part.endswith('.jar'):
                         base_jar_name = os.path.basename(spider_path_part)
@@ -154,7 +163,6 @@ for idx, line in enumerate(sources_raw, 1):
 
                     if os.path.exists(local_rel_path) and os.path.getsize(local_rel_path) > 1024:
                         jar_status_tip = f' | 📦 <b>{base_jar_name} 已存在</b>'
-                        print(f"[INFO] 本地已存在 {local_rel_path}，跳过重复下载。")
                         ensure_jar_in_lib(local_rel_path, base_jar_name)
                     else:
                         candidate_urls = []
@@ -188,23 +196,20 @@ for idx, line in enumerate(sources_raw, 1):
                                 unique_candidates.append(cu)
                         candidate_urls = unique_candidates
 
-                        print(f"[DEBUG] 最终候选 Jar 链接列表: {candidate_urls}")
-
                         downloaded = False
                         for d_url in candidate_urls:
                             for ua in USER_AGENTS:
                                 try:
                                     s_res = requests.get(d_url, headers={'User-Agent': ua}, timeout=60)
-                                    if s_res.status_code == 200 and len(s_res.content) > 1024:
-                                        content_sample = s_res.content[:50].lower()
-                                        if b'html' not in content_sample and b'png' not in content_sample and b'jpeg' not in content_sample:
+                                    s_bytes = s_res.content
+                                    if s_res.status_code == 200 and len(s_bytes) > 1024:
+                                        if not (s_bytes.startswith(b'\x89\x50\x4e\x47') or s_bytes.startswith(b'\xff\xd8\xff') or b'html' in s_bytes[:50].lower()):
                                             target_dir = os.path.dirname(os.path.abspath(local_rel_path))
                                             if target_dir:
                                                 os.makedirs(target_dir, exist_ok=True)
                                             with open(local_rel_path, 'wb') as sf:
-                                                sf.write(s_res.content)
+                                                sf.write(s_bytes)
                                             jar_status_tip = f' | 📦 <b>{base_jar_name} 同步成功</b>'
-                                            print(f"[SUCCESS] 成功保存 jar 到: {local_rel_path}")
                                             ensure_jar_in_lib(local_rel_path, base_jar_name)
                                             downloaded = True
                                             break
