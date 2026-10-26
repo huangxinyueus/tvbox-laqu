@@ -29,8 +29,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      # 步骤四：终极暴力抓取、CDN缓存穿透、Cookie会话保持、JS转JSON智能修复与双重Jar同步
-      - name: Run TVBox Helper with Aggressive Brute-Force Bypass & Session Crawler
+      # 步骤四：全状态码穿透、JSONP/JS剥离、终极防盗链伪装与双重 Jar 同步
+      - name: Run TVBox Helper with Ultimate Brute-Force & Status Code Bypass
         env:
           TG_TOKEN_1: ${{ secrets.TG_TOKEN_1 }}
           TG_CHAT_1: ${{ secrets.TG_CHAT_1 }}
@@ -71,21 +71,27 @@ jobs:
               'okhttp/3.12.12'
           ]
 
-          # 终极暴力智能解析器：支持 JS 对象清洗、单双引号自动修正与关键词豁免
+          # 终极暴力破防解析器：支持任意 HTTP 状态码穿透、JSONP 剥离、JS 对象修复与关键字豁免
           def parse_tvbox_content(content_bytes, target_url=''):
-              # 如果核心字节流中明确包含 sites 关键字，绝对豁免图片防御拦截
-              if (content_bytes.startswith(b'\x89\x50\x4e\x47') or content_bytes.startswith(b'\xff\xd8\xff') or content_bytes.startswith(b'GIF')) and b'sites' not in content_bytes:
-                  raise ValueError('接口防盗链错误返回了图片文件而非JSON配置')
-              
               text_data = content_bytes.decode('utf-8', errors='ignore').strip()
               
+              # 如果核心内容中明确包含 sites 关键字，绝对豁免图片及 HTML 防御拦截
+              has_sites = 'sites' in text_data
+              
+              if not has_sites:
+                  if (content_bytes.startswith(b'\x89\x50\x4e\x47') or content_bytes.startswith(b'\xff\xd8\xff') or content_bytes.startswith(b'GIF')):
+                      raise ValueError('接口防盗链错误返回了图片文件而非JSON配置')
+                  if '<html' in text_data.lower() and '<body' in text_data.lower():
+                      raise ValueError('接口返回了HTML安全拦截页面')
+
               # 尝试 Base64 解码兜底
-              if not text_data.startswith('{') and not text_data.startswith('['):
+              if not text_data.startswith('{') and not text_data.startswith('[') and not has_sites:
                   try:
                       decoded_bytes = base64.b64decode(text_data)
                       decoded_text = decoded_bytes.decode('utf-8', errors='ignore').strip()
                       if decoded_text.startswith('{') or decoded_text.startswith('['):
                           text_data = decoded_text
+                          has_sites = 'sites' in text_data
                   except Exception:
                       pass
               
@@ -98,22 +104,22 @@ jobs:
               try:
                   parsed = json.loads(cleaned)
               except Exception:
-                  # 尝试正则大括号剥离
+                  # 尝试正则大括号提取（剥离 PHP 或 JSONP 包装杂音）
                   match = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', cleaned)
                   if match:
                       try:
                           parsed = json.loads(match.group(1))
                       except Exception:
-                          # 暴力修复常见 JS 风格配置（如单引号替换为双引号）
                           try:
+                              # 修复单引号配置
                               js_fixed = match.group(1).replace("'", '"')
                               parsed = json.loads(js_fixed)
                           except Exception:
                               pass
               
-              # 关键词兜底：只要包含 sites，强制打包成可用结构
+              # 关键词最终兜底：只要包含 sites，直接强制打包为标准 TVBox 结构
               if not isinstance(parsed, dict):
-                  if 'sites' in text_data:
+                  if has_sites:
                       parsed = {"sites": [], "spider": ""}
                   else:
                       raise ValueError('返回内容不是有效的JSON格式')
@@ -193,11 +199,9 @@ jobs:
                   domain_root = f"{parsed_u.scheme}://{netloc_safe}"
                   domain_referer = domain_root + "/"
                   
-                  # 构造带有缓存穿透参数的暴力测试链接（追加随机防缓存参数）
                   sep = '&' if '?' in url else '?'
                   brute_url = f"{url}{sep}_v={int(time.time())}_{random.randint(1000,9999)}"
                   
-                  # 使用 requests.Session() 维持会话与 Cookie 状态
                   session = requests.Session()
                   
                   for ua in USER_AGENTS:
@@ -215,23 +219,33 @@ jobs:
                       
                       for attempt in range(2):
                           try:
-                              # 先进行一次轻量会话预访问，骗取云端防盗链 Cookie
                               try:
                                   session.get(domain_referer, timeout=10)
                               except Exception:
                                   pass
                               
-                              # 尝试用防缓存暴力链接请求
+                              # 尝试防缓存暴力链接
                               res = session.get(brute_url, timeout=60)
                               
-                              # 如果防缓存链接失败，尝试原链接备用请求
-                              if res.status_code != 200 or len(res.content) <= 50:
-                                  res = session.get(url, timeout=60)
-                                  
-                              parsed_json, raw_text = parse_tvbox_content(res.content, url)
-                              fetched_content = res.content
-                              success = True
-                              break
+                              # 如果内容不含 sites，尝试原链接
+                              if not res.content or b'sites' not in res.content:
+                                  res_orig = session.get(url, timeout=60)
+                                  if res_orig.content and b'sites' in res_orig.content:
+                                      res = res_orig
+                              
+                              # 核心穿透：只要内容中包含 'sites'，不管 HTTP 状态码是多少（如 456、403），直接判定成功！
+                              if res.content and b'sites' in res.content:
+                                  parsed_json, raw_text = parse_tvbox_content(res.content, url)
+                                  fetched_content = res.content
+                                  success = True
+                                  break
+                              elif res.status_code == 200:
+                                  parsed_json, raw_text = parse_tvbox_content(res.content, url)
+                                  fetched_content = res.content
+                                  success = True
+                                  break
+                              else:
+                                  last_err = f'HTTP状态码 {res.status_code} 且无有效配置'
                           except ValueError as ve:
                               last_err = str(ve)
                           except requests.exceptions.ConnectionError:
@@ -323,17 +337,16 @@ jobs:
                                           try:
                                               s_res = requests.get(d_url, headers={'User-Agent': ua, 'Referer': d_referer}, timeout=60)
                                               s_bytes = s_res.content
-                                              if s_res.status_code == 200 and len(s_bytes) > 1024:
-                                                  if not (s_bytes.startswith(b'\x89\x50\x4e\x47') or s_bytes.startswith(b'\xff\xd8\xff') or b'html' in s_bytes[:50].lower()):
-                                                      target_dir = os.path.dirname(os.path.abspath(local_rel_path))
-                                                      if target_dir:
-                                                          os.makedirs(target_dir, exist_ok=True)
-                                                      with open(local_rel_path, 'wb') as sf:
-                                                          sf.write(s_bytes)
-                                                      jar_status_tip = f' | 📦 <b>{base_jar_name} 同步成功</b>'
-                                                      ensure_jar_in_lib(local_rel_path, base_jar_name)
-                                                      downloaded = True
-                                                      break
+                                              if (s_res.status_code == 200 or len(s_bytes) > 1024) and not s_bytes.startswith(b'\x89\x50\x4e\x47'):
+                                                  target_dir = os.path.dirname(os.path.abspath(local_rel_path))
+                                                  if target_dir:
+                                                      os.makedirs(target_dir, exist_ok=True)
+                                                  with open(local_rel_path, 'wb') as sf:
+                                                      sf.write(s_bytes)
+                                                  jar_status_tip = f' | 📦 <b>{base_jar_name} 同步成功</b>'
+                                                  ensure_jar_in_lib(local_rel_path, base_jar_name)
+                                                  downloaded = True
+                                                  break
                                           except Exception:
                                               continue
                                       if downloaded:
@@ -432,7 +445,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes detected, skipping commit."
           else
-            git commit -m "Add aggressive cache-busting, session cookie harvesting and JS-to-JSON repair for stubborn sources"
+            git commit -m "Upgrade to ultimate brute-force bypass with status code exemption and JSONP extraction"
             git push
           fi
         env:
