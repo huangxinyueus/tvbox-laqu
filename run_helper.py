@@ -1,4 +1,4 @@
-import os, re, requests, time, sys, json, hashlib, shutil, base64, random
+import os, re, requests, time, sys, json, hashlib, shutil, base64, zlib, gzip, random
 from datetime import datetime, timezone, timedelta
 from io import StringIO
 from urllib.parse import urljoin, urlparse
@@ -14,52 +14,102 @@ USER_AGENTS = [
     'okhttp/4.10.0'
 ]
 
-def parse_tvbox_content(content_bytes, target_url=''):
-    text_data = content_bytes.decode('utf-8', errors='ignore').strip()
-    has_sites = 'sites' in text_data
-    
-    if not has_sites:
-        if (content_bytes.startswith(b'\x89\x50\x4e\x47') or content_bytes.startswith(b'\xff\xd8\xff') or content_bytes.startswith(b'GIF')):
-            raise ValueError('接口防盗链错误返回了图片文件而非JSON配置')
-        if '<html' in text_data.lower() and '<body' in text_data.lower():
-            raise ValueError('接口返回了HTML安全拦截页面')
+# 融合 tvbox_helper 的深度字节解密与 raw_decode 引擎
+def parse_tvbox_content(raw_bytes, target_url=''):
+    content_candidates = []
 
-    if not text_data.startswith('{') and not text_data.startswith('[') and not has_sites:
+    # 0. 尝试提取 PNG 隐写尾椎 (针对防盗链图片包裹JSON的情况)
+    if b'IEND' in raw_bytes:
         try:
-            decoded_bytes = base64.b64decode(text_data)
-            decoded_text = decoded_bytes.decode('utf-8', errors='ignore').strip()
-            if decoded_text.startswith('{') or decoded_text.startswith('['):
-                text_data = decoded_text
-                has_sites = 'sites' in text_data
+            iend_pos = raw_bytes.rfind(b'IEND')
+            after_iend = raw_bytes[iend_pos + 8:]
+            content_candidates.append(after_iend.decode('utf-8', errors='ignore'))
         except Exception:
             pass
-    
-    cleaned = re.sub(r'//.*', '', text_data)
-    cleaned = re.sub(r'/\*.*?\*/', '', cleaned, flags=re.DOTALL)
-    cleaned = re.sub(r',\s*([\]}])', r'\1', cleaned)
-    
-    parsed = None
+
+    # 1. 尝试 Hex 十六进制转二进制
     try:
-        parsed = json.loads(cleaned)
+        text_preview = raw_bytes[:120].decode('utf-8', errors='ignore').strip()
+        if text_preview.startswith('2423') or (len(text_preview) > 50 and all(c in '0123456789abcdefABCDEF' for c in text_preview[:100])):
+            raw_bytes = bytes.fromhex(text_preview)
     except Exception:
-        match = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', cleaned)
+        pass
+
+    # 2. 剥离 $# 魔术头
+    try:
+        if raw_bytes.startswith(b'$#'):
+            idx_end = raw_bytes.find(b'#$', 2)
+            if idx_end != -1:
+                raw_bytes = raw_bytes[idx_end + 2:]
+    except Exception:
+        pass
+
+    # 3. 多路解压与解码尝试
+    try:
+        content_candidates.append(raw_bytes.decode('utf-8', errors='ignore'))
+    except:
+        pass
+        
+    try:
+        content_candidates.append(zlib.decompress(raw_bytes).decode('utf-8', errors='ignore'))
+    except:
+        try:
+            content_candidates.append(gzip.decompress(raw_bytes).decode('utf-8', errors='ignore'))
+        except:
+            pass
+
+    # 4. 暴力搜索整个文件中的所有长 Base64 片段并尝试解码
+    try:
+        full_str = raw_bytes.decode('latin1', errors='ignore')
+        b64_matches = re.findall(r'[A-Za-z0-9+/=]{30,}', full_str)
+        for b64_str in b64_matches:
+            try:
+                dec = base64.b64decode(b64_str.encode('utf-8'))
+                content_candidates.append(dec.decode('utf-8', errors='ignore'))
+                try:
+                    content_candidates.append(zlib.decompress(dec).decode('utf-8', errors='ignore'))
+                except:
+                    pass
+            except:
+                pass
+    except:
+        pass
+
+    content_candidates.append(raw_bytes.decode('latin1', errors='ignore'))
+    combined_content = "\n".join(content_candidates)
+    
+    # 清理注释行及反爬干扰文本
+    clean_lines = [line for line in combined_content.splitlines() if not line.strip().startswith('//') and '高抬贵手' not in line]
+    clean_content = '\n'.join(clean_lines).strip()
+
+    # 5. 全局遍历所有 '{' 或 '[' 位置，利用 raw_decode 寻找合法的 TVBox 配置
+    possible_indices = [i for i, char in enumerate(clean_content) if char in ('{', '[')]
+    json_data = None
+    
+    for idx in possible_indices:
+        try:
+            data, _ = json.JSONDecoder().raw_decode(clean_content, idx)
+            if isinstance(data, (dict, list)) and len(data) > 0:
+                if isinstance(data, dict) and any(k in data for k in ('sites', 'spider', 'lives', 'channels', 'parses')):
+                    json_data = data
+                    break
+                elif json_data is None and isinstance(data, dict):
+                    json_data = data
+        except Exception:
+            continue
+
+    if json_data is None and 'sites' in clean_content:
+        match = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', clean_content)
         if match:
             try:
-                parsed = json.loads(match.group(1))
+                json_data = json.loads(match.group(1))
             except Exception:
-                try:
-                    js_fixed = match.group(1).replace("'", '"')
-                    parsed = json.loads(js_fixed)
-                except Exception:
-                    pass
-    
-    if not isinstance(parsed, dict):
-        if has_sites:
-            parsed = {"sites": [], "spider": ""}
-        else:
-            raise ValueError('返回内容不是有效的JSON格式')
-            
-    return parsed, text_data
+                pass
+
+    if json_data is None:
+        raise ValueError("未能提取到合法的 JSON 配置对象")
+        
+    return json_data, clean_content
 
 def ensure_jar_in_lib(local_path, jar_filename):
     if not os.path.exists(local_path) or os.path.getsize(local_path) <= 1024:
@@ -140,21 +190,12 @@ for idx, line in enumerate(sources_raw, 1):
         session = requests.Session()
         
         for ua in USER_AGENTS:
-            # 注入完整浏览器指纹与安全标头
             headers = {
                 'User-Agent': ua,
                 'Referer': domain_referer,
                 'Origin': domain_root,
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-                'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
-                'Sec-Ch-Ua': '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
-                'Sec-Ch-Ua-Mobile': '?0',
-                'Sec-Ch-Ua-Platform': '"Windows"',
-                'Sec-Fetch-Dest': 'document',
-                'Sec-Fetch-Mode': 'navigate',
-                'Sec-Fetch-Site': 'same-origin',
-                'Sec-Fetch-User': '?1',
-                'Upgrade-Insecure-Requests': '1',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                'Accept-Language': 'zh-CN,zh;q=0.9',
                 'Connection': 'Keep-Alive',
                 'Cache-Control': 'no-cache'
             }
@@ -162,36 +203,30 @@ for idx, line in enumerate(sources_raw, 1):
             
             for attempt in range(2):
                 try:
-                    # 会话预热：先访问根域名获取 Cookie 防护凭证
                     try:
                         session.get(domain_referer, timeout=10)
                     except Exception:
                         pass
                     
-                    res = session.get(brute_url, timeout=60)
-                    
+                    res = session.get(brute_url, timeout=60, verify=False)
                     if not res.content or b'sites' not in res.content:
-                        res_orig = session.get(url, timeout=60)
-                        if res_orig.content and b'sites' in res_orig.content:
+                        res_orig = session.get(url, timeout=60, verify=False)
+                        if res_orig.content:
                             res = res_orig
                     
-                    # 任意状态码穿透：只要内容包含 sites 关键字，强制判定成功
-                    if res.content and b'sites' in res.content:
+                    # 任意状态码穿透（完美解决 PHP 456 错误码无法抓取的问题）
+                    try:
                         parsed_json, raw_text = parse_tvbox_content(res.content, url)
                         fetched_content = res.content
                         success = True
                         break
-                    elif res.status_code == 200:
-                        parsed_json, raw_text = parse_tvbox_content(res.content, url)
-                        fetched_content = res.content
-                        success = True
-                        break
-                    else:
-                        last_err = f'HTTP状态码 {res.status_code} 且无有效配置'
-                except ValueError as ve:
-                    last_err = str(ve)
+                    except Exception as inner_ex:
+                        if res.status_code == 200:
+                            last_err = f'解析失败: {inner_ex}'
+                        else:
+                            last_err = f'HTTP状态码 {res.status_code}'
                 except requests.exceptions.ConnectionError:
-                    last_err = '网络连接/域名解析错误（网站无法打开）'
+                    last_err = '网络连接/域名解析错误'
                 except requests.exceptions.Timeout:
                     last_err = '请求超时 (60s)'
                 except Exception as e:
@@ -277,9 +312,9 @@ for idx, line in enumerate(sources_raw, 1):
                             d_referer = f"{parsed_d.scheme}://{d_netloc_safe}/"
                             for ua in USER_AGENTS:
                                 try:
-                                    s_res = requests.get(d_url, headers={'User-Agent': ua, 'Referer': d_referer}, timeout=60)
+                                    s_res = requests.get(d_url, headers={'User-Agent': ua, 'Referer': d_referer}, timeout=60, verify=False)
                                     s_bytes = s_res.content
-                                    if (s_res.status_code == 200 or len(s_bytes) > 1024) and not s_bytes.startswith(b'\x89\x50\x4e\x47'):
+                                    if len(s_bytes) > 1024 and not s_bytes.startswith(b'\x89\x50\x4e\x47'):
                                         target_dir = os.path.dirname(os.path.abspath(local_rel_path))
                                         if target_dir:
                                             os.makedirs(target_dir, exist_ok=True)
@@ -336,27 +371,6 @@ try:
     tvbox_helper.main()
 except SystemExit:
     pass
-
-for root, dirs, files in os.walk('.'):
-    for file in files:
-        if file.endswith('.json') and not file.startswith('.'):
-            json_path = os.path.join(root, file)
-            try:
-                with open(json_path, 'r', encoding='utf-8') as jf:
-                    jdata = json.load(jf)
-                if isinstance(jdata, dict) and 'spider' in jdata and isinstance(jdata['spider'], str):
-                    sp_val = jdata['spider']
-                    sp_parts = sp_val.split(';')
-                    sp_path = sp_parts[0].strip()
-                    if not sp_path.startswith('http') and not any(sp_path.lower().endswith(ext) for ext in ['.png', '.jpg', '.jpeg', '.webp']):
-                        jar_name = os.path.basename(sp_path) if sp_path.endswith('.jar') else 'spider.jar'
-                        new_sp_path = f"./lib/{jar_name}"
-                        sp_parts[0] = new_sp_path
-                        jdata['spider'] = ';'.join(sp_parts)
-                        with open(json_path, 'w', encoding='utf-8') as jf:
-                            json.dump(jdata, jf, ensure_ascii=False, indent=2)
-            except Exception:
-                pass
 
 details_text = '\n\n'.join(source_results)
 message = f'<b>📊 TVBox 智能备用源独立监控报告</b>\n\n{details_text}'
