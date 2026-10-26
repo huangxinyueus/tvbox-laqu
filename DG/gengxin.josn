@@ -1,12 +1,19 @@
-# 格式：文件夹名称, 主地址 | 备用地址1 | 备用地址2
-潇洒,https://cnb.cool/fish2035/xs/-/git/raw/main/api.json | https://0.12yue.de5.net/tvbox/潇洒.json | https://jijietvbox.lol/xiaosha.json
-饭太硬,http://www.饭太硬.cc/tv | http://www.饭太硬.net/tv
-肥猫,http://肥猫.net | http://肥猫.net/tv | https://w.junce.dpdns.org/fm.gif
-王小二,https://9280.kstore.vip/aiwex.json | https://9280.kstore.space/aiwex.json | http://ai.xn--4kq62z5rby2qupq9ub.top | http://new.王二小放牛娃.top | http://new.999888123.xyz | http://new.999888123.xyz | http://new.999888987.xyz | http://new.999888987.xyz
-王小二影视特供,https://9280.kstore.vip/newwex.json | http://tvbox.王二小放牛娃.top | http://tvbox.xn--4kq62z5rby2qupq9ub.top | http://tv.999888987.xyz/ | http://tv.999888123.xyz/ | https://9280.kstore.vip/wex.json
-老刘备,https://raw.githubusercontent.com/liu673cn/box/main/m.json | https://raw.liucn.cc/box/m.json
-聚玩盒子,http://xhztv.top/xhz | http://xhztv.top/4k.json | https://0.12yue.de5.net/tvbox/聚玩.json
-摸鱼,http://www.y456y.com | http://我不是.摸鱼儿.cc
-无意云,https://yc.wya6.cn/wykj.php | https://yc.wya6.cn/wyxs.php
-天神,https://14505.kstore.space/天神IY.json
+{ "urls": [{ "url": "https://java.keai.nyc.mn/https://raw.githubusercontent.com/huangxinyueus/tvbox-laqu/refs/heads/main/sources_files/潇洒/api_本地版.json", "name": "🇺🇸潇洒[自更新版]🇺🇸" },
 
+{ "url": "https://java.keai.nyc.mn/https://raw.githubusercontent.com/huangxinyueus/tvbox-laqu/refs/heads/main/sources_files/饭太硬/api_本地版.json", "name": "🇺🇸饭太硬[自更新版]🇺🇸" },
+
+{ "url": "https://java.keai.nyc.mn/https://raw.githubusercontent.com/huangxinyueus/tvbox-laqu/refs/heads/main/sources_files/肥猫/api_本地版.json", "name": "🇺🇸肥猫[自更新版]🇺🇸" },
+
+{ "url": "https://java.keai.nyc.mn/https://raw.githubusercontent.com/huangxinyueus/tvbox-laqu/refs/heads/main/sources_files/王小二/api_本地版.json", "name": "🇺🇸王小二[自更新版]🇺🇸" },
+
+{ "url": "https://java.keai.nyc.mn/https://raw.githubusercontent.com/huangxinyueus/tvbox-laqu/refs/heads/main/sources_files/王小二影视特供/api_本地版.json", "name": "🇺🇸王小二影视特供[自更新版]🇺🇸" },
+
+{ "url": "https://java.keai.nyc.mn/https://raw.githubusercontent.com/huangxinyueus/tvbox-laqu/refs/heads/main/sources_files/老刘备/api_本地版.json", "name": "🇺🇸老刘备[自更新版]🇺🇸" },
+
+{ "url": "https://java.keai.nyc.mn/https://raw.githubusercontent.com/huangxinyueus/tvbox-laqu/refs/heads/main/sources_files/聚玩盒子/api_本地版.json", "name": "🇺🇸聚玩盒子[自更新版]🇺🇸" },
+
+{ "url": "https://java.keai.nyc.mn/https://raw.githubusercontent.com/huangxinyueus/tvbox-laqu/refs/heads/main/sources_files/摸鱼/api_本地版.json", "name": "🇺🇸摸鱼[自更新版]🇺🇸" },
+
+{ "url": "https://java.keai.nyc.mn/https://raw.githubusercontent.com/huangxinyueus/tvbox-laqu/refs/heads/main/sources_files/无意云/api_本地版.json", "name": "🇺🇸无意云自更新版]🇺🇸" },
+
+{ "url": "https://java.keai.nyc.mn/https://raw.githubusercontent.com/huangxinyueus/tvbox-laqu/refs/heads/main/sources_files/天神/api_本地版.json", "name": "🇺🇸天神[自更新版]🇺🇸"  }]}
