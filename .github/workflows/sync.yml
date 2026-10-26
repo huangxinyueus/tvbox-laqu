@@ -29,8 +29,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      # 步骤四：智能备用源检测、图片过滤、双重 Jar 路径智能补齐与自动修正本地 JSON
-      - name: Run TVBox Helper with Smart Image Filter & Universal Jar Hunter
+      # 步骤四：PHP 接口伪装防拦截、多重 UA 探测、双重 Jar 路径智能补齐与自动修正本地 JSON
+      - name: Run TVBox Helper with PHP Bypass & Universal Jar Hunter
         env:
           TG_TOKEN_1: ${{ secrets.TG_TOKEN_1 }}
           TG_CHAT_1: ${{ secrets.TG_CHAT_1 }}
@@ -63,12 +63,19 @@ jobs:
           bj_time = datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')
           state_file = '.source_state.json'
 
+          # 模拟真实 TVBox 客户端及浏览器的多套请求头（用于完美破解 .php 及防爬接口）
+          USER_AGENTS = [
+              'okhttp/4.9.3',
+              'Mozilla/5.0 (Linux; Android 11; V2049A Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36',
+              'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'TVBox/1.0.0 (Linux; Android 10)'
+          ]
+
           # 辅助函数：保证 jar 文件同时存在于 lib 目录和根目录/源子目录中（双重容错）
           def ensure_jar_in_lib(local_path, jar_filename):
               if not os.path.exists(local_path) or os.path.getsize(local_path) <= 1024:
                   return
               
-              # 1. 确保源文件同级目录下的 lib 文件夹中有 jar
               base_dir = os.path.dirname(local_path)
               lib_dir = os.path.join(base_dir, 'lib') if base_dir else 'lib'
               os.makedirs(lib_dir, exist_ok=True)
@@ -81,7 +88,6 @@ jobs:
                   except Exception as e:
                       print(f"[WARNING] 复制 jar 到 lib 失败: {e}")
 
-              # 2. 确保根目录下的 lib 也有对应 spider.jar
               root_lib_dir = 'lib'
               os.makedirs(root_lib_dir, exist_ok=True)
               root_lib_jar = os.path.join(root_lib_dir, jar_filename)
@@ -109,7 +115,6 @@ jobs:
 
           new_sources_lines = []
           source_results = []
-          headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
           for idx, line in enumerate(sources_raw, 1):
               if line.startswith('#'):
@@ -137,24 +142,30 @@ jobs:
                   success = False
                   last_err = ''
                   
-                  for attempt in range(2):
-                      try:
-                          res = requests.get(url, headers=headers, timeout=10)
-                          if res.status_code == 200:
-                              fetched_content = res.content
-                              success = True
-                              break
-                          else:
-                              last_err = f'HTTP 错误码 {res.status_code}'
-                      except requests.exceptions.ConnectionError:
-                          last_err = '网络连接/域名解析错误（网站无法打开）'
-                      except requests.exceptions.Timeout:
-                          last_err = '请求超时 (60s)'
-                      except Exception as e:
-                          last_err = f'异常 {str(e)}'
-                      
-                      if attempt < 1:
-                          time.sleep(2)
+                  # 遍历多套 UA 进行防拦截暴力探测
+                  for ua in USER_AGENTS:
+                      headers = {'User-Agent': ua}
+                      for attempt in range(2):
+                          try:
+                              res = requests.get(url, headers=headers, timeout=60)
+                              # 智能判定：哪怕 HTTP 状态码非 200（如 456、403），只要返回内容里包含 TVBox 的标志性 JSON 键，即视为成功运行！
+                              if res.status_code == 200 or (res.content and (b'sites' in res.content or b'spider' in res.content)):
+                                  fetched_content = res.content
+                                  success = True
+                                  break
+                              else:
+                                  last_err = f'HTTP 错误码 {res.status_code}'
+                          except requests.exceptions.ConnectionError:
+                              last_err = '网络连接/域名解析错误（网站无法打开）'
+                          except requests.exceptions.Timeout:
+                              last_err = '请求超时 (60s)'
+                          except Exception as e:
+                              last_err = f'异常 {str(e)}'
+                          
+                          if attempt < 1:
+                              time.sleep(2)
+                      if success:
+                          break
                   
                   if success:
                       working_url = url
@@ -180,7 +191,7 @@ jobs:
                               spider_path_part = spider_val.split(';')[0].strip()
                               lower_part = spider_path_part.lower()
                               
-                              # 智能过滤图片链接（如 .png, .jpg 等）
+                              # 智能过滤图片链接
                               is_image = any(lower_part.endswith(ext) for ext in ['.png', '.jpg', '.jpeg', '.gif', '.webp', '.bmp'])
                               
                               if is_image:
@@ -197,14 +208,11 @@ jobs:
                           if base_jar_name:
                               local_rel_path = f"sources_files/{name}/{base_jar_name}"
 
-                              # 检查本地是否已经存在该 jar 文件
                               if os.path.exists(local_rel_path) and os.path.getsize(local_rel_path) > 1024:
                                   jar_status_tip = f' | 📦 <b>{base_jar_name} 已存在</b>'
                                   print(f"[INFO] 本地已存在 {local_rel_path}，跳过重复下载。")
-                                  # 【方案二】自动触发本地与 lib 目录的双重补齐
                                   ensure_jar_in_lib(local_rel_path, base_jar_name)
                               else:
-                                  # 遍历该源配置的所有主地址和备用地址，搜罗所有可能的下载链接
                                   candidate_urls = []
                                   if spider_val and spider_val.split(';')[0].strip().startswith('http') and spider_val.split(';')[0].strip().lower().endswith('.jar'):
                                       candidate_urls.append(spider_val.split(';')[0].strip())
@@ -228,7 +236,6 @@ jobs:
                                       candidate_urls.append(f"{u_domain_root}/spider.jar")
                                       candidate_urls.append(f"{u_domain_root}/fty.jar")
 
-                                  # 去重候选链接保持顺序
                                   seen_cu = set()
                                   unique_candidates = []
                                   for cu in candidate_urls:
@@ -237,37 +244,34 @@ jobs:
                                           unique_candidates.append(cu)
                                   candidate_urls = unique_candidates
 
-                                  print(f"[DEBUG] 联动主备用地址的最终候选 Jar 链接列表: {candidate_urls}, 自定义目标路径: {local_rel_path}")
+                                  print(f"[DEBUG] 最终候选 Jar 链接列表: {candidate_urls}")
 
-                                  # 开始尝试下载并进行内容校验
                                   downloaded = False
                                   for d_url in candidate_urls:
-                                      try:
-                                          s_res = requests.get(d_url, headers=headers, timeout=30)
-                                          print(f"[DEBUG] 请求备用/主地址 {d_url} -> 状态码: {s_res.status_code}, 大小: {len(s_res.content)}")
-                                          if s_res.status_code == 200 and len(s_res.content) > 1024:
-                                              content_sample = s_res.content[:50].lower()
-                                              if b'html' not in content_sample and b'png' not in content_sample and b'jpeg' not in content_sample:
-                                                  target_dir = os.path.dirname(os.path.abspath(local_rel_path))
-                                                  if target_dir:
-                                                      os.makedirs(target_dir, exist_ok=True)
-                                                  with open(local_rel_path, 'wb') as sf:
-                                                      sf.write(s_res.content)
-                                                  jar_status_tip = f' | 📦 <b>{base_jar_name} 同步成功</b>'
-                                                  print(f"[SUCCESS] 成功保存 jar 到自定义目录: {local_rel_path}")
-                                                  # 【方案二】自动补齐多路径支撑
-                                                  ensure_jar_in_lib(local_rel_path, base_jar_name)
-                                                  downloaded = True
-                                                  break
-                                      except Exception as ex:
-                                          print(f"[ERROR] 下载异常: {ex}")
-                                          continue
+                                      for ua in USER_AGENTS:
+                                          try:
+                                              s_res = requests.get(d_url, headers={'User-Agent': ua}, timeout=60)
+                                              if s_res.status_code == 200 and len(s_res.content) > 1024:
+                                                  content_sample = s_res.content[:50].lower()
+                                                  if b'html' not in content_sample and b'png' not in content_sample and b'jpeg' not in content_sample:
+                                                      target_dir = os.path.dirname(os.path.abspath(local_rel_path))
+                                                      if target_dir:
+                                                          os.makedirs(target_dir, exist_ok=True)
+                                                      with open(local_rel_path, 'wb') as sf:
+                                                          sf.write(s_res.content)
+                                                      jar_status_tip = f' | 📦 <b>{base_jar_name} 同步成功</b>'
+                                                      print(f"[SUCCESS] 成功保存 jar 到: {local_rel_path}")
+                                                      ensure_jar_in_lib(local_rel_path, base_jar_name)
+                                                      downloaded = True
+                                                      break
+                                          except Exception as ex:
+                                              continue
+                                      if downloaded:
+                                          break
                                   
                                   if not downloaded:
                                       jar_status_tip = f' | ❌ <b>抓取jar失败</b>'
-                                      print(f"[WARNING] 源 [{name}] 的 jar 文件在所有主备用地址中均未命中，抓取失败。")
                           else:
-                              # 无需下载 jar（例如图片链接或空 spider 字段）
                               jar_status_tip = ''
 
                       normalized_str = json.dumps(parsed_json, sort_keys=True, ensure_ascii=False)
@@ -316,7 +320,7 @@ jobs:
           except SystemExit:
               pass
 
-          # 【方案一与方案二核心适配】扫描并修复所有本地 JSON 文件的 spider 指向，统一修正为 ./lib/ 相对路径
+          # 自动扫描并修复所有本地 JSON 文件的 spider 指向，统一修正为 ./lib/ 相对路径
           for root, dirs, files in os.walk('.'):
               for file in files:
                   if file.endswith('.json') and not file.startswith('.'):
@@ -329,12 +333,10 @@ jobs:
                               sp_parts = sp_val.split(';')
                               sp_path = sp_parts[0].strip()
                               
-                              # 排除网络 http 开头和图片类型
                               if not sp_path.startswith('http') and not any(sp_path.lower().endswith(ext) for ext in ['.png', '.jpg', '.jpeg', '.webp']):
                                   jar_name = os.path.basename(sp_path) if sp_path.endswith('.jar') else 'spider.jar'
                                   new_sp_path = f"./lib/{jar_name}"
                                   
-                                  # 重构 spider 声明字段
                                   sp_parts[0] = new_sp_path
                                   jdata['spider'] = ';'.join(sp_parts)
                                   
@@ -344,7 +346,7 @@ jobs:
                       except Exception as ex:
                           pass
 
-          # 组合推送内容（每个源之间空一行，在 TG 中更直观）
+          # 组合推送内容
           details_text = '\n\n'.join(source_results)
           message = f'<b>📊 TVBox 智能备用源独立监控报告</b>\n\n{details_text}'
 
@@ -365,19 +367,17 @@ jobs:
           EOF
           python run_helper.py
 
-      # 步骤五：自动将脚本运行后生成/更新的文件强制提交并推送到仓库（绕过 .gitignore 限制）
+      # 步骤五：自动将脚本运行后生成/更新的文件强制提交并推送到仓库
       - name: Commit and Push Changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.io'
-          # 使用强制添加参数 -f，确保所有子目录下的 .jar 文件即使被 .gitignore 拦截也能成功提交
           git add -f -A
           
-          # 检查是否有文件改动，若无改动则跳过提交
           if git diff --staged --quiet; then
             echo "No changes detected, skipping commit."
           else
-            git commit -m "Auto-fix spider jar paths & deploy dual-path lib structure"
+            git commit -m "Auto-bypass PHP anti-crawler, fix spider jar paths and update TVBox assets"
             git push
           fi
         env:
