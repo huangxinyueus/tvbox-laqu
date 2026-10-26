@@ -1,4 +1,4 @@
-import os, re, requests, time, sys, json, hashlib
+import os, re, requests, time, sys, json, hashlib, shutil
 from datetime import datetime, timezone, timedelta
 from io import StringIO
 from urllib.parse import urljoin, urlparse
@@ -6,6 +6,35 @@ import tvbox_helper
 
 bj_time = datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')
 state_file = '.source_state.json'
+
+# 辅助函数：保证 jar 文件同时存在于 lib 目录和根目录/源子目录中（双重容错）
+def ensure_jar_in_lib(local_path, jar_filename):
+    if not os.path.exists(local_path) or os.path.getsize(local_path) <= 1024:
+        return
+    
+    # 1. 确保源文件同级目录下的 lib 文件夹中有 jar
+    base_dir = os.path.dirname(local_path)
+    lib_dir = os.path.join(base_dir, 'lib') if base_dir else 'lib'
+    os.makedirs(lib_dir, exist_ok=True)
+    target_lib_jar = os.path.join(lib_dir, jar_filename)
+    
+    if not os.path.exists(target_lib_jar) or os.path.getsize(target_lib_jar) != os.path.getsize(local_path):
+        try:
+            shutil.copy2(local_path, target_lib_jar)
+            print(f"[AUTO-FIX] 已补齐容错 Jar 到: {target_lib_jar}")
+        except Exception as e:
+            print(f"[WARNING] 复制 jar 到 lib 失败: {e}")
+
+    # 2. 确保根目录下的 lib 也有对应 spider.jar
+    root_lib_dir = 'lib'
+    os.makedirs(root_lib_dir, exist_ok=True)
+    root_lib_jar = os.path.join(root_lib_dir, jar_filename)
+    if not os.path.exists(root_lib_jar) or os.path.getsize(root_lib_jar) != os.path.getsize(local_path):
+        try:
+            shutil.copy2(local_path, root_lib_jar)
+            print(f"[AUTO-FIX] 已同步补齐根目录 Lib Jar: {root_lib_jar}")
+        except Exception as e:
+            print(f"[WARNING] 同步至根目录 lib 失败: {e}")
 
 # 读取上一次保存各源状态的历史文件
 old_state = {}
@@ -95,7 +124,7 @@ for idx, line in enumerate(sources_raw, 1):
                     spider_path_part = spider_val.split(';')[0].strip()
                     lower_part = spider_path_part.lower()
                     
-                    # 智能过滤图片链接（如 .png, .jpg 等），避免把壁纸当作 jar 报错
+                    # 智能过滤图片链接（如 .png, .jpg 等）
                     is_image = any(lower_part.endswith(ext) for ext in ['.png', '.jpg', '.jpeg', '.gif', '.webp', '.bmp'])
                     
                     if is_image:
@@ -116,6 +145,8 @@ for idx, line in enumerate(sources_raw, 1):
                     if os.path.exists(local_rel_path) and os.path.getsize(local_rel_path) > 1024:
                         jar_status_tip = f' | 📦 <b>{base_jar_name} 已存在</b>'
                         print(f"[INFO] 本地已存在 {local_rel_path}，跳过重复下载。")
+                        # 【方案二】自动触发本地与 lib 目录的双重补齐
+                        ensure_jar_in_lib(local_rel_path, base_jar_name)
                     else:
                         # 遍历该源配置的所有主地址和备用地址，搜罗所有可能的下载链接
                         candidate_urls = []
@@ -168,6 +199,8 @@ for idx, line in enumerate(sources_raw, 1):
                                             sf.write(s_res.content)
                                         jar_status_tip = f' | 📦 <b>{base_jar_name} 同步成功</b>'
                                         print(f"[SUCCESS] 成功保存 jar 到自定义目录: {local_rel_path}")
+                                        # 【方案二】自动补齐多路径支撑
+                                        ensure_jar_in_lib(local_rel_path, base_jar_name)
                                         downloaded = True
                                         break
                             except Exception as ex:
@@ -226,6 +259,34 @@ try:
     tvbox_helper.main()
 except SystemExit:
     pass
+
+# 【方案一与方案二核心适配】扫描并修复所有本地 JSON 文件的 spider 指向，统一修正为 ./lib/ 相对路径
+for root, dirs, files in os.walk('.'):
+    for file in files:
+        if file.endswith('.json') and not file.startswith('.'):
+            json_path = os.path.join(root, file)
+            try:
+                with open(json_path, 'r', encoding='utf-8') as jf:
+                    jdata = json.load(jf)
+                if isinstance(jdata, dict) and 'spider' in jdata and isinstance(jdata['spider'], str):
+                    sp_val = jdata['spider']
+                    sp_parts = sp_val.split(';')
+                    sp_path = sp_parts[0].strip()
+                    
+                    # 排除网络 http 开头和图片类型
+                    if not sp_path.startswith('http') and not any(sp_path.lower().endswith(ext) for ext in ['.png', '.jpg', '.jpeg', '.webp']):
+                        jar_name = os.path.basename(sp_path) if sp_path.endswith('.jar') else 'spider.jar'
+                        new_sp_path = f"./lib/{jar_name}"
+                        
+                        # 重构 spider 声明字段
+                        sp_parts[0] = new_sp_path
+                        jdata['spider'] = ';'.join(sp_parts)
+                        
+                        with open(json_path, 'w', encoding='utf-8') as jf:
+                            json.dump(jdata, jf, ensure_ascii=False, indent=2)
+                        print(f"[JSON-FIX] 已自动将 {json_path} 中的 spider 字段修补为: {jdata['spider']}")
+            except Exception as ex:
+                pass
 
 # 组合推送内容（每个源之间空一行，在 TG 中更直观）
 details_text = '\n\n'.join(source_results)
