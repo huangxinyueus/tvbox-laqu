@@ -14,32 +14,39 @@ USER_AGENTS = [
     'TVBox/1.0.0 (Linux; Android 10)'
 ]
 
-# 智能容错解析器：过滤图片和恶意拦截页，同时对包含 TVBox 特征（sites）的文本进行宽松兼容
+# 万能智能解析器：通过正则自动从 PHP/HTML 杂音中剥离并精准提取纯 JSON 数据块
 def parse_tvbox_content(content_bytes):
-    if content_bytes.startswith(b'\x89\x50\x4e\x47') or content_bytes.startswith(b'\xff\xd8\xff') or content_bytes.startswith(b'GIF'):
+    # 严格图片流拦截（但如果字节流中明确包含 sites 关键字，则判定为误报并特批放行）
+    if (content_bytes.startswith(b'\x89\x50\x4e\x47') or content_bytes.startswith(b'\xff\xd8\xff') or content_bytes.startswith(b'GIF')) and b'sites' not in content_bytes:
         raise ValueError('接口错误返回了图片文件而非JSON配置')
     
     text_data = content_bytes.decode('utf-8', errors='ignore')
-    
-    if '<html' in text_data.lower() and '<body' in text_data.lower() and 'sites' not in text_data.lower():
-        raise ValueError('接口返回了HTML网页或安全拦截页面')
     
     # 清洗注释与尾随逗号
     cleaned = re.sub(r'//.*', '', text_data)
     cleaned = re.sub(r'/\*.*?\*/', '', cleaned, flags=re.DOTALL)
     cleaned = re.sub(r',\s*([\]}])', r'\1', cleaned)
     
+    parsed = None
+    # 1. 尝试直接解析
     try:
         parsed = json.loads(cleaned)
     except Exception:
-        # 如果标准解析失败，但内容中确实包含 TVBox 的核心标记，尝试强制转换为基础字典结构以保障运行
+        # 2. 如果失败，使用正则精准提取第一个 { 到最后一个 } 之间的 JSON 内容（完美应对 PHP 包装或网页杂音）
+        match = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', cleaned)
+        if match:
+            try:
+                parsed = json.loads(match.group(1))
+            except Exception:
+                pass
+    
+    # 3. 关键字保底兜底校验
+    if not isinstance(parsed, dict):
         if 'sites' in text_data:
             parsed = {"sites": [], "spider": ""}
         else:
             raise ValueError('返回内容不是有效的JSON格式')
             
-    if not isinstance(parsed, dict):
-        parsed = {"sites": [], "spider": ""}
     return parsed, text_data
 
 def ensure_jar_in_lib(local_path, jar_filename):

@@ -624,7 +624,7 @@
       "searchable": 1,
       "filterable": 1,
       "changeable": 1,
-      "ext": "https://vip.wwgz.cn:5200"
+      "ext": "./lib/vip.wwgz.cn:5200"
     },
     {
       "key": "CZ",
