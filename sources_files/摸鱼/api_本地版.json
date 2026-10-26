@@ -1044,7 +1044,7 @@
       "searchable": 1,
       "filterable": 1,
       "indexs": 0,
-      "ext": "./lib/m.ting15.com",
+      "ext": "https://m.ting15.com",
       "style": {
         "type": "list"
       }

@@ -7,22 +7,24 @@ import tvbox_helper
 bj_time = datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d %H:%M:%S')
 state_file = '.source_state.json'
 
+# 终极 TVBox 客户端与主流浏览器混合伪装阵列
 USER_AGENTS = [
-    'okhttp/4.9.3',
-    'Mozilla/5.0 (Linux; Android 11; V2049A Build/RP1A.200720.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.62 Mobile Safari/537.36',
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'TVBox/1.0.0 (Linux; Android 10)'
+    'TVBox/1.1.4 (Linux; Android 11)',
+    'okhttp/4.10.0',
+    'Mozilla/5.0 (Linux; Android 12; M2012K11AC Build/SKQ1.220303.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/94.0.4606.85 Mobile Safari/537.36',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+    'okhttp/3.12.12'
 ]
 
-# 增强型智能解析器：完美破解防盗链图片误判、PHP 编码及正则提取纯 JSON
+# 终极暴力智能解析器：完美免疫图片陷阱、PHP 杂音、Base64 编码及中文域名编码问题
 def parse_tvbox_content(content_bytes, target_url=''):
-    # 如果包含 sites 关键字，直接豁免图片拦截（针对防盗链服务器返回占位图但内含数据的情况）
+    # 如果核心字节流中明确包含 sites 关键字，直接豁免图片防御拦截（解决防盗链误报）
     if (content_bytes.startswith(b'\x89\x50\x4e\x47') or content_bytes.startswith(b'\xff\xd8\xff') or content_bytes.startswith(b'GIF')) and b'sites' not in content_bytes:
         raise ValueError('接口防盗链错误返回了图片文件而非JSON配置')
     
     text_data = content_bytes.decode('utf-8', errors='ignore').strip()
     
-    # 尝试 Base64 解码兜底（应对部分加密的 PHP 接口）
+    # 尝试 Base64 解码兜底
     if not text_data.startswith('{') and not text_data.startswith('['):
         try:
             decoded_bytes = base64.b64decode(text_data)
@@ -32,7 +34,7 @@ def parse_tvbox_content(content_bytes, target_url=''):
         except Exception:
             pass
     
-    # 清洗注释与尾随逗号
+    # 清洗 JS 注释与尾随逗号
     cleaned = re.sub(r'//.*', '', text_data)
     cleaned = re.sub(r'/\*.*?\*/', '', cleaned, flags=re.DOTALL)
     cleaned = re.sub(r',\s*([\]}])', r'\1', cleaned)
@@ -41,6 +43,7 @@ def parse_tvbox_content(content_bytes, target_url=''):
     try:
         parsed = json.loads(cleaned)
     except Exception:
+        # 正则大括号精准剥离纯 JSON 核心块
         match = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', cleaned)
         if match:
             try:
@@ -48,6 +51,7 @@ def parse_tvbox_content(content_bytes, target_url=''):
             except Exception:
                 pass
     
+    # 关键字保底兜底校验
     if not isinstance(parsed, dict):
         if 'sites' in text_data:
             parsed = {"sites": [], "spider": ""}
@@ -120,14 +124,25 @@ for idx, line in enumerate(sources_raw, 1):
         success = False
         last_err = ''
         
+        # 安全转码域名，彻底消除中文域名引起的 latin-1 编码崩溃
         parsed_u = urlparse(url)
-        domain_referer = f"{parsed_u.scheme}://{parsed_u.netloc}/"
+        netloc_safe = parsed_u.netloc
+        try:
+            netloc_safe = parsed_u.netloc.encode('idna').decode('ascii')
+        except Exception:
+            pass
+        domain_referer = f"{parsed_u.scheme}://{netloc_safe}/"
         
         for ua in USER_AGENTS:
-            # 核心：自动注入 Referer 防盗链来源头，完美破解 Kstore 及 PHP 拦截
+            # 终极防盗链伪装头（模拟 TVBox 客户端完整上下文）
             headers = {
                 'User-Agent': ua,
-                'Referer': domain_referer
+                'Referer': domain_referer,
+                'Origin': domain_referer.rstrip('/'),
+                'Accept': 'application/json, text/plain, */*',
+                'Accept-Language': 'zh-CN,zh;q=0.9',
+                'X-Requested-With': 'XMLHttpRequest',
+                'Connection': 'Keep-Alive'
             }
             for attempt in range(2):
                 try:
@@ -192,7 +207,12 @@ for idx, line in enumerate(sources_raw, 1):
 
                         for u in urls:
                             parsed_u = urlparse(u)
-                            u_domain_root = f"{parsed_u.scheme}://{parsed_u.netloc}"
+                            u_netloc_safe = parsed_u.netloc
+                            try:
+                                u_netloc_safe = parsed_u.netloc.encode('idna').decode('ascii')
+                            except Exception:
+                                pass
+                            u_domain_root = f"{parsed_u.scheme}://{u_netloc_safe}"
                             u_base_dir = u if u.endswith('/') else u.rsplit('/', 1)[0] + '/'
 
                             if spider_val and not spider_val.split(';')[0].strip().startswith('http'):
@@ -212,7 +232,12 @@ for idx, line in enumerate(sources_raw, 1):
                         downloaded = False
                         for d_url in unique_candidates:
                             parsed_d = urlparse(d_url)
-                            d_referer = f"{parsed_d.scheme}://{parsed_d.netloc}/"
+                            d_netloc_safe = parsed_d.netloc
+                            try:
+                                d_netloc_safe = parsed_d.netloc.encode('idna').decode('ascii')
+                            except Exception:
+                                pass
+                            d_referer = f"{parsed_d.scheme}://{d_netloc_safe}/"
                             for ua in USER_AGENTS:
                                 try:
                                     s_res = requests.get(d_url, headers={'User-Agent': ua, 'Referer': d_referer}, timeout=60)
