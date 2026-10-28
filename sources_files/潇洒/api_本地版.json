@@ -116,7 +116,7 @@
       "type": 3,
       "api": "csp_App3Q",
       "ext": {
-        "host": "./lib/ds3xy2yunsa.xyz",
+        "host": "https://ds3xy2yunsa.xyz",
         "finger": "SF-F5F11CB15897115AE6BCFE063C288F730CA865588F572C780A3E8477D0DD3776",
         "updateId": "175070c3-075c-468b-950a-bf575769f4f1",
         "deviceBrand": "vivo",
