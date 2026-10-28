@@ -45,11 +45,11 @@
     <meta name="twitter:image" content="/assets/app-icon-512.png?v=20260819-kanju" />
     <title>看剧AI - KANJU.AI</title>
     <script src="/app-bootstrap.js"></script>
-    <script type="module" crossorigin src="/assets/main-BmSekNnN.js"></script>
+    <script type="module" crossorigin src="/assets/main-D-buOu6_.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vite-runtime-mxn4OsD4.js">
     <link rel="modulepreload" crossorigin href="/assets/react-vendor-P5XnYvWb.js">
     <link rel="modulepreload" crossorigin href="/assets/native-environment-ChodKNAD.js">
-    <link rel="modulepreload" crossorigin href="/assets/movie-card-runtime-BdSnnkVo.js">
+    <link rel="modulepreload" crossorigin href="/assets/movie-card-runtime-CVrAaplf.js">
     <link rel="modulepreload" crossorigin href="/assets/navigation-runtime-Dw-8DVQD.js">
     <link rel="modulepreload" crossorigin href="/assets/radix-ui-BE1Q6vTN.js">
     <link rel="modulepreload" crossorigin href="/assets/icons-BXguogWd.js">
