@@ -154,6 +154,12 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/donghuapian/21341.html'>
+            斗罗大陆2：绝世唐门            </a></li>
+                    <li><a href='/donghuapian/21959.html'>
+            大主宰年番            </a></li>
+                    <li><a href='/donghuapian/21328.html'>
+            沧元图 第三季            </a></li>
                     <li><a href='/donghuapian/23320.html'>
             逆天邪神[第二季]            </a></li>
                     <li><a href='/donghuapian/29236.html'>
@@ -188,28 +194,24 @@ document.getElementById(obj).style.display="none";
             师兄啊师兄/我师兄实在太稳健了            </a></li>
                     <li><a href='/donghuapian/29600.html'>
             灵境行者            </a></li>
-                    <li><a href='/donghuapian/15179.html'>
-            一念永恒 第四季            </a></li>
-                    <li><a href='/donghuapian/29907.html'>
-            忘却之岛            </a></li>
-                    <li><a href='/aiqingpian/29906.html'>
-            不存在的罪人            </a></li>
                   </ul>
         <ul class="hide">
-                    <li><a href='/dianshiju/guoju/29804.html'>
-            璀璨之城            </a></li>
-                    <li><a href='/dianshiju/guoju/29867.html'>
-            莫语者            </a></li>
+                    <li><a href='/dianshiju/rihanju/29918.html'>
+            末路兼职[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29803.html'>
             玉簟秋            </a></li>
+                    <li><a href='/dianshiju/guoju/29804.html'>
+            璀璨之城            </a></li>
                     <li><a href='/dianshiju/guoju/29835.html'>
             嫁金钗            </a></li>
-                    <li><a href='/dianshiju/guoju/29871.html'>
-            尚公主            </a></li>
+                    <li><a href='/dianshiju/guoju/29867.html'>
+            莫语者[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29866.html'>
             小城良方            </a></li>
                     <li><a href='/dianshiju/guoju/29789.html'>
             伟大的长征            </a></li>
+                    <li><a href='/dianshiju/guoju/29871.html'>
+            尚公主            </a></li>
                     <li><a href='/dianshiju/oumeiju/29817.html'>
             幻视任务 第一季            </a></li>
                     <li><a href='/dianshiju/guoju/29776.html'>
@@ -234,10 +236,10 @@ document.getElementById(obj).style.display="none";
             新斯坦福监狱实验 第一季全            </a></li>
                     <li><a href='/dianshiju/oumeiju/29875.html'>
             新星格斗场[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29874.html'>
-            贵族依旧[全集]            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/rihanju/29918.html'>
+            末路兼职[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29804.html'>
             璀璨之城            </a></li>
                     <li><a href='/dianshiju/guoju/29835.html'>
@@ -276,8 +278,6 @@ document.getElementById(obj).style.display="none";
             尸变            </a></li>
                     <li><a href='/dongzuopian/29888.html'>
             虎影夺锋            </a></li>
-                    <li><a href='/juqingpian/29822.html'>
-            杯雪·一战成名            </a></li>
                   </ul>
       </div>
     </div>
@@ -307,6 +307,31 @@ document.getElementById(obj).style.display="none";
 							<li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
+                        <a href="/dianshiju/rihanju/29918.html" class="zoom" rel="bookmark" title="末路兼职[全集]">
+                            
+								<img src="https://hongniuzyimage.com/cover/3d3f6332eaf39e8387be5fcd23a763b0.jpg" alt="末路兼职[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/rihanju/29918.html" rel="bookmark" title="末路兼职[全集]">末路兼职[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp; &nbsp;◎中 文 名:　末路兼职◎译　　名:　Dead-End Job / Honey Jar Project / Perfect Job / 甜蜜打工 / 蜜罐计划 / 꿀단지 알바 프로젝트 / 꿀단지 프로젝트◎年　　代:　2                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-10-30</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/rihanju/29918.html#respond" title="《末路兼职[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
                         <a href="/dianshiju/guoju/29804.html" class="zoom" rel="bookmark" title="璀璨之城">
                             
 								<img src="https://tu.66tutup.com:667/2026/3930.jpg" alt="璀璨之城" />                                  
@@ -323,7 +348,7 @@ document.getElementById(obj).style.display="none";
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-10-29</span>
+                        <span class="info_date info_ico">2026-10-30</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/29804.html#respond" title="《璀璨之城》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
@@ -348,7 +373,7 @@ document.getElementById(obj).style.display="none";
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-10-29</span>
+                        <span class="info_date info_ico">2026-10-30</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/29835.html#respond" title="《嫁金钗》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
@@ -373,7 +398,7 @@ document.getElementById(obj).style.display="none";
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-10-29</span>
+                        <span class="info_date info_ico">2026-10-30</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/29866.html#respond" title="《小城良方》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
@@ -398,7 +423,7 @@ document.getElementById(obj).style.display="none";
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-10-29</span>
+                        <span class="info_date info_ico">2026-10-30</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/29789.html#respond" title="《伟大的长征》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
@@ -727,31 +752,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/donghuapian/29892.html#respond" title="《小羊肖恩3：怪兽来袭》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/donghuapian/" title="查看动画片中的全部文章" rel="category tag">动画片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/kongbupian/29891.html" class="zoom" rel="bookmark" title="尸变">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4194.jpg" alt="尸变" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/kongbupian/29891.html" rel="bookmark" title="尸变">尸变</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　The Cycle◎中 文 名:　尸变◎译　　名:　老爸的尸体◎年　　代:　2026◎产　　地:　英国◎类　　别:　惊悚 / 恐怖 / 犯罪◎语　　言:　英语◎上映日期:　2                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-10-26</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/kongbupian/29891.html#respond" title="《尸变》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/kongbupian/" title="查看恐怖片中的全部文章" rel="category tag">恐怖片</a></span> 
     				</div>
                </div>
     		</li>
