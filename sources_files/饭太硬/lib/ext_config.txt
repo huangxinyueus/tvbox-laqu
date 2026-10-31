@@ -154,6 +154,10 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/juqingpian/29920.html'>
+            天启Z：新世界            </a></li>
+                    <li><a href='/juqingpian/29919.html'>
+            戴高乐之战：我写下你的名字            </a></li>
                     <li><a href='/donghuapian/21341.html'>
             斗罗大陆2：绝世唐门            </a></li>
                     <li><a href='/donghuapian/21959.html'>
@@ -190,10 +194,6 @@ document.getElementById(obj).style.display="none";
             极速：伪装者            </a></li>
                     <li><a href='/donghuapian/29402.html'>
             李熊猫            </a></li>
-                    <li><a href='/donghuapian/20280.html'>
-            师兄啊师兄/我师兄实在太稳健了            </a></li>
-                    <li><a href='/donghuapian/29600.html'>
-            灵境行者            </a></li>
                   </ul>
         <ul class="hide">
                     <li><a href='/dianshiju/rihanju/29918.html'>
@@ -238,6 +238,10 @@ document.getElementById(obj).style.display="none";
             新星格斗场[全集]            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/juqingpian/29920.html'>
+            天启Z：新世界            </a></li>
+                    <li><a href='/juqingpian/29919.html'>
+            戴高乐之战：我写下你的名字            </a></li>
                     <li><a href='/dianshiju/rihanju/29918.html'>
             末路兼职[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29804.html'>
@@ -274,10 +278,6 @@ document.getElementById(obj).style.display="none";
             血色机库            </a></li>
                     <li><a href='/donghuapian/29892.html'>
             小羊肖恩3：怪兽来袭            </a></li>
-                    <li><a href='/kongbupian/29891.html'>
-            尸变            </a></li>
-                    <li><a href='/dongzuopian/29888.html'>
-            虎影夺锋            </a></li>
                   </ul>
       </div>
     </div>
@@ -305,6 +305,56 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/juqingpian/29920.html" class="zoom" rel="bookmark" title="天启Z：新世界">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4284.jpg" alt="天启Z：新世界" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/juqingpian/29920.html" rel="bookmark" title="天启Z：新世界">天启Z：新世界</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　Apocalipsis Z: Nuevo Mundo◎中 文 名:　天启Z：新世界◎译　　名:　Apocalipsis Z 2 / Apocalipsis Z Part 2 / Apocalipsis Z Part II / Apocalipsis Z: Pa                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-10-31</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/juqingpian/29920.html#respond" title="《天启Z：新世界》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/juqingpian/29919.html" class="zoom" rel="bookmark" title="戴高乐之战：我写下你的名字">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4285.jpg" alt="戴高乐之战：我写下你的名字" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/juqingpian/29919.html" rel="bookmark" title="戴高乐之战：我写下你的名字">戴高乐之战：我写下你的名字</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　La Bataille De Gaulle : J&amp;amp;#39;&amp;amp;eacute;cris ton nom◎中 文 名:　戴高乐之战：我写下你的名字◎译　　名:　De Gaulle - Part 2: Libert&amp;amp;eacute; / De Gaull                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-10-31</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/juqingpian/29919.html#respond" title="《戴高乐之战：我写下你的名字》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/dianshiju/rihanju/29918.html" class="zoom" rel="bookmark" title="末路兼职[全集]">
@@ -702,56 +752,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/juqingpian/29897.html#respond" title="《茫然女王》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/juqingpian/29893.html" class="zoom" rel="bookmark" title="血色机库">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4210.jpg" alt="血色机库" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/juqingpian/29893.html" rel="bookmark" title="血色机库">血色机库</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　Hangar Rojo◎中 文 名:　血色机库◎译　　名:　The Red Hangar◎年　　代:　2026◎产　　地:　智利 / 阿根廷 / 意大利◎类　　别:　剧情 / 惊悚 / 历史◎                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-10-27</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/juqingpian/29893.html#respond" title="《血色机库》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/donghuapian/29892.html" class="zoom" rel="bookmark" title="小羊肖恩3：怪兽来袭">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4190.jpg" alt="小羊肖恩3：怪兽来袭" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/donghuapian/29892.html" rel="bookmark" title="小羊肖恩3：怪兽来袭">小羊肖恩3：怪兽来袭</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　Shaun the Sheep: The Beast of Mossy Bottom◎中 文 名:　小羊肖恩3：怪兽来袭◎译　　名:　小羊肖恩3：青苔农场的怪兽 / 小羊肖恩：苔藓谷的野兽 / 超级无敌羊                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-10-26</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/donghuapian/29892.html#respond" title="《小羊肖恩3：怪兽来袭》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/donghuapian/" title="查看动画片中的全部文章" rel="category tag">动画片</a></span> 
     				</div>
                </div>
     		</li>
