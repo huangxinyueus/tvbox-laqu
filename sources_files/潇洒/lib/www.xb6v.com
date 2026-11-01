@@ -196,6 +196,16 @@ document.getElementById(obj).style.display="none";
             妈，我怀了外星宝宝            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/oumeiju/29925.html'>
+            诡术[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29924.html'>
+            血刃岛[全集]            </a></li>
+                    <li><a href='/dianshiju/rihanju/29843.html'>
+            Doctor X：白色黑手党时代            </a></li>
+                    <li><a href='/dianshiju/rihanju/29918.html'>
+            末路兼职[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/29804.html'>
+            璀璨之城            </a></li>
                     <li><a href='/dianshiju/guoju/29789.html'>
             伟大的长征            </a></li>
                     <li><a href='/dianshiju/guoju/29866.html'>
@@ -206,10 +216,6 @@ document.getElementById(obj).style.display="none";
             嫁金钗            </a></li>
                     <li><a href='/dianshiju/oumeiju/29926.html'>
             夜曲 第一季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29925.html'>
-            诡术[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29924.html'>
-            血刃岛[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/29692.html'>
             美国恐怖故事 第十三季全            </a></li>
                     <li><a href='/dianshiju/oumeiju/29824.html'>
@@ -230,14 +236,16 @@ document.getElementById(obj).style.display="none";
             邮票与舒芙蕾[全集]            </a></li>
                     <li><a href='/dianshiju/rihanju/29923.html'>
             韩剧[谎言]            </a></li>
-                    <li><a href='/dianshiju/rihanju/29922.html'>
-            不着边际的你            </a></li>
-                    <li><a href='/dianshiju/rihanju/29921.html'>
-            暑假            </a></li>
-                    <li><a href='/dianshiju/rihanju/29828.html'>
-            心动制造所            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/oumeiju/29925.html'>
+            诡术[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29924.html'>
+            血刃岛[全集]            </a></li>
+                    <li><a href='/dianshiju/rihanju/29918.html'>
+            末路兼职[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/29804.html'>
+            璀璨之城            </a></li>
                     <li><a href='/dianshiju/guoju/29789.html'>
             伟大的长征            </a></li>
                     <li><a href='/dianshiju/guoju/29866.html'>
@@ -252,10 +260,6 @@ document.getElementById(obj).style.display="none";
             戴高乐之战：我写下你的名字            </a></li>
                     <li><a href='/dianshiju/oumeiju/29926.html'>
             夜曲 第一季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29925.html'>
-            诡术[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29924.html'>
-            血刃岛[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/23576.html'>
             人生复本 第二季全            </a></li>
                     <li><a href='/dianshiju/guoju/29739.html'>
@@ -264,12 +268,8 @@ document.getElementById(obj).style.display="none";
             韩剧[谎言]            </a></li>
                     <li><a href='/dianshiju/rihanju/29763.html'>
             赤裸裸的人们            </a></li>
-                    <li><a href='/dianshiju/rihanju/29918.html'>
-            末路兼职[全集]            </a></li>
                     <li><a href='/donghuapian/13804.html'>
             凡人修仙传            </a></li>
-                    <li><a href='/dianshiju/guoju/29804.html'>
-            璀璨之城            </a></li>
                     <li><a href='/kongbupian/29916.html'>
             妈，我怀了外星宝宝            </a></li>
                     <li><a href='/kongbupian/29913.html'>
@@ -305,6 +305,106 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/29925.html" class="zoom" rel="bookmark" title="诡术[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4247.jpg" alt="诡术[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/29925.html" rel="bookmark" title="诡术[全集]">诡术[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　Dom de Iludir◎中 文 名:　诡术◎译　　名:　The Gift of Deceit / Um melodrama◎年　　代:　2026◎产　　地:　巴西◎类　　别:　剧情◎语　　言:　葡萄                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-01</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29925.html#respond" title="《诡术[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/29924.html" class="zoom" rel="bookmark" title="血刃岛[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4311.jpg" alt="血刃岛[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/29924.html" rel="bookmark" title="血刃岛[全集]">血刃岛[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　Balaraw◎中 文 名:　血刃岛◎译　　名:　Balaraw: Blood Island◎年　　代:　2026◎产　　地:　菲律宾◎类　　别:　悬疑 / 恐怖◎语　　言:　菲律宾语 Fil                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-01</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29924.html#respond" title="《血刃岛[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/rihanju/29918.html" class="zoom" rel="bookmark" title="末路兼职[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4298.jpg" alt="末路兼职[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/rihanju/29918.html" rel="bookmark" title="末路兼职[全集]">末路兼职[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp; &nbsp;◎中 文 名:　末路兼职◎译　　名:　Dead-End Job / Honey Jar Project / Perfect Job / 甜蜜打工 / 蜜罐计划 / 꿀단지 알바 프로젝트 / 꿀단지 프로젝트◎年　　代:　2                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-01</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/rihanju/29918.html#respond" title="《末路兼职[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/29804.html" class="zoom" rel="bookmark" title="璀璨之城">
+                            
+								<img src="https://tu.66tutup.com:667/2026/3930.jpg" alt="璀璨之城" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/29804.html" rel="bookmark" title="璀璨之城">璀璨之城</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　璀璨之城◎译　　名:　十月初五后传◎年　　代:　2026◎产　　地:　中国香港 / 中国大陆◎类　　别:　剧情◎语　　言:　粤语◎上映日期:　2026-10-12(中国                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-01</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29804.html#respond" title="《璀璨之城》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/dianshiju/guoju/29789.html" class="zoom" rel="bookmark" title="伟大的长征">
@@ -482,56 +582,6 @@ document.getElementById(obj).style.display="none";
     		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/29925.html" class="zoom" rel="bookmark" title="诡术[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4247.jpg" alt="诡术[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/29925.html" rel="bookmark" title="诡术[全集]">诡术[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　Dom de Iludir◎中 文 名:　诡术◎译　　名:　The Gift of Deceit / Um melodrama◎年　　代:　2026◎产　　地:　巴西◎类　　别:　剧情◎语　　言:　葡萄                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-10-31</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29925.html#respond" title="《诡术[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/29924.html" class="zoom" rel="bookmark" title="血刃岛[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4311.jpg" alt="血刃岛[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/29924.html" rel="bookmark" title="血刃岛[全集]">血刃岛[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　Balaraw◎中 文 名:　血刃岛◎译　　名:　Balaraw: Blood Island◎年　　代:　2026◎产　　地:　菲律宾◎类　　别:　悬疑 / 恐怖◎语　　言:　菲律宾语 Fil                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-10-31</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29924.html#respond" title="《血刃岛[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
                         <a href="/dianshiju/oumeiju/23576.html" class="zoom" rel="bookmark" title="人生复本 第二季全">
                             
 								<img src="https://www.haibao123.xyz/01/3503.jpg" alt="人生复本 第二季全" />                                  
@@ -632,31 +682,6 @@ document.getElementById(obj).style.display="none";
     		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dianshiju/rihanju/29918.html" class="zoom" rel="bookmark" title="末路兼职[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4298.jpg" alt="末路兼职[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/rihanju/29918.html" rel="bookmark" title="末路兼职[全集]">末路兼职[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp; &nbsp;◎中 文 名:　末路兼职◎译　　名:　Dead-End Job / Honey Jar Project / Perfect Job / 甜蜜打工 / 蜜罐计划 / 꿀단지 알바 프로젝트 / 꿀단지 프로젝트◎年　　代:　2                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-10-31</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/rihanju/29918.html#respond" title="《末路兼职[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
                         <a href="/donghuapian/13804.html" class="zoom" rel="bookmark" title="凡人修仙传">
                             
 								<img src="https://tu.66tutup.com:667/2025/1945.jpg" alt="凡人修仙传" />                                  
@@ -677,31 +702,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/donghuapian/13804.html#respond" title="《凡人修仙传》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/donghuapian/" title="查看动画片中的全部文章" rel="category tag">动画片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29804.html" class="zoom" rel="bookmark" title="璀璨之城">
-                            
-								<img src="https://tu.66tutup.com:667/2026/3930.jpg" alt="璀璨之城" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29804.html" rel="bookmark" title="璀璨之城">璀璨之城</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　璀璨之城◎译　　名:　十月初五后传◎年　　代:　2026◎产　　地:　中国香港 / 中国大陆◎类　　别:　剧情◎语　　言:　粤语◎上映日期:　2026-10-12(中国                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-10-30</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29804.html#respond" title="《璀璨之城》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
     				</div>
                </div>
     		</li><li class="post box row fixed-hight">
