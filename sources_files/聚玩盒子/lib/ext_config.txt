@@ -154,6 +154,8 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/donghuapian/21958.html'>
+            仙逆            </a></li>
                     <li><a href='/donghuapian/13804.html'>
             凡人修仙传            </a></li>
                     <li><a href='/donghuapian/29937.html'>
@@ -166,8 +168,6 @@ document.getElementById(obj).style.display="none";
             蛊降            </a></li>
                     <li><a href='/kongbupian/29933.html'>
             小丑回魂：德里故事            </a></li>
-                    <li><a href='/donghuapian/21958.html'>
-            仙逆            </a></li>
                     <li><a href='/donghuapian/24756.html'>
             牧神记            </a></li>
                     <li><a href='/donghuapian/29540.html'>

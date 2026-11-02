@@ -1,5 +1,5 @@
 {
-  "spider": "./lib/spider.jar;md5;efdab3edef534eb3d98706f0023a8676",
+  "spider": "./lib/spider.jar;md5;6a396033ae45efee57ba789f91d7123e",
   "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
   "wallpaper": "https://深色壁纸.xxooo.cf/",
   "logo": "http://w.junce.dpdns.org/fm.gif",
@@ -25,6 +25,32 @@
       "type": 3,
       "api": "csp_Config",
       "playerType": 2
+    },
+    {
+      "key": "PanMarket",
+      "name": "🐼┃网盘┃应用",
+      "type": 3,
+      "api": "csp_PanMarket",
+      "searchable": 0,
+      "style": {
+        "type": "list"
+      },
+      "ext": {
+        "categories": [
+          {
+            "name": "Fongmi影视",
+            "url": "https://pan.quark.cn/s/7129866d8655"
+          },
+          {
+            "name": "OK影视",
+            "url": "https://pan.quark.cn/s/cc286c991136"
+          },
+          {
+            "name": "Kazumi",
+            "url": "https://pan.quark.cn/s/e77ca870e15e"
+          }
+        ]
+      }
     },
     {
       "key": "alllive",
@@ -144,7 +170,7 @@
         "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
         "pkg": "com.mxj.wylcjbxyx",
         "host": "",
-        "site": "./lib/app.txt",
+        "site": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt",
         "version": "3.0.2.4",
         "decrypt": "1"
       }
