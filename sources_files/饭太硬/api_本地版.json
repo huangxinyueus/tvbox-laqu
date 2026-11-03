@@ -1,10 +1,10 @@
 {
-  "spider": "./lib/spider.jar;md5;d2a33b53d09ec59c4cb7e3f482ef3907",
+  "spider": "./lib/spider.jar;md5;e6c78bbbd60e50f611c9aac6ff273fd8",
   "wallpaper": "https://动态壁纸.饭.eu.org/",
   "sites": [
     {
       "key": "点我切源",
-      "name": "豆豆┃片单<修复所有>",
+      "name": "豆豆┃片单",
       "type": 3,
       "api": "csp_DouDouGuard",
       "indexs": 1,
@@ -427,7 +427,7 @@
       "quickSearch": 0,
       "changeable": 0,
       "ext": {
-        "siteUrl": "./lib/siteUrl.txt"
+        "siteUrl": "https://so.252035.xyz/"
       },
       "indexs": 0,
       "style": {
