@@ -154,6 +154,22 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/donghuapian/20280.html'>
+            师兄啊师兄/我师兄实在太稳健了            </a></li>
+                    <li><a href='/donghuapian/29600.html'>
+            灵境行者            </a></li>
+                    <li><a href='/donghuapian/29402.html'>
+            李熊猫            </a></li>
+                    <li><a href='/dongzuopian/29949.html'>
+            巨蟒博尤纳            </a></li>
+                    <li><a href='/dongzuopian/29948.html'>
+            为了你的母亲            </a></li>
+                    <li><a href='/kongbupian/29947.html'>
+            恶灵缪斯            </a></li>
+                    <li><a href='/kongbupian/29946.html'>
+            孽种            </a></li>
+                    <li><a href='/aiqingpian/29945.html'>
+            查理与哈珀            </a></li>
                     <li><a href='/donghuapian/20991.html'>
             遮天 动画版            </a></li>
                     <li><a href='/donghuapian/15179.html'>
@@ -178,42 +194,28 @@ document.getElementById(obj).style.display="none";
             吞噬星空            </a></li>
                     <li><a href='/donghuapian/21958.html'>
             仙逆            </a></li>
-                    <li><a href='/donghuapian/13804.html'>
-            凡人修仙传            </a></li>
-                    <li><a href='/donghuapian/29937.html'>
-            宝莲灯凡心问天            </a></li>
-                    <li><a href='/xijupian/29936.html'>
-            疯狂舞蹈办公室            </a></li>
-                    <li><a href='/juqingpian/29935.html'>
-            碟仙怪谈            </a></li>
-                    <li><a href='/kongbupian/29934.html'>
-            蛊降            </a></li>
-                    <li><a href='/kongbupian/29933.html'>
-            小丑回魂：德里故事            </a></li>
-                    <li><a href='/donghuapian/24756.html'>
-            牧神记            </a></li>
-                    <li><a href='/donghuapian/29540.html'>
-            财神窦占龙            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/guoju/29871.html'>
+            尚公主            </a></li>
+                    <li><a href='/dianshiju/guoju/29943.html'>
+            鉴定            </a></li>
+                    <li><a href='/dianshiju/guoju/29944.html'>
+            走马上任            </a></li>
+                    <li><a href='/dianshiju/guoju/29938.html'>
+            北境往事            </a></li>
+                    <li><a href='/dianshiju/guoju/29789.html'>
+            伟大的长征            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29817.html'>
+            幻视任务 第一季            </a></li>
                     <li><a href='/dianshiju/guoju/29803.html'>
             玉簟秋[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29866.html'>
             小城良方[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29804.html'>
             璀璨之城            </a></li>
-                    <li><a href='/dianshiju/guoju/29944.html'>
-            走马上任            </a></li>
-                    <li><a href='/dianshiju/guoju/29789.html'>
-            伟大的长征            </a></li>
-                    <li><a href='/dianshiju/guoju/29871.html'>
-            尚公主            </a></li>
                     <li><a href='/dianshiju/guoju/29835.html'>
             嫁金钗[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29943.html'>
-            鉴定            </a></li>
-                    <li><a href='/dianshiju/guoju/29938.html'>
-            北境往事            </a></li>
                     <li><a href='/dianshiju/oumeiju/29925.html'>
             诡术[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/29924.html'>
@@ -234,26 +236,26 @@ document.getElementById(obj).style.display="none";
             毒潮：白粉飞纪事 第一季全            </a></li>
                     <li><a href='/dianshiju/oumeiju/25833.html'>
             黑帮领地 第二季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29691.html'>
-            无间兄弟情 第一季            </a></li>
                   </ul>
         <ul class="hide">
-                    <li><a href='/dianshiju/guoju/29803.html'>
-            玉簟秋[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29866.html'>
-            小城良方[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29804.html'>
-            璀璨之城            </a></li>
-                    <li><a href='/dianshiju/guoju/29944.html'>
-            走马上任            </a></li>
-                    <li><a href='/dianshiju/guoju/29789.html'>
-            伟大的长征            </a></li>
-                    <li><a href='/dianshiju/guoju/29835.html'>
-            嫁金钗[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29943.html'>
             鉴定            </a></li>
+                    <li><a href='/dianshiju/guoju/29944.html'>
+            走马上任            </a></li>
                     <li><a href='/dianshiju/guoju/29938.html'>
             北境往事            </a></li>
+                    <li><a href='/dianshiju/guoju/29789.html'>
+            伟大的长征            </a></li>
+                    <li><a href='/dongzuopian/29949.html'>
+            巨蟒博尤纳            </a></li>
+                    <li><a href='/dongzuopian/29948.html'>
+            为了你的母亲            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29817.html'>
+            幻视任务 第一季            </a></li>
+                    <li><a href='/dianshiju/guoju/29804.html'>
+            璀璨之城            </a></li>
+                    <li><a href='/dianshiju/guoju/29835.html'>
+            嫁金钗[全集]            </a></li>
                     <li><a href='/kongbupian/29649.html'>
             生化危机：爆发夜            </a></li>
                     <li><a href='/kehuanpian/29424.html'>
@@ -274,8 +276,6 @@ document.getElementById(obj).style.display="none";
             血刃岛[全集]            </a></li>
                     <li><a href='/dianshiju/rihanju/29918.html'>
             末路兼职[全集]            </a></li>
-                    <li><a href='/dongzuopian/29932.html'>
-            失控撞劫            </a></li>
                     <li><a href='/juqingpian/29920.html'>
             天启Z：新世界            </a></li>
                   </ul>
@@ -307,51 +307,176 @@ document.getElementById(obj).style.display="none";
 							<li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29803.html" class="zoom" rel="bookmark" title="玉簟秋[全集]">
+                        <a href="/dianshiju/guoju/29943.html" class="zoom" rel="bookmark" title="鉴定">
                             
-								<img src="https://tu.66tutup.com:667/2026/3920.jpg" alt="玉簟秋[全集]" />                                  
+								<img src="https://img.dytt-tupian.com/upload/vod/20261101-1/3ce04b944f18ae74b1ea520bdb6fe2a4.webp" alt="鉴定" />                                  
                         </a>
                     </div>
                     <div class="article">
-                        <h2><a href="/dianshiju/guoju/29803.html" rel="bookmark" title="玉簟秋[全集]">玉簟秋[全集]</a></h2>
+                        <h2><a href="/dianshiju/guoju/29943.html" rel="bookmark" title="鉴定">鉴定</a></h2>
                                                      <div class="entry_post">
                                 <p>
                                 
-&nbsp;&nbsp;◎片　　名:　玉簟秋◎译　　名:　The Lament of Autumn◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 爱情◎语　　言:　汉语普通话◎上映日期:　2026-10-                            </p>
+&nbsp;&nbsp;◎片　　名:　鉴定◎译　　名:　Notes of DNA Appraiser◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　悬疑 / 家庭◎语　　言:　汉语普通话◎上映日期:　2026-11-                            </p>
                             </div>
                                                 
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-11-04</span>
+                        <span class="info_date info_ico">2026-11-05</span>
                     	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29803.html#respond" title="《玉簟秋[全集]》上的评论">评论</a></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29943.html#respond" title="《鉴定》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
     				</div>
                </div>
     		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29866.html" class="zoom" rel="bookmark" title="小城良方[全集]">
+                        <a href="/dianshiju/guoju/29944.html" class="zoom" rel="bookmark" title="走马上任">
                             
-								<img src="https://tu.66tutup.com:667/2026/4113.jpg" alt="小城良方[全集]" />                                  
+								<img src="https://tu.66tutup.com:667/2026/4360.jpg" alt="走马上任" />                                  
                         </a>
                     </div>
                     <div class="article">
-                        <h2><a href="/dianshiju/guoju/29866.html" rel="bookmark" title="小城良方[全集]">小城良方[全集]</a></h2>
+                        <h2><a href="/dianshiju/guoju/29944.html" rel="bookmark" title="走马上任">走马上任</a></h2>
                                                      <div class="entry_post">
                                 <p>
                                 
-&nbsp;&nbsp;◎片　　名:　小城良方◎译　　名:　刘医生返乡记 / 飞刀◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情◎语　　言:　汉语普通话◎上映日期:　2026-10-21(中                            </p>
+&nbsp;&nbsp;◎片　　名:　走马上任◎译　　名:　小五当官之走马上任◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 喜剧◎语　　言:　汉语普通话◎上映日期:　2026-11-                            </p>
                             </div>
                                                 
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-11-04</span>
+                        <span class="info_date info_ico">2026-11-05</span>
                     	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29866.html#respond" title="《小城良方[全集]》上的评论">评论</a></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29944.html#respond" title="《走马上任》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/29938.html" class="zoom" rel="bookmark" title="北境往事">
+                            
+								<img src="https://img.dytt-tupian.com/upload/vod/20261030-1/312a0641d26804a8ddab874c1dd4762c.webp" alt="北境往事" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/29938.html" rel="bookmark" title="北境往事">北境往事</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　北境往事◎译　　名:　黑道悲情◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 短片 / 冒险◎语　　言:　汉语普通话◎上映日期:　2026-10-30(                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-05</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29938.html#respond" title="《北境往事》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/29789.html" class="zoom" rel="bookmark" title="伟大的长征">
+                            
+								<img src="https://tu.66tutup.com:667/2026/3868.jpg" alt="伟大的长征" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/29789.html" rel="bookmark" title="伟大的长征">伟大的长征</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　伟大的长征◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 历史 / 战争◎语　　言:　汉语普通话◎上映日期:　2026-10-09(中国大陆)◎IMDb评分                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-05</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29789.html#respond" title="《伟大的长征》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/29949.html" class="zoom" rel="bookmark" title="巨蟒博尤纳">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4377.jpg" alt="巨蟒博尤纳" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/29949.html" rel="bookmark" title="巨蟒博尤纳">巨蟒博尤纳</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　Beware Boi&amp;amp;uacute;na◎中 文 名:　巨蟒博尤纳◎译　　名:　Boi&amp;amp;uacute;na: Legend of the Amazon / Titan◎年　　代:　2026◎产　　地:　美国 / 德国◎类                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-05</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/29949.html#respond" title="《巨蟒博尤纳》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/29948.html" class="zoom" rel="bookmark" title="为了你的母亲">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4376.jpg" alt="为了你的母亲" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/29948.html" rel="bookmark" title="为了你的母亲">为了你的母亲</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　Your Mother Your Mother Your Mother◎中 文 名:　为了你的母亲◎译　　名:　你的母亲，你的母亲，你的母亲◎年　　代:　2026◎产　　地:　英国 / 美国◎类　                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-05</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/29948.html#respond" title="《为了你的母亲》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/29817.html" class="zoom" rel="bookmark" title="幻视任务 第一季">
+                            
+								<img src="https://tu.66tutup.com:667/2026/3968.jpg" alt="幻视任务 第一季" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/29817.html" rel="bookmark" title="幻视任务 第一季">幻视任务 第一季</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　VisionQuest◎中 文 名:　幻视任务◎译　　名:　Vision Quest / 幻视征途(港) / 幻视探索 / 幻视追寻 / 旺达幻视衍生剧◎年　　代:　2026◎产　　地:　美国                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-05</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29817.html#respond" title="《幻视任务 第一季》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
     				</div>
                </div>
     		</li><li class="post box row fixed-hight">
@@ -382,56 +507,6 @@ document.getElementById(obj).style.display="none";
     		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29944.html" class="zoom" rel="bookmark" title="走马上任">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4360.jpg" alt="走马上任" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29944.html" rel="bookmark" title="走马上任">走马上任</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　走马上任◎译　　名:　小五当官之走马上任◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 喜剧◎语　　言:　汉语普通话◎上映日期:　2026-11-                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-03</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29944.html#respond" title="《走马上任》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29789.html" class="zoom" rel="bookmark" title="伟大的长征">
-                            
-								<img src="https://tu.66tutup.com:667/2026/3868.jpg" alt="伟大的长征" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29789.html" rel="bookmark" title="伟大的长征">伟大的长征</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　伟大的长征◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 历史 / 战争◎语　　言:　汉语普通话◎上映日期:　2026-10-09(中国大陆)◎IMDb评分                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-03</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29789.html#respond" title="《伟大的长征》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
                         <a href="/dianshiju/guoju/29835.html" class="zoom" rel="bookmark" title="嫁金钗[全集]">
                             
 								<img src="https://tu.66tutup.com:667/2026/3995.jpg" alt="嫁金钗[全集]" />                                  
@@ -451,56 +526,6 @@ document.getElementById(obj).style.display="none";
                         <span class="info_date info_ico">2026-11-03</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/29835.html#respond" title="《嫁金钗[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29943.html" class="zoom" rel="bookmark" title="鉴定">
-                            
-								<img src="https://img.dytt-tupian.com/upload/vod/20261101-1/3ce04b944f18ae74b1ea520bdb6fe2a4.webp" alt="鉴定" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29943.html" rel="bookmark" title="鉴定">鉴定</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　鉴定◎译　　名:　Notes of DNA Appraiser◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　悬疑 / 家庭◎语　　言:　汉语普通话◎上映日期:　2026-11-                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-03</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29943.html#respond" title="《鉴定》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29938.html" class="zoom" rel="bookmark" title="北境往事">
-                            
-								<img src="https://img.dytt-tupian.com/upload/vod/20261030-1/312a0641d26804a8ddab874c1dd4762c.webp" alt="北境往事" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29938.html" rel="bookmark" title="北境往事">北境往事</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　北境往事◎译　　名:　黑道悲情◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 短片 / 冒险◎语　　言:　汉语普通话◎上映日期:　2026-10-30(                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-03</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29938.html#respond" title="《北境往事》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
     				</div>
                </div>
@@ -727,31 +752,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29924.html#respond" title="《血刃岛[全集]》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/rihanju/29918.html" class="zoom" rel="bookmark" title="末路兼职[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4298.jpg" alt="末路兼职[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/rihanju/29918.html" rel="bookmark" title="末路兼职[全集]">末路兼职[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp; &nbsp;◎中 文 名:　末路兼职◎译　　名:　Dead-End Job / Honey Jar Project / Perfect Job / 甜蜜打工 / 蜜罐计划 / 꿀단지 알바 프로젝트 / 꿀단지 프로젝트◎年　　代:　2                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-01</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/rihanju/29918.html#respond" title="《末路兼职[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
     				</div>
                </div>
     		</li>

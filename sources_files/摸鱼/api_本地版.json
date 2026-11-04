@@ -1093,7 +1093,7 @@
       "api": "csp_TingBook",
       "searchable": 1,
       "indexs": 0,
-      "ext": "./lib/app.365ting.com",
+      "ext": "https://app.365ting.com",
       "style": {
         "type": "list"
       }
