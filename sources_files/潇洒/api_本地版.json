@@ -812,7 +812,7 @@
       "name": "枫叶 • 影视",
       "type": 3,
       "api": "csp_FengYe",
-      "ext": "https://www.vip1949.com/"
+      "ext": "./lib/ext_config.txt"
     },
     {
       "key": "爱看机器人",
