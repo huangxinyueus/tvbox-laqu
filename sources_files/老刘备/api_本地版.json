@@ -868,7 +868,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "https://www.gsjtlxy.top/xgapp.php/v3/"
+      "ext": "./lib/ext_config.txt"
     },
     {
       "key": "圣城影视",
