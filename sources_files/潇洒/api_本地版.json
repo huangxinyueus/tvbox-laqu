@@ -203,7 +203,7 @@
         "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
         "pkg": "com.muyue.tool",
         "host": "",
-        "site": "./lib/az5.txt",
+        "site": "https://vip.123pan.cn/1851089669/oss/az5.txt",
         "version": "1.0.0.4",
         "decrypt": "1"
       }
@@ -805,7 +805,7 @@
       "name": "农民 • 影视",
       "type": 3,
       "api": "csp_Wwys",
-      "ext": "https://vip.wwgz.cn:5200"
+      "ext": "./lib/vip.wwgz.cn:5200"
     },
     {
       "key": "枫叶影视",
