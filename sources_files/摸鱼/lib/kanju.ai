@@ -45,16 +45,16 @@
     <meta name="twitter:image" content="/assets/app-icon-512.png?v=20260819-kanju" />
     <title>看剧AI - KANJU.AI</title>
     <script src="/app-bootstrap.js"></script>
-    <script type="module" crossorigin src="/assets/main-Cr_IKu2H.js"></script>
+    <script type="module" crossorigin src="/assets/main-3H4ZSkip.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vite-runtime-mxn4OsD4.js">
     <link rel="modulepreload" crossorigin href="/assets/react-vendor-P5XnYvWb.js">
     <link rel="modulepreload" crossorigin href="/assets/native-environment-ChodKNAD.js">
-    <link rel="modulepreload" crossorigin href="/assets/movie-card-runtime-7gs2Ny3g.js">
+    <link rel="modulepreload" crossorigin href="/assets/movie-card-runtime-z-PWzGSL.js">
     <link rel="modulepreload" crossorigin href="/assets/navigation-runtime-Dw-8DVQD.js">
     <link rel="modulepreload" crossorigin href="/assets/radix-ui-BE1Q6vTN.js">
-    <link rel="modulepreload" crossorigin href="/assets/icons-BXguogWd.js">
-    <link rel="modulepreload" crossorigin href="/assets/assistant-ui-primitives-RefRnAjV.js">
-    <link rel="stylesheet" crossorigin href="/assets/main-B34LE_H-.css">
+    <link rel="modulepreload" crossorigin href="/assets/icons-B6cJTgMu.js">
+    <link rel="modulepreload" crossorigin href="/assets/assistant-ui-primitives-DalFKjZn.js">
+    <link rel="stylesheet" crossorigin href="/assets/main-C_7grv6_.css">
   </head>
   <body>
     <div id="root"></div>

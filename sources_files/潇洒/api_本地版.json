@@ -805,14 +805,14 @@
       "name": "农民 • 影视",
       "type": 3,
       "api": "csp_Wwys",
-      "ext": "./lib/vip.wwgz.cn:5200"
+      "ext": "https://vip.wwgz.cn:5200"
     },
     {
       "key": "枫叶影视",
       "name": "枫叶 • 影视",
       "type": 3,
       "api": "csp_FengYe",
-      "ext": "https://www.vip1949.com/"
+      "ext": "./lib/ext_config.txt"
     },
     {
       "key": "爱看机器人",
