@@ -112,7 +112,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "./lib/ext_config.txt"
+      "ext": "https://auete.pro/"
     },
     {
       "key": "csp_MLYS",

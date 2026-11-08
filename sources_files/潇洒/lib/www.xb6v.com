@@ -154,6 +154,24 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/donghuapian/21958.html'>
+            仙逆            </a></li>
+                    <li><a href='/donghuapian/24756.html'>
+            牧神记            </a></li>
+                    <li><a href='/donghuapian/29966.html'>
+            糯糯下山，师兄们都慌了 第1-5季            </a></li>
+                    <li><a href='/kehuanpian/29965.html'>
+            模范公民            </a></li>
+                    <li><a href='/dongzuopian/29964.html'>
+            巨蛇闯体校            </a></li>
+                    <li><a href='/aiqingpian/29963.html'>
+            我想留在你身边            </a></li>
+                    <li><a href='/juqingpian/29962.html'>
+            勿信楼上人            </a></li>
+                    <li><a href='/juqingpian/29961.html'>
+            目不转睛            </a></li>
+                    <li><a href='/juqingpian/29960.html'>
+            诗人普希金            </a></li>
                     <li><a href='/dongzuopian/29599.html'>
             奥德赛 诺兰版            </a></li>
                     <li><a href='/donghuapian/17003.html'>
@@ -176,40 +194,22 @@ document.getElementById(obj).style.display="none";
             八仙！            </a></li>
                     <li><a href='/donghuapian/21341.html'>
             斗罗大陆2：绝世唐门            </a></li>
-                    <li><a href='/donghuapian/21328.html'>
-            沧元图 第三季            </a></li>
-                    <li><a href='/donghuapian/21959.html'>
-            大主宰年番            </a></li>
-                    <li><a href='/donghuapian/18878.html'>
-            诛仙动画[第四季]            </a></li>
-                    <li><a href='/donghuapian/23320.html'>
-            逆天邪神[第二季]            </a></li>
-                    <li><a href='/juqingpian/29955.html'>
-            血债双偿            </a></li>
-                    <li><a href='/juqingpian/28597.html'>
-            无名之町            </a></li>
-                    <li><a href='/juqingpian/29954.html'>
-            遇见世界            </a></li>
-                    <li><a href='/aiqingpian/29953.html'>
-            竹篱笆外的春天            </a></li>
-                    <li><a href='/xijupian/29952.html'>
-            熟龄闺蜜出走记            </a></li>
                   </ul>
         <ul class="hide">
                     <li><a href='/dianshiju/guoju/29956.html'>
             玫瑰战争            </a></li>
-                    <li><a href='/dianshiju/guoju/29938.html'>
-            北境往事[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/29958.html'>
+            折月亮            </a></li>
                     <li><a href='/dianshiju/guoju/29944.html'>
             走马上任            </a></li>
                     <li><a href='/dianshiju/guoju/29943.html'>
             鉴定            </a></li>
-                    <li><a href='/dianshiju/guoju/29958.html'>
-            折月亮            </a></li>
                     <li><a href='/dianshiju/guoju/29957.html'>
             谷雨            </a></li>
                     <li><a href='/dianshiju/guoju/29871.html'>
             尚公主            </a></li>
+                    <li><a href='/dianshiju/guoju/29938.html'>
+            北境往事[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29789.html'>
             伟大的长征            </a></li>
                     <li><a href='/dianshiju/guoju/29804.html'>
@@ -238,14 +238,18 @@ document.getElementById(obj).style.display="none";
             独家黑幕 第二季            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/guoju/29944.html'>
+            走马上任            </a></li>
+                    <li><a href='/kehuanpian/29965.html'>
+            模范公民            </a></li>
+                    <li><a href='/dongzuopian/29964.html'>
+            巨蛇闯体校            </a></li>
+                    <li><a href='/juqingpian/29960.html'>
+            诗人普希金            </a></li>
                     <li><a href='/dongzuopian/29599.html'>
             奥德赛 诺兰版            </a></li>
                     <li><a href='/dianshiju/guoju/29938.html'>
             北境往事[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29944.html'>
-            走马上任            </a></li>
-                    <li><a href='/dianshiju/guoju/29943.html'>
-            鉴定            </a></li>
                     <li><a href='/dianshiju/guoju/29789.html'>
             伟大的长征            </a></li>
                     <li><a href='/donghuapian/13804.html'>
@@ -274,10 +278,6 @@ document.getElementById(obj).style.display="none";
             逃出绝命街            </a></li>
                     <li><a href='/juqingpian/29942.html'>
             爸爸2026            </a></li>
-                    <li><a href='/juqingpian/29940.html'>
-            禁闭洗手间            </a></li>
-                    <li><a href='/donghuapian/29937.html'>
-            宝莲灯凡心问天            </a></li>
                   </ul>
       </div>
     </div>
@@ -305,6 +305,106 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/29944.html" class="zoom" rel="bookmark" title="走马上任">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4360.jpg" alt="走马上任" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/29944.html" rel="bookmark" title="走马上任">走马上任</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　走马上任◎译　　名:　小五当官之走马上任◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 喜剧◎语　　言:　汉语普通话◎上映日期:　2026-11-                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-08</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29944.html#respond" title="《走马上任》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/kehuanpian/29965.html" class="zoom" rel="bookmark" title="模范公民">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4413.jpg" alt="模范公民" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/kehuanpian/29965.html" rel="bookmark" title="模范公民">模范公民</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　Model Citizen◎中 文 名:　模范公民◎年　　代:　2026◎产　　地:　英国 / 加拿大◎类　　别:　科幻 / 惊悚 / 犯罪◎语　　言:　英语◎上映日期:　2026-11                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-08</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/kehuanpian/29965.html#respond" title="《模范公民》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/kehuanpian/" title="查看科幻片中的全部文章" rel="category tag">科幻片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/29964.html" class="zoom" rel="bookmark" title="巨蛇闯体校">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4414.jpg" alt="巨蛇闯体校" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/29964.html" rel="bookmark" title="巨蛇闯体校">巨蛇闯体校</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　巨蛇闯体校◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 灾难◎语　　言:　汉语普通话◎上映日期:　2026-11-04(中国大陆网络)◎豆瓣评分:　                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-08</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/29964.html#respond" title="《巨蛇闯体校》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/juqingpian/29960.html" class="zoom" rel="bookmark" title="诗人普希金">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4411.jpg" alt="诗人普希金" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/juqingpian/29960.html" rel="bookmark" title="诗人普希金">诗人普希金</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　Пророк. История Александра Пушкина◎中 文 名:　诗人普希金◎译　　名:　Prorok. Istoriya Aleksandra Pushkina / The Po                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-08</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/juqingpian/29960.html#respond" title="《诗人普希金》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/dongzuopian/29599.html" class="zoom" rel="bookmark" title="奥德赛 诺兰版">
@@ -351,56 +451,6 @@ document.getElementById(obj).style.display="none";
                         <span class="info_date info_ico">2026-11-07</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/29938.html#respond" title="《北境往事[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29944.html" class="zoom" rel="bookmark" title="走马上任">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4360.jpg" alt="走马上任" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29944.html" rel="bookmark" title="走马上任">走马上任</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　走马上任◎译　　名:　小五当官之走马上任◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 喜剧◎语　　言:　汉语普通话◎上映日期:　2026-11-                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-07</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29944.html#respond" title="《走马上任》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29943.html" class="zoom" rel="bookmark" title="鉴定">
-                            
-								<img src="https://img.dytt-tupian.com/upload/vod/20261101-1/3ce04b944f18ae74b1ea520bdb6fe2a4.webp" alt="鉴定" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29943.html" rel="bookmark" title="鉴定">鉴定</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　鉴定◎译　　名:　Notes of DNA Appraiser◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　悬疑 / 家庭◎语　　言:　汉语普通话◎上映日期:　2026-11-                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-07</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29943.html#respond" title="《鉴定》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
     				</div>
                </div>
@@ -702,56 +752,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/kongbupian/29649.html#respond" title="《生化危机：爆发夜》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/kongbupian/" title="查看恐怖片中的全部文章" rel="category tag">恐怖片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/kehuanpian/29424.html" class="zoom" rel="bookmark" title="逃出绝命街">
-                            
-								<img src="https://tu.66tutup.com:667/2026/2863.jpg" alt="逃出绝命街" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/kehuanpian/29424.html" rel="bookmark" title="逃出绝命街">逃出绝命街</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　The End of Oak Street◎中 文 名:　逃出绝命街◎译　　名:　Flowervale St / Flowervale Street&amp;amp;lrm; / 末世橡树街(港) / 橡树街末日(台) / 橡树街的尽头                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-02</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/kehuanpian/29424.html#respond" title="《逃出绝命街》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/kehuanpian/" title="查看科幻片中的全部文章" rel="category tag">科幻片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/juqingpian/29942.html" class="zoom" rel="bookmark" title="爸爸2026">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4357.jpg" alt="爸爸2026" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/juqingpian/29942.html" rel="bookmark" title="爸爸2026">爸爸2026</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　爸爸◎译　　名:　Papa◎年　　代:　2024◎产　　地:　中国香港◎类　　别:　剧情◎语　　言:　粤语 / 客家话◎上映日期:　2024-10-31(东京国际电影节) / 2                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-02</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/juqingpian/29942.html#respond" title="《爸爸2026》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
     				</div>
                </div>
     		</li>
