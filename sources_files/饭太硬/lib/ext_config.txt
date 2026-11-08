@@ -154,10 +154,10 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
-                    <li><a href='/donghuapian/17003.html'>
-            斗破苍穹 第5季            </a></li>
                     <li><a href='/dongzuopian/29599.html'>
             奥德赛 诺兰版            </a></li>
+                    <li><a href='/donghuapian/17003.html'>
+            斗破苍穹 第5季            </a></li>
                     <li><a href='/donghuapian/17788.html'>
             大王饶命[第三季]            </a></li>
                     <li><a href='/donghuapian/29199.html'>
@@ -238,6 +238,8 @@ document.getElementById(obj).style.display="none";
             独家黑幕 第二季            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dongzuopian/29599.html'>
+            奥德赛 诺兰版            </a></li>
                     <li><a href='/dianshiju/guoju/29938.html'>
             北境往事[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29944.html'>
@@ -246,8 +248,6 @@ document.getElementById(obj).style.display="none";
             鉴定            </a></li>
                     <li><a href='/dianshiju/guoju/29789.html'>
             伟大的长征            </a></li>
-                    <li><a href='/dongzuopian/29599.html'>
-            奥德赛 诺兰版            </a></li>
                     <li><a href='/donghuapian/13804.html'>
             凡人修仙传            </a></li>
                     <li><a href='/aiqingpian/29959.html'>
@@ -305,6 +305,31 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/29599.html" class="zoom" rel="bookmark" title="奥德赛 诺兰版">
+                            
+								<img src="https://tu.66tutup.com:667/2026/2996.jpg" alt="奥德赛 诺兰版" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/29599.html" rel="bookmark" title="奥德赛 诺兰版">奥德赛 诺兰版</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　The Odyssey◎中 文 名:　奥德赛◎年　　代:　2026◎产　　地:　美国 / 加拿大 / 冰岛 / 新西兰 / 摩洛哥 / 英国◎类　　别:　动作 / 历史 / 奇幻 / 冒险◎                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-08</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/29599.html#respond" title="《奥德赛 诺兰版》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/dianshiju/guoju/29938.html" class="zoom" rel="bookmark" title="北境往事[全集]">
@@ -402,31 +427,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/29789.html#respond" title="《伟大的长征》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dongzuopian/29599.html" class="zoom" rel="bookmark" title="奥德赛 诺兰版">
-                            
-								<img src="https://tu.66tutup.com:667/2026/2996.jpg" alt="奥德赛 诺兰版" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/29599.html" rel="bookmark" title="奥德赛 诺兰版">奥德赛 诺兰版</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　The Odyssey◎中 文 名:　奥德赛◎年　　代:　2026◎产　　地:　美国 / 加拿大 / 冰岛 / 新西兰 / 摩洛哥 / 英国◎类　　别:　动作 / 历史 / 奇幻 / 冒险◎                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-07</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/29599.html#respond" title="《奥德赛 诺兰版》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
     				</div>
                </div>
     		</li><li class="post box row fixed-hight">
