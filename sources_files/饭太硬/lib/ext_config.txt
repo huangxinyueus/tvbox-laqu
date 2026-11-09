@@ -154,6 +154,16 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/dongzuopian/29599.html'>
+            奥德赛 诺兰版            </a></li>
+                    <li><a href='/donghuapian/29540.html'>
+            财神窦占龙            </a></li>
+                    <li><a href='/donghuapian/29270.html'>
+            一斩苍穹            </a></li>
+                    <li><a href='/donghuapian/14764.html'>
+            吞噬星空            </a></li>
+                    <li><a href='/aiqingpian/29963.html'>
+            我想留在你身边            </a></li>
                     <li><a href='/donghuapian/21958.html'>
             仙逆            </a></li>
                     <li><a href='/donghuapian/24756.html'>
@@ -164,16 +174,12 @@ document.getElementById(obj).style.display="none";
             模范公民            </a></li>
                     <li><a href='/dongzuopian/29964.html'>
             巨蛇闯体校            </a></li>
-                    <li><a href='/aiqingpian/29963.html'>
-            我想留在你身边            </a></li>
                     <li><a href='/juqingpian/29962.html'>
             勿信楼上人            </a></li>
                     <li><a href='/juqingpian/29961.html'>
             目不转睛            </a></li>
                     <li><a href='/juqingpian/29960.html'>
             诗人普希金            </a></li>
-                    <li><a href='/dongzuopian/29599.html'>
-            奥德赛 诺兰版            </a></li>
                     <li><a href='/donghuapian/17003.html'>
             斗破苍穹 第5季            </a></li>
                     <li><a href='/donghuapian/17788.html'>
@@ -188,30 +194,24 @@ document.getElementById(obj).style.display="none";
             东大高武学院            </a></li>
                     <li><a href='/aiqingpian/29959.html'>
             可能的爱            </a></li>
-                    <li><a href='/dongzuopian/29873.html'>
-            野兽之心            </a></li>
-                    <li><a href='/donghuapian/29508.html'>
-            八仙！            </a></li>
-                    <li><a href='/donghuapian/21341.html'>
-            斗罗大陆2：绝世唐门            </a></li>
                   </ul>
         <ul class="hide">
                     <li><a href='/dianshiju/guoju/29956.html'>
             玫瑰战争            </a></li>
-                    <li><a href='/dianshiju/guoju/29958.html'>
-            折月亮            </a></li>
+                    <li><a href='/dianshiju/guoju/29871.html'>
+            尚公主            </a></li>
                     <li><a href='/dianshiju/guoju/29944.html'>
             走马上任            </a></li>
                     <li><a href='/dianshiju/guoju/29943.html'>
             鉴定            </a></li>
+                    <li><a href='/dianshiju/guoju/29958.html'>
+            折月亮            </a></li>
                     <li><a href='/dianshiju/guoju/29957.html'>
             谷雨            </a></li>
-                    <li><a href='/dianshiju/guoju/29871.html'>
-            尚公主            </a></li>
-                    <li><a href='/dianshiju/guoju/29938.html'>
-            北境往事[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29789.html'>
             伟大的长征            </a></li>
+                    <li><a href='/dianshiju/guoju/29938.html'>
+            北境往事[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29804.html'>
             璀璨之城[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/29817.html'>
@@ -238,20 +238,20 @@ document.getElementById(obj).style.display="none";
             独家黑幕 第二季            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dongzuopian/29599.html'>
+            奥德赛 诺兰版            </a></li>
                     <li><a href='/dianshiju/guoju/29944.html'>
             走马上任            </a></li>
+                    <li><a href='/dianshiju/guoju/29789.html'>
+            伟大的长征            </a></li>
                     <li><a href='/kehuanpian/29965.html'>
             模范公民            </a></li>
                     <li><a href='/dongzuopian/29964.html'>
             巨蛇闯体校            </a></li>
                     <li><a href='/juqingpian/29960.html'>
             诗人普希金            </a></li>
-                    <li><a href='/dongzuopian/29599.html'>
-            奥德赛 诺兰版            </a></li>
                     <li><a href='/dianshiju/guoju/29938.html'>
             北境往事[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29789.html'>
-            伟大的长征            </a></li>
                     <li><a href='/donghuapian/13804.html'>
             凡人修仙传            </a></li>
                     <li><a href='/aiqingpian/29959.html'>
@@ -307,6 +307,31 @@ document.getElementById(obj).style.display="none";
 							<li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
+                        <a href="/dongzuopian/29599.html" class="zoom" rel="bookmark" title="奥德赛 诺兰版">
+                            
+								<img src="https://tu.66tutup.com:667/2026/2996.jpg" alt="奥德赛 诺兰版" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/29599.html" rel="bookmark" title="奥德赛 诺兰版">奥德赛 诺兰版</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　The Odyssey◎中 文 名:　奥德赛◎年　　代:　2026◎产　　地:　美国 / 加拿大 / 冰岛 / 新西兰 / 摩洛哥 / 英国◎类　　别:　动作 / 历史 / 奇幻 / 冒险◎                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-10</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/29599.html#respond" title="《奥德赛 诺兰版》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
                         <a href="/dianshiju/guoju/29944.html" class="zoom" rel="bookmark" title="走马上任">
                             
 								<img src="https://tu.66tutup.com:667/2026/4360.jpg" alt="走马上任" />                                  
@@ -323,9 +348,34 @@ document.getElementById(obj).style.display="none";
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-11-08</span>
+                        <span class="info_date info_ico">2026-11-10</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/29944.html#respond" title="《走马上任》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/29789.html" class="zoom" rel="bookmark" title="伟大的长征">
+                            
+								<img src="https://tu.66tutup.com:667/2026/3868.jpg" alt="伟大的长征" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/29789.html" rel="bookmark" title="伟大的长征">伟大的长征</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　伟大的长征◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 历史 / 战争◎语　　言:　汉语普通话◎上映日期:　2026-10-09(中国大陆)◎IMDb评分                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-10</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29789.html#respond" title="《伟大的长征》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
     				</div>
                </div>
@@ -407,31 +457,6 @@ document.getElementById(obj).style.display="none";
     		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dongzuopian/29599.html" class="zoom" rel="bookmark" title="奥德赛 诺兰版">
-                            
-								<img src="https://tu.66tutup.com:667/2026/2996.jpg" alt="奥德赛 诺兰版" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/29599.html" rel="bookmark" title="奥德赛 诺兰版">奥德赛 诺兰版</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　The Odyssey◎中 文 名:　奥德赛◎年　　代:　2026◎产　　地:　美国 / 加拿大 / 冰岛 / 新西兰 / 摩洛哥 / 英国◎类　　别:　动作 / 历史 / 奇幻 / 冒险◎                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-08</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/29599.html#respond" title="《奥德赛 诺兰版》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
                         <a href="/dianshiju/guoju/29938.html" class="zoom" rel="bookmark" title="北境往事[全集]">
                             
 								<img src="https://img.dytt-tupian.com/upload/vod/20261030-1/312a0641d26804a8ddab874c1dd4762c.webp" alt="北境往事[全集]" />                                  
@@ -451,31 +476,6 @@ document.getElementById(obj).style.display="none";
                         <span class="info_date info_ico">2026-11-07</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/29938.html#respond" title="《北境往事[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29789.html" class="zoom" rel="bookmark" title="伟大的长征">
-                            
-								<img src="https://tu.66tutup.com:667/2026/3868.jpg" alt="伟大的长征" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29789.html" rel="bookmark" title="伟大的长征">伟大的长征</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　伟大的长征◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 历史 / 战争◎语　　言:　汉语普通话◎上映日期:　2026-10-09(中国大陆)◎IMDb评分                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-07</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29789.html#respond" title="《伟大的长征》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
     				</div>
                </div>
