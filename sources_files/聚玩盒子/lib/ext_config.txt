@@ -154,6 +154,10 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/dongzuopian/29872.html'>
+            街头霸王2026            </a></li>
+                    <li><a href='/dongzuopian/29599.html'>
+            奥德赛 诺兰版            </a></li>
                     <li><a href='/donghuapian/20280.html'>
             师兄啊师兄/我师兄实在太稳健了            </a></li>
                     <li><a href='/donghuapian/29600.html'>
@@ -190,12 +194,38 @@ document.getElementById(obj).style.display="none";
             遮天 动画版            </a></li>
                     <li><a href='/donghuapian/15179.html'>
             一念永恒 第四季            </a></li>
-                    <li><a href='/dongzuopian/29599.html'>
-            奥德赛 诺兰版            </a></li>
-                    <li><a href='/donghuapian/29540.html'>
-            财神窦占龙            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/oumeiju/26531.html'>
+            嗜血法医：杀魔复生 第二季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29824.html'>
+            独家黑幕 第二季            </a></li>
+                    <li><a href='/dianshiju/rihanju/29921.html'>
+            暑假            </a></li>
+                    <li><a href='/dianshiju/rihanju/29922.html'>
+            不着边际的你            </a></li>
+                    <li><a href='/dianshiju/rihanju/29828.html'>
+            心动制造所[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/26282.html'>
+            一杆入魂 第二季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/27375.html'>
+            诉讼女王 第二季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29817.html'>
+            幻视任务 第一季全            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29926.html'>
+            夜曲 第一季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/19100.html'>
+            指环王：力量之戒[第三季]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29853.html'>
+            换母疑云 第一季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29691.html'>
+            无间兄弟情 第一季全            </a></li>
+                    <li><a href='/dianshiju/oumeiju/24565.html'>
+            旺达在哪里 第二季            </a></li>
+                    <li><a href='/dianshiju/rihanju/29738.html'>
+            潜入你心[全集]            </a></li>
+                    <li><a href='/dianshiju/rihanju/29764.html'>
+            恋爱博士[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29956.html'>
             玫瑰战争            </a></li>
                     <li><a href='/dianshiju/guoju/29871.html'>
@@ -206,38 +236,18 @@ document.getElementById(obj).style.display="none";
             走马上任            </a></li>
                     <li><a href='/dianshiju/guoju/29958.html'>
             折月亮            </a></li>
-                    <li><a href='/dianshiju/guoju/29957.html'>
-            谷雨            </a></li>
-                    <li><a href='/dianshiju/oumeiju/25833.html'>
-            黑帮领地 第二季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/19727.html'>
-            塔尔萨之王[第四季]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29676.html'>
-            找春天 第一季全            </a></li>
-                    <li><a href='/dianshiju/oumeiju/17645.html'>
-            镀金时代[第四季]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/24933.html'>
-            乔治和曼迪的头婚生活 第三季            </a></li>
-                    <li><a href='/dianshiju/rihanju/29979.html'>
-            再婚皇后            </a></li>
-                    <li><a href='/dianshiju/rihanju/29843.html'>
-            Doctor X：白色黑手党时代            </a></li>
-                    <li><a href='/dianshiju/rihanju/29601.html'>
-            不是你的恋爱[全集]            </a></li>
-                    <li><a href='/dianshiju/rihanju/29923.html'>
-            韩剧[谎言]            </a></li>
-                    <li><a href='/dianshiju/rihanju/29790.html'>
-            百日谎言            </a></li>
-                    <li><a href='/dianshiju/guoju/29789.html'>
-            伟大的长征[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29938.html'>
-            北境往事[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29804.html'>
-            璀璨之城[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29817.html'>
-            幻视任务 第一季            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dongzuopian/29872.html'>
+            街头霸王2026            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29817.html'>
+            幻视任务 第一季全            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29926.html'>
+            夜曲 第一季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/19100.html'>
+            指环王：力量之戒[第三季]            </a></li>
+                    <li><a href='/dongzuopian/29599.html'>
+            奥德赛 诺兰版            </a></li>
                     <li><a href='/dianshiju/guoju/29944.html'>
             走马上任            </a></li>
                     <li><a href='/dianshiju/oumeiju/19727.html'>
@@ -260,8 +270,6 @@ document.getElementById(obj).style.display="none";
             昏头转向            </a></li>
                     <li><a href='/juqingpian/29968.html'>
             狗狗的完美圣诞节            </a></li>
-                    <li><a href='/dongzuopian/29599.html'>
-            奥德赛 诺兰版            </a></li>
                     <li><a href='/kehuanpian/29965.html'>
             模范公民            </a></li>
                     <li><a href='/dongzuopian/29964.html'>
@@ -270,14 +278,6 @@ document.getElementById(obj).style.display="none";
             诗人普希金            </a></li>
                     <li><a href='/dianshiju/guoju/29938.html'>
             北境往事[全集]            </a></li>
-                    <li><a href='/donghuapian/13804.html'>
-            凡人修仙传            </a></li>
-                    <li><a href='/aiqingpian/29959.html'>
-            可能的爱            </a></li>
-                    <li><a href='/dongzuopian/29873.html'>
-            野兽之心            </a></li>
-                    <li><a href='/donghuapian/29508.html'>
-            八仙！            </a></li>
                   </ul>
       </div>
     </div>
@@ -305,6 +305,131 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/29872.html" class="zoom" rel="bookmark" title="街头霸王2026">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4479.jpg" alt="街头霸王2026" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/29872.html" rel="bookmark" title="街头霸王2026">街头霸王2026</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　Street Fighter◎中 文 名:　街头霸王◎译　　名:　快打旋风(台) / 街霸(港)◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 动作◎语　　言:　英                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-13</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/29872.html#respond" title="《街头霸王2026》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/29817.html" class="zoom" rel="bookmark" title="幻视任务 第一季全">
+                            
+								<img src="https://tu.66tutup.com:667/2026/3968.jpg" alt="幻视任务 第一季全" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/29817.html" rel="bookmark" title="幻视任务 第一季全">幻视任务 第一季全</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　VisionQuest◎中 文 名:　幻视任务◎译　　名:　Vision Quest / 幻视征途(港) / 幻视探索 / 幻视追寻 / 旺达幻视衍生剧◎年　　代:　2026◎产　　地:　美国                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-12</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29817.html#respond" title="《幻视任务 第一季全》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/29926.html" class="zoom" rel="bookmark" title="夜曲 第一季">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4279.jpg" alt="夜曲 第一季" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/29926.html" rel="bookmark" title="夜曲 第一季">夜曲 第一季</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　Nocturne◎中 文 名:　夜曲◎译　　名:　Lazarus&amp;amp;lrm; / 夜行杀机 / 拉撒路◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 动作 / 悬疑 / 惊悚 /                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-12</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29926.html#respond" title="《夜曲 第一季》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/19100.html" class="zoom" rel="bookmark" title="指环王：力量之戒[第三季]">
+                            
+								<img src="https://tu.66tutup.com:667/2022/3434.jpg" alt="指环王：力量之戒[第三季]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/19100.html" rel="bookmark" title="指环王：力量之戒[第三季]">指环王：力量之戒[第三季]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+ ◎译　　名　指环王：力量之戒 第一季/魔戒/魔戒:統御魔戒/指环王：权能之戒/指环王剧版/The Lord of the Rings◎片　　名　The Lord of the Rings: The Rings of Power Seaso                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-12</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/19100.html#respond" title="《指环王：力量之戒[第三季]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/29599.html" class="zoom" rel="bookmark" title="奥德赛 诺兰版">
+                            
+								<img src="https://tu.66tutup.com:667/2026/2996.jpg" alt="奥德赛 诺兰版" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/29599.html" rel="bookmark" title="奥德赛 诺兰版">奥德赛 诺兰版</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　The Odyssey◎中 文 名:　奥德赛◎年　　代:　2026◎产　　地:　美国 / 加拿大 / 冰岛 / 新西兰 / 摩洛哥 / 英国◎类　　别:　动作 / 历史 / 奇幻 / 冒险◎                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-12</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/29599.html#respond" title="《奥德赛 诺兰版》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/dianshiju/guoju/29944.html" class="zoom" rel="bookmark" title="走马上任">
@@ -582,31 +707,6 @@ document.getElementById(obj).style.display="none";
     		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dongzuopian/29599.html" class="zoom" rel="bookmark" title="奥德赛 诺兰版">
-                            
-								<img src="https://tu.66tutup.com:667/2026/2996.jpg" alt="奥德赛 诺兰版" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/29599.html" rel="bookmark" title="奥德赛 诺兰版">奥德赛 诺兰版</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　The Odyssey◎中 文 名:　奥德赛◎年　　代:　2026◎产　　地:　美国 / 加拿大 / 冰岛 / 新西兰 / 摩洛哥 / 英国◎类　　别:　动作 / 历史 / 奇幻 / 冒险◎                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-10</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/29599.html#respond" title="《奥德赛 诺兰版》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
                         <a href="/kehuanpian/29965.html" class="zoom" rel="bookmark" title="模范公民">
                             
 								<img src="https://tu.66tutup.com:667/2026/4413.jpg" alt="模范公民" />                                  
@@ -654,112 +754,12 @@ document.getElementById(obj).style.display="none";
                         <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
     				</div>
                </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/juqingpian/29960.html" class="zoom" rel="bookmark" title="诗人普希金">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4411.jpg" alt="诗人普希金" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/juqingpian/29960.html" rel="bookmark" title="诗人普希金">诗人普希金</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　Пророк. История Александра Пушкина◎中 文 名:　诗人普希金◎译　　名:　Prorok. Istoriya Aleksandra Pushkina / The Po                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-08</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/juqingpian/29960.html#respond" title="《诗人普希金》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29938.html" class="zoom" rel="bookmark" title="北境往事[全集]">
-                            
-								<img src="https://img.dytt-tupian.com/upload/vod/20261030-1/312a0641d26804a8ddab874c1dd4762c.webp" alt="北境往事[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29938.html" rel="bookmark" title="北境往事[全集]">北境往事[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　北境往事◎译　　名:　黑道悲情◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 短片 / 冒险◎语　　言:　汉语普通话◎上映日期:　2026-10-30(                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-07</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29938.html#respond" title="《北境往事[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/donghuapian/13804.html" class="zoom" rel="bookmark" title="凡人修仙传">
-                            
-								<img src="https://tu.66tutup.com:667/2025/1945.jpg" alt="凡人修仙传" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/donghuapian/13804.html" rel="bookmark" title="凡人修仙传">凡人修仙传</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-平凡少年韩立出生贫困，为了让家人过上更好的生活，自愿前去七玄门参加入门考核，最终被墨大夫收入门下。 墨大夫一开始对韩立悉心培养、传授医术，让韩立对他非常感激，但随着一同入                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-07</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/donghuapian/13804.html#respond" title="《凡人修仙传》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/donghuapian/" title="查看动画片中的全部文章" rel="category tag">动画片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/aiqingpian/29959.html" class="zoom" rel="bookmark" title="可能的爱">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4423.jpg" alt="可能的爱" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/aiqingpian/29959.html" rel="bookmark" title="可能的爱">可能的爱</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎中 文 名:　可能的爱/可能的爱情◎译　　名:　Possible Love / 假如爱有如果◎年　　代:　2026◎产　　地:　韩国◎类　　别:　剧情 / 爱情◎语　　言:　韩语◎上映日期                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-07</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/aiqingpian/29959.html#respond" title="《可能的爱》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/aiqingpian/" title="查看爱情片中的全部文章" rel="category tag">爱情片</a></span> 
-    				</div>
-               </div>
     		</li>
 	    	</ul>
 		<div class="clear"></div>
 		</div>
 	</div>
-	<div class="navigation container"><div class='pagination'>&nbsp;<a class='current'>1</a>&nbsp;<a href="/index_2.html">2</a>&nbsp;<a href="/index_3.html">3</a>&nbsp;<a href="/index_4.html">4</a>&nbsp;<a href="/index_5.html">5</a>&nbsp;<a href="/index_6.html">6</a><a href="/index_2.html" class="next">下一页</a><a href="/index_6.html" class="next">尾页</a></div></div>
+	<div class="navigation container"><div class='pagination'>&nbsp;<a class='current'>1</a>&nbsp;<a href="/index_2.html">2</a>&nbsp;<a href="/index_3.html">3</a>&nbsp;<a href="/index_4.html">4</a>&nbsp;<a href="/index_5.html">5</a><a href="/index_2.html" class="next">下一页</a><a href="/index_5.html" class="next">尾页</a></div></div>
 <div class="clear"></div>
 
 

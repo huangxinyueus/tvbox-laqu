@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>正在验证访问</title><p id="message">正在验证访问，请稍候…</p><noscript>请启用 JavaScript 后刷新页面。</noscript><script>document.cookie="ccguard=1794513199.iSeLGwy241HX32FUXISAVyOsE4Y=; Max-Age=1800; Path=/; SameSite=Lax";
+if(document.cookie.indexOf('ccguard=')!==-1){
+  var key='ccguard-retry:'+location.host, old='';
+  try{old=sessionStorage.getItem(key)||'';sessionStorage.setItem(key,String(Date.now()));}catch(e){}
+  if(!old || Date.now()-Number(old)>4000){location.reload();}
+  else{document.getElementById('message').textContent='验证尚未完成，请稍后刷新页面。';}
+}else{document.getElementById('message').textContent='请允许本站使用 Cookie 后刷新页面。';}</script></html>

@@ -203,7 +203,7 @@
         "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
         "pkg": "com.muyue.tool",
         "host": "",
-        "site": "https://vip.123pan.cn/1851089669/oss/az5.txt",
+        "site": "./lib/az5.txt",
         "version": "1.0.0.4",
         "decrypt": "1"
       }
@@ -831,7 +831,7 @@
       "ext": {
         "线路数组": "<a data-toggle=\"tab\"&&/a>",
         "线路标题": ">&&<",
-        "分类url": "http://dyxz.tv/list/{cateId}_{catePg}.html",
+        "分类url": "./lib/{cateId}_{catePg}.html",
         "分类": "电影$1#电视剧$2#动漫$3#综艺$4"
       }
     },
