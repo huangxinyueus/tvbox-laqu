@@ -154,6 +154,18 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/donghuapian/18878.html'>
+            诛仙动画[第四季]            </a></li>
+                    <li><a href='/donghuapian/21328.html'>
+            沧元图 第三季            </a></li>
+                    <li><a href='/donghuapian/21341.html'>
+            斗罗大陆2：绝世唐门            </a></li>
+                    <li><a href='/donghuapian/21959.html'>
+            大主宰年番            </a></li>
+                    <li><a href='/donghuapian/29236.html'>
+            东大高武学院            </a></li>
+                    <li><a href='/donghuapian/23320.html'>
+            逆天邪神[第二季]            </a></li>
                     <li><a href='/dongzuopian/29872.html'>
             街头霸王2026            </a></li>
                     <li><a href='/dongzuopian/29599.html'>
@@ -182,22 +194,26 @@ document.getElementById(obj).style.display="none";
             猫鼬            </a></li>
                     <li><a href='/juqingpian/27900.html'>
             重建            </a></li>
-                    <li><a href='/xijupian/29970.html'>
-            昏头转向            </a></li>
-                    <li><a href='/juqingpian/29969.html'>
-            归鹭            </a></li>
-                    <li><a href='/juqingpian/29968.html'>
-            狗狗的完美圣诞节            </a></li>
-                    <li><a href='/jilupian/29967.html'>
-            法国饶舌巨星 Ninho：成名代价            </a></li>
-                    <li><a href='/donghuapian/20991.html'>
-            遮天 动画版            </a></li>
-                    <li><a href='/donghuapian/15179.html'>
-            一念永恒 第四季            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/guoju/29943.html'>
+            鉴定[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/29958.html'>
+            折月亮            </a></li>
+                    <li><a href='/dianshiju/guoju/29944.html'>
+            走马上任            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29981.html'>
+            青春共体[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/29980.html'>
+            急诊室的奇迹[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/26531.html'>
             嗜血法医：杀魔复生 第二季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/25833.html'>
+            黑帮领地 第二季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/19727.html'>
+            塔尔萨之王[第四季]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29926.html'>
+            夜曲 第一季            </a></li>
                     <li><a href='/dianshiju/oumeiju/29824.html'>
             独家黑幕 第二季            </a></li>
                     <li><a href='/dianshiju/rihanju/29921.html'>
@@ -212,8 +228,6 @@ document.getElementById(obj).style.display="none";
             诉讼女王 第二季            </a></li>
                     <li><a href='/dianshiju/oumeiju/29817.html'>
             幻视任务 第一季全            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29926.html'>
-            夜曲 第一季            </a></li>
                     <li><a href='/dianshiju/oumeiju/19100.html'>
             指环王：力量之戒[第三季]            </a></li>
                     <li><a href='/dianshiju/oumeiju/29853.html'>
@@ -222,36 +236,26 @@ document.getElementById(obj).style.display="none";
             无间兄弟情 第一季全            </a></li>
                     <li><a href='/dianshiju/oumeiju/24565.html'>
             旺达在哪里 第二季            </a></li>
-                    <li><a href='/dianshiju/rihanju/29738.html'>
-            潜入你心[全集]            </a></li>
-                    <li><a href='/dianshiju/rihanju/29764.html'>
-            恋爱博士[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29956.html'>
-            玫瑰战争            </a></li>
-                    <li><a href='/dianshiju/guoju/29871.html'>
-            尚公主[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29943.html'>
-            鉴定            </a></li>
-                    <li><a href='/dianshiju/guoju/29944.html'>
-            走马上任            </a></li>
-                    <li><a href='/dianshiju/guoju/29958.html'>
-            折月亮            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/guoju/29944.html'>
+            走马上任            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29981.html'>
+            青春共体[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/29980.html'>
+            急诊室的奇迹[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/19727.html'>
+            塔尔萨之王[第四季]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29926.html'>
+            夜曲 第一季            </a></li>
                     <li><a href='/dongzuopian/29872.html'>
             街头霸王2026            </a></li>
                     <li><a href='/dianshiju/oumeiju/29817.html'>
             幻视任务 第一季全            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29926.html'>
-            夜曲 第一季            </a></li>
                     <li><a href='/dianshiju/oumeiju/19100.html'>
             指环王：力量之戒[第三季]            </a></li>
                     <li><a href='/dongzuopian/29599.html'>
             奥德赛 诺兰版            </a></li>
-                    <li><a href='/dianshiju/guoju/29944.html'>
-            走马上任            </a></li>
-                    <li><a href='/dianshiju/oumeiju/19727.html'>
-            塔尔萨之王[第四季]            </a></li>
                     <li><a href='/dianshiju/rihanju/29979.html'>
             再婚皇后            </a></li>
                     <li><a href='/dianshiju/rihanju/29923.html'>
@@ -274,10 +278,6 @@ document.getElementById(obj).style.display="none";
             模范公民            </a></li>
                     <li><a href='/dongzuopian/29964.html'>
             巨蛇闯体校            </a></li>
-                    <li><a href='/juqingpian/29960.html'>
-            诗人普希金            </a></li>
-                    <li><a href='/dianshiju/guoju/29938.html'>
-            北境往事[全集]            </a></li>
                   </ul>
       </div>
     </div>
@@ -305,6 +305,131 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/29944.html" class="zoom" rel="bookmark" title="走马上任">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4360.jpg" alt="走马上任" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/29944.html" rel="bookmark" title="走马上任">走马上任</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　走马上任◎译　　名:　小五当官之走马上任◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 喜剧◎语　　言:　汉语普通话◎上映日期:　2026-11-                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-14</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29944.html#respond" title="《走马上任》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/29981.html" class="zoom" rel="bookmark" title="青春共体[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4502.jpg" alt="青春共体[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/29981.html" rel="bookmark" title="青春共体[全集]">青春共体[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　青春共体◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 惊悚◎语　　言:　英语◎上映日期:　2026-11-11(美国)◎IMDb评分:　6.9 / 10 from 596 us                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-14</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29981.html#respond" title="《青春共体[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/29980.html" class="zoom" rel="bookmark" title="急诊室的奇迹[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4499.jpg" alt="急诊室的奇迹[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/29980.html" rel="bookmark" title="急诊室的奇迹[全集]">急诊室的奇迹[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　急诊室的奇迹◎译　　名:　Miracles of the ER◎年　　代:　2026◎产　　地:　中国台湾◎类　　别:　剧情◎语　　言:　汉语普通话◎上映日期:　2026-11-12(                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-14</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29980.html#respond" title="《急诊室的奇迹[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/19727.html" class="zoom" rel="bookmark" title="塔尔萨之王[第四季]">
+                            
+								<img src="https://www.haibao123.xyz/01/0723.jpg" alt="塔尔萨之王[第四季]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/19727.html" rel="bookmark" title="塔尔萨之王[第四季]">塔尔萨之王[第四季]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+ ◎译　　名　塔尔萨之王/堪萨斯城黑帮/Kansas City◎片　　名　Tulsa King◎年　　代　2022◎产　　地　美国◎类　　别　剧情/犯罪◎语　　言　英语◎上映日期　2022-11-1                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-14</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/19727.html#respond" title="《塔尔萨之王[第四季]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/29926.html" class="zoom" rel="bookmark" title="夜曲 第一季">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4279.jpg" alt="夜曲 第一季" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/29926.html" rel="bookmark" title="夜曲 第一季">夜曲 第一季</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　Nocturne◎中 文 名:　夜曲◎译　　名:　Lazarus&amp;amp;lrm; / 夜行杀机 / 拉撒路◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 动作 / 悬疑 / 惊悚 /                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-14</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29926.html#respond" title="《夜曲 第一季》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/dongzuopian/29872.html" class="zoom" rel="bookmark" title="街头霸王2026">
@@ -357,31 +482,6 @@ document.getElementById(obj).style.display="none";
     		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/29926.html" class="zoom" rel="bookmark" title="夜曲 第一季">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4279.jpg" alt="夜曲 第一季" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/29926.html" rel="bookmark" title="夜曲 第一季">夜曲 第一季</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　Nocturne◎中 文 名:　夜曲◎译　　名:　Lazarus&amp;amp;lrm; / 夜行杀机 / 拉撒路◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 动作 / 悬疑 / 惊悚 /                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-12</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29926.html#respond" title="《夜曲 第一季》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
                         <a href="/dianshiju/oumeiju/19100.html" class="zoom" rel="bookmark" title="指环王：力量之戒[第三季]">
                             
 								<img src="https://tu.66tutup.com:667/2022/3434.jpg" alt="指环王：力量之戒[第三季]" />                                  
@@ -427,56 +527,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dongzuopian/29599.html#respond" title="《奥德赛 诺兰版》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29944.html" class="zoom" rel="bookmark" title="走马上任">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4360.jpg" alt="走马上任" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29944.html" rel="bookmark" title="走马上任">走马上任</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　走马上任◎译　　名:　小五当官之走马上任◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 喜剧◎语　　言:　汉语普通话◎上映日期:　2026-11-                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-12</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29944.html#respond" title="《走马上任》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/19727.html" class="zoom" rel="bookmark" title="塔尔萨之王[第四季]">
-                            
-								<img src="https://www.haibao123.xyz/01/0723.jpg" alt="塔尔萨之王[第四季]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/19727.html" rel="bookmark" title="塔尔萨之王[第四季]">塔尔萨之王[第四季]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
- ◎译　　名　塔尔萨之王/堪萨斯城黑帮/Kansas City◎片　　名　Tulsa King◎年　　代　2022◎产　　地　美国◎类　　别　剧情/犯罪◎语　　言　英语◎上映日期　2022-11-1                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-12</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/19727.html#respond" title="《塔尔萨之王[第四季]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
     				</div>
                </div>
     		</li><li class="post box row fixed-hight">
@@ -702,56 +752,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/juqingpian/29968.html#respond" title="《狗狗的完美圣诞节》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/kehuanpian/29965.html" class="zoom" rel="bookmark" title="模范公民">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4413.jpg" alt="模范公民" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/kehuanpian/29965.html" rel="bookmark" title="模范公民">模范公民</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　Model Citizen◎中 文 名:　模范公民◎年　　代:　2026◎产　　地:　英国 / 加拿大◎类　　别:　科幻 / 惊悚 / 犯罪◎语　　言:　英语◎上映日期:　2026-11                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-08</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/kehuanpian/29965.html#respond" title="《模范公民》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/kehuanpian/" title="查看科幻片中的全部文章" rel="category tag">科幻片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dongzuopian/29964.html" class="zoom" rel="bookmark" title="巨蛇闯体校">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4414.jpg" alt="巨蛇闯体校" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/29964.html" rel="bookmark" title="巨蛇闯体校">巨蛇闯体校</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　巨蛇闯体校◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 灾难◎语　　言:　汉语普通话◎上映日期:　2026-11-04(中国大陆网络)◎豆瓣评分:　                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-08</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/29964.html#respond" title="《巨蛇闯体校》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
     				</div>
                </div>
     		</li>
