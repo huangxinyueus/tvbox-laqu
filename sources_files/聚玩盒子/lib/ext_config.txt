@@ -154,6 +154,20 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/donghuapian/17003.html'>
+            斗破苍穹 第5季            </a></li>
+                    <li><a href='/donghuapian/29983.html'>
+            巴斯×机甲[全集]            </a></li>
+                    <li><a href='/donghuapian/13804.html'>
+            凡人修仙传            </a></li>
+                    <li><a href='/donghuapian/29199.html'>
+            择日飞升            </a></li>
+                    <li><a href='/donghuapian/17788.html'>
+            大王饶命[第三季]            </a></li>
+                    <li><a href='/donghuapian/27821.html'>
+            光阴之外            </a></li>
+                    <li><a href='/jilupian/29982.html'>
+            被夺走的女儿：娜塔莉·霍洛威失踪案            </a></li>
                     <li><a href='/donghuapian/18878.html'>
             诛仙动画[第四季]            </a></li>
                     <li><a href='/donghuapian/21328.html'>
@@ -180,64 +194,62 @@ document.getElementById(obj).style.display="none";
             余命一年买男人            </a></li>
                     <li><a href='/xijupian/29977.html'>
             浮夸特攻队            </a></li>
-                    <li><a href='/jilupian/29976.html'>
-            无人守护：枕边杀局            </a></li>
-                    <li><a href='/juqingpian/29975.html'>
-            一位好律师            </a></li>
-                    <li><a href='/juqingpian/29974.html'>
-            本命年            </a></li>
-                    <li><a href='/dongzuopian/29973.html'>
-            复活男            </a></li>
-                    <li><a href='/zhanzhengpian/29972.html'>
-            不列颠之战            </a></li>
-                    <li><a href='/dongzuopian/29971.html'>
-            猫鼬            </a></li>
-                    <li><a href='/juqingpian/27900.html'>
-            重建            </a></li>
                   </ul>
         <ul class="hide">
-                    <li><a href='/dianshiju/guoju/29943.html'>
-            鉴定[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/29956.html'>
+            玫瑰战争            </a></li>
                     <li><a href='/dianshiju/guoju/29958.html'>
             折月亮            </a></li>
-                    <li><a href='/dianshiju/guoju/29944.html'>
-            走马上任            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29981.html'>
-            青春共体[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29980.html'>
-            急诊室的奇迹[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/26531.html'>
-            嗜血法医：杀魔复生 第二季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/25833.html'>
-            黑帮领地 第二季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/19727.html'>
-            塔尔萨之王[第四季]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29926.html'>
-            夜曲 第一季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29824.html'>
-            独家黑幕 第二季            </a></li>
-                    <li><a href='/dianshiju/rihanju/29921.html'>
-            暑假            </a></li>
-                    <li><a href='/dianshiju/rihanju/29922.html'>
-            不着边际的你            </a></li>
-                    <li><a href='/dianshiju/rihanju/29828.html'>
-            心动制造所[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/26282.html'>
-            一杆入魂 第二季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/27375.html'>
-            诉讼女王 第二季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29817.html'>
-            幻视任务 第一季全            </a></li>
-                    <li><a href='/dianshiju/oumeiju/19100.html'>
-            指环王：力量之戒[第三季]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29853.html'>
-            换母疑云 第一季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29691.html'>
-            无间兄弟情 第一季全            </a></li>
-                    <li><a href='/dianshiju/oumeiju/24565.html'>
-            旺达在哪里 第二季            </a></li>
+                    <li><a href='/dianshiju/guoju/29957.html'>
+            谷雨            </a></li>
+                    <li><a href='/dianshiju/oumeiju/25054.html'>
+            黑鸽[第1-2季全]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/25872.html'>
+            极北以北[第1-2季全]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/28288.html'>
+            劣探德克尔 第1-2季全            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29996.html'>
+            翻案人生[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29995.html'>
+            明暗谜案录[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29994.html'>
+            麻木医生[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29993.html'>
+            凶杀回环：帕里什站惨案[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29992.html'>
+            至伟者[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29991.html'>
+            小先知 第一季全            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29990.html'>
+            围城困局[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29989.html'>
+            校园接送恋曲[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29988.html'>
+            谧夜宁魂[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29987.html'>
+            消失的妻子 第一季全            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29986.html'>
+            如何毁掉排灯节：见家长[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29985.html'>
+            尘落[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29984.html'>
+            危城女当家[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/29789.html'>
+            伟大的长征[全集]            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/guoju/29957.html'>
+            谷雨            </a></li>
+                    <li><a href='/dianshiju/oumeiju/25054.html'>
+            黑鸽[第1-2季全]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29996.html'>
+            翻案人生[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29994.html'>
+            麻木医生[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29992.html'>
+            至伟者[全集]            </a></li>
+                    <li><a href='/donghuapian/13804.html'>
+            凡人修仙传            </a></li>
                     <li><a href='/dianshiju/guoju/29944.html'>
             走马上任            </a></li>
                     <li><a href='/dianshiju/oumeiju/29981.html'>
@@ -264,20 +276,8 @@ document.getElementById(obj).style.display="none";
             余命一年买男人            </a></li>
                     <li><a href='/xijupian/29977.html'>
             浮夸特攻队            </a></li>
-                    <li><a href='/dianshiju/guoju/29789.html'>
-            伟大的长征[全集]            </a></li>
                     <li><a href='/dongzuopian/29973.html'>
             复活男            </a></li>
-                    <li><a href='/dongzuopian/29971.html'>
-            猫鼬            </a></li>
-                    <li><a href='/xijupian/29970.html'>
-            昏头转向            </a></li>
-                    <li><a href='/juqingpian/29968.html'>
-            狗狗的完美圣诞节            </a></li>
-                    <li><a href='/kehuanpian/29965.html'>
-            模范公民            </a></li>
-                    <li><a href='/dongzuopian/29964.html'>
-            巨蛇闯体校            </a></li>
                   </ul>
       </div>
     </div>
@@ -305,6 +305,156 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/29957.html" class="zoom" rel="bookmark" title="谷雨">
+                            
+								<img src="https://img.dytt-tupian.com/upload/vod/20261105-1/085d3254ee251e0428262c624d65e9ad.webp" alt="谷雨" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/29957.html" rel="bookmark" title="谷雨">谷雨</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　谷雨◎译　　名:　The Silent Storm◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 悬疑 / 犯罪◎语　　言:　汉语普通话◎上映日期:　2026-11                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-14</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29957.html#respond" title="《谷雨》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/25054.html" class="zoom" rel="bookmark" title="黑鸽[第1-2季全]">
+                            
+								<img src="https://tu.66tutup.com:667/2024/1333.jpg" alt="黑鸽[第1-2季全]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/25054.html" rel="bookmark" title="黑鸽[第1-2季全]">黑鸽[第1-2季全]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+◎译　　名　黑鸽 第一季◎片　　名　Black Doves Season 1◎年　　代　2024◎产　　地　英国◎类　　别　动作 / 悬疑 / 惊悚◎语　　言　英语◎上映日期　2024-12-05(英国                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-14</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/25054.html#respond" title="《黑鸽[第1-2季全]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/29996.html" class="zoom" rel="bookmark" title="翻案人生[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4498.jpg" alt="翻案人生[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/29996.html" rel="bookmark" title="翻案人生[全集]">翻案人生[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　翻案人生◎译　　名:　Alicia&amp;amp;#39;s Law / The Good Wife / 墨西哥版《傲骨贤妻》◎年　　代:　2026◎产　　地:　墨西哥◎类　　别:　剧情◎语　　言:　西                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-14</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29996.html#respond" title="《翻案人生[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/29994.html" class="zoom" rel="bookmark" title="麻木医生[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4520.jpg" alt="麻木医生[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/29994.html" rel="bookmark" title="麻木医生[全集]">麻木医生[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　麻木医生◎译　　名:　Anaesthesia / Anestesi◎年　　代:　2026◎产　　地:　波兰◎类　　别:　剧情◎语　　言:　波兰语◎上映日期:　2026-11-04(波兰)◎I                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-14</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29994.html#respond" title="《麻木医生[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/29992.html" class="zoom" rel="bookmark" title="至伟者[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4501.jpg" alt="至伟者[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/29992.html" rel="bookmark" title="至伟者[全集]">至伟者[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　至伟者◎译　　名:　最伟大的 / 最伟大的人 / 阿里传◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 传记 / 运动◎语　　言:　英语◎上映日期:　2                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-14</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29992.html#respond" title="《至伟者[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/donghuapian/13804.html" class="zoom" rel="bookmark" title="凡人修仙传">
+                            
+								<img src="https://tu.66tutup.com:667/2025/1945.jpg" alt="凡人修仙传" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/donghuapian/13804.html" rel="bookmark" title="凡人修仙传">凡人修仙传</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+平凡少年韩立出生贫困，为了让家人过上更好的生活，自愿前去七玄门参加入门考核，最终被墨大夫收入门下。 墨大夫一开始对韩立悉心培养、传授医术，让韩立对他非常感激，但随着一同入                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-14</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/donghuapian/13804.html#respond" title="《凡人修仙传》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/donghuapian/" title="查看动画片中的全部文章" rel="category tag">动画片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/dianshiju/guoju/29944.html" class="zoom" rel="bookmark" title="走马上任">
@@ -604,162 +754,12 @@ document.getElementById(obj).style.display="none";
                         <span class="info_category info_ico"><a href="/aiqingpian/" title="查看爱情片中的全部文章" rel="category tag">爱情片</a></span> 
     				</div>
                </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/xijupian/29977.html" class="zoom" rel="bookmark" title="浮夸特攻队">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4462.jpg" alt="浮夸特攻队" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/xijupian/29977.html" rel="bookmark" title="浮夸特攻队">浮夸特攻队</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎中 文 名:　浮夸特攻队◎译　　名:　Kaeng Owoe / Overacting◎年　　代:　2026◎产　　地:　泰国◎类　　别:　剧情 / 喜剧◎语　　言:　泰语◎上映日期:　2026-11-05(                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-11</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/xijupian/29977.html#respond" title="《浮夸特攻队》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/xijupian/" title="查看喜剧片中的全部文章" rel="category tag">喜剧片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29789.html" class="zoom" rel="bookmark" title="伟大的长征[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/3868.jpg" alt="伟大的长征[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29789.html" rel="bookmark" title="伟大的长征[全集]">伟大的长征[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　伟大的长征◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 历史 / 战争◎语　　言:　汉语普通话◎上映日期:　2026-10-09(中国大陆)◎IMDb评分                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-11</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29789.html#respond" title="《伟大的长征[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dongzuopian/29973.html" class="zoom" rel="bookmark" title="复活男">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4457.jpg" alt="复活男" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/29973.html" rel="bookmark" title="复活男">复活男</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎中 文 名:　复活男◎译　　名:　New Generation War: Reawakened Man / 新人类战争：复活男◎年　　代:　2026◎产　　地:　韩国◎类　　别:　剧情 / 动作 / 奇幻◎语　　                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-11</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/29973.html#respond" title="《复活男》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dongzuopian/29971.html" class="zoom" rel="bookmark" title="猫鼬">
-                            
-								<img src="https://tu.66tutup.com:667/2026/3080.jpg" alt="猫鼬" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/29971.html" rel="bookmark" title="猫鼬">猫鼬</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　The Mongoose◎中 文 名:　猫鼬◎译　　名:　狂飙营救◎年　　代:　2026◎产　　地:　美国 / 澳大利亚◎类　　别:　动作 / 惊悚◎语　　言:　英语◎上映日                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-11</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/29971.html#respond" title="《猫鼬》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/xijupian/29970.html" class="zoom" rel="bookmark" title="昏头转向">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4453.jpg" alt="昏头转向" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/xijupian/29970.html" rel="bookmark" title="昏头转向">昏头转向</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　昏头转向◎译　　名:　Head Spinning◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 喜剧◎语　　言:　汉语普通话◎上映日期:　2026-08-21(中                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-11</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/xijupian/29970.html#respond" title="《昏头转向》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/xijupian/" title="查看喜剧片中的全部文章" rel="category tag">喜剧片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/juqingpian/29968.html" class="zoom" rel="bookmark" title="狗狗的完美圣诞节">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4415.jpg" alt="狗狗的完美圣诞节" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/juqingpian/29968.html" rel="bookmark" title="狗狗的完美圣诞节">狗狗的完美圣诞节</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　A Dog&amp;amp;#39;s Perfect Christmas◎中 文 名:　狗狗的完美圣诞节◎年　　代:　2026◎产　　地:　加拿大◎类　　别:　剧情◎语　　言:　英语◎上映日期:　2026                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-11</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/juqingpian/29968.html#respond" title="《狗狗的完美圣诞节》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
-    				</div>
-               </div>
     		</li>
 	    	</ul>
 		<div class="clear"></div>
 		</div>
 	</div>
-	<div class="navigation container"><div class='pagination'>&nbsp;<a class='current'>1</a>&nbsp;<a href="/index_2.html">2</a>&nbsp;<a href="/index_3.html">3</a>&nbsp;<a href="/index_4.html">4</a>&nbsp;<a href="/index_5.html">5</a><a href="/index_2.html" class="next">下一页</a><a href="/index_5.html" class="next">尾页</a></div></div>
+	<div class="navigation container"><div class='pagination'>&nbsp;<a class='current'>1</a>&nbsp;<a href="/index_2.html">2</a>&nbsp;<a href="/index_3.html">3</a>&nbsp;<a href="/index_4.html">4</a>&nbsp;<a href="/index_5.html">5</a>&nbsp;<a href="/index_6.html">6</a><a href="/index_2.html" class="next">下一页</a><a href="/index_6.html" class="next">尾页</a></div></div>
 <div class="clear"></div>
 
 
