@@ -154,6 +154,24 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/dongzuopian/30005.html'>
+            极限逃生2026            </a></li>
+                    <li><a href='/dongzuopian/30004.html'>
+            绝境反击            </a></li>
+                    <li><a href='/dongzuopian/30003.html'>
+            寄生狂潮            </a></li>
+                    <li><a href='/juqingpian/30002.html'>
+            心乡迷踪            </a></li>
+                    <li><a href='/juqingpian/30001.html'>
+            成为休曼            </a></li>
+                    <li><a href='/kehuanpian/30000.html'>
+            艾伦            </a></li>
+                    <li><a href='/aiqingpian/29999.html'>
+            交换身份过圣诞            </a></li>
+                    <li><a href='/jilupian/29998.html'>
+            上流罪网：跨国名表盗卖集团            </a></li>
+                    <li><a href='/kongbupian/29997.html'>
+            猛鬼乐园            </a></li>
                     <li><a href='/donghuapian/17003.html'>
             斗破苍穹 第5季            </a></li>
                     <li><a href='/donghuapian/29983.html'>
@@ -176,26 +194,14 @@ document.getElementById(obj).style.display="none";
             斗罗大陆2：绝世唐门            </a></li>
                     <li><a href='/donghuapian/21959.html'>
             大主宰年番            </a></li>
-                    <li><a href='/donghuapian/29236.html'>
-            东大高武学院            </a></li>
-                    <li><a href='/donghuapian/23320.html'>
-            逆天邪神[第二季]            </a></li>
-                    <li><a href='/dongzuopian/29872.html'>
-            街头霸王2026            </a></li>
-                    <li><a href='/dongzuopian/29599.html'>
-            奥德赛 诺兰版            </a></li>
-                    <li><a href='/donghuapian/20280.html'>
-            师兄啊师兄/我师兄实在太稳健了            </a></li>
-                    <li><a href='/donghuapian/29600.html'>
-            灵境行者            </a></li>
-                    <li><a href='/donghuapian/29402.html'>
-            李熊猫            </a></li>
-                    <li><a href='/aiqingpian/29978.html'>
-            余命一年买男人            </a></li>
-                    <li><a href='/xijupian/29977.html'>
-            浮夸特攻队            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/rihanju/29843.html'>
+            Doctor X：白色黑手党时代[全集]            </a></li>
+                    <li><a href='/dianshiju/rihanju/29923.html'>
+            韩剧[谎言]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/30006.html'>
+            12 12 12 第一季            </a></li>
                     <li><a href='/dianshiju/guoju/29956.html'>
             玫瑰战争            </a></li>
                     <li><a href='/dianshiju/guoju/29958.html'>
@@ -230,14 +236,20 @@ document.getElementById(obj).style.display="none";
             消失的妻子 第一季全            </a></li>
                     <li><a href='/dianshiju/oumeiju/29986.html'>
             如何毁掉排灯节：见家长[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29985.html'>
-            尘落[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29984.html'>
-            危城女当家[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29789.html'>
-            伟大的长征[全集]            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/rihanju/29923.html'>
+            韩剧[谎言]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/30006.html'>
+            12 12 12 第一季            </a></li>
+                    <li><a href='/dongzuopian/30005.html'>
+            极限逃生2026            </a></li>
+                    <li><a href='/dongzuopian/30004.html'>
+            绝境反击            </a></li>
+                    <li><a href='/dongzuopian/30003.html'>
+            寄生狂潮            </a></li>
+                    <li><a href='/juqingpian/30002.html'>
+            心乡迷踪            </a></li>
                     <li><a href='/dianshiju/guoju/29957.html'>
             谷雨            </a></li>
                     <li><a href='/dianshiju/oumeiju/25054.html'>
@@ -266,18 +278,6 @@ document.getElementById(obj).style.display="none";
             幻视任务 第一季全            </a></li>
                     <li><a href='/dianshiju/oumeiju/19100.html'>
             指环王：力量之戒[第三季]            </a></li>
-                    <li><a href='/dongzuopian/29599.html'>
-            奥德赛 诺兰版            </a></li>
-                    <li><a href='/dianshiju/rihanju/29979.html'>
-            再婚皇后            </a></li>
-                    <li><a href='/dianshiju/rihanju/29923.html'>
-            韩剧[谎言]            </a></li>
-                    <li><a href='/aiqingpian/29978.html'>
-            余命一年买男人            </a></li>
-                    <li><a href='/xijupian/29977.html'>
-            浮夸特攻队            </a></li>
-                    <li><a href='/dongzuopian/29973.html'>
-            复活男            </a></li>
                   </ul>
       </div>
     </div>
@@ -305,6 +305,156 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/rihanju/29923.html" class="zoom" rel="bookmark" title="韩剧[谎言]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4318.jpg" alt="韩剧[谎言]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/rihanju/29923.html" rel="bookmark" title="韩剧[谎言]">韩剧[谎言]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎中 文 名:　谎言◎译　　名:　Liar / The Perfect Lie / 说谎者 / 谁在撒谎(韩国版)◎年　　代:　2026◎产　　地:　韩国◎类　　别:　剧情 / 爱情 / 悬疑◎语　　言:　                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-15</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/rihanju/29923.html#respond" title="《韩剧[谎言]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/30006.html" class="zoom" rel="bookmark" title="12 12 12 第一季">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4519.jpg" alt="12 12 12 第一季" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/30006.html" rel="bookmark" title="12 12 12 第一季">12 12 12 第一季</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　12 12 12◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 惊悚 / 犯罪◎语　　言:　英语◎上映日期:　2026-11-13(美国)◎IMDb评分:　7.5 / 10 from                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-15</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/30006.html#respond" title="《12 12 12 第一季》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/30005.html" class="zoom" rel="bookmark" title="极限逃生2026">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4512.jpg" alt="极限逃生2026" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/30005.html" rel="bookmark" title="极限逃生2026">极限逃生2026</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　极限逃生◎译　　名:　Escape / The Breakthrough / 极限逃生中国版◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　喜剧 / 动作 / 灾难◎语　　言:　                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-15</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/30005.html#respond" title="《极限逃生2026》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/30004.html" class="zoom" rel="bookmark" title="绝境反击">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4505.jpg" alt="绝境反击" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/30004.html" rel="bookmark" title="绝境反击">绝境反击</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　绝境反击◎译　　名:　Never Surrender◎年　　代:　2026◎产　　地:　印度尼西亚◎类　　别:　剧情 / 动作 / 犯罪◎语　　言:　印度尼西亚语◎上映日期:　                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-15</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/30004.html#respond" title="《绝境反击》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/30003.html" class="zoom" rel="bookmark" title="寄生狂潮">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4511.jpg" alt="寄生狂潮" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/30003.html" rel="bookmark" title="寄生狂潮">寄生狂潮</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　寄生狂潮◎译　　名:　深海寄生兽◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　动作 / 奇幻 / 冒险 / 古装◎语　　言:　汉语普通话◎上映日期:　20                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-15</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/30003.html#respond" title="《寄生狂潮》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/juqingpian/30002.html" class="zoom" rel="bookmark" title="心乡迷踪">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4553.jpg" alt="心乡迷踪" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/juqingpian/30002.html" rel="bookmark" title="心乡迷踪">心乡迷踪</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　心乡迷踪◎译　　名:　心之国度◎年　　代:　2026◎产　　地:　美国◎类　　别:　悬疑 / 惊悚◎语　　言:　英语◎上映日期:　2026-11-13(美国网络)◎IMDb评                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-15</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/juqingpian/30002.html#respond" title="《心乡迷踪》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/dianshiju/guoju/29957.html" class="zoom" rel="bookmark" title="谷雨">
@@ -604,162 +754,12 @@ document.getElementById(obj).style.display="none";
                         <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
     				</div>
                </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/29817.html" class="zoom" rel="bookmark" title="幻视任务 第一季全">
-                            
-								<img src="https://tu.66tutup.com:667/2026/3968.jpg" alt="幻视任务 第一季全" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/29817.html" rel="bookmark" title="幻视任务 第一季全">幻视任务 第一季全</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　VisionQuest◎中 文 名:　幻视任务◎译　　名:　Vision Quest / 幻视征途(港) / 幻视探索 / 幻视追寻 / 旺达幻视衍生剧◎年　　代:　2026◎产　　地:　美国                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-12</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29817.html#respond" title="《幻视任务 第一季全》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/19100.html" class="zoom" rel="bookmark" title="指环王：力量之戒[第三季]">
-                            
-								<img src="https://tu.66tutup.com:667/2022/3434.jpg" alt="指环王：力量之戒[第三季]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/19100.html" rel="bookmark" title="指环王：力量之戒[第三季]">指环王：力量之戒[第三季]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
- ◎译　　名　指环王：力量之戒 第一季/魔戒/魔戒:統御魔戒/指环王：权能之戒/指环王剧版/The Lord of the Rings◎片　　名　The Lord of the Rings: The Rings of Power Seaso                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-12</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/19100.html#respond" title="《指环王：力量之戒[第三季]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dongzuopian/29599.html" class="zoom" rel="bookmark" title="奥德赛 诺兰版">
-                            
-								<img src="https://tu.66tutup.com:667/2026/2996.jpg" alt="奥德赛 诺兰版" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/29599.html" rel="bookmark" title="奥德赛 诺兰版">奥德赛 诺兰版</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　The Odyssey◎中 文 名:　奥德赛◎年　　代:　2026◎产　　地:　美国 / 加拿大 / 冰岛 / 新西兰 / 摩洛哥 / 英国◎类　　别:　动作 / 历史 / 奇幻 / 冒险◎                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-12</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/29599.html#respond" title="《奥德赛 诺兰版》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/rihanju/29979.html" class="zoom" rel="bookmark" title="再婚皇后">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4455.jpg" alt="再婚皇后" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/rihanju/29979.html" rel="bookmark" title="再婚皇后">再婚皇后</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎中 文 名:　再婚皇后◎译　　名:　The Remarried Empress◎年　　代:　2026◎产　　地:　韩国◎类　　别:　爱情 / 奇幻 / 古装◎语　　言:　韩语◎上映日期:　2026-10-                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-11</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/rihanju/29979.html#respond" title="《再婚皇后》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/rihanju/29923.html" class="zoom" rel="bookmark" title="韩剧[谎言]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4318.jpg" alt="韩剧[谎言]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/rihanju/29923.html" rel="bookmark" title="韩剧[谎言]">韩剧[谎言]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎中 文 名:　谎言◎译　　名:　Liar / The Perfect Lie / 说谎者 / 谁在撒谎(韩国版)◎年　　代:　2026◎产　　地:　韩国◎类　　别:　剧情 / 爱情 / 悬疑◎语　　言:　                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-11</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/rihanju/29923.html#respond" title="《韩剧[谎言]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/aiqingpian/29978.html" class="zoom" rel="bookmark" title="余命一年买男人">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4456.jpg" alt="余命一年买男人" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/aiqingpian/29978.html" rel="bookmark" title="余命一年买男人">余命一年买男人</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　余命一年、男をかう◎中 文 名:　余命一年买男人◎译　　名:　One Year to Live, Buy a Man / 余命一年，买下那个男人 / 余命一年，买个男人◎年　　代:　2026                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-11</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/aiqingpian/29978.html#respond" title="《余命一年买男人》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/aiqingpian/" title="查看爱情片中的全部文章" rel="category tag">爱情片</a></span> 
-    				</div>
-               </div>
     		</li>
 	    	</ul>
 		<div class="clear"></div>
 		</div>
 	</div>
-	<div class="navigation container"><div class='pagination'>&nbsp;<a class='current'>1</a>&nbsp;<a href="/index_2.html">2</a>&nbsp;<a href="/index_3.html">3</a>&nbsp;<a href="/index_4.html">4</a>&nbsp;<a href="/index_5.html">5</a>&nbsp;<a href="/index_6.html">6</a><a href="/index_2.html" class="next">下一页</a><a href="/index_6.html" class="next">尾页</a></div></div>
+	<div class="navigation container"><div class='pagination'>&nbsp;<a class='current'>1</a>&nbsp;<a href="/index_2.html">2</a>&nbsp;<a href="/index_3.html">3</a>&nbsp;<a href="/index_4.html">4</a>&nbsp;<a href="/index_5.html">5</a><a href="/index_2.html" class="next">下一页</a><a href="/index_5.html" class="next">尾页</a></div></div>
 <div class="clear"></div>
 
 
