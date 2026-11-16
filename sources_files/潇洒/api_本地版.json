@@ -968,7 +968,7 @@
       "searchable": 1,
       "api": "csp_AppGet",
       "ext": {
-        "url": "./lib/www.gugu3.com",
+        "url": "https://www.gugu3.com",
         "dataKey": "nKfZ8KX6JTNWRzTD",
         "dataIv": "nKfZ8KX6JTNWRzTD"
       }
