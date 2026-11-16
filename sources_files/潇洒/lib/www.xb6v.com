@@ -154,6 +154,20 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/donghuapian/14764.html'>
+            吞噬星空            </a></li>
+                    <li><a href='/donghuapian/29270.html'>
+            一斩苍穹            </a></li>
+                    <li><a href='/donghuapian/30017.html'>
+            吉姆皇后            </a></li>
+                    <li><a href='/juqingpian/30016.html'>
+            告知信            </a></li>
+                    <li><a href='/aiqingpian/30015.html'>
+            圣诞节的十二次约会            </a></li>
+                    <li><a href='/xijupian/30014.html'>
+            小春，屁股摇起来！            </a></li>
+                    <li><a href='/jilupian/30013.html'>
+            史蒂芬·库里：大师画像            </a></li>
                     <li><a href='/juqingpian/30012.html'>
             实习生2026            </a></li>
                     <li><a href='/kehuanpian/30011.html'>
@@ -180,30 +194,24 @@ document.getElementById(obj).style.display="none";
             艾伦            </a></li>
                     <li><a href='/aiqingpian/29999.html'>
             交换身份过圣诞            </a></li>
-                    <li><a href='/jilupian/29998.html'>
-            上流罪网：跨国名表盗卖集团            </a></li>
-                    <li><a href='/kongbupian/29997.html'>
-            猛鬼乐园            </a></li>
-                    <li><a href='/donghuapian/17003.html'>
-            斗破苍穹 第5季            </a></li>
-                    <li><a href='/donghuapian/29983.html'>
-            巴斯×机甲[全集]            </a></li>
-                    <li><a href='/donghuapian/13804.html'>
-            凡人修仙传            </a></li>
-                    <li><a href='/donghuapian/29199.html'>
-            择日飞升            </a></li>
-                    <li><a href='/donghuapian/17788.html'>
-            大王饶命[第三季]            </a></li>
                   </ul>
         <ul class="hide">
-                    <li><a href='/dianshiju/guoju/29956.html'>
-            玫瑰战争            </a></li>
-                    <li><a href='/dianshiju/guoju/29957.html'>
-            谷雨            </a></li>
-                    <li><a href='/dianshiju/guoju/29958.html'>
-            折月亮[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/17645.html'>
+            镀金时代[第四季]            </a></li>
+                    <li><a href='/dianshiju/guoju/30020.html'>
+            多喜一家人            </a></li>
+                    <li><a href='/dianshiju/guoju/30019.html'>
+            今天是太阳雨            </a></li>
+                    <li><a href='/dianshiju/guoju/30018.html'>
+            十万狂花入梦来            </a></li>
                     <li><a href='/dianshiju/guoju/29944.html'>
             走马上任            </a></li>
+                    <li><a href='/dianshiju/guoju/29957.html'>
+            谷雨            </a></li>
+                    <li><a href='/dianshiju/guoju/29956.html'>
+            玫瑰战争            </a></li>
+                    <li><a href='/dianshiju/guoju/29958.html'>
+            折月亮[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/19352.html'>
             茜茜皇后[三季全]            </a></li>
                     <li><a href='/dianshiju/oumeiju/23580.html'>
@@ -228,22 +236,22 @@ document.getElementById(obj).style.display="none";
             极北以北[第1-2季全]            </a></li>
                     <li><a href='/dianshiju/oumeiju/28288.html'>
             劣探德克尔 第1-2季全            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29996.html'>
-            翻案人生[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29995.html'>
-            明暗谜案录[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29994.html'>
-            麻木医生[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29993.html'>
-            凶杀回环：帕里什站惨案[全集]            </a></li>
                   </ul>
         <ul class="hide">
-                    <li><a href='/juqingpian/30012.html'>
-            实习生2026            </a></li>
-                    <li><a href='/dianshiju/guoju/29957.html'>
-            谷雨            </a></li>
+                    <li><a href='/dianshiju/guoju/30019.html'>
+            今天是太阳雨            </a></li>
                     <li><a href='/dianshiju/guoju/29944.html'>
             走马上任            </a></li>
+                    <li><a href='/dianshiju/guoju/29957.html'>
+            谷雨            </a></li>
+                    <li><a href='/donghuapian/30017.html'>
+            吉姆皇后            </a></li>
+                    <li><a href='/juqingpian/30016.html'>
+            告知信            </a></li>
+                    <li><a href='/xijupian/30014.html'>
+            小春，屁股摇起来！            </a></li>
+                    <li><a href='/juqingpian/30012.html'>
+            实习生2026            </a></li>
                     <li><a href='/dianshiju/oumeiju/30009.html'>
             枕边杀局[全集]            </a></li>
                     <li><a href='/dianshiju/rihanju/29923.html'>
@@ -270,14 +278,6 @@ document.getElementById(obj).style.display="none";
             凡人修仙传            </a></li>
                     <li><a href='/dianshiju/oumeiju/29981.html'>
             青春共体[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29980.html'>
-            急诊室的奇迹[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/19727.html'>
-            塔尔萨之王[第四季]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29926.html'>
-            夜曲 第一季            </a></li>
-                    <li><a href='/dongzuopian/29872.html'>
-            街头霸王2026            </a></li>
                   </ul>
       </div>
     </div>
@@ -307,50 +307,25 @@ document.getElementById(obj).style.display="none";
 							<li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/juqingpian/30012.html" class="zoom" rel="bookmark" title="实习生2026">
+                        <a href="/dianshiju/guoju/30019.html" class="zoom" rel="bookmark" title="今天是太阳雨">
                             
-								<img src="https://tu.66tutup.com:667/2026/4605.jpg" alt="实习生2026" />                                  
+								<img src="https://tu.66tutup.com:667/2026/4587.jpg" alt="今天是太阳雨" />                                  
                         </a>
                     </div>
                     <div class="article">
-                        <h2><a href="/juqingpian/30012.html" rel="bookmark" title="实习生2026">实习生2026</a></h2>
+                        <h2><a href="/dianshiju/guoju/30019.html" rel="bookmark" title="今天是太阳雨">今天是太阳雨</a></h2>
                                                      <div class="entry_post">
                                 <p>
                                 
-&nbsp;&nbsp;◎片　　名:　实习生◎译　　名:　The Intern / 实习生(韩国版) / 高年级实习生(台)◎年　　代:　2026◎产　　地:　韩国◎类　　别:　剧情 / 喜剧◎语　　言:　韩语◎上                            </p>
+&nbsp;&nbsp;◎片　　名:　今天是太阳雨◎译　　名:　Sunshine Through the Rain◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 爱情◎语　　言:　汉语普通话◎上映日期                            </p>
                             </div>
                                                 
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-11-15</span>
+                        <span class="info_date info_ico">2026-11-16</span>
                     	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/juqingpian/30012.html#respond" title="《实习生2026》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29957.html" class="zoom" rel="bookmark" title="谷雨">
-                            
-								<img src="https://img.dytt-tupian.com/upload/vod/20261105-1/085d3254ee251e0428262c624d65e9ad.webp" alt="谷雨" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29957.html" rel="bookmark" title="谷雨">谷雨</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　谷雨◎译　　名:　The Silent Storm◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 悬疑 / 犯罪◎语　　言:　汉语普通话◎上映日期:　2026-11                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-15</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29957.html#respond" title="《谷雨》上的评论">评论</a></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30019.html#respond" title="《今天是太阳雨》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
     				</div>
                </div>
@@ -373,10 +348,135 @@ document.getElementById(obj).style.display="none";
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-11-15</span>
+                        <span class="info_date info_ico">2026-11-16</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/29944.html#respond" title="《走马上任》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/29957.html" class="zoom" rel="bookmark" title="谷雨">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4438.jpg" alt="谷雨" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/29957.html" rel="bookmark" title="谷雨">谷雨</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　谷雨◎译　　名:　The Silent Storm◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 悬疑 / 犯罪◎语　　言:　汉语普通话◎上映日期:　2026-11                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-16</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29957.html#respond" title="《谷雨》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/donghuapian/30017.html" class="zoom" rel="bookmark" title="吉姆皇后">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4583.jpg" alt="吉姆皇后" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/donghuapian/30017.html" rel="bookmark" title="吉姆皇后">吉姆皇后</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+ ◎片　　名:　吉姆皇后◎译　　名:　Jim Queen and the Quest for Chloroqueer / Jim Queen &amp;amp;agrave; la recherche de la Chloroqueer / Jim Queen：肌情四射(台)◎年　　代                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-16</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/donghuapian/30017.html#respond" title="《吉姆皇后》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/donghuapian/" title="查看动画片中的全部文章" rel="category tag">动画片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/juqingpian/30016.html" class="zoom" rel="bookmark" title="告知信">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4582.jpg" alt="告知信" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/juqingpian/30016.html" rel="bookmark" title="告知信">告知信</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　告知信◎译　　名:　Sarı Zarflar / Yellow Letters◎年　　代:　2026◎产　　地:　德国 / 法国 / 土耳其◎类　　别:　剧情◎语　　言:　土耳其语◎上映日                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-16</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/juqingpian/30016.html#respond" title="《告知信》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/xijupian/30014.html" class="zoom" rel="bookmark" title="小春，屁股摇起来！">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4584.jpg" alt="小春，屁股摇起来！" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/xijupian/30014.html" rel="bookmark" title="小春，屁股摇起来！">小春，屁股摇起来！</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　小春，屁股摇起来！◎译　　名:　爱到舞春(台)◎年　　代:　2026◎产　　地:　美国 / 日本◎类　　别:　剧情 / 喜剧 / 爱情 / 科幻◎语　　言:　日语 / 英语 /                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-16</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/xijupian/30014.html#respond" title="《小春，屁股摇起来！》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/xijupian/" title="查看喜剧片中的全部文章" rel="category tag">喜剧片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/juqingpian/30012.html" class="zoom" rel="bookmark" title="实习生2026">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4605.jpg" alt="实习生2026" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/juqingpian/30012.html" rel="bookmark" title="实习生2026">实习生2026</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　实习生◎译　　名:　The Intern / 实习生(韩国版) / 高年级实习生(台)◎年　　代:　2026◎产　　地:　韩国◎类　　别:　剧情 / 喜剧◎语　　言:　韩语◎上                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-15</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/juqingpian/30012.html#respond" title="《实习生2026》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
     				</div>
                </div>
     		</li><li class="post box row fixed-hight">
@@ -651,106 +751,6 @@ document.getElementById(obj).style.display="none";
                         <span class="info_date info_ico">2026-11-14</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29992.html#respond" title="《至伟者[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/donghuapian/13804.html" class="zoom" rel="bookmark" title="凡人修仙传">
-                            
-								<img src="https://tu.66tutup.com:667/2025/1945.jpg" alt="凡人修仙传" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/donghuapian/13804.html" rel="bookmark" title="凡人修仙传">凡人修仙传</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-平凡少年韩立出生贫困，为了让家人过上更好的生活，自愿前去七玄门参加入门考核，最终被墨大夫收入门下。 墨大夫一开始对韩立悉心培养、传授医术，让韩立对他非常感激，但随着一同入                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-14</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/donghuapian/13804.html#respond" title="《凡人修仙传》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/donghuapian/" title="查看动画片中的全部文章" rel="category tag">动画片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/29981.html" class="zoom" rel="bookmark" title="青春共体[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4502.jpg" alt="青春共体[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/29981.html" rel="bookmark" title="青春共体[全集]">青春共体[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　青春共体◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 惊悚◎语　　言:　英语◎上映日期:　2026-11-11(美国)◎IMDb评分:　6.9 / 10 from 596 us                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-14</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29981.html#respond" title="《青春共体[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29980.html" class="zoom" rel="bookmark" title="急诊室的奇迹[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4499.jpg" alt="急诊室的奇迹[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29980.html" rel="bookmark" title="急诊室的奇迹[全集]">急诊室的奇迹[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　急诊室的奇迹◎译　　名:　Miracles of the ER◎年　　代:　2026◎产　　地:　中国台湾◎类　　别:　剧情◎语　　言:　汉语普通话◎上映日期:　2026-11-12(                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-14</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29980.html#respond" title="《急诊室的奇迹[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/19727.html" class="zoom" rel="bookmark" title="塔尔萨之王[第四季]">
-                            
-								<img src="https://www.haibao123.xyz/01/0723.jpg" alt="塔尔萨之王[第四季]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/19727.html" rel="bookmark" title="塔尔萨之王[第四季]">塔尔萨之王[第四季]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
- ◎译　　名　塔尔萨之王/堪萨斯城黑帮/Kansas City◎片　　名　Tulsa King◎年　　代　2022◎产　　地　美国◎类　　别　剧情/犯罪◎语　　言　英语◎上映日期　2022-11-1                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-14</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/19727.html#respond" title="《塔尔萨之王[第四季]》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
     				</div>
                </div>
