@@ -154,6 +154,22 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/donghuapian/20991.html'>
+            遮天 动画版            </a></li>
+                    <li><a href='/donghuapian/15179.html'>
+            一念永恒 第四季            </a></li>
+                    <li><a href='/kehuanpian/30026.html'>
+            复仇者联盟4：终局之战(加码臻享版)            </a></li>
+                    <li><a href='/kongbupian/30025.html'>
+            另一个妈妈            </a></li>
+                    <li><a href='/juqingpian/30024.html'>
+            诚实房地产 电影版            </a></li>
+                    <li><a href='/juqingpian/30023.html'>
+            黑色圣诞福音            </a></li>
+                    <li><a href='/juqingpian/30022.html'>
+            米斯蒂·格林            </a></li>
+                    <li><a href='/jilupian/30021.html'>
+            混凝土简史            </a></li>
                     <li><a href='/donghuapian/14764.html'>
             吞噬星空            </a></li>
                     <li><a href='/donghuapian/29270.html'>
@@ -178,40 +194,26 @@ document.getElementById(obj).style.display="none";
             牧神记            </a></li>
                     <li><a href='/donghuapian/29540.html'>
             财神窦占龙[全集]            </a></li>
-                    <li><a href='/donghuapian/30008.html'>
-            史努比特辑：史努比的12天            </a></li>
-                    <li><a href='/dongzuopian/30005.html'>
-            极限逃生2026            </a></li>
-                    <li><a href='/dongzuopian/30004.html'>
-            绝境反击            </a></li>
-                    <li><a href='/dongzuopian/30003.html'>
-            寄生狂潮            </a></li>
-                    <li><a href='/juqingpian/30002.html'>
-            心乡迷踪            </a></li>
-                    <li><a href='/juqingpian/30001.html'>
-            成为休曼            </a></li>
-                    <li><a href='/kehuanpian/30000.html'>
-            艾伦            </a></li>
-                    <li><a href='/aiqingpian/29999.html'>
-            交换身份过圣诞            </a></li>
                   </ul>
         <ul class="hide">
-                    <li><a href='/dianshiju/oumeiju/17645.html'>
-            镀金时代[第四季]            </a></li>
-                    <li><a href='/dianshiju/guoju/30020.html'>
-            多喜一家人            </a></li>
                     <li><a href='/dianshiju/guoju/30019.html'>
-            今天是太阳雨            </a></li>
-                    <li><a href='/dianshiju/guoju/30018.html'>
-            十万狂花入梦来            </a></li>
-                    <li><a href='/dianshiju/guoju/29944.html'>
-            走马上任            </a></li>
-                    <li><a href='/dianshiju/guoju/29957.html'>
-            谷雨            </a></li>
-                    <li><a href='/dianshiju/guoju/29956.html'>
-            玫瑰战争            </a></li>
+            今天是太阳雨[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29958.html'>
             折月亮[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/29871.html'>
+            尚公主[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/29956.html'>
+            玫瑰战争[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/29957.html'>
+            谷雨[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/30020.html'>
+            多喜一家人            </a></li>
+                    <li><a href='/dianshiju/guoju/29944.html'>
+            走马上任            </a></li>
+                    <li><a href='/dianshiju/guoju/30018.html'>
+            十万狂花入梦来            </a></li>
+                    <li><a href='/dianshiju/oumeiju/17645.html'>
+            镀金时代[第四季]            </a></li>
                     <li><a href='/dianshiju/oumeiju/19352.html'>
             茜茜皇后[三季全]            </a></li>
                     <li><a href='/dianshiju/oumeiju/23580.html'>
@@ -234,16 +236,18 @@ document.getElementById(obj).style.display="none";
             黑鸽[第1-2季全]            </a></li>
                     <li><a href='/dianshiju/oumeiju/25872.html'>
             极北以北[第1-2季全]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/28288.html'>
-            劣探德克尔 第1-2季全            </a></li>
                   </ul>
         <ul class="hide">
                     <li><a href='/dianshiju/guoju/30019.html'>
-            今天是太阳雨            </a></li>
+            今天是太阳雨[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/29957.html'>
+            谷雨[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29944.html'>
             走马上任            </a></li>
-                    <li><a href='/dianshiju/guoju/29957.html'>
-            谷雨            </a></li>
+                    <li><a href='/kehuanpian/30026.html'>
+            复仇者联盟4：终局之战(加码臻享版)            </a></li>
+                    <li><a href='/kongbupian/30025.html'>
+            另一个妈妈            </a></li>
                     <li><a href='/donghuapian/30017.html'>
             吉姆皇后            </a></li>
                     <li><a href='/juqingpian/30016.html'>
@@ -274,10 +278,6 @@ document.getElementById(obj).style.display="none";
             麻木医生[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/29992.html'>
             至伟者[全集]            </a></li>
-                    <li><a href='/donghuapian/13804.html'>
-            凡人修仙传            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29981.html'>
-            青春共体[全集]            </a></li>
                   </ul>
       </div>
     </div>
@@ -307,13 +307,13 @@ document.getElementById(obj).style.display="none";
 							<li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/30019.html" class="zoom" rel="bookmark" title="今天是太阳雨">
+                        <a href="/dianshiju/guoju/30019.html" class="zoom" rel="bookmark" title="今天是太阳雨[全集]">
                             
-								<img src="https://tu.66tutup.com:667/2026/4587.jpg" alt="今天是太阳雨" />                                  
+								<img src="https://tu.66tutup.com:667/2026/4587.jpg" alt="今天是太阳雨[全集]" />                                  
                         </a>
                     </div>
                     <div class="article">
-                        <h2><a href="/dianshiju/guoju/30019.html" rel="bookmark" title="今天是太阳雨">今天是太阳雨</a></h2>
+                        <h2><a href="/dianshiju/guoju/30019.html" rel="bookmark" title="今天是太阳雨[全集]">今天是太阳雨[全集]</a></h2>
                                                      <div class="entry_post">
                                 <p>
                                 
@@ -323,9 +323,34 @@ document.getElementById(obj).style.display="none";
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-11-16</span>
+                        <span class="info_date info_ico">2026-11-18</span>
                     	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30019.html#respond" title="《今天是太阳雨》上的评论">评论</a></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30019.html#respond" title="《今天是太阳雨[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/29957.html" class="zoom" rel="bookmark" title="谷雨[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4438.jpg" alt="谷雨[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/29957.html" rel="bookmark" title="谷雨[全集]">谷雨[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　谷雨◎译　　名:　The Silent Storm◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 悬疑 / 犯罪◎语　　言:　汉语普通话◎上映日期:　2026-11                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-17</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29957.html#respond" title="《谷雨[全集]》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
     				</div>
                </div>
@@ -348,7 +373,7 @@ document.getElementById(obj).style.display="none";
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-11-16</span>
+                        <span class="info_date info_ico">2026-11-17</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/29944.html#respond" title="《走马上任》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
@@ -357,26 +382,51 @@ document.getElementById(obj).style.display="none";
     		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29957.html" class="zoom" rel="bookmark" title="谷雨">
+                        <a href="/kehuanpian/30026.html" class="zoom" rel="bookmark" title="复仇者联盟4：终局之战(加码臻享版)">
                             
-								<img src="https://tu.66tutup.com:667/2026/4438.jpg" alt="谷雨" />                                  
+								<img src="https://tu.66tutup.com:667/2026/4621.jpg" alt="复仇者联盟4：终局之战(加码臻享版)" />                                  
                         </a>
                     </div>
                     <div class="article">
-                        <h2><a href="/dianshiju/guoju/29957.html" rel="bookmark" title="谷雨">谷雨</a></h2>
+                        <h2><a href="/kehuanpian/30026.html" rel="bookmark" title="复仇者联盟4：终局之战(加码臻享版)">复仇者联盟4：终局之战(加码臻享版)</a></h2>
                                                      <div class="entry_post">
                                 <p>
                                 
-&nbsp;&nbsp;◎片　　名:　谷雨◎译　　名:　The Silent Storm◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 悬疑 / 犯罪◎语　　言:　汉语普通话◎上映日期:　2026-11                            </p>
+ ◎片　　名:　复仇者联盟4：终局之战◎译　　名:　AVG4 / Avengers Endgame: Encore / Avengers: Infinity War - Part II / The Avengers 3: Part 2 / The Avengers 4: Endg                            </p>
                             </div>
                                                 
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-11-16</span>
+                        <span class="info_date info_ico">2026-11-17</span>
                     	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29957.html#respond" title="《谷雨》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+                        <span class="info_comment info_ico"><a href="/kehuanpian/30026.html#respond" title="《复仇者联盟4：终局之战(加码臻享版)》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/kehuanpian/" title="查看科幻片中的全部文章" rel="category tag">科幻片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/kongbupian/30025.html" class="zoom" rel="bookmark" title="另一个妈妈">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4589.jpg" alt="另一个妈妈" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/kongbupian/30025.html" rel="bookmark" title="另一个妈妈">另一个妈妈</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　另一个妈妈◎译　　名:　Grandma&amp;amp;#39;s House / Incidents Around the House / 另一个妈咪(台) / 屋内事件 / 衣柜里的妈咪(港)◎年　　代:　2026◎产　　地                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-17</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/kongbupian/30025.html#respond" title="《另一个妈妈》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/kongbupian/" title="查看恐怖片中的全部文章" rel="category tag">恐怖片</a></span> 
     				</div>
                </div>
     		</li><li class="post box row fixed-hight">
@@ -701,56 +751,6 @@ document.getElementById(obj).style.display="none";
                         <span class="info_date info_ico">2026-11-14</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29996.html#respond" title="《翻案人生[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/29994.html" class="zoom" rel="bookmark" title="麻木医生[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4520.jpg" alt="麻木医生[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/29994.html" rel="bookmark" title="麻木医生[全集]">麻木医生[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　麻木医生◎译　　名:　Anaesthesia / Anestesi◎年　　代:　2026◎产　　地:　波兰◎类　　别:　剧情◎语　　言:　波兰语◎上映日期:　2026-11-04(波兰)◎I                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-14</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29994.html#respond" title="《麻木医生[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/29992.html" class="zoom" rel="bookmark" title="至伟者[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4501.jpg" alt="至伟者[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/29992.html" rel="bookmark" title="至伟者[全集]">至伟者[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　至伟者◎译　　名:　最伟大的 / 最伟大的人 / 阿里传◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 传记 / 运动◎语　　言:　英语◎上映日期:　2                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-14</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29992.html#respond" title="《至伟者[全集]》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
     				</div>
                </div>

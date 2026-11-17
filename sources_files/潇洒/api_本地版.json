@@ -322,7 +322,7 @@
       "searchable": 1,
       "changeable": 1,
       "ext": {
-        "url": "./lib/app.95112475.xyz",
+        "url": "https://app.95112475.xyz",
         "dataKey": "5a9w6x58dsq6z3a6",
         "dataIv": "5a9w6x58dsq6z3a6"
       }
@@ -791,7 +791,7 @@
       "name": "修罗 • 影视",
       "api": "csp_Xlys",
       "type": 3,
-      "ext": "./lib/www.xlysw.ggff.net"
+      "ext": "https://www.xlysw.ggff.net"
     },
     {
       "key": "骚火影视",
