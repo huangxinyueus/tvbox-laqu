@@ -1,5 +1,5 @@
 {
-  "spider": "./lib/spider.jar;md5;fb6c7aca82019e4fb811497a37629e3d",
+  "spider": "./lib/spider.jar;md5;c7ac89ae1d981e87afb9698a8a4ca30b",
   "wallpaper": "https://动态壁纸.饭.eu.org/",
   "sites": [
     {
@@ -659,7 +659,7 @@
     {
       "name": "虎牙一起看",
       "type": 0,
-      "url": "https://sub.ottiptv.cc/huyayqk.m3u",
+      "url": "./live/huyayqk.m3u",
       "playerType": 2,
       "timeout": 10,
       "ua": "okHttp/Mod-1.5.0.0"
