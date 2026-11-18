@@ -154,6 +154,8 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/donghuapian/20280.html'>
+            师兄啊师兄/我师兄实在太稳健了            </a></li>
                     <li><a href='/donghuapian/20991.html'>
             遮天 动画版            </a></li>
                     <li><a href='/donghuapian/15179.html'>
@@ -192,10 +194,22 @@ document.getElementById(obj).style.display="none";
             仙逆            </a></li>
                     <li><a href='/donghuapian/24756.html'>
             牧神记            </a></li>
-                    <li><a href='/donghuapian/29540.html'>
-            财神窦占龙[全集]            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/oumeiju/24933.html'>
+            乔治和曼迪的头婚生活 第三季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29853.html'>
+            换母疑云 第一季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/26282.html'>
+            一杆入魂 第二季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/19100.html'>
+            指环王：力量之戒[第三季]            </a></li>
+                    <li><a href='/dianshiju/guoju/30020.html'>
+            多喜一家人            </a></li>
+                    <li><a href='/dianshiju/guoju/30018.html'>
+            十万狂花入梦来            </a></li>
+                    <li><a href='/dianshiju/guoju/29944.html'>
+            走马上任[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/30019.html'>
             今天是太阳雨[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29958.html'>
@@ -206,12 +220,6 @@ document.getElementById(obj).style.display="none";
             玫瑰战争[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29957.html'>
             谷雨[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/30020.html'>
-            多喜一家人            </a></li>
-                    <li><a href='/dianshiju/guoju/29944.html'>
-            走马上任            </a></li>
-                    <li><a href='/dianshiju/guoju/30018.html'>
-            十万狂花入梦来            </a></li>
                     <li><a href='/dianshiju/oumeiju/17645.html'>
             镀金时代[第四季]            </a></li>
                     <li><a href='/dianshiju/oumeiju/19352.html'>
@@ -228,22 +236,16 @@ document.getElementById(obj).style.display="none";
             接招吧！制作人[全集]            </a></li>
                     <li><a href='/dianshiju/rihanju/29843.html'>
             Doctor X：白色黑手党时代[全集]            </a></li>
-                    <li><a href='/dianshiju/rihanju/29923.html'>
-            韩剧[谎言]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30006.html'>
-            12 12 12 第一季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/25054.html'>
-            黑鸽[第1-2季全]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/25872.html'>
-            极北以北[第1-2季全]            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/oumeiju/19100.html'>
+            指环王：力量之戒[第三季]            </a></li>
+                    <li><a href='/dianshiju/guoju/29944.html'>
+            走马上任[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/30019.html'>
             今天是太阳雨[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29957.html'>
             谷雨[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29944.html'>
-            走马上任            </a></li>
                     <li><a href='/kehuanpian/30026.html'>
             复仇者联盟4：终局之战(加码臻享版)            </a></li>
                     <li><a href='/kongbupian/30025.html'>
@@ -276,8 +278,6 @@ document.getElementById(obj).style.display="none";
             翻案人生[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/29994.html'>
             麻木医生[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29992.html'>
-            至伟者[全集]            </a></li>
                   </ul>
       </div>
     </div>
@@ -305,6 +305,56 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/19100.html" class="zoom" rel="bookmark" title="指环王：力量之戒[第三季]">
+                            
+								<img src="https://tu.66tutup.com:667/2022/3434.jpg" alt="指环王：力量之戒[第三季]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/19100.html" rel="bookmark" title="指环王：力量之戒[第三季]">指环王：力量之戒[第三季]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+ ◎译　　名　指环王：力量之戒 第一季/魔戒/魔戒:統御魔戒/指环王：权能之戒/指环王剧版/The Lord of the Rings◎片　　名　The Lord of the Rings: The Rings of Power Seaso                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-18</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/19100.html#respond" title="《指环王：力量之戒[第三季]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/29944.html" class="zoom" rel="bookmark" title="走马上任[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4360.jpg" alt="走马上任[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/29944.html" rel="bookmark" title="走马上任[全集]">走马上任[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　走马上任◎译　　名:　小五当官之走马上任◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 喜剧◎语　　言:　汉语普通话◎上映日期:　2026-11-                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-18</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29944.html#respond" title="《走马上任[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/dianshiju/guoju/30019.html" class="zoom" rel="bookmark" title="今天是太阳雨[全集]">
@@ -351,31 +401,6 @@ document.getElementById(obj).style.display="none";
                         <span class="info_date info_ico">2026-11-17</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/29957.html#respond" title="《谷雨[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29944.html" class="zoom" rel="bookmark" title="走马上任">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4360.jpg" alt="走马上任" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29944.html" rel="bookmark" title="走马上任">走马上任</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　走马上任◎译　　名:　小五当官之走马上任◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 喜剧◎语　　言:　汉语普通话◎上映日期:　2026-11-                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-17</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29944.html#respond" title="《走马上任》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
     				</div>
                </div>
@@ -726,31 +751,6 @@ document.getElementById(obj).style.display="none";
                         <span class="info_date info_ico">2026-11-14</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/25054.html#respond" title="《黑鸽[第1-2季全]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/29996.html" class="zoom" rel="bookmark" title="翻案人生[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4498.jpg" alt="翻案人生[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/29996.html" rel="bookmark" title="翻案人生[全集]">翻案人生[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　翻案人生◎译　　名:　Alicia&amp;amp;#39;s Law / The Good Wife / 墨西哥版《傲骨贤妻》◎年　　代:　2026◎产　　地:　墨西哥◎类　　别:　剧情◎语　　言:　西                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-14</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29996.html#respond" title="《翻案人生[全集]》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
     				</div>
                </div>
