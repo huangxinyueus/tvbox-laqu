@@ -154,6 +154,10 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/dongzuopian/30028.html'>
+            生死制暴            </a></li>
+                    <li><a href='/dongzuopian/30027.html'>
+            野兽座驾            </a></li>
                     <li><a href='/donghuapian/20280.html'>
             师兄啊师兄/我师兄实在太稳健了            </a></li>
                     <li><a href='/donghuapian/20991.html'>
@@ -190,10 +194,6 @@ document.getElementById(obj).style.display="none";
             实习生2026            </a></li>
                     <li><a href='/kehuanpian/30011.html'>
             机械凶姬            </a></li>
-                    <li><a href='/donghuapian/21958.html'>
-            仙逆            </a></li>
-                    <li><a href='/donghuapian/24756.html'>
-            牧神记            </a></li>
                   </ul>
         <ul class="hide">
                     <li><a href='/dianshiju/oumeiju/24933.html'>
@@ -238,6 +238,10 @@ document.getElementById(obj).style.display="none";
             Doctor X：白色黑手党时代[全集]            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dongzuopian/30028.html'>
+            生死制暴            </a></li>
+                    <li><a href='/dongzuopian/30027.html'>
+            野兽座驾            </a></li>
                     <li><a href='/dianshiju/oumeiju/19100.html'>
             指环王：力量之戒[第三季]            </a></li>
                     <li><a href='/dianshiju/guoju/29944.html'>
@@ -274,10 +278,6 @@ document.getElementById(obj).style.display="none";
             心乡迷踪            </a></li>
                     <li><a href='/dianshiju/oumeiju/25054.html'>
             黑鸽[第1-2季全]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29996.html'>
-            翻案人生[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29994.html'>
-            麻木医生[全集]            </a></li>
                   </ul>
       </div>
     </div>
@@ -305,6 +305,56 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/30028.html" class="zoom" rel="bookmark" title="生死制暴">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4630.jpg" alt="生死制暴" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/30028.html" rel="bookmark" title="生死制暴">生死制暴</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　生死制暴◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 动作 / 犯罪◎语　　言:　英语◎上映日期:　2026-11-17(中国大陆网络)◎豆瓣评分:　0                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-19</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/30028.html#respond" title="《生死制暴》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/30027.html" class="zoom" rel="bookmark" title="野兽座驾">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4622.jpg" alt="野兽座驾" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/30027.html" rel="bookmark" title="野兽座驾">野兽座驾</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　野兽座驾◎年　　代:　2026◎产　　地:　英国 / 美国◎类　　别:　剧情 / 动作 / 惊悚◎语　　言:　英语◎上映日期:　2026-10-09(美国)◎IMDb评分:　4.7 /                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-19</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/30027.html#respond" title="《野兽座驾》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/dianshiju/oumeiju/19100.html" class="zoom" rel="bookmark" title="指环王：力量之戒[第三季]">
@@ -704,62 +754,12 @@ document.getElementById(obj).style.display="none";
                         <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
     				</div>
                </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/juqingpian/30002.html" class="zoom" rel="bookmark" title="心乡迷踪">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4553.jpg" alt="心乡迷踪" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/juqingpian/30002.html" rel="bookmark" title="心乡迷踪">心乡迷踪</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　心乡迷踪◎译　　名:　心之国度◎年　　代:　2026◎产　　地:　美国◎类　　别:　悬疑 / 惊悚◎语　　言:　英语◎上映日期:　2026-11-13(美国网络)◎IMDb评                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-15</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/juqingpian/30002.html#respond" title="《心乡迷踪》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/25054.html" class="zoom" rel="bookmark" title="黑鸽[第1-2季全]">
-                            
-								<img src="https://tu.66tutup.com:667/2024/1333.jpg" alt="黑鸽[第1-2季全]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/25054.html" rel="bookmark" title="黑鸽[第1-2季全]">黑鸽[第1-2季全]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-◎译　　名　黑鸽 第一季◎片　　名　Black Doves Season 1◎年　　代　2024◎产　　地　英国◎类　　别　动作 / 悬疑 / 惊悚◎语　　言　英语◎上映日期　2024-12-05(英国                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-14</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/25054.html#respond" title="《黑鸽[第1-2季全]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
     		</li>
 	    	</ul>
 		<div class="clear"></div>
 		</div>
 	</div>
-	<div class="navigation container"><div class='pagination'>&nbsp;<a class='current'>1</a>&nbsp;<a href="/index_2.html">2</a>&nbsp;<a href="/index_3.html">3</a>&nbsp;<a href="/index_4.html">4</a>&nbsp;<a href="/index_5.html">5</a><a href="/index_2.html" class="next">下一页</a><a href="/index_5.html" class="next">尾页</a></div></div>
+	<div class="navigation container"><div class='pagination'>&nbsp;<a class='current'>1</a>&nbsp;<a href="/index_2.html">2</a>&nbsp;<a href="/index_3.html">3</a>&nbsp;<a href="/index_4.html">4</a>&nbsp;<a href="/index_5.html">5</a>&nbsp;<a href="/index_6.html">6</a><a href="/index_2.html" class="next">下一页</a><a href="/index_6.html" class="next">尾页</a></div></div>
 <div class="clear"></div>
 
 
