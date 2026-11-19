@@ -154,6 +154,26 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/donghuapian/30033.html'>
+            哆啦A梦：新·大雄的海底鬼岩城            </a></li>
+                    <li><a href='/dongzuopian/29599.html'>
+            奥德赛 诺兰版            </a></li>
+                    <li><a href='/kehuanpian/30026.html'>
+            复仇者联盟4：终局之战(加码臻享版)            </a></li>
+                    <li><a href='/donghuapian/18878.html'>
+            诛仙动画[第四季]            </a></li>
+                    <li><a href='/donghuapian/29236.html'>
+            东大高武学院            </a></li>
+                    <li><a href='/donghuapian/23320.html'>
+            逆天邪神[第二季]            </a></li>
+                    <li><a href='/juqingpian/30032.html'>
+            天才谋杀法            </a></li>
+                    <li><a href='/juqingpian/30031.html'>
+            高危假日            </a></li>
+                    <li><a href='/kongbupian/30030.html'>
+            新集体            </a></li>
+                    <li><a href='/kongbupian/30029.html'>
+            双重偏执            </a></li>
                     <li><a href='/dongzuopian/30028.html'>
             生死制暴            </a></li>
                     <li><a href='/dongzuopian/30027.html'>
@@ -164,8 +184,6 @@ document.getElementById(obj).style.display="none";
             遮天 动画版            </a></li>
                     <li><a href='/donghuapian/15179.html'>
             一念永恒 第四季            </a></li>
-                    <li><a href='/kehuanpian/30026.html'>
-            复仇者联盟4：终局之战(加码臻享版)            </a></li>
                     <li><a href='/kongbupian/30025.html'>
             另一个妈妈            </a></li>
                     <li><a href='/juqingpian/30024.html'>
@@ -176,26 +194,12 @@ document.getElementById(obj).style.display="none";
             米斯蒂·格林            </a></li>
                     <li><a href='/jilupian/30021.html'>
             混凝土简史            </a></li>
-                    <li><a href='/donghuapian/14764.html'>
-            吞噬星空            </a></li>
-                    <li><a href='/donghuapian/29270.html'>
-            一斩苍穹            </a></li>
-                    <li><a href='/donghuapian/30017.html'>
-            吉姆皇后            </a></li>
-                    <li><a href='/juqingpian/30016.html'>
-            告知信            </a></li>
-                    <li><a href='/aiqingpian/30015.html'>
-            圣诞节的十二次约会            </a></li>
-                    <li><a href='/xijupian/30014.html'>
-            小春，屁股摇起来！            </a></li>
-                    <li><a href='/jilupian/30013.html'>
-            史蒂芬·库里：大师画像            </a></li>
-                    <li><a href='/juqingpian/30012.html'>
-            实习生2026            </a></li>
-                    <li><a href='/kehuanpian/30011.html'>
-            机械凶姬            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/guoju/30020.html'>
+            多喜一家人            </a></li>
+                    <li><a href='/dianshiju/guoju/30018.html'>
+            十万狂花入梦来            </a></li>
                     <li><a href='/dianshiju/oumeiju/24933.html'>
             乔治和曼迪的头婚生活 第三季            </a></li>
                     <li><a href='/dianshiju/oumeiju/29853.html'>
@@ -204,10 +208,6 @@ document.getElementById(obj).style.display="none";
             一杆入魂 第二季            </a></li>
                     <li><a href='/dianshiju/oumeiju/19100.html'>
             指环王：力量之戒[第三季]            </a></li>
-                    <li><a href='/dianshiju/guoju/30020.html'>
-            多喜一家人            </a></li>
-                    <li><a href='/dianshiju/guoju/30018.html'>
-            十万狂花入梦来            </a></li>
                     <li><a href='/dianshiju/guoju/29944.html'>
             走马上任[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/30019.html'>
@@ -238,6 +238,16 @@ document.getElementById(obj).style.display="none";
             Doctor X：白色黑手党时代[全集]            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/donghuapian/30033.html'>
+            哆啦A梦：新·大雄的海底鬼岩城            </a></li>
+                    <li><a href='/dongzuopian/29599.html'>
+            奥德赛 诺兰版            </a></li>
+                    <li><a href='/kehuanpian/30026.html'>
+            复仇者联盟4：终局之战(加码臻享版)            </a></li>
+                    <li><a href='/juqingpian/30032.html'>
+            天才谋杀法            </a></li>
+                    <li><a href='/kongbupian/30029.html'>
+            双重偏执            </a></li>
                     <li><a href='/dongzuopian/30028.html'>
             生死制暴            </a></li>
                     <li><a href='/dongzuopian/30027.html'>
@@ -250,8 +260,6 @@ document.getElementById(obj).style.display="none";
             今天是太阳雨[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29957.html'>
             谷雨[全集]            </a></li>
-                    <li><a href='/kehuanpian/30026.html'>
-            复仇者联盟4：终局之战(加码臻享版)            </a></li>
                     <li><a href='/kongbupian/30025.html'>
             另一个妈妈            </a></li>
                     <li><a href='/donghuapian/30017.html'>
@@ -270,14 +278,6 @@ document.getElementById(obj).style.display="none";
             12 12 12 第一季            </a></li>
                     <li><a href='/dongzuopian/30005.html'>
             极限逃生2026            </a></li>
-                    <li><a href='/dongzuopian/30004.html'>
-            绝境反击            </a></li>
-                    <li><a href='/dongzuopian/30003.html'>
-            寄生狂潮            </a></li>
-                    <li><a href='/juqingpian/30002.html'>
-            心乡迷踪            </a></li>
-                    <li><a href='/dianshiju/oumeiju/25054.html'>
-            黑鸽[第1-2季全]            </a></li>
                   </ul>
       </div>
     </div>
@@ -305,6 +305,131 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/donghuapian/30033.html" class="zoom" rel="bookmark" title="哆啦A梦：新·大雄的海底鬼岩城">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4635.jpg" alt="哆啦A梦：新·大雄的海底鬼岩城" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/donghuapian/30033.html" rel="bookmark" title="哆啦A梦：新·大雄的海底鬼岩城">哆啦A梦：新·大雄的海底鬼岩城</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　哆啦A梦：新&amp;amp;middot;大雄的海底鬼岩城◎译　　名:　Doraemon: Nobita and the New Castle of the Undersea Devil / 哆啦A梦 第45部剧场版 / 映画ドラえもん M                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-19</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/donghuapian/30033.html#respond" title="《哆啦A梦：新·大雄的海底鬼岩城》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/donghuapian/" title="查看动画片中的全部文章" rel="category tag">动画片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/29599.html" class="zoom" rel="bookmark" title="奥德赛 诺兰版">
+                            
+								<img src="https://tu.66tutup.com:667/2026/2996.jpg" alt="奥德赛 诺兰版" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/29599.html" rel="bookmark" title="奥德赛 诺兰版">奥德赛 诺兰版</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　The Odyssey◎中 文 名:　奥德赛◎年　　代:　2026◎产　　地:　美国 / 加拿大 / 冰岛 / 新西兰 / 摩洛哥 / 英国◎类　　别:　动作 / 历史 / 奇幻 / 冒险◎                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-19</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/29599.html#respond" title="《奥德赛 诺兰版》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/kehuanpian/30026.html" class="zoom" rel="bookmark" title="复仇者联盟4：终局之战(加码臻享版)">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4621.jpg" alt="复仇者联盟4：终局之战(加码臻享版)" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/kehuanpian/30026.html" rel="bookmark" title="复仇者联盟4：终局之战(加码臻享版)">复仇者联盟4：终局之战(加码臻享版)</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+ ◎片　　名:　复仇者联盟4：终局之战◎译　　名:　AVG4 / Avengers Endgame: Encore / Avengers: Infinity War - Part II / The Avengers 3: Part 2 / The Avengers 4: Endg                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-19</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/kehuanpian/30026.html#respond" title="《复仇者联盟4：终局之战(加码臻享版)》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/kehuanpian/" title="查看科幻片中的全部文章" rel="category tag">科幻片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/juqingpian/30032.html" class="zoom" rel="bookmark" title="天才谋杀法">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4636.jpg" alt="天才谋杀法" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/juqingpian/30032.html" rel="bookmark" title="天才谋杀法">天才谋杀法</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　天才谋杀法◎译　　名:　Switzerland / 瑞士◎年　　代:　2026◎产　　地:　瑞士 / 澳大利亚 / 意大利 / 美国 / 英国◎类　　别:　剧情 / 惊悚 / 犯罪◎语                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-19</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/juqingpian/30032.html#respond" title="《天才谋杀法》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/kongbupian/30029.html" class="zoom" rel="bookmark" title="双重偏执">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4634.jpg" alt="双重偏执" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/kongbupian/30029.html" rel="bookmark" title="双重偏执">双重偏执</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　双重偏执◎译　　名:　规律妄想狂◎年　　代:　2025◎产　　地:　美国◎类　　别:　惊悚 / 恐怖◎语　　言:　英语◎上映日期:　2025-08-22(FrightFest) / 2                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-19</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/kongbupian/30029.html#respond" title="《双重偏执》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/kongbupian/" title="查看恐怖片中的全部文章" rel="category tag">恐怖片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/dongzuopian/30028.html" class="zoom" rel="bookmark" title="生死制暴">
@@ -452,31 +577,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/29957.html#respond" title="《谷雨[全集]》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/kehuanpian/30026.html" class="zoom" rel="bookmark" title="复仇者联盟4：终局之战(加码臻享版)">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4621.jpg" alt="复仇者联盟4：终局之战(加码臻享版)" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/kehuanpian/30026.html" rel="bookmark" title="复仇者联盟4：终局之战(加码臻享版)">复仇者联盟4：终局之战(加码臻享版)</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
- ◎片　　名:　复仇者联盟4：终局之战◎译　　名:　AVG4 / Avengers Endgame: Encore / Avengers: Infinity War - Part II / The Avengers 3: Part 2 / The Avengers 4: Endg                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-17</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/kehuanpian/30026.html#respond" title="《复仇者联盟4：终局之战(加码臻享版)》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/kehuanpian/" title="查看科幻片中的全部文章" rel="category tag">科幻片</a></span> 
     				</div>
                </div>
     		</li><li class="post box row fixed-hight">
@@ -652,106 +752,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/rihanju/29923.html#respond" title="《韩剧[谎言]》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/30006.html" class="zoom" rel="bookmark" title="12 12 12 第一季">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4519.jpg" alt="12 12 12 第一季" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/30006.html" rel="bookmark" title="12 12 12 第一季">12 12 12 第一季</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　12 12 12◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 惊悚 / 犯罪◎语　　言:　英语◎上映日期:　2026-11-13(美国)◎IMDb评分:　7.5 / 10 from                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-15</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/30006.html#respond" title="《12 12 12 第一季》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dongzuopian/30005.html" class="zoom" rel="bookmark" title="极限逃生2026">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4512.jpg" alt="极限逃生2026" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/30005.html" rel="bookmark" title="极限逃生2026">极限逃生2026</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　极限逃生◎译　　名:　Escape / The Breakthrough / 极限逃生中国版◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　喜剧 / 动作 / 灾难◎语　　言:　                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-15</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/30005.html#respond" title="《极限逃生2026》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dongzuopian/30004.html" class="zoom" rel="bookmark" title="绝境反击">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4505.jpg" alt="绝境反击" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/30004.html" rel="bookmark" title="绝境反击">绝境反击</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　绝境反击◎译　　名:　Never Surrender◎年　　代:　2026◎产　　地:　印度尼西亚◎类　　别:　剧情 / 动作 / 犯罪◎语　　言:　印度尼西亚语◎上映日期:　                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-15</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/30004.html#respond" title="《绝境反击》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dongzuopian/30003.html" class="zoom" rel="bookmark" title="寄生狂潮">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4511.jpg" alt="寄生狂潮" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/30003.html" rel="bookmark" title="寄生狂潮">寄生狂潮</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　寄生狂潮◎译　　名:　深海寄生兽◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　动作 / 奇幻 / 冒险 / 古装◎语　　言:　汉语普通话◎上映日期:　20                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-15</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/30003.html#respond" title="《寄生狂潮》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
     				</div>
                </div>
     		</li>
