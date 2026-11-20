@@ -275,42 +275,42 @@ gtag('config', 'UA-147241604-1');
     <li class="list-group-item group-game-item">
         <div style="padding:0 17px" class="row justify-content-between align-items-center">
             <div class="row d-none d-lg-flex justify-content-between align-items-center vertical-center">
-                <div class="col-md-1 category-game-time">03:30
+                <div class="col-md-1 category-game-time">11:00
                 </div>
                 <div class="col-md-3">
                     <div class=""><span
-                            class="game-type">NCAA</span>
+                            class="game-type">足球综合</span>
                     </div>
                 </div>
                 <div class="col-md-4 text-right">
                                     <span class="team-name"
-                                          title="佛罗里达大学">佛罗里达大学</span>
+                                          title="西雅图海湾人">西雅图海湾人</span>
                 </div>
                 <div class="col-xs-1 text-right" style="padding: 0;">
-                    <img class="lazyload" src="/static/img/default.png?t=1792651338" alt="佛罗里达大学"
+                    <img class="lazyload" src="/static/img/default.png?t=1792651338" alt="西雅图海湾人"
                          referrerPolicy="no-referrer"
-                         data-src="/static/img/default.png"
+                         data-src="https://sd.qunliao.info/fastdfs3/M00/B5/89/ChOxM1xC2nOAM5sJAAAY6JYZLec007.png"
                          style="width: 36px;">
                 </div>
                 <div class="col-md-1 text-center">
                     VS
                 </div>
                 <div class="col-xs-1 text-left" style="padding: 0;">
-                    <img src="/static/img/default.png?t=1792651338" alt="西弗吉尼亚大学理工学院"
+                    <img src="/static/img/default.png?t=1792651338" alt="皇家盐湖城"
                          referrerPolicy="no-referrer"
-                         data-src="/static/img/default.png "
+                         data-src="https://sd.qunliao.info/fastdfs3/M00/B5/83/ChOxM1xC2ZyAFf6EAAATIvbev6A175.png "
                          class="team-logo boss lazyload" style="width: 36px;">
                 </div>
                 <div class="col-md-3 text-left">
-                                            <span class="team-name" title="西弗吉尼亚大学理工学院">
-                                              西弗吉尼亚大学理工学院</span>
+                                            <span class="team-name" title="皇家盐湖城">
+                                              皇家盐湖城</span>
                 </div>
 
-                <div data-id="132302" class="col-md-3 pay-btn text-right">
+                <div data-id="132314" class="col-md-3 pay-btn text-right">
                     
                     
                     <a target="_blank" class="btn btn-primary"
-                       href='/live/132302/play'
+                       href='/live/132314/play'
                        role="button">直播中<i class="glyphicon glyphicon-play"></i></a>
                     
                     
@@ -323,44 +323,44 @@ gtag('config', 'UA-147241604-1');
     <li class="list-group-item group-game-item">
         <div style="padding:0 17px" class="row justify-content-between align-items-center">
             <div class="row d-none d-lg-flex justify-content-between align-items-center vertical-center">
-                <div class="col-md-1 category-game-time">09:00
+                <div class="col-md-1 category-game-time">11:00
                 </div>
                 <div class="col-md-3">
                     <div class=""><span
-                            class="game-type">NBA常规赛</span>
+                            class="game-type">NCAA</span>
                     </div>
                 </div>
                 <div class="col-md-4 text-right">
                                     <span class="team-name"
-                                          title="雄鹿">雄鹿</span>
+                                          title="加州大学伯克利分校">加州大学伯克利分校</span>
                 </div>
                 <div class="col-xs-1 text-right" style="padding: 0;">
-                    <img class="lazyload" src="/static/img/default.png?t=1792651338" alt="雄鹿"
+                    <img class="lazyload" src="/static/img/default.png?t=1792651338" alt="加州大学伯克利分校"
                          referrerPolicy="no-referrer"
-                         data-src="https://mat1.gtimg.com/sports/nba/logo/1602/15.png"
+                         data-src="/static/img/default.png"
                          style="width: 36px;">
                 </div>
                 <div class="col-md-1 text-center">
                     VS
                 </div>
                 <div class="col-xs-1 text-left" style="padding: 0;">
-                    <img src="/static/img/default.png?t=1792651338" alt="开拓者"
+                    <img src="/static/img/default.png?t=1792651338" alt="东德克萨斯农工大学"
                          referrerPolicy="no-referrer"
-                         data-src="https://mat1.gtimg.com/sports/nba/logo/new/22.png "
+                         data-src="/static/img/default.png "
                          class="team-logo boss lazyload" style="width: 36px;">
                 </div>
                 <div class="col-md-3 text-left">
-                                            <span class="team-name" title="开拓者">
-                                              开拓者</span>
+                                            <span class="team-name" title="东德克萨斯农工大学">
+                                              东德克萨斯农工大学</span>
                 </div>
 
-                <div data-id="132025" class="col-md-3 pay-btn text-right">
+                <div data-id="132324" class="col-md-3 pay-btn text-right">
                     
-                    <a class="btn btn-default btn-disabled "
-                       href='/live/132025/play'
-                       role="button">
-                        暂无
-                    </a>
+                    
+                    <a target="_blank" class="btn btn-primary"
+                       href='/live/132324/play'
+                       role="button">直播中<i class="glyphicon glyphicon-play"></i></a>
+                    
                     
 
                 </div>
@@ -371,44 +371,44 @@ gtag('config', 'UA-147241604-1');
     <li class="list-group-item group-game-item">
         <div style="padding:0 17px" class="row justify-content-between align-items-center">
             <div class="row d-none d-lg-flex justify-content-between align-items-center vertical-center">
-                <div class="col-md-1 category-game-time">09:00
+                <div class="col-md-1 category-game-time">11:00
                 </div>
                 <div class="col-md-3">
                     <div class=""><span
-                            class="game-type">NBA常规赛</span>
+                            class="game-type">NCAA</span>
                     </div>
                 </div>
                 <div class="col-md-4 text-right">
                                     <span class="team-name"
-                                          title="马刺">马刺</span>
+                                          title="斯坦福大学">斯坦福大学</span>
                 </div>
                 <div class="col-xs-1 text-right" style="padding: 0;">
-                    <img class="lazyload" src="/static/img/default.png?t=1792651338" alt="马刺"
+                    <img class="lazyload" src="/static/img/default.png?t=1792651338" alt="斯坦福大学"
                          referrerPolicy="no-referrer"
-                         data-src="https://img1.gtimg.com/sports/pics/hv1/231/116/2220/144385311.png"
+                         data-src="/static/img/default.png"
                          style="width: 36px;">
                 </div>
                 <div class="col-md-1 text-center">
                     VS
                 </div>
                 <div class="col-xs-1 text-left" style="padding: 0;">
-                    <img src="/static/img/default.png?t=1792651338" alt="快船"
+                    <img src="/static/img/default.png?t=1792651338" alt="萨克拉门托州立大学"
                          referrerPolicy="no-referrer"
-                         data-src="https://mat1.gtimg.com/sports/nba/logo/1602/1201.png "
+                         data-src="/static/img/default.png "
                          class="team-logo boss lazyload" style="width: 36px;">
                 </div>
                 <div class="col-md-3 text-left">
-                                            <span class="team-name" title="快船">
-                                              快船</span>
+                                            <span class="team-name" title="萨克拉门托州立大学">
+                                              萨克拉门托州立大学</span>
                 </div>
 
-                <div data-id="132026" class="col-md-3 pay-btn text-right">
+                <div data-id="132325" class="col-md-3 pay-btn text-right">
                     
-                    <a class="btn btn-default btn-disabled "
-                       href='/live/132026/play'
-                       role="button">
-                        暂无
-                    </a>
+                    
+                    <a target="_blank" class="btn btn-primary"
+                       href='/live/132325/play'
+                       role="button">直播中<i class="glyphicon glyphicon-play"></i></a>
+                    
                     
 
                 </div>
@@ -419,44 +419,44 @@ gtag('config', 'UA-147241604-1');
     <li class="list-group-item group-game-item">
         <div style="padding:0 17px" class="row justify-content-between align-items-center">
             <div class="row d-none d-lg-flex justify-content-between align-items-center vertical-center">
-                <div class="col-md-1 category-game-time">09:00
+                <div class="col-md-1 category-game-time">11:00
                 </div>
                 <div class="col-md-3">
                     <div class=""><span
-                            class="game-type">NBA常规赛</span>
+                            class="game-type">NCAA</span>
                     </div>
                 </div>
                 <div class="col-md-4 text-right">
                                     <span class="team-name"
-                                          title="灰熊">灰熊</span>
+                                          title="波特兰州立大学">波特兰州立大学</span>
                 </div>
                 <div class="col-xs-1 text-right" style="padding: 0;">
-                    <img class="lazyload" src="/static/img/default.png?t=1792651338" alt="灰熊"
+                    <img class="lazyload" src="/static/img/default.png?t=1792651338" alt="波特兰州立大学"
                          referrerPolicy="no-referrer"
-                         data-src="https://mat1.gtimg.com/sports/nba/logo/1602/29.png"
+                         data-src="/static/img/default.png"
                          style="width: 36px;">
                 </div>
                 <div class="col-md-1 text-center">
                     VS
                 </div>
                 <div class="col-xs-1 text-left" style="padding: 0;">
-                    <img src="/static/img/default.png?t=1792651338" alt="勇士"
+                    <img src="/static/img/default.png?t=1792651338" alt="西北印第安学院"
                          referrerPolicy="no-referrer"
-                         data-src="https://mat1.gtimg.com/sports/nba/logo/1602/9.png "
+                         data-src="/static/img/default.png "
                          class="team-logo boss lazyload" style="width: 36px;">
                 </div>
                 <div class="col-md-3 text-left">
-                                            <span class="team-name" title="勇士">
-                                              勇士</span>
+                                            <span class="team-name" title="西北印第安学院">
+                                              西北印第安学院</span>
                 </div>
 
-                <div data-id="132027" class="col-md-3 pay-btn text-right">
+                <div data-id="132326" class="col-md-3 pay-btn text-right">
                     
-                    <a class="btn btn-default btn-disabled "
-                       href='/live/132027/play'
-                       role="button">
-                        暂无
-                    </a>
+                    
+                    <a target="_blank" class="btn btn-primary"
+                       href='/live/132326/play'
+                       role="button">直播中<i class="glyphicon glyphicon-play"></i></a>
+                    
                     
 
                 </div>
@@ -467,44 +467,92 @@ gtag('config', 'UA-147241604-1');
     <li class="list-group-item group-game-item">
         <div style="padding:0 17px" class="row justify-content-between align-items-center">
             <div class="row d-none d-lg-flex justify-content-between align-items-center vertical-center">
-                <div class="col-md-1 category-game-time">09:00
+                <div class="col-md-1 category-game-time">11:30
                 </div>
                 <div class="col-md-3">
                     <div class=""><span
-                            class="game-type">NBA常规赛</span>
+                            class="game-type">NCAA</span>
                     </div>
                 </div>
                 <div class="col-md-4 text-right">
                                     <span class="team-name"
-                                          title="森林狼">森林狼</span>
+                                          title="圣塔克拉拉大学">圣塔克拉拉大学</span>
                 </div>
                 <div class="col-xs-1 text-right" style="padding: 0;">
-                    <img class="lazyload" src="/static/img/default.png?t=1792651338" alt="森林狼"
+                    <img class="lazyload" src="/static/img/default.png?t=1792651338" alt="圣塔克拉拉大学"
                          referrerPolicy="no-referrer"
-                         data-src="https://mat1.gtimg.com/sports/nba/logo/new/16.png"
+                         data-src="/static/img/default.png"
                          style="width: 36px;">
                 </div>
                 <div class="col-md-1 text-center">
                     VS
                 </div>
                 <div class="col-xs-1 text-left" style="padding: 0;">
-                    <img src="/static/img/default.png?t=1792651338" alt="尼克斯"
+                    <img src="/static/img/default.png?t=1792651338" alt="弗吉尼亚联邦大学"
                          referrerPolicy="no-referrer"
-                         data-src="https://mat1.gtimg.com/sports/nba/logo/1602/18.png "
+                         data-src="/static/img/default.png "
                          class="team-logo boss lazyload" style="width: 36px;">
                 </div>
                 <div class="col-md-3 text-left">
-                                            <span class="team-name" title="尼克斯">
-                                              尼克斯</span>
+                                            <span class="team-name" title="弗吉尼亚联邦大学">
+                                              弗吉尼亚联邦大学</span>
                 </div>
 
-                <div data-id="132028" class="col-md-3 pay-btn text-right">
+                <div data-id="132327" class="col-md-3 pay-btn text-right">
                     
-                    <a class="btn btn-default btn-disabled "
-                       href='/live/132028/play'
-                       role="button">
-                        暂无
-                    </a>
+                    
+                    <a target="_blank" class="btn btn-primary"
+                       href='/live/132327/play'
+                       role="button">直播中<i class="glyphicon glyphicon-play"></i></a>
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+    </li>
+    
+    <li class="list-group-item group-game-item">
+        <div style="padding:0 17px" class="row justify-content-between align-items-center">
+            <div class="row d-none d-lg-flex justify-content-between align-items-center vertical-center">
+                <div class="col-md-1 category-game-time">12:00
+                </div>
+                <div class="col-md-3">
+                    <div class=""><span
+                            class="game-type">NCAA</span>
+                    </div>
+                </div>
+                <div class="col-md-4 text-right">
+                                    <span class="team-name"
+                                          title="休斯顿大学">休斯顿大学</span>
+                </div>
+                <div class="col-xs-1 text-right" style="padding: 0;">
+                    <img class="lazyload" src="/static/img/default.png?t=1792651338" alt="休斯顿大学"
+                         referrerPolicy="no-referrer"
+                         data-src="/static/img/default.png"
+                         style="width: 36px;">
+                </div>
+                <div class="col-md-1 text-center">
+                    VS
+                </div>
+                <div class="col-xs-1 text-left" style="padding: 0;">
+                    <img src="/static/img/default.png?t=1792651338" alt="堪萨斯大学"
+                         referrerPolicy="no-referrer"
+                         data-src="/static/img/default.png "
+                         class="team-logo boss lazyload" style="width: 36px;">
+                </div>
+                <div class="col-md-3 text-left">
+                                            <span class="team-name" title="堪萨斯大学">
+                                              堪萨斯大学</span>
+                </div>
+
+                <div data-id="132328" class="col-md-3 pay-btn text-right">
+                    
+                    
+                    <a target="_blank" class="btn btn-primary"
+                       href='/live/132328/play'
+                       role="button">直播中<i class="glyphicon glyphicon-play"></i></a>
+                    
                     
 
                 </div>
@@ -2972,108 +3020,6 @@ gtag('config', 'UA-147241604-1');
         </div>
     </li>
     
-    <li class="list-group-item group-game-item">
-        <div style="padding:0 17px" class="row justify-content-between align-items-center">
-            <div class="row d-none d-lg-flex justify-content-between align-items-center vertical-center">
-                <div class="col-md-1 category-game-time">23:15
-                </div>
-                <div class="col-md-3">
-                    <div class=""><span
-                            class="game-type">西甲第13轮</span>
-                    </div>
-                </div>
-                <div class="col-md-4 text-right">
-                                    <span class="team-name"
-                                          title="桑坦德竞技">桑坦德竞技</span>
-                </div>
-                <div class="col-xs-1 text-right" style="padding: 0;">
-                    <img class="lazyload" src="/static/img/default.png?t=1792651338" alt="桑坦德竞技"
-                         referrerPolicy="no-referrer"
-                         data-src="https://sd.qunliao.info/fastdfs3/M00/B5/7E/ChOxM1xC2R-AQzquAAAbPtHe3QI317.png"
-                         style="width: 36px;">
-                </div>
-                <div class="col-md-1 text-center">
-                    VS
-                </div>
-                <div class="col-xs-1 text-left" style="padding: 0;">
-                    <img src="/static/img/default.png?t=1792651338" alt="皇家社会"
-                         referrerPolicy="no-referrer"
-                         data-src="https://mat1.gtimg.com/sports/logo/xijia/Sociedad.png "
-                         class="team-logo boss lazyload" style="width: 36px;">
-                </div>
-                <div class="col-md-3 text-left">
-                                            <span class="team-name" title="皇家社会">
-                                              皇家社会</span>
-                </div>
-
-                <div data-id="130023" class="col-md-3 pay-btn text-right">
-                    
-                    <a class="btn btn-default btn-disabled "
-                       href='/live/130023/play'
-                       role="button">
-                        暂无
-                    </a>
-                    
-
-                </div>
-            </div>
-        </div>
-    </li>
-    
-    
-    <li class="list-group-item live-list-group-time">
-        <span class="date"></span>
-        2026-11-23
-    </li>
-    
-    <li class="list-group-item group-game-item">
-        <div style="padding:0 17px" class="row justify-content-between align-items-center">
-            <div class="row d-none d-lg-flex justify-content-between align-items-center vertical-center">
-                <div class="col-md-1 category-game-time">00:15
-                </div>
-                <div class="col-md-3">
-                    <div class=""><span
-                            class="game-type">法甲联赛 第11轮</span>
-                    </div>
-                </div>
-                <div class="col-md-4 text-right">
-                                    <span class="team-name"
-                                          title="洛里昂">洛里昂</span>
-                </div>
-                <div class="col-xs-1 text-right" style="padding: 0;">
-                    <img class="lazyload" src="/static/img/default.png?t=1792651338" alt="洛里昂"
-                         referrerPolicy="no-referrer"
-                         data-src="https://sd.qunliao.info/fastdfs3/M00/B5/76/ChOxM1xC2HuAWsaCAAAXalthfQc160.png"
-                         style="width: 36px;">
-                </div>
-                <div class="col-md-1 text-center">
-                    VS
-                </div>
-                <div class="col-xs-1 text-left" style="padding: 0;">
-                    <img src="/static/img/default.png?t=1792651338" alt="雷恩"
-                         referrerPolicy="no-referrer"
-                         data-src="https://sd.qunliao.info/fastdfs3/M00/B5/76/ChOxM1xC2HiAEp4eAAAWIzu7tFs976.png "
-                         class="team-logo boss lazyload" style="width: 36px;">
-                </div>
-                <div class="col-md-3 text-left">
-                                            <span class="team-name" title="雷恩">
-                                              雷恩</span>
-                </div>
-
-                <div data-id="129895" class="col-md-3 pay-btn text-right">
-                    
-                    <a class="btn btn-default btn-disabled "
-                       href='/live/129895/play'
-                       role="button">
-                        暂无
-                    </a>
-                    
-
-                </div>
-            </div>
-        </div>
-    </li>
-    
     
     
 </ul>
@@ -3087,99 +3033,55 @@ gtag('config', 'UA-147241604-1');
     <ul class="list-unstyled row">
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2405/live'>北京北汽直播</a>
-        </li>
-        
-        <li class="col-md-2 col-sm-6 col-xs-6">
             <a class="list-item" href='/team/5852/live'>塞尔维亚直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2408/live'>维罗纳直播</a>
+            <a class="list-item" href='/team/2507/live'>曼城直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/3105/live'>克莱蒙直播</a>
+            <a class="list-item" href='/team/2387/live'>山东高速直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/5851/live'>伊朗直播</a>
+            <a class="list-item" href='/team/2426/live'>深圳马可波罗直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2707/live'>卢多戈雷茨直播</a>
+            <a class="list-item" href='/team/6476/live'>沙特直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/4317/live'>RB莱比锡直播</a>
+            <a class="list-item" href='/team/2489/live'>巴拉多利德直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2652/live'>布雷斯特直播</a>
+            <a class="list-item" href='/team/5877/live'>波黑直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2580/live'>沙尔克04直播</a>
+            <a class="list-item" href='/team/2609/live'>安德莱赫特直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2607/live'>沃尔夫斯堡直播</a>
+            <a class="list-item" href='/team/2487/live'>卡拉巴克直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/9639/live'>瑞士女足直播</a>
+            <a class="list-item" href='/team/4424/live'>萨勒尼塔纳直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2363/live'>热火直播</a>
+            <a class="list-item" href='/team/2630/live'>顿涅茨克矿工直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2384/live'>水晶宫直播</a>
+            <a class="list-item" href='/team/6383/live'>哥伦比亚女足直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/6376/live'>瑞典女足直播</a>
-        </li>
-        
-        <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/4203/live'>桑坦德竞技直播</a>
-        </li>
-        
-        <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/5355/live'>德国直播</a>
-        </li>
-        
-        <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/4417/live'>蒙扎直播</a>
-        </li>
-        
-        <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/5833/live'>新西兰直播</a>
-        </li>
-        
-        <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/3812/live'>诺丁汉森林直播</a>
-        </li>
-        
-        <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2458/live'>青岛国信直播</a>
-        </li>
-        
-        <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2418/live'>塞维利亚直播</a>
-        </li>
-        
-        <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2540/live'>朗斯直播</a>
-        </li>
-        
-        <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/3106/live'>勒芒直播</a>
-        </li>
-        
-        <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/5834/live'>巴西直播</a>
+            <a class="list-item" href='/team/6206/live'>乌拉圭直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
@@ -3187,23 +3089,67 @@ gtag('config', 'UA-147241604-1');
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2472/live'>尤文图斯直播</a>
+            <a class="list-item" href='/team/4203/live'>桑坦德竞技直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2455/live'>切尔西直播</a>
+            <a class="list-item" href='/team/2425/live'>福建晋江直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2439/live'>格拉斯哥流浪者直播</a>
+            <a class="list-item" href='/team/7341/live'>加纳直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/12268/live'>摩洛哥女足直播</a>
+            <a class="list-item" href='/team/2588/live'>蒙彼利埃直播</a>
         </li>
         
         <li class="col-md-2 col-sm-6 col-xs-6">
-            <a class="list-item" href='/team/2547/live'>富勒姆直播</a>
+            <a class="list-item" href='/team/6386/live'>日本女足直播</a>
+        </li>
+        
+        <li class="col-md-2 col-sm-6 col-xs-6">
+            <a class="list-item" href='/team/2392/live'>湖人直播</a>
+        </li>
+        
+        <li class="col-md-2 col-sm-6 col-xs-6">
+            <a class="list-item" href='/team/2414/live'>葡萄牙体育直播</a>
+        </li>
+        
+        <li class="col-md-2 col-sm-6 col-xs-6">
+            <a class="list-item" href='/team/7116/live'>海登海姆直播</a>
+        </li>
+        
+        <li class="col-md-2 col-sm-6 col-xs-6">
+            <a class="list-item" href='/team/2443/live'>布鲁日直播</a>
+        </li>
+        
+        <li class="col-md-2 col-sm-6 col-xs-6">
+            <a class="list-item" href='/team/6980/live'>卢多格雷茨直播</a>
+        </li>
+        
+        <li class="col-md-2 col-sm-6 col-xs-6">
+            <a class="list-item" href='/team/2361/live'>活塞直播</a>
+        </li>
+        
+        <li class="col-md-2 col-sm-6 col-xs-6">
+            <a class="list-item" href='/team/2495/live'>欧塞尔直播</a>
+        </li>
+        
+        <li class="col-md-2 col-sm-6 col-xs-6">
+            <a class="list-item" href='/team/5846/live'>意大利直播</a>
+        </li>
+        
+        <li class="col-md-2 col-sm-6 col-xs-6">
+            <a class="list-item" href='/team/2405/live'>北京北汽直播</a>
+        </li>
+        
+        <li class="col-md-2 col-sm-6 col-xs-6">
+            <a class="list-item" href='/team/6376/live'>瑞典女足直播</a>
+        </li>
+        
+        <li class="col-md-2 col-sm-6 col-xs-6">
+            <a class="list-item" href='/team/2475/live'>北京国安直播</a>
         </li>
         
     </ul>
@@ -3221,39 +3167,23 @@ gtag('config', 'UA-147241604-1');
     <ul class="list-unstyled row">
         
         <li class="col-md-6">
-            <a class="list-item" href='/replay/147750'>2026年11月18日 欧国联B2组第6轮 乌克兰vs格鲁吉亚 全场录像回放</a>
-        </li>
-        
-        <li class="col-md-6">
-            <a class="list-item" href='/replay/147749'>2026年11月18日 欧国联B2组第6轮 匈牙利vs北爱尔兰 全场录像回放</a>
-        </li>
-        
-        <li class="col-md-6">
-            <a class="list-item" href='/replay/147748'>2026年11月18日 欧国联B3组第6轮 爱尔兰vs科索沃 全场录像回放</a>
-        </li>
-        
-        <li class="col-md-6">
-            <a class="list-item" href='/replay/147747'>2026年11月18日 欧国联B4组第6轮 波兰vs瑞典 全场录像回放</a>
-        </li>
-        
-        <li class="col-md-6">
-            <a class="list-item" href='/replay/147740'>2026年11月18日 欧国联A4组第6轮 威尔士vs葡萄牙 全场录像回放</a>
-        </li>
-        
-        <li class="col-md-6">
-            <a class="list-item" href='/replay/147739'>2026年11月18日 欧国联A4组第6轮 丹麦vs挪威 全场录像回放</a>
-        </li>
-        
-        <li class="col-md-6">
-            <a class="list-item" href='/replay/147738'>2026年11月18日 欧国联B4组第6轮 波黑vs罗马尼亚 全场录像回放</a>
-        </li>
-        
-        <li class="col-md-6">
-            <a class="list-item" href='/replay/147737'>2026年11月18日 欧国联B3组第6轮 以色列vs奥地利 全场录像回放</a>
-        </li>
-        
-        <li class="col-md-6">
             <a class="list-item" href='/replay/147763'>2026年11月19日 斯诺克德国大师赛资格赛64进32 丁俊晖vs舒尔第 全场录像回放</a>
+        </li>
+        
+        <li class="col-md-6">
+            <a class="list-item" href='/replay/147767'>2026年11月20日 NBA常规赛 勇士vs灰熊 全场录像回放</a>
+        </li>
+        
+        <li class="col-md-6">
+            <a class="list-item" href='/replay/147766'>2026年11月20日 NBA常规赛 尼克斯vs森林狼 全场录像回放</a>
+        </li>
+        
+        <li class="col-md-6">
+            <a class="list-item" href='/replay/147765'>2026年11月20日 NBA常规赛 开拓者vs雄鹿 全场录像回放</a>
+        </li>
+        
+        <li class="col-md-6">
+            <a class="list-item" href='/replay/147764'>2026年11月20日 NBA常规赛 快船vs马刺 全场录像回放</a>
         </li>
         
         <li class="col-md-6">
@@ -3266,6 +3196,22 @@ gtag('config', 'UA-147241604-1');
         
         <li class="col-md-6">
             <a class="list-item" href='/replay/147760'>2026年11月19日 NBA常规赛 奇才vs猛龙 全场录像回放</a>
+        </li>
+        
+        <li class="col-md-6">
+            <a class="list-item" href='/replay/147759'>2026年11月19日 NBA常规赛 老鹰vs雷霆 全场录像回放</a>
+        </li>
+        
+        <li class="col-md-6">
+            <a class="list-item" href='/replay/147758'>2026年11月19日 NBA常规赛 活塞vs鹈鹕 全场录像回放</a>
+        </li>
+        
+        <li class="col-md-6">
+            <a class="list-item" href='/replay/147757'>2026年11月19日 NBA常规赛 勇士vs独行侠 全场录像回放</a>
+        </li>
+        
+        <li class="col-md-6">
+            <a class="list-item" href='/replay/147756'>2026年11月19日 NBA常规赛 灰熊vs骑士 全场录像回放</a>
         </li>
         
     </ul>
