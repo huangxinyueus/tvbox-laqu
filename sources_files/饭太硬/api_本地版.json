@@ -1,10 +1,10 @@
 {
-  "spider": "./lib/spider.jar;md5;6ef2e95b434509eed5b943aa44bb3fdf",
+  "spider": "./lib/spider.jar;md5;0ce2eae734b7eff47763f3f9e1d8525b",
   "wallpaper": "https://动态壁纸.饭.eu.org/",
   "sites": [
     {
       "key": "点我切源",
-      "name": "豆豆┃片单 <升级弹幕>",
+      "name": "豆豆┃片单 <fix+升级弹幕>",
       "type": 3,
       "api": "csp_DouDouGuard",
       "indexs": 1,
@@ -115,6 +115,16 @@
       "changeable": 1
     },
     {
+      "key": "韩剧",
+      "name": "🐱韩迷┃外剧",
+      "type": 3,
+      "api": "csp_HanquanGuard",
+      "timeout": 10,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1
+    },
+    {
       "key": "光影",
       "name": "🌞光影┃不卡",
       "type": 3,
@@ -170,12 +180,14 @@
       "changeable": 1
     },
     {
-      "key": "海绵",
-      "name": "🐬海绵┃不卡",
+      "key": "花生",
+      "name": "🥜花生┃不卡",
       "type": 3,
-      "api": "csp_HmysGuard",
-      "timeout": 10,
-      "playerType": "2",
+      "api": "csp_HuashuGuard",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
@@ -384,7 +396,7 @@
       "name": "🐯虎牙┃直播",
       "type": 3,
       "api": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-      "ext": "./lib/虎牙.js",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/虎牙.js",
       "style": {
         "type": "rect",
         "ratio": 1.755
@@ -400,7 +412,7 @@
       "name": "🐟斗鱼┃直播",
       "type": 3,
       "api": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-      "ext": "./lib/斗鱼直播.js",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/斗鱼直播.js",
       "style": {
         "type": "rect",
         "ratio": 1.755
@@ -528,7 +540,7 @@
       "name": "📚儿童┃启蒙",
       "type": 3,
       "api": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-      "ext": "./lib/%E5%85%94%E5%B0%8F%E8%B4%9D.js",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/%E5%85%94%E5%B0%8F%E8%B4%9D.js",
       "style": {
         "type": "rect",
         "ratio": 1.597
@@ -653,7 +665,7 @@
     {
       "name": "Kimentanm",
       "type": 0,
-      "url": "./live/iptv.m3u",
+      "url": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
       "playerType": 2
     },
     {
