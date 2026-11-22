@@ -638,7 +638,7 @@
                  alt="药屋少女的呢喃 第三季封面图"
                  data-src="https://img.qkacg.top/upload/vod/20260924-1/fe42ee1d48ec483bb3e05c0c67f24357.jpg" />
             <span class="public-bg"></span>
-            <span class="public-prt hide cr1" style="">热映推荐</span>            <span class="public-play"><i class="fa">&#xe593;</i></span>
+            <span class="public-prt hide cr8" style="">热映推荐</span>            <span class="public-play"><i class="fa">&#xe593;</i></span>
         </a>
     </div>
     <div class="public-list-button">
@@ -1215,6 +1215,22 @@
     <div class="flex wrap border-box public-r hide-b-10">
                 <div class="public-list-box public-pic-b [swiper]">
     <div class="public-list-div public-list-bj">
+        <a target="_self" class="public-list-exp" href="/pages/5450.html" title="斗破苍穹剧场版 双帝之战">
+            <img class="lazy lazy1 gen-movie-img mask-1"
+                 referrerpolicy="no-referrer"
+                 src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="
+                 alt="斗破苍穹剧场版 双帝之战封面图"
+                 data-src="https://img.qkacg.top/upload/vod/20261122-1/4eb31f528a1f52936fe990a8bc448ee9.jpg" />
+            <span class="public-bg"></span>
+                        <span class="public-play"><i class="fa">&#xe593;</i></span>
+        </a>
+    </div>
+    <div class="public-list-button">
+        <a target="_self" class="time-title hide ft4" href="/pages/5450.html" title="斗破苍穹剧场版 双帝之战">斗破苍穹剧场版 双帝之战</a>
+            </div>
+</div>
+                <div class="public-list-box public-pic-b [swiper]">
+    <div class="public-list-div public-list-bj">
         <a target="_self" class="public-list-exp" href="/pages/5405.html" title="罗梅莉亚战记">
             <img class="lazy lazy1 gen-movie-img mask-1"
                  referrerpolicy="no-referrer"
@@ -1238,7 +1254,7 @@
                  alt="药屋少女的呢喃 第三季封面图"
                  data-src="https://img.qkacg.top/upload/vod/20260924-1/fe42ee1d48ec483bb3e05c0c67f24357.jpg" />
             <span class="public-bg"></span>
-            <span class="public-prt hide cr5" style="">热映推荐</span>            <span class="public-play"><i class="fa">&#xe593;</i></span>
+            <span class="public-prt hide cr7" style="">热映推荐</span>            <span class="public-play"><i class="fa">&#xe593;</i></span>
         </a>
     </div>
     <div class="public-list-button">
@@ -1357,22 +1373,6 @@
         <a target="_self" class="time-title hide ft4" href="/pages/3384.html" title="圣诞之吻SS+ plus">圣诞之吻SS+ plus</a>
             </div>
 </div>
-                <div class="public-list-box public-pic-b [swiper]">
-    <div class="public-list-div public-list-bj">
-        <a target="_self" class="public-list-exp" href="/pages/4112.html" title="圣诞之吻SS">
-            <img class="lazy lazy1 gen-movie-img mask-1"
-                 referrerpolicy="no-referrer"
-                 src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="
-                 alt="圣诞之吻SS封面图"
-                 data-src="https://gimg1.baidu.com/gimg/app=2001&amp;src=https%3A%2F%2Fi0.hdslb.com/bfs/album/88a409a57e14d512d03e0d53d4108ff760543dfd.jpg" />
-            <span class="public-bg"></span>
-                        <span class="public-play"><i class="fa">&#xe593;</i></span>
-        </a>
-    </div>
-    <div class="public-list-button">
-        <a target="_self" class="time-title hide ft4" href="/pages/4112.html" title="圣诞之吻SS">圣诞之吻SS</a>
-            </div>
-</div>
             </div>
 </div><div class="box-width wow fadeInUp">
     <div class="title-a flex top40">
@@ -1408,7 +1408,7 @@
                  alt="药屋少女的呢喃 第三季封面图"
                  data-src="https://img.qkacg.top/upload/vod/20260924-1/fe42ee1d48ec483bb3e05c0c67f24357.jpg" />
             <span class="public-bg"></span>
-            <span class="public-prt hide cr7" style="">热映推荐</span>            <span class="public-list-prb hide ft2">
+            <span class="public-prt hide cr2" style="">热映推荐</span>            <span class="public-list-prb hide ft2">
                 更新至8话            </span>
                         <span class="public-play"><i class="fa">&#xe593;</i></span>
         </a>
