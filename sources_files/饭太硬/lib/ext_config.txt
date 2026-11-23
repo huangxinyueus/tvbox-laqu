@@ -154,6 +154,22 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/xijupian/30065.html'>
+            神之乐团            </a></li>
+                    <li><a href='/juqingpian/30064.html'>
+            地理补习课            </a></li>
+                    <li><a href='/juqingpian/30063.html'>
+            大秦文公            </a></li>
+                    <li><a href='/juqingpian/30062.html'>
+            寒鸦之冬            </a></li>
+                    <li><a href='/juqingpian/30061.html'>
+            警督巴比塔 辛格            </a></li>
+                    <li><a href='/dongzuopian/30060.html'>
+            AI乱杀：绝地反击            </a></li>
+                    <li><a href='/donghuapian/29270.html'>
+            一斩苍穹            </a></li>
+                    <li><a href='/donghuapian/14764.html'>
+            吞噬星空            </a></li>
                     <li><a href='/juqingpian/30058.html'>
             温柔的怪物            </a></li>
                     <li><a href='/juqingpian/30057.html'>
@@ -178,34 +194,28 @@ document.getElementById(obj).style.display="none";
             我不好惹3            </a></li>
                     <li><a href='/dongzuopian/30050.html'>
             全县最棒的煎饼            </a></li>
-                    <li><a href='/xijupian/30049.html'>
-            拳拳慈母心            </a></li>
-                    <li><a href='/donghuapian/13804.html'>
-            凡人修仙传            </a></li>
-                    <li><a href='/donghuapian/29199.html'>
-            择日飞升            </a></li>
-                    <li><a href='/donghuapian/27821.html'>
-            光阴之外            </a></li>
-                    <li><a href='/dongzuopian/29599.html'>
-            奥德赛 诺兰版            </a></li>
-                    <li><a href='/zhanzhengpian/29569.html'>
-            四渡            </a></li>
-                    <li><a href='/donghuapian/21959.html'>
-            大主宰年番            </a></li>
-                    <li><a href='/donghuapian/21328.html'>
-            沧元图 第三季            </a></li>
                   </ul>
         <ul class="hide">
-                    <li><a href='/dianshiju/guoju/30020.html'>
-            多喜一家人            </a></li>
-                    <li><a href='/dianshiju/guoju/30035.html'>
-            重生密码            </a></li>
+                    <li><a href='/dianshiju/oumeiju/17645.html'>
+            镀金时代[第四季]            </a></li>
+                    <li><a href='/dianshiju/rihanju/29923.html'>
+            韩剧[谎言]            </a></li>
+                    <li><a href='/dianshiju/rihanju/29790.html'>
+            百日谎言            </a></li>
+                    <li><a href='/dianshiju/rihanju/30037.html'>
+            我的有罪之人            </a></li>
+                    <li><a href='/dianshiju/guoju/30059.html'>
+            宝珠            </a></li>
+                    <li><a href='/dianshiju/guoju/30018.html'>
+            十万狂花入梦来            </a></li>
                     <li><a href='/dianshiju/guoju/30034.html'>
             两京十五日            </a></li>
                     <li><a href='/dianshiju/guoju/30036.html'>
             无声的回响            </a></li>
-                    <li><a href='/dianshiju/guoju/30018.html'>
-            十万狂花入梦来            </a></li>
+                    <li><a href='/dianshiju/guoju/30020.html'>
+            多喜一家人            </a></li>
+                    <li><a href='/dianshiju/guoju/30035.html'>
+            重生密码            </a></li>
                     <li><a href='/dianshiju/oumeiju/15032.html'>
             亚森·罗宾 四季全            </a></li>
                     <li><a href='/dianshiju/oumeiju/22560.html'>
@@ -226,32 +236,24 @@ document.getElementById(obj).style.display="none";
             十二星座恋爱实验[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/30042.html'>
             水晶湖[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30041.html'>
-            维也纳风云[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30040.html'>
-            镶金理想[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30039.html'>
-            罪兽之法[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29944.html'>
-            走马上任[全集]            </a></li>
-                    <li><a href='/dianshiju/guoju/29957.html'>
-            谷雨[全集]            </a></li>
                   </ul>
         <ul class="hide">
-                    <li><a href='/juqingpian/30058.html'>
-            温柔的怪物            </a></li>
-                    <li><a href='/donghuapian/30053.html'>
-            斗破苍穹剧场版 双帝之战            </a></li>
+                    <li><a href='/dianshiju/rihanju/29923.html'>
+            韩剧[谎言]            </a></li>
+                    <li><a href='/dianshiju/rihanju/30037.html'>
+            我的有罪之人            </a></li>
+                    <li><a href='/xijupian/30065.html'>
+            神之乐团            </a></li>
                     <li><a href='/dianshiju/guoju/30034.html'>
             两京十五日            </a></li>
                     <li><a href='/dianshiju/guoju/30036.html'>
             无声的回响            </a></li>
+                    <li><a href='/juqingpian/30058.html'>
+            温柔的怪物            </a></li>
+                    <li><a href='/donghuapian/30053.html'>
+            斗破苍穹剧场版 双帝之战            </a></li>
                     <li><a href='/dongzuopian/30052.html'>
             泥面人            </a></li>
-                    <li><a href='/dongzuopian/30051.html'>
-            我不好惹3            </a></li>
-                    <li><a href='/dongzuopian/30050.html'>
-            全县最棒的煎饼            </a></li>
                     <li><a href='/xijupian/30049.html'>
             拳拳慈母心            </a></li>
                     <li><a href='/dianshiju/oumeiju/30046.html'>
@@ -270,8 +272,6 @@ document.getElementById(obj).style.display="none";
             谷雨[全集]            </a></li>
                     <li><a href='/dianshiju/rihanju/30038.html'>
             罪蓝之路[全集]            </a></li>
-                    <li><a href='/dianshiju/rihanju/30037.html'>
-            我的有罪之人            </a></li>
                     <li><a href='/dianshiju/oumeiju/19727.html'>
             塔尔萨之王[第四季]            </a></li>
                     <li><a href='/zhanzhengpian/29569.html'>
@@ -305,6 +305,131 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/rihanju/29923.html" class="zoom" rel="bookmark" title="韩剧[谎言]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4318.jpg" alt="韩剧[谎言]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/rihanju/29923.html" rel="bookmark" title="韩剧[谎言]">韩剧[谎言]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎中 文 名:　谎言◎译　　名:　Liar / The Perfect Lie / 说谎者 / 谁在撒谎(韩国版)◎年　　代:　2026◎产　　地:　韩国◎类　　别:　剧情 / 爱情 / 悬疑◎语　　言:　                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-24</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/rihanju/29923.html#respond" title="《韩剧[谎言]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/rihanju/30037.html" class="zoom" rel="bookmark" title="我的有罪之人">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4649.jpg" alt="我的有罪之人" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/rihanju/30037.html" rel="bookmark" title="我的有罪之人">我的有罪之人</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+◎片　　名:　我的有罪之人◎译　　名:　Love in Disguise / Why Don&amp;amp;#39;t You Know I&amp;amp;#39;m a Woman? / 为什么不知道我是女人? / 为什么不知道是女人? / 伪装恋爱 / 你怎                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-24</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/rihanju/30037.html#respond" title="《我的有罪之人》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/xijupian/30065.html" class="zoom" rel="bookmark" title="神之乐团">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4743.jpg" alt="神之乐团" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/xijupian/30065.html" rel="bookmark" title="神之乐团">神之乐团</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◉　片　　名　神之乐团◉　译　　名　Choir of God / 神的乐团◉　年　　代　2025◉　产　　地　韩国◉　类　　别　剧情 / 喜剧 / 音乐◉　语　　言　韩语◉　片　　长                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-23</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/xijupian/30065.html#respond" title="《神之乐团》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/xijupian/" title="查看喜剧片中的全部文章" rel="category tag">喜剧片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/30034.html" class="zoom" rel="bookmark" title="两京十五日">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4648.jpg" alt="两京十五日" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/30034.html" rel="bookmark" title="两京十五日">两京十五日</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　两京十五日◎译　　名:　River of No Return◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 古装◎语　　言:　汉语普通话◎上映日期:　2026-1                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-23</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30034.html#respond" title="《两京十五日》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/30036.html" class="zoom" rel="bookmark" title="无声的回响">
+                            
+								<img src="https://img.dytt-tupian.com/upload/vod/20261120-1/ca6b2200fbed9ff355ffdbb9877992ce.webp" alt="无声的回响" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/30036.html" rel="bookmark" title="无声的回响">无声的回响</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　无声的回响◎译　　名:　Silent Echoes◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 犯罪◎语　　言:　汉语普通话◎上映日期:　2026-11-20(                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-23</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30036.html#respond" title="《无声的回响》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/juqingpian/30058.html" class="zoom" rel="bookmark" title="温柔的怪物">
@@ -357,56 +482,6 @@ document.getElementById(obj).style.display="none";
     		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/30034.html" class="zoom" rel="bookmark" title="两京十五日">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4648.jpg" alt="两京十五日" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/30034.html" rel="bookmark" title="两京十五日">两京十五日</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　两京十五日◎译　　名:　River of No Return◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 古装◎语　　言:　汉语普通话◎上映日期:　2026-1                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-22</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30034.html#respond" title="《两京十五日》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/30036.html" class="zoom" rel="bookmark" title="无声的回响">
-                            
-								<img src="https://img.dytt-tupian.com/upload/vod/20261120-1/ca6b2200fbed9ff355ffdbb9877992ce.webp" alt="无声的回响" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/30036.html" rel="bookmark" title="无声的回响">无声的回响</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　无声的回响◎译　　名:　Silent Echoes◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 犯罪◎语　　言:　汉语普通话◎上映日期:　2026-11-20(                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-22</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30036.html#respond" title="《无声的回响》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
                         <a href="/dongzuopian/30052.html" class="zoom" rel="bookmark" title="泥面人">
                             
 								<img src="https://tu.66tutup.com:667/2026/4687.jpg" alt="泥面人" />                                  
@@ -426,56 +501,6 @@ document.getElementById(obj).style.display="none";
                         <span class="info_date info_ico">2026-11-22</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dongzuopian/30052.html#respond" title="《泥面人》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dongzuopian/30051.html" class="zoom" rel="bookmark" title="我不好惹3">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4674.jpg" alt="我不好惹3" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/30051.html" rel="bookmark" title="我不好惹3">我不好惹3</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◉　片　　名　我不好惹3 The Last Temptation Of Becky (2026)◉　译　　名　贝琪：潜入狼穴◉　年　　代　2026◉　产　　地　英国 / 美国◉　类　　别　动作 / 惊悚◉　                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-22</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/30051.html#respond" title="《我不好惹3》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dongzuopian/30050.html" class="zoom" rel="bookmark" title="全县最棒的煎饼">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4685.jpg" alt="全县最棒的煎饼" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/30050.html" rel="bookmark" title="全县最棒的煎饼">全县最棒的煎饼</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◉　片　　名　全县最棒的煎饼 Best Pancakes in the County (2026)◉　年　　代　2026◉　产　　地　美国◉　类　　别　动作 / 惊悚 / 犯罪◉　语　　言　英语◉　片　                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-22</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/30050.html#respond" title="《全县最棒的煎饼》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
     				</div>
                </div>
@@ -707,31 +732,6 @@ document.getElementById(obj).style.display="none";
     		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dianshiju/rihanju/30037.html" class="zoom" rel="bookmark" title="我的有罪之人">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4649.jpg" alt="我的有罪之人" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/rihanju/30037.html" rel="bookmark" title="我的有罪之人">我的有罪之人</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-◎片　　名:　我的有罪之人◎译　　名:　Love in Disguise / Why Don&amp;amp;#39;t You Know I&amp;amp;#39;m a Woman? / 为什么不知道我是女人? / 为什么不知道是女人? / 伪装恋爱 / 你怎                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-21</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/rihanju/30037.html#respond" title="《我的有罪之人》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
                         <a href="/dianshiju/oumeiju/19727.html" class="zoom" rel="bookmark" title="塔尔萨之王[第四季]">
                             
 								<img src="https://www.haibao123.xyz/01/0723.jpg" alt="塔尔萨之王[第四季]" />                                  
@@ -759,7 +759,7 @@ document.getElementById(obj).style.display="none";
 		<div class="clear"></div>
 		</div>
 	</div>
-	<div class="navigation container"><div class='pagination'>&nbsp;<a class='current'>1</a>&nbsp;<a href="/index_2.html">2</a>&nbsp;<a href="/index_3.html">3</a>&nbsp;<a href="/index_4.html">4</a>&nbsp;<a href="/index_5.html">5</a>&nbsp;<a href="/index_6.html">6</a><a href="/index_2.html" class="next">下一页</a><a href="/index_6.html" class="next">尾页</a></div></div>
+	<div class="navigation container"><div class='pagination'>&nbsp;<a class='current'>1</a>&nbsp;<a href="/index_2.html">2</a>&nbsp;<a href="/index_3.html">3</a>&nbsp;<a href="/index_4.html">4</a>&nbsp;<a href="/index_5.html">5</a><a href="/index_2.html" class="next">下一页</a><a href="/index_5.html" class="next">尾页</a></div></div>
 <div class="clear"></div>
 
 

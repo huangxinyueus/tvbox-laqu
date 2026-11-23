@@ -1,10 +1,10 @@
 {
-  "spider": "./lib/spider.jar;md5;33ff9fba113101e9eba7c3d6f40314b7",
+  "spider": "./lib/spider.jar;md5;59a6b4afe46139a3a50d4f19b6137091",
   "wallpaper": "https://动态壁纸.饭.eu.org/",
   "sites": [
     {
       "key": "点我切源",
-      "name": "豆豆┃片单 <Fix所有>",
+      "name": "豆豆┃片单 <修复扫码Bug>",
       "type": 3,
       "api": "csp_DouDouGuard",
       "indexs": 1,
