@@ -154,6 +154,20 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/juqingpian/30068.html'>
+            深度安静            </a></li>
+                    <li><a href='/juqingpian/30067.html'>
+            单一幻国            </a></li>
+                    <li><a href='/xijupian/30066.html'>
+            里斯本媒人            </a></li>
+                    <li><a href='/donghuapian/29402.html'>
+            李熊猫[全集]            </a></li>
+                    <li><a href='/donghuapian/29600.html'>
+            灵境行者            </a></li>
+                    <li><a href='/donghuapian/20991.html'>
+            遮天 动画版            </a></li>
+                    <li><a href='/donghuapian/15179.html'>
+            一念永恒 第四季            </a></li>
                     <li><a href='/xijupian/30065.html'>
             神之乐团            </a></li>
                     <li><a href='/juqingpian/30064.html'>
@@ -180,22 +194,16 @@ document.getElementById(obj).style.display="none";
             守护星            </a></li>
                     <li><a href='/jilupian/30054.html'>
             马斯克            </a></li>
-                    <li><a href='/donghuapian/30053.html'>
-            斗破苍穹剧场版 双帝之战            </a></li>
-                    <li><a href='/donghuapian/17788.html'>
-            大王饶命[第三季全]            </a></li>
-                    <li><a href='/donghuapian/24756.html'>
-            牧神记            </a></li>
-                    <li><a href='/donghuapian/21958.html'>
-            仙逆            </a></li>
-                    <li><a href='/dongzuopian/30052.html'>
-            泥面人            </a></li>
-                    <li><a href='/dongzuopian/30051.html'>
-            我不好惹3            </a></li>
-                    <li><a href='/dongzuopian/30050.html'>
-            全县最棒的煎饼            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/guoju/30020.html'>
+            多喜一家人            </a></li>
+                    <li><a href='/dianshiju/guoju/30034.html'>
+            两京十五日            </a></li>
+                    <li><a href='/dianshiju/guoju/30036.html'>
+            无声的回响            </a></li>
+                    <li><a href='/dianshiju/guoju/30018.html'>
+            十万狂花入梦来            </a></li>
                     <li><a href='/dianshiju/oumeiju/17645.html'>
             镀金时代[第四季]            </a></li>
                     <li><a href='/dianshiju/rihanju/29923.html'>
@@ -206,14 +214,6 @@ document.getElementById(obj).style.display="none";
             我的有罪之人            </a></li>
                     <li><a href='/dianshiju/guoju/30059.html'>
             宝珠            </a></li>
-                    <li><a href='/dianshiju/guoju/30018.html'>
-            十万狂花入梦来            </a></li>
-                    <li><a href='/dianshiju/guoju/30034.html'>
-            两京十五日            </a></li>
-                    <li><a href='/dianshiju/guoju/30036.html'>
-            无声的回响            </a></li>
-                    <li><a href='/dianshiju/guoju/30020.html'>
-            多喜一家人            </a></li>
                     <li><a href='/dianshiju/guoju/30035.html'>
             重生密码            </a></li>
                     <li><a href='/dianshiju/oumeiju/15032.html'>
@@ -238,16 +238,18 @@ document.getElementById(obj).style.display="none";
             水晶湖[全集]            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/juqingpian/30068.html'>
+            深度安静            </a></li>
+                    <li><a href='/dianshiju/guoju/30034.html'>
+            两京十五日            </a></li>
+                    <li><a href='/dianshiju/guoju/30036.html'>
+            无声的回响            </a></li>
                     <li><a href='/dianshiju/rihanju/29923.html'>
             韩剧[谎言]            </a></li>
                     <li><a href='/dianshiju/rihanju/30037.html'>
             我的有罪之人            </a></li>
                     <li><a href='/xijupian/30065.html'>
             神之乐团            </a></li>
-                    <li><a href='/dianshiju/guoju/30034.html'>
-            两京十五日            </a></li>
-                    <li><a href='/dianshiju/guoju/30036.html'>
-            无声的回响            </a></li>
                     <li><a href='/juqingpian/30058.html'>
             温柔的怪物            </a></li>
                     <li><a href='/donghuapian/30053.html'>
@@ -276,8 +278,6 @@ document.getElementById(obj).style.display="none";
             塔尔萨之王[第四季]            </a></li>
                     <li><a href='/zhanzhengpian/29569.html'>
             四渡            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29926.html'>
-            夜曲 第一季            </a></li>
                   </ul>
       </div>
     </div>
@@ -305,6 +305,81 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/juqingpian/30068.html" class="zoom" rel="bookmark" title="深度安静">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4749.jpg" alt="深度安静" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/juqingpian/30068.html" rel="bookmark" title="深度安静">深度安静</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◉　片　　名　深度安静◉　译　　名　Deep Quiet Room◉　年　　代　2025◉　产　　地　中国台湾 / 意大利◉　类　　别　剧情◉　语　　言　汉语普通话◉　片　　长　10                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-25</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/juqingpian/30068.html#respond" title="《深度安静》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/30034.html" class="zoom" rel="bookmark" title="两京十五日">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4648.jpg" alt="两京十五日" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/30034.html" rel="bookmark" title="两京十五日">两京十五日</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　两京十五日◎译　　名:　River of No Return◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 古装◎语　　言:　汉语普通话◎上映日期:　2026-1                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-24</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30034.html#respond" title="《两京十五日》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/30036.html" class="zoom" rel="bookmark" title="无声的回响">
+                            
+								<img src="https://img.dytt-tupian.com/upload/vod/20261120-1/ca6b2200fbed9ff355ffdbb9877992ce.webp" alt="无声的回响" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/30036.html" rel="bookmark" title="无声的回响">无声的回响</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　无声的回响◎译　　名:　Silent Echoes◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 犯罪◎语　　言:　汉语普通话◎上映日期:　2026-11-20(                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-24</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30036.html#respond" title="《无声的回响》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/dianshiju/rihanju/29923.html" class="zoom" rel="bookmark" title="韩剧[谎言]">
@@ -377,56 +452,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/xijupian/30065.html#respond" title="《神之乐团》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/xijupian/" title="查看喜剧片中的全部文章" rel="category tag">喜剧片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/30034.html" class="zoom" rel="bookmark" title="两京十五日">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4648.jpg" alt="两京十五日" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/30034.html" rel="bookmark" title="两京十五日">两京十五日</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　两京十五日◎译　　名:　River of No Return◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 古装◎语　　言:　汉语普通话◎上映日期:　2026-1                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-23</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30034.html#respond" title="《两京十五日》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/30036.html" class="zoom" rel="bookmark" title="无声的回响">
-                            
-								<img src="https://img.dytt-tupian.com/upload/vod/20261120-1/ca6b2200fbed9ff355ffdbb9877992ce.webp" alt="无声的回响" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/30036.html" rel="bookmark" title="无声的回响">无声的回响</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　无声的回响◎译　　名:　Silent Echoes◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 犯罪◎语　　言:　汉语普通话◎上映日期:　2026-11-20(                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-23</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30036.html#respond" title="《无声的回响》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
     				</div>
                </div>
     		</li><li class="post box row fixed-hight">
@@ -727,31 +752,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/rihanju/30038.html#respond" title="《罪蓝之路[全集]》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/19727.html" class="zoom" rel="bookmark" title="塔尔萨之王[第四季]">
-                            
-								<img src="https://www.haibao123.xyz/01/0723.jpg" alt="塔尔萨之王[第四季]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/19727.html" rel="bookmark" title="塔尔萨之王[第四季]">塔尔萨之王[第四季]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
- ◎译　　名　塔尔萨之王/堪萨斯城黑帮/Kansas City◎片　　名　Tulsa King◎年　　代　2022◎产　　地　美国◎类　　别　剧情/犯罪◎语　　言　英语◎上映日期　2022-11-1                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-21</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/19727.html#respond" title="《塔尔萨之王[第四季]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
     				</div>
                </div>
     		</li>
