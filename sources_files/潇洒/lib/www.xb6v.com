@@ -154,6 +154,10 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/jilupian/30074.html'>
+            蓝色星球 第三季全            </a></li>
+                    <li><a href='/donghuapian/20280.html'>
+            师兄啊师兄/我师兄实在太稳健了            </a></li>
                     <li><a href='/juqingpian/30068.html'>
             深度安静            </a></li>
                     <li><a href='/juqingpian/30067.html'>
@@ -190,64 +194,72 @@ document.getElementById(obj).style.display="none";
             马登            </a></li>
                     <li><a href='/juqingpian/30056.html'>
             完美说谎者            </a></li>
-                    <li><a href='/aiqingpian/30055.html'>
-            守护星            </a></li>
-                    <li><a href='/jilupian/30054.html'>
-            马斯克            </a></li>
                   </ul>
         <ul class="hide">
-                    <li><a href='/dianshiju/guoju/30020.html'>
-            多喜一家人            </a></li>
-                    <li><a href='/dianshiju/guoju/30034.html'>
-            两京十五日            </a></li>
-                    <li><a href='/dianshiju/guoju/30036.html'>
-            无声的回响            </a></li>
-                    <li><a href='/dianshiju/guoju/30018.html'>
-            十万狂花入梦来            </a></li>
-                    <li><a href='/dianshiju/oumeiju/17645.html'>
-            镀金时代[第四季]            </a></li>
-                    <li><a href='/dianshiju/rihanju/29923.html'>
-            韩剧[谎言]            </a></li>
-                    <li><a href='/dianshiju/rihanju/29790.html'>
-            百日谎言            </a></li>
+                    <li><a href='/dianshiju/oumeiju/24321.html'>
+            上帝之城：斗争蔓延[第二季]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/24933.html'>
+            乔治和曼迪的头婚生活 第三季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/30073.html'>
+            女性炼狱[全集]            </a></li>
+                    <li><a href='/dianshiju/rihanju/29763.html'>
+            赤裸裸的人们            </a></li>
+                    <li><a href='/dianshiju/rihanju/29762.html'>
+            捉迷藏：0秒前的女友            </a></li>
                     <li><a href='/dianshiju/rihanju/30037.html'>
-            我的有罪之人            </a></li>
-                    <li><a href='/dianshiju/guoju/30059.html'>
-            宝珠            </a></li>
-                    <li><a href='/dianshiju/guoju/30035.html'>
-            重生密码            </a></li>
-                    <li><a href='/dianshiju/oumeiju/15032.html'>
-            亚森·罗宾 四季全            </a></li>
-                    <li><a href='/dianshiju/oumeiju/22560.html'>
-            波西·杰克逊 第三季            </a></li>
+            我的有罪之人[全集]            </a></li>
+                    <li><a href='/dianshiju/rihanju/30072.html'>
+            代考风暴            </a></li>
+                    <li><a href='/dianshiju/rihanju/30071.html'>
+            好搭档2            </a></li>
+                    <li><a href='/dianshiju/oumeiju/19100.html'>
+            指环王：力量之戒[第三季全]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/30070.html'>
+            挖[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/30069.html'>
+            银翼杀手2099[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/29689.html'>
             火线家族 第一季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30048.html'>
-            切尔西侦探 第四季全            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30047.html'>
-            野探哈莉 第五季全            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30046.html'>
-            库比蒂诺            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30045.html'>
-            戈登档案[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30044.html'>
-            律界战争 第一季全            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30043.html'>
-            十二星座恋爱实验[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30042.html'>
-            水晶湖[全集]            </a></li>
-                  </ul>
-        <ul class="hide">
-                    <li><a href='/juqingpian/30068.html'>
-            深度安静            </a></li>
-                    <li><a href='/dianshiju/guoju/30034.html'>
-            两京十五日            </a></li>
+                    <li><a href='/dianshiju/oumeiju/27375.html'>
+            诉讼女王 第二季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29853.html'>
+            换母疑云 第一季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/26282.html'>
+            一杆入魂 第二季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/24565.html'>
+            旺达在哪里 第二季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29926.html'>
+            夜曲 第一季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/30006.html'>
+            12 12 12 第一季            </a></li>
+                    <li><a href='/dianshiju/guoju/30059.html'>
+            宝珠            </a></li>
                     <li><a href='/dianshiju/guoju/30036.html'>
             无声的回响            </a></li>
+                  </ul>
+        <ul class="hide">
+                    <li><a href='/jilupian/30074.html'>
+            蓝色星球 第三季全            </a></li>
+                    <li><a href='/dianshiju/rihanju/30037.html'>
+            我的有罪之人[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/19100.html'>
+            指环王：力量之戒[第三季全]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/30070.html'>
+            挖[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/30069.html'>
+            银翼杀手2099[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29926.html'>
+            夜曲 第一季            </a></li>
+                    <li><a href='/dianshiju/oumeiju/30006.html'>
+            12 12 12 第一季            </a></li>
+                    <li><a href='/dianshiju/guoju/30036.html'>
+            无声的回响            </a></li>
+                    <li><a href='/dianshiju/guoju/30034.html'>
+            两京十五日            </a></li>
+                    <li><a href='/juqingpian/30068.html'>
+            深度安静            </a></li>
                     <li><a href='/dianshiju/rihanju/29923.html'>
             韩剧[谎言]            </a></li>
-                    <li><a href='/dianshiju/rihanju/30037.html'>
-            我的有罪之人            </a></li>
                     <li><a href='/xijupian/30065.html'>
             神之乐团            </a></li>
                     <li><a href='/juqingpian/30058.html'>
@@ -266,18 +278,6 @@ document.getElementById(obj).style.display="none";
             水晶湖[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/29944.html'>
             走马上任[全集]            </a></li>
-                    <li><a href='/donghuapian/13804.html'>
-            凡人修仙传            </a></li>
-                    <li><a href='/dongzuopian/29599.html'>
-            奥德赛 诺兰版            </a></li>
-                    <li><a href='/dianshiju/guoju/29957.html'>
-            谷雨[全集]            </a></li>
-                    <li><a href='/dianshiju/rihanju/30038.html'>
-            罪蓝之路[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/19727.html'>
-            塔尔萨之王[第四季]            </a></li>
-                    <li><a href='/zhanzhengpian/29569.html'>
-            四渡            </a></li>
                   </ul>
       </div>
     </div>
@@ -307,6 +307,231 @@ document.getElementById(obj).style.display="none";
 							<li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
+                        <a href="/jilupian/30074.html" class="zoom" rel="bookmark" title="蓝色星球 第三季全">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4746.jpg" alt="蓝色星球 第三季全" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/jilupian/30074.html" rel="bookmark" title="蓝色星球 第三季全">蓝色星球 第三季全</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◉　片　　名　蓝色星球 第三季◉　译　　名　Blue Planet III◉　年　　代　2026◉　产　　地　英国◉　类　　别　纪录片◉　语　　言　英语◉　片　　长　60分钟◉　上                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-26</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/jilupian/30074.html#respond" title="《蓝色星球 第三季全》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/jilupian/" title="查看纪录片中的全部文章" rel="category tag">纪录片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/rihanju/30037.html" class="zoom" rel="bookmark" title="我的有罪之人[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4649.jpg" alt="我的有罪之人[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/rihanju/30037.html" rel="bookmark" title="我的有罪之人[全集]">我的有罪之人[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+◎片　　名:　我的有罪之人◎译　　名:　Love in Disguise / Why Don&amp;amp;#39;t You Know I&amp;amp;#39;m a Woman? / 为什么不知道我是女人? / 为什么不知道是女人? / 伪装恋爱 / 你怎                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-26</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/rihanju/30037.html#respond" title="《我的有罪之人[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/19100.html" class="zoom" rel="bookmark" title="指环王：力量之戒[第三季全]">
+                            
+								<img src="https://tu.66tutup.com:667/2022/3434.jpg" alt="指环王：力量之戒[第三季全]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/19100.html" rel="bookmark" title="指环王：力量之戒[第三季全]">指环王：力量之戒[第三季全]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+ ◎译　　名　指环王：力量之戒 第一季/魔戒/魔戒:統御魔戒/指环王：权能之戒/指环王剧版/The Lord of the Rings◎片　　名　The Lord of the Rings: The Rings of Power Seaso                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-26</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/19100.html#respond" title="《指环王：力量之戒[第三季全]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/30070.html" class="zoom" rel="bookmark" title="挖[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4798.jpg" alt="挖[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/30070.html" rel="bookmark" title="挖[全集]">挖[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◉　片　　名　挖◉　译　　名　Excavations / 发掘◉　年　　代　2026◉　产　　地　美国◉　类　　别　喜剧 / 冒险◉　语　　言　英语◉　上映日期　2026-11-23(美国)                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-26</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/30070.html#respond" title="《挖[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/30069.html" class="zoom" rel="bookmark" title="银翼杀手2099[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4797.jpg" alt="银翼杀手2099[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/30069.html" rel="bookmark" title="银翼杀手2099[全集]">银翼杀手2099[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎译　 　名　　银翼杀手2099 / 银翼杀手衍生剧◎片 　　名　　Blade Runner 2099◎年　 　代　　2026◎产　 　地　　美国 / 捷克◎类　 　别　　剧情 / 动作 / 科幻 /                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-26</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/30069.html#respond" title="《银翼杀手2099[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/29926.html" class="zoom" rel="bookmark" title="夜曲 第一季">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4279.jpg" alt="夜曲 第一季" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/29926.html" rel="bookmark" title="夜曲 第一季">夜曲 第一季</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　Nocturne◎中 文 名:　夜曲◎译　　名:　Lazarus&amp;amp;lrm; / 夜行杀机 / 拉撒路◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 动作 / 悬疑 / 惊悚 /                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-26</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29926.html#respond" title="《夜曲 第一季》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/30006.html" class="zoom" rel="bookmark" title="12 12 12 第一季">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4519.jpg" alt="12 12 12 第一季" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/30006.html" rel="bookmark" title="12 12 12 第一季">12 12 12 第一季</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　12 12 12◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 惊悚 / 犯罪◎语　　言:　英语◎上映日期:　2026-11-13(美国)◎IMDb评分:　7.5 / 10 from                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-26</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/30006.html#respond" title="《12 12 12 第一季》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/30036.html" class="zoom" rel="bookmark" title="无声的回响">
+                            
+								<img src="https://img.dytt-tupian.com/upload/vod/20261120-1/ca6b2200fbed9ff355ffdbb9877992ce.webp" alt="无声的回响" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/30036.html" rel="bookmark" title="无声的回响">无声的回响</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　无声的回响◎译　　名:　Silent Echoes◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 犯罪◎语　　言:　汉语普通话◎上映日期:　2026-11-20(                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-25</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30036.html#respond" title="《无声的回响》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/30034.html" class="zoom" rel="bookmark" title="两京十五日">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4648.jpg" alt="两京十五日" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/30034.html" rel="bookmark" title="两京十五日">两京十五日</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　两京十五日◎译　　名:　River of No Return◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 古装◎语　　言:　汉语普通话◎上映日期:　2026-1                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-25</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30034.html#respond" title="《两京十五日》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
                         <a href="/juqingpian/30068.html" class="zoom" rel="bookmark" title="深度安静">
                             
 								<img src="https://tu.66tutup.com:667/2026/4749.jpg" alt="深度安静" />                                  
@@ -332,56 +557,6 @@ document.getElementById(obj).style.display="none";
     		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/30034.html" class="zoom" rel="bookmark" title="两京十五日">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4648.jpg" alt="两京十五日" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/30034.html" rel="bookmark" title="两京十五日">两京十五日</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　两京十五日◎译　　名:　River of No Return◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 古装◎语　　言:　汉语普通话◎上映日期:　2026-1                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-24</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30034.html#respond" title="《两京十五日》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/30036.html" class="zoom" rel="bookmark" title="无声的回响">
-                            
-								<img src="https://img.dytt-tupian.com/upload/vod/20261120-1/ca6b2200fbed9ff355ffdbb9877992ce.webp" alt="无声的回响" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/30036.html" rel="bookmark" title="无声的回响">无声的回响</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　无声的回响◎译　　名:　Silent Echoes◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 犯罪◎语　　言:　汉语普通话◎上映日期:　2026-11-20(                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-24</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30036.html#respond" title="《无声的回响》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
                         <a href="/dianshiju/rihanju/29923.html" class="zoom" rel="bookmark" title="韩剧[谎言]">
                             
 								<img src="https://tu.66tutup.com:667/2026/4318.jpg" alt="韩剧[谎言]" />                                  
@@ -401,31 +576,6 @@ document.getElementById(obj).style.display="none";
                         <span class="info_date info_ico">2026-11-24</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/rihanju/29923.html#respond" title="《韩剧[谎言]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/rihanju/30037.html" class="zoom" rel="bookmark" title="我的有罪之人">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4649.jpg" alt="我的有罪之人" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/rihanju/30037.html" rel="bookmark" title="我的有罪之人">我的有罪之人</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-◎片　　名:　我的有罪之人◎译　　名:　Love in Disguise / Why Don&amp;amp;#39;t You Know I&amp;amp;#39;m a Woman? / 为什么不知道我是女人? / 为什么不知道是女人? / 伪装恋爱 / 你怎                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-24</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/rihanju/30037.html#respond" title="《我的有罪之人》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
     				</div>
                </div>
@@ -602,156 +752,6 @@ document.getElementById(obj).style.display="none";
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/30044.html#respond" title="《律界战争 第一季全》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/30042.html" class="zoom" rel="bookmark" title="水晶湖[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4164.jpg" alt="水晶湖[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/30042.html" rel="bookmark" title="水晶湖[全集]">水晶湖[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　Crystal Lake◎中 文 名:　水晶湖◎年　　代:　2026◎产　　地:　美国◎类　　别:　恐怖◎语　　言:　英语◎上映日期:　2026-10-15(美国)◎IMDb评分:　7.5                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-22</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/30042.html#respond" title="《水晶湖[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29944.html" class="zoom" rel="bookmark" title="走马上任[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4360.jpg" alt="走马上任[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29944.html" rel="bookmark" title="走马上任[全集]">走马上任[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　走马上任◎译　　名:　小五当官之走马上任◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 喜剧◎语　　言:　汉语普通话◎上映日期:　2026-11-                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-21</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29944.html#respond" title="《走马上任[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/donghuapian/13804.html" class="zoom" rel="bookmark" title="凡人修仙传">
-                            
-								<img src="https://tu.66tutup.com:667/2025/1945.jpg" alt="凡人修仙传" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/donghuapian/13804.html" rel="bookmark" title="凡人修仙传">凡人修仙传</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-平凡少年韩立出生贫困，为了让家人过上更好的生活，自愿前去七玄门参加入门考核，最终被墨大夫收入门下。 墨大夫一开始对韩立悉心培养、传授医术，让韩立对他非常感激，但随着一同入                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-21</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/donghuapian/13804.html#respond" title="《凡人修仙传》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/donghuapian/" title="查看动画片中的全部文章" rel="category tag">动画片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dongzuopian/29599.html" class="zoom" rel="bookmark" title="奥德赛 诺兰版">
-                            
-								<img src="https://tu.66tutup.com:667/2026/2996.jpg" alt="奥德赛 诺兰版" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dongzuopian/29599.html" rel="bookmark" title="奥德赛 诺兰版">奥德赛 诺兰版</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　The Odyssey◎中 文 名:　奥德赛◎年　　代:　2026◎产　　地:　美国 / 加拿大 / 冰岛 / 新西兰 / 摩洛哥 / 英国◎类　　别:　动作 / 历史 / 奇幻 / 冒险◎                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-21</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dongzuopian/29599.html#respond" title="《奥德赛 诺兰版》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/29957.html" class="zoom" rel="bookmark" title="谷雨[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4438.jpg" alt="谷雨[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/guoju/29957.html" rel="bookmark" title="谷雨[全集]">谷雨[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　谷雨◎译　　名:　The Silent Storm◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 悬疑 / 犯罪◎语　　言:　汉语普通话◎上映日期:　2026-11                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-21</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/29957.html#respond" title="《谷雨[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/rihanju/30038.html" class="zoom" rel="bookmark" title="罪蓝之路[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4645.jpg" alt="罪蓝之路[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/rihanju/30038.html" rel="bookmark" title="罪蓝之路[全集]">罪蓝之路[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　罪蓝之路◎译　　名:　Road / プルンギル―青の道 / 绿道 / 路 / 로드◎年　　代:　2026◎产　　地:　韩国 / 日本◎类　　别:　剧情 / 悬疑 / 犯罪◎语　　                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-21</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/rihanju/30038.html#respond" title="《罪蓝之路[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
     				</div>
                </div>
     		</li>
