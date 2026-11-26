@@ -196,6 +196,8 @@ document.getElementById(obj).style.display="none";
             完美说谎者            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/oumeiju/30070.html'>
+            挖[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/24321.html'>
             上帝之城：斗争蔓延[第二季]            </a></li>
                     <li><a href='/dianshiju/oumeiju/24933.html'>
@@ -214,8 +216,6 @@ document.getElementById(obj).style.display="none";
             好搭档2            </a></li>
                     <li><a href='/dianshiju/oumeiju/19100.html'>
             指环王：力量之戒[第三季全]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30070.html'>
-            挖[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/30069.html'>
             银翼杀手2099[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/29689.html'>
@@ -238,14 +238,14 @@ document.getElementById(obj).style.display="none";
             无声的回响            </a></li>
                   </ul>
         <ul class="hide">
+                    <li><a href='/dianshiju/oumeiju/30070.html'>
+            挖[全集]            </a></li>
                     <li><a href='/jilupian/30074.html'>
             蓝色星球 第三季全            </a></li>
                     <li><a href='/dianshiju/rihanju/30037.html'>
             我的有罪之人[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/19100.html'>
             指环王：力量之戒[第三季全]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30070.html'>
-            挖[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/30069.html'>
             银翼杀手2099[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/29926.html'>
@@ -305,6 +305,31 @@ document.getElementById(obj).style.display="none";
 <script src="/lightbox.js"></script>
 <ul id="post_container" class="masonry clearfix">
 							<li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/oumeiju/30070.html" class="zoom" rel="bookmark" title="挖[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4798.jpg" alt="挖[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/oumeiju/30070.html" rel="bookmark" title="挖[全集]">挖[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◉　片　　名　挖◉　译　　名　Excavations / 发掘◉　年　　代　2026◉　产　　地　美国◉　类　　别　喜剧 / 冒险◉　语　　言　英语◉　上映日期　2026-11-23(美国)                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-26</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/30070.html#respond" title="《挖[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
                         <a href="/jilupian/30074.html" class="zoom" rel="bookmark" title="蓝色星球 第三季全">
@@ -376,31 +401,6 @@ document.getElementById(obj).style.display="none";
                         <span class="info_date info_ico">2026-11-26</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/19100.html#respond" title="《指环王：力量之戒[第三季全]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/30070.html" class="zoom" rel="bookmark" title="挖[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4798.jpg" alt="挖[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/30070.html" rel="bookmark" title="挖[全集]">挖[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◉　片　　名　挖◉　译　　名　Excavations / 发掘◉　年　　代　2026◉　产　　地　美国◉　类　　别　喜剧 / 冒险◉　语　　言　英语◉　上映日期　2026-11-23(美国)                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-26</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/30070.html#respond" title="《挖[全集]》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
     				</div>
                </div>
