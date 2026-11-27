@@ -154,6 +154,30 @@ document.getElementById(obj).style.display="none";
       </div>
       <div id="tab-content">
         <ul class="">
+                    <li><a href='/juqingpian/30090.html'>
+            误杀瞒天记3            </a></li>
+                    <li><a href='/xijupian/29485.html'>
+            欢迎来龙餐馆            </a></li>
+                    <li><a href='/dongzuopian/29872.html'>
+            街头霸王2026            </a></li>
+                    <li><a href='/donghuapian/30093.html'>
+            愚者之夜[全集]            </a></li>
+                    <li><a href='/donghuapian/21341.html'>
+            斗罗大陆2：绝世唐门            </a></li>
+                    <li><a href='/donghuapian/21328.html'>
+            沧元图 第三季            </a></li>
+                    <li><a href='/donghuapian/21959.html'>
+            大主宰年番            </a></li>
+                    <li><a href='/donghuapian/30088.html'>
+            ChaO，我代表人类跟人鱼结婚了            </a></li>
+                    <li><a href='/aiqingpian/30087.html'>
+            最后的晚餐            </a></li>
+                    <li><a href='/xijupian/30086.html'>
+            你是电影            </a></li>
+                    <li><a href='/juqingpian/30085.html'>
+            黑牢城            </a></li>
+                    <li><a href='/juqingpian/30084.html'>
+            随机访客            </a></li>
                     <li><a href='/donghuapian/18878.html'>
             诛仙动画[第四季]            </a></li>
                     <li><a href='/donghuapian/29236.html'>
@@ -170,44 +194,38 @@ document.getElementById(obj).style.display="none";
             仰天一笑            </a></li>
                     <li><a href='/dongzuopian/30080.html'>
             尘缘2026            </a></li>
-                    <li><a href='/aiqingpian/30079.html'>
-            编个丈夫            </a></li>
-                    <li><a href='/jilupian/30078.html'>
-            一切如你所见            </a></li>
-                    <li><a href='/juqingpian/30077.html'>
-            峡湾            </a></li>
-                    <li><a href='/juqingpian/30076.html'>
-            繁殖者            </a></li>
-                    <li><a href='/juqingpian/30075.html'>
-            社交清算            </a></li>
-                    <li><a href='/jilupian/30074.html'>
-            蓝色星球 第三季全            </a></li>
-                    <li><a href='/donghuapian/20280.html'>
-            师兄啊师兄/我师兄实在太稳健了            </a></li>
-                    <li><a href='/juqingpian/30068.html'>
-            深度安静            </a></li>
-                    <li><a href='/juqingpian/30067.html'>
-            单一幻国            </a></li>
-                    <li><a href='/xijupian/30066.html'>
-            里斯本媒人            </a></li>
-                    <li><a href='/donghuapian/29402.html'>
-            李熊猫[全集]            </a></li>
-                    <li><a href='/donghuapian/29600.html'>
-            灵境行者            </a></li>
                   </ul>
         <ul class="hide">
-                    <li><a href='/dianshiju/guoju/30083.html'>
-            不为人知的故事            </a></li>
-                    <li><a href='/dianshiju/guoju/30034.html'>
-            两京十五日            </a></li>
+                    <li><a href='/dianshiju/oumeiju/27180.html'>
+            狩猎之妻[第1-2季全]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/29824.html'>
+            独家黑幕 第二季全            </a></li>
+                    <li><a href='/dianshiju/oumeiju/30092.html'>
+            豪门劫案[全集]            </a></li>
+                    <li><a href='/dianshiju/oumeiju/30091.html'>
+            急症最前线[全集]            </a></li>
+                    <li><a href='/dianshiju/rihanju/29922.html'>
+            不着边际的你            </a></li>
+                    <li><a href='/dianshiju/rihanju/29979.html'>
+            再婚皇后[全集]            </a></li>
+                    <li><a href='/dianshiju/rihanju/29921.html'>
+            暑假[全集]            </a></li>
+                    <li><a href='/dianshiju/guoju/30089.html'>
+            风生水起            </a></li>
+                    <li><a href='/dianshiju/guoju/30035.html'>
+            重生密码[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/30020.html'>
             多喜一家人            </a></li>
                     <li><a href='/dianshiju/guoju/30018.html'>
             十万狂花入梦来            </a></li>
-                    <li><a href='/dianshiju/guoju/30059.html'>
-            宝珠            </a></li>
+                    <li><a href='/dianshiju/guoju/30083.html'>
+            不为人知的故事            </a></li>
                     <li><a href='/dianshiju/guoju/30036.html'>
             无声的回响            </a></li>
+                    <li><a href='/dianshiju/guoju/30034.html'>
+            两京十五日            </a></li>
+                    <li><a href='/dianshiju/guoju/30059.html'>
+            宝珠            </a></li>
                     <li><a href='/dianshiju/oumeiju/30070.html'>
             挖[全集]            </a></li>
                     <li><a href='/dianshiju/oumeiju/24321.html'>
@@ -218,30 +236,22 @@ document.getElementById(obj).style.display="none";
             女性炼狱[全集]            </a></li>
                     <li><a href='/dianshiju/rihanju/29763.html'>
             赤裸裸的人们            </a></li>
-                    <li><a href='/dianshiju/rihanju/29762.html'>
-            捉迷藏：0秒前的女友            </a></li>
-                    <li><a href='/dianshiju/rihanju/30037.html'>
-            我的有罪之人[全集]            </a></li>
-                    <li><a href='/dianshiju/rihanju/30072.html'>
-            代考风暴            </a></li>
-                    <li><a href='/dianshiju/rihanju/30071.html'>
-            好搭档2            </a></li>
-                    <li><a href='/dianshiju/oumeiju/19100.html'>
-            指环王：力量之戒[第三季全]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30069.html'>
-            银翼杀手2099[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29689.html'>
-            火线家族 第一季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/27375.html'>
-            诉讼女王 第二季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29853.html'>
-            换母疑云 第一季            </a></li>
                   </ul>
         <ul class="hide">
-                    <li><a href='/dianshiju/guoju/30034.html'>
-            两京十五日            </a></li>
+                    <li><a href='/juqingpian/30090.html'>
+            误杀瞒天记3            </a></li>
+                    <li><a href='/xijupian/29485.html'>
+            欢迎来龙餐馆            </a></li>
+                    <li><a href='/dongzuopian/29872.html'>
+            街头霸王2026            </a></li>
+                    <li><a href='/donghuapian/30093.html'>
+            愚者之夜[全集]            </a></li>
                     <li><a href='/dianshiju/guoju/30036.html'>
             无声的回响            </a></li>
+                    <li><a href='/dianshiju/guoju/30034.html'>
+            两京十五日            </a></li>
+                    <li><a href='/xijupian/30086.html'>
+            你是电影            </a></li>
                     <li><a href='/zhanzhengpian/30082.html'>
             蚊子杯：最后一役            </a></li>
                     <li><a href='/kehuanpian/zzx.html'>
@@ -268,16 +278,6 @@ document.getElementById(obj).style.display="none";
             指环王：力量之戒[第三季全]            </a></li>
                     <li><a href='/dianshiju/oumeiju/30069.html'>
             银翼杀手2099[全集]            </a></li>
-                    <li><a href='/dianshiju/oumeiju/29926.html'>
-            夜曲 第一季            </a></li>
-                    <li><a href='/dianshiju/oumeiju/30006.html'>
-            12 12 12 第一季            </a></li>
-                    <li><a href='/juqingpian/30068.html'>
-            深度安静            </a></li>
-                    <li><a href='/dianshiju/rihanju/29923.html'>
-            韩剧[谎言]            </a></li>
-                    <li><a href='/xijupian/30065.html'>
-            神之乐团            </a></li>
                   </ul>
       </div>
     </div>
@@ -307,26 +307,101 @@ document.getElementById(obj).style.display="none";
 							<li class="post box row fixed-hight">
             	<div class="post_hover">
                 	                    <div class="thumbnail">
-                        <a href="/dianshiju/guoju/30034.html" class="zoom" rel="bookmark" title="两京十五日">
+                        <a href="/juqingpian/30090.html" class="zoom" rel="bookmark" title="误杀瞒天记3">
                             
-								<img src="https://tu.66tutup.com:667/2026/4648.jpg" alt="两京十五日" />                                  
+								<img src="https://tu.66tutup.com:667/2026/4846.jpg" alt="误杀瞒天记3" />                                  
                         </a>
                     </div>
                     <div class="article">
-                        <h2><a href="/dianshiju/guoju/30034.html" rel="bookmark" title="两京十五日">两京十五日</a></h2>
+                        <h2><a href="/juqingpian/30090.html" rel="bookmark" title="误杀瞒天记3">误杀瞒天记3</a></h2>
                                                      <div class="entry_post">
                                 <p>
                                 
-&nbsp;&nbsp;◎片　　名:　两京十五日◎译　　名:　River of No Return◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 古装◎语　　言:　汉语普通话◎上映日期:　2026-1                            </p>
+&nbsp;&nbsp;◉　片　　名　误杀瞒天记3◉　译　　名　Drishyam 3 / Drishyam: The Conclusion / दृश्यम् 3◉　年　　代　2026◉　产　　地　印度◉　类　　别　惊悚 / 犯罪◉                            </p>
                             </div>
                                                 
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-11-26</span>
+                        <span class="info_date info_ico">2026-11-28</span>
                     	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30034.html#respond" title="《两京十五日》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+                        <span class="info_comment info_ico"><a href="/juqingpian/30090.html#respond" title="《误杀瞒天记3》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/xijupian/29485.html" class="zoom" rel="bookmark" title="欢迎来龙餐馆">
+                            
+								<img src="https://tu.66tutup.com:667/2026/3114.jpg" alt="欢迎来龙餐馆" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/xijupian/29485.html" rel="bookmark" title="欢迎来龙餐馆">欢迎来龙餐馆</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　欢迎来龙餐馆◎译　　名:　Once Upon a Time in the Middle East◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 战争◎语　　言:　汉语普通话                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-28</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/xijupian/29485.html#respond" title="《欢迎来龙餐馆》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/xijupian/" title="查看喜剧片中的全部文章" rel="category tag">喜剧片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dongzuopian/29872.html" class="zoom" rel="bookmark" title="街头霸王2026">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4479.jpg" alt="街头霸王2026" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dongzuopian/29872.html" rel="bookmark" title="街头霸王2026">街头霸王2026</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　Street Fighter◎中 文 名:　街头霸王◎译　　名:　快打旋风(台) / 街霸(港)◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 动作◎语　　言:　英                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-28</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dongzuopian/29872.html#respond" title="《街头霸王2026》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dongzuopian/" title="查看动作片中的全部文章" rel="category tag">动作片</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/donghuapian/30093.html" class="zoom" rel="bookmark" title="愚者之夜[全集]">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4841.jpg" alt="愚者之夜[全集]" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/donghuapian/30093.html" rel="bookmark" title="愚者之夜[全集]">愚者之夜[全集]</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◉　片　　名　愚者之夜◉　译　　名　Fool Night◉　年　　代　2026◉　产　　地　日本◉　类　　别　剧情 / 科幻 / 动画◉　语　　言　日语◉　上映日期　2026-11-26(                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-28</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/donghuapian/30093.html#respond" title="《愚者之夜[全集]》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/donghuapian/" title="查看动画片中的全部文章" rel="category tag">动画片</a></span> 
     				</div>
                </div>
     		</li><li class="post box row fixed-hight">
@@ -348,10 +423,60 @@ document.getElementById(obj).style.display="none";
                         <div class="arrow-catpanel-top">&nbsp;</div>
                     </div>
     				<div class="info">
-                        <span class="info_date info_ico">2026-11-26</span>
+                        <span class="info_date info_ico">2026-11-27</span>
                     	<span class="info_views info_ico"></span>
                         <span class="info_comment info_ico"><a href="/dianshiju/guoju/30036.html#respond" title="《无声的回响》上的评论">评论</a></span>
                         <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/dianshiju/guoju/30034.html" class="zoom" rel="bookmark" title="两京十五日">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4648.jpg" alt="两京十五日" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/dianshiju/guoju/30034.html" rel="bookmark" title="两京十五日">两京十五日</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◎片　　名:　两京十五日◎译　　名:　River of No Return◎年　　代:　2026◎产　　地:　中国大陆◎类　　别:　剧情 / 古装◎语　　言:　汉语普通话◎上映日期:　2026-1                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-27</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/dianshiju/guoju/30034.html#respond" title="《两京十五日》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/dianshiju/guoju/" title="查看国剧中的全部文章" rel="category tag">国剧</a></span> 
+    				</div>
+               </div>
+    		</li><li class="post box row fixed-hight">
+            	<div class="post_hover">
+                	                    <div class="thumbnail">
+                        <a href="/xijupian/30086.html" class="zoom" rel="bookmark" title="你是电影">
+                            
+								<img src="https://tu.66tutup.com:667/2026/4744.jpg" alt="你是电影" />                                  
+                        </a>
+                    </div>
+                    <div class="article">
+                        <h2><a href="/xijupian/30086.html" rel="bookmark" title="你是电影">你是电影</a></h2>
+                                                     <div class="entry_post">
+                                <p>
+                                
+&nbsp;&nbsp;◉　片　　名　你是电影◉　译　　名　You Are the Film / 超越无限电影院(台)◉　年　　代　2026◉　产　　地　日本◉　类　　别　喜剧 / 科幻◉　语　　言　日语◉　片                            </p>
+                            </div>
+                                                
+                        <div class="arrow-catpanel-top">&nbsp;</div>
+                    </div>
+    				<div class="info">
+                        <span class="info_date info_ico">2026-11-27</span>
+                    	<span class="info_views info_ico"></span>
+                        <span class="info_comment info_ico"><a href="/xijupian/30086.html#respond" title="《你是电影》上的评论">评论</a></span>
+                        <span class="info_category info_ico"><a href="/xijupian/" title="查看喜剧片中的全部文章" rel="category tag">喜剧片</a></span> 
     				</div>
                </div>
     		</li><li class="post box row fixed-hight">
@@ -629,137 +754,12 @@ document.getElementById(obj).style.display="none";
                         <span class="info_category info_ico"><a href="/dianshiju/rihanju/" title="查看日韩剧中的全部文章" rel="category tag">日韩剧</a></span> 
     				</div>
                </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/19100.html" class="zoom" rel="bookmark" title="指环王：力量之戒[第三季全]">
-                            
-								<img src="https://tu.66tutup.com:667/2022/3434.jpg" alt="指环王：力量之戒[第三季全]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/19100.html" rel="bookmark" title="指环王：力量之戒[第三季全]">指环王：力量之戒[第三季全]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
- ◎译　　名　指环王：力量之戒 第一季/魔戒/魔戒:統御魔戒/指环王：权能之戒/指环王剧版/The Lord of the Rings◎片　　名　The Lord of the Rings: The Rings of Power Seaso                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-26</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/19100.html#respond" title="《指环王：力量之戒[第三季全]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/30069.html" class="zoom" rel="bookmark" title="银翼杀手2099[全集]">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4797.jpg" alt="银翼杀手2099[全集]" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/30069.html" rel="bookmark" title="银翼杀手2099[全集]">银翼杀手2099[全集]</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎译　 　名　　银翼杀手2099 / 银翼杀手衍生剧◎片 　　名　　Blade Runner 2099◎年　 　代　　2026◎产　 　地　　美国 / 捷克◎类　 　别　　剧情 / 动作 / 科幻 /                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-26</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/30069.html#respond" title="《银翼杀手2099[全集]》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/29926.html" class="zoom" rel="bookmark" title="夜曲 第一季">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4279.jpg" alt="夜曲 第一季" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/29926.html" rel="bookmark" title="夜曲 第一季">夜曲 第一季</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　Nocturne◎中 文 名:　夜曲◎译　　名:　Lazarus&amp;amp;lrm; / 夜行杀机 / 拉撒路◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 动作 / 悬疑 / 惊悚 /                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-26</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/29926.html#respond" title="《夜曲 第一季》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/dianshiju/oumeiju/30006.html" class="zoom" rel="bookmark" title="12 12 12 第一季">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4519.jpg" alt="12 12 12 第一季" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/dianshiju/oumeiju/30006.html" rel="bookmark" title="12 12 12 第一季">12 12 12 第一季</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◎片　　名:　12 12 12◎年　　代:　2026◎产　　地:　美国◎类　　别:　剧情 / 惊悚 / 犯罪◎语　　言:　英语◎上映日期:　2026-11-13(美国)◎IMDb评分:　7.5 / 10 from                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-26</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/dianshiju/oumeiju/30006.html#respond" title="《12 12 12 第一季》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/dianshiju/oumeiju/" title="查看欧美剧中的全部文章" rel="category tag">欧美剧</a></span> 
-    				</div>
-               </div>
-    		</li><li class="post box row fixed-hight">
-            	<div class="post_hover">
-                	                    <div class="thumbnail">
-                        <a href="/juqingpian/30068.html" class="zoom" rel="bookmark" title="深度安静">
-                            
-								<img src="https://tu.66tutup.com:667/2026/4749.jpg" alt="深度安静" />                                  
-                        </a>
-                    </div>
-                    <div class="article">
-                        <h2><a href="/juqingpian/30068.html" rel="bookmark" title="深度安静">深度安静</a></h2>
-                                                     <div class="entry_post">
-                                <p>
-                                
-&nbsp;&nbsp;◉　片　　名　深度安静◉　译　　名　Deep Quiet Room◉　年　　代　2025◉　产　　地　中国台湾 / 意大利◉　类　　别　剧情◉　语　　言　汉语普通话◉　片　　长　10                            </p>
-                            </div>
-                                                
-                        <div class="arrow-catpanel-top">&nbsp;</div>
-                    </div>
-    				<div class="info">
-                        <span class="info_date info_ico">2026-11-25</span>
-                    	<span class="info_views info_ico"></span>
-                        <span class="info_comment info_ico"><a href="/juqingpian/30068.html#respond" title="《深度安静》上的评论">评论</a></span>
-                        <span class="info_category info_ico"><a href="/juqingpian/" title="查看剧情片中的全部文章" rel="category tag">剧情片</a></span> 
-    				</div>
-               </div>
     		</li>
 	    	</ul>
 		<div class="clear"></div>
 		</div>
 	</div>
-	<div class="navigation container"><div class='pagination'>&nbsp;<a class='current'>1</a>&nbsp;<a href="/index_2.html">2</a>&nbsp;<a href="/index_3.html">3</a>&nbsp;<a href="/index_4.html">4</a>&nbsp;<a href="/index_5.html">5</a><a href="/index_2.html" class="next">下一页</a><a href="/index_5.html" class="next">尾页</a></div></div>
+	<div class="navigation container"><div class='pagination'>&nbsp;<a class='current'>1</a>&nbsp;<a href="/index_2.html">2</a>&nbsp;<a href="/index_3.html">3</a>&nbsp;<a href="/index_4.html">4</a>&nbsp;<a href="/index_5.html">5</a>&nbsp;<a href="/index_6.html">6</a><a href="/index_2.html" class="next">下一页</a><a href="/index_6.html" class="next">尾页</a></div></div>
 <div class="clear"></div>
 
 
