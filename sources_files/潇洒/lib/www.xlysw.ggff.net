@@ -463,15 +463,15 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
                   热门搜索
                 </p>
 
-                <p><a class="text-333" href="/detail/?9443.html" title="意难忘"><span class="badge badge-first">1</span> 意难忘</a></p>
+                <p><a class="text-333" href="/detail/?60456.html" title="米奇妙妙屋第三季"><span class="badge badge-first">1</span> 米奇妙妙屋第三季</a></p>
                 
                 <p><a class="text-333" href="/detail/?47267.html" title="偷情的后裔"><span class="badge badge-second">2</span> 偷情的后裔</a></p>
                 
-                <p><a class="text-333" href="/detail/?256700.html" title="伟大的长征"><span class="badge badge-third">3</span> 伟大的长征</a></p>
+                <p><a class="text-333" href="/detail/?268026.html" title="两京十五日"><span class="badge badge-third">3</span> 两京十五日</a></p>
                 
-                <p><a class="text-333" href="/detail/?269852.html" title="风生水起"><span class="badge">4</span> 风生水起</a></p>
+                <p><a class="text-333" href="/detail/?251770.html" title="生化危机：爆发夜"><span class="badge">4</span> 生化危机：爆发夜</a></p>
                 
-                <p><a class="text-333" href="/detail/?268026.html" title="两京十五日"><span class="badge">5</span> 两京十五日</a></p>
+                <p><a class="text-333" href="/detail/?44174.html" title="半径5米"><span class="badge">5</span> 半径5米</a></p>
                 
               </div>
             </div>
@@ -523,7 +523,9 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
               <div class="myui-vodlist__box">
                 <a href="/detail/?47267.html" class="myui-vodlist__thumb" title="偷情的后裔" style="background: url(http://ry-pic.com/upload/vod/20240924-1/398acf614291542a59c67e954d1d8bde.jpg);">
                   <span class="play hidden-xs"></span>
-                  
+                  <span class="pic-tag pic-tag-top" style="background-color: #5bb7fe;">
+                    0.5分
+                  </span>
                   <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
                     HD
                   </span>
@@ -559,7 +561,27 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
             
             <div class="col-lg-6  col-md-6 col-sm-4 col-xs-3">
               <div class="myui-vodlist__box">
-                <a href="/detail/?255767.html" class="myui-vodlist__thumb" title="潜伏6" style="background: url(http://pic.ry-pic.com/upload/vod/20261006-1/237a043265db3720dd74ab7ab39d694d.webp);">
+                <a href="/detail/?241989.html" class="myui-vodlist__thumb" title="欢迎来龙餐馆" style="background: url(http://pic.ry-pic.com/upload/vod/20260817-1/c3c36fe9dcca11525bd274c843ba4929.webp);">
+                  <span class="play hidden-xs"></span>
+                  <span class="pic-tag pic-tag-top" style="background-color: #5bb7fe;">
+                    2.6分
+                  </span>
+                  <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
+                    HD
+                  </span>
+                </a>
+                <div class="myui-vodlist__detail">
+                  <h4 class="title text-overflow"><a href="/detail/?241989.html" class="text-fff" title="欢迎来龙餐馆">欢迎来龙餐馆</a></h4>
+                  <p class="text text-overflow text-muted hidden-xs">
+                    主演：沈腾,蒋奇明,奥马尔·谢里夫,李治廷,谢里夫·萨比,艾哈迈德·塞利姆,法鲁克·穆罕穆德,拉塞尔·希利,奈拉·阿克西姆,卡尔玛·哈齐姆,苇青,张熙唯
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-6  col-md-6 col-sm-4 col-xs-3">
+              <div class="myui-vodlist__box">
+                <a href="/detail/?260422.html" class="myui-vodlist__thumb" title="空枪" style="background: url(http://pic.ry-pic.com/upload/vod/20261023-1/d703fcdfb1b46246af0d66fba0df6909.webp);">
                   <span class="play hidden-xs"></span>
                   
                   <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
@@ -567,9 +589,9 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
                   </span>
                 </a>
                 <div class="myui-vodlist__detail">
-                  <h4 class="title text-overflow"><a href="/detail/?255767.html" class="text-fff" title="潜伏6">潜伏6</a></h4>
+                  <h4 class="title text-overflow"><a href="/detail/?260422.html" class="text-fff" title="空枪">空枪</a></h4>
                   <p class="text text-overflow text-muted hidden-xs">
-                    主演：阿梅利亚·伊芙,林·沙烨,萨姆·斯普卢尔,麦茜·理查森-塞勒斯,约瑟夫·洛佩斯,布兰登·佩利亚,劳拉·戈登,艾兰·奥斯汀,朱莉·尼希尔,查莉·彭顿,康纳·麦克劳德,卡特琳娜·达斯卡拉基斯,拉腊·福里,大卫·摩根,本·凯勒
+                    主演：朱一龙,檀健次,梁家辉,卫诗雅,惠英红,李施嬅,袁富华,倪大红,叶童,黄觉,俞灏明,李治廷,李修贤,张兆辉,林雪,王戈,刘登宇,赵润南
                   </p>
                 </div>
               </div>
@@ -611,38 +633,20 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
               </div>
             </div>
             
-            <div class="col-lg-6  col-md-6 col-sm-4 col-xs-3">
-              <div class="myui-vodlist__box">
-                <a href="/detail/?260422.html" class="myui-vodlist__thumb" title="空枪" style="background: url(http://pic.ry-pic.com/upload/vod/20261023-1/d703fcdfb1b46246af0d66fba0df6909.webp);">
-                  <span class="play hidden-xs"></span>
-                  
-                  <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                    HD
-                  </span>
-                </a>
-                <div class="myui-vodlist__detail">
-                  <h4 class="title text-overflow"><a href="/detail/?260422.html" class="text-fff" title="空枪">空枪</a></h4>
-                  <p class="text text-overflow text-muted hidden-xs">
-                    主演：朱一龙,檀健次,梁家辉,卫诗雅,惠英红,李施嬅,袁富华,倪大红,叶童,黄觉,俞灏明,李治廷,李修贤,张兆辉,林雪,王戈,刘登宇,赵润南
-                  </p>
-                </div>
-              </div>
-            </div>
-            
             
             <div class="col-lg-6  col-md-6 col-sm-4 col-xs-3">
               <div class="myui-vodlist__box">
-                <a href="/detail/?9443.html" class="myui-vodlist__thumb" title="意难忘" style="background: url(http://vip.dytt-img.com/upload/vod/20250614-1/3f7ae9be86a21445e1ae5f7a3fcf67c6.jpg);">
+                <a href="/detail/?268026.html" class="myui-vodlist__thumb" title="两京十五日" style="background: url(http://pic.ry-pic.com/upload/vod/20261120-1/4bfe725f59da751c143291d84e6d8d35.webp);">
                   <span class="play hidden-xs"></span>
                   
                   <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                    已完结
+                    更新至第18集
                   </span>
                 </a>
                 <div class="myui-vodlist__detail">
-                  <h4 class="title text-overflow"><a href="/detail/?9443.html" class="text-fff" title="意难忘">意难忘</a></h4>
+                  <h4 class="title text-overflow"><a href="/detail/?268026.html" class="text-fff" title="两京十五日">两京十五日</a></h4>
                   <p class="text text-overflow text-muted hidden-xs">
-                    主演：王识贤,张凤书,刘至翰,高欣欣,李兴文,李李仁,江祖平,张琴,徐亨,陈若萍,韩瑜,杨宝玮,黄仲昆,石英,邱琦雯,李政颖
+                    主演：成毅,林更新,姜珮瑶,吴幸键,王和,陈数,张志坚,张国强,马少骅,黄品沅
                   </p>
                 </div>
               </div>
@@ -650,19 +654,17 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
             
             <div class="col-lg-6  col-md-6 col-sm-4 col-xs-3">
               <div class="myui-vodlist__box">
-                <a href="/detail/?256700.html" class="myui-vodlist__thumb" title="伟大的长征" style="background: url(http://pic.ry-pic.com/upload/vod/20261009-1/0dfbd0914499d25672d315ce10db9b38.webp);">
+                <a href="/detail/?44174.html" class="myui-vodlist__thumb" title="半径5米" style="background: url(http://ry-pic.com/upload/vod/20240930-1/99cfe4b09b87df741e7a46f00b26dbf9.jpg);">
                   <span class="play hidden-xs"></span>
-                  <span class="pic-tag pic-tag-top" style="background-color: #5bb7fe;">
-                    3.6分
-                  </span>
+                  
                   <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
                     已完结
                   </span>
                 </a>
                 <div class="myui-vodlist__detail">
-                  <h4 class="title text-overflow"><a href="/detail/?256700.html" class="text-fff" title="伟大的长征">伟大的长征</a></h4>
+                  <h4 class="title text-overflow"><a href="/detail/?44174.html" class="text-fff" title="半径5米">半径5米</a></h4>
                   <p class="text text-overflow text-muted hidden-xs">
-                    主演：于和伟,曹磊,何政军,王劲松,吴健,李泓良,郭广平,朱刚日尧,万茜,啜妮,张晚意,张桐,黄晓明,陈永胜,刘奕铁,林家川,史彭元,李乃文,成泰燊
+                    主演：芳根京子,每熊克哉,真飞圣,山田真步,北村有起哉,尾美利德,永作博美,仓悠贵
                   </p>
                 </div>
               </div>
@@ -762,17 +764,17 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
             
             <div class="col-lg-6  col-md-6 col-sm-4 col-xs-3">
               <div class="myui-vodlist__box">
-                <a href="/detail/?1330.html" class="myui-vodlist__thumb" title="海贼王" style="background: url(http://ry-pic.com/upload/vod/20240919-1/543c769501b03d1bb2e050f354a7de46.jpg);">
+                <a href="/detail/?259.html" class="myui-vodlist__thumb" title="无上神帝" style="background: url(http://ry-pic.com/upload/vod/20240928-1/62556dd1ca1261282f858fa197bdf705.jpg);">
                   <span class="play hidden-xs"></span>
                   
                   <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                    更新至1180集
+                    更新至第661集
                   </span>
                 </a>
                 <div class="myui-vodlist__detail">
-                  <h4 class="title text-overflow"><a href="/detail/?1330.html" class="text-fff" title="海贼王">海贼王</a></h4>
+                  <h4 class="title text-overflow"><a href="/detail/?259.html" class="text-fff" title="无上神帝">无上神帝</a></h4>
                   <p class="text text-overflow text-muted hidden-xs">
-                    主演：田中真弓,冈村明美,中井和哉,山口胜平,平田广明,大谷育江,山口由里子,矢尾一树,长岛雄一,池田秀一,古川登志夫,古谷彻,大塚周夫,津嘉山正种,草尾毅,大场真人,宝龟克寿,园部启一,柴田秀胜,中博史,阪口大助,竹内顺子,千叶繁,三石琴乃,挂川裕彦,堀秀行,田中秀幸,大友龙三郎,有本钦隆,大塚明夫,玄田哲章,小山茉美,土井美加,野田顺子,渡边美佐,野上尤加奈,林原惠美,水树奈奈,园崎未惠,西原久美子
+                    主演：溪林,郭懿骧,关帅,黄骥,季骜杰,钟巍,烈之流星,蘭雨馨,张妮,徐翔,Akira明,柳知萧
                   </p>
                 </div>
               </div>
@@ -784,7 +786,7 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
                   <span class="play hidden-xs"></span>
                   
                   <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                    更新至第03集
+                    更新至第04集
                   </span>
                 </a>
                 <div class="myui-vodlist__detail">
@@ -809,7 +811,7 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
   <div class="myui-panel-box clearfix">
     <div class="myui-panel_hd">
       <div class="myui-panel__head clearfix">
-        <span class="text-muted more pull-right">今日更新 13 条数据</span>
+        <span class="text-muted more pull-right">今日更新 24 条数据</span>
         <h1 class="title">
           热门推荐
         </h1>
@@ -840,7 +842,9 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
           <div class="myui-vodlist__box">
             <a class="myui-vodlist__thumb lazyload" href="/detail/?47267.html" title="偷情的后裔" data-original="http://ry-pic.com/upload/vod/20240924-1/398acf614291542a59c67e954d1d8bde.jpg">
               <span class="play hidden-xs"></span>
-              
+              <span class="pic-tag pic-tag-top" style="background-color: #5bb7fe;">
+                0.5分
+              </span>
               <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
                 HD
               </span>
@@ -1105,37 +1109,37 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?255767.html" title="潜伏6">          
+          <a class="top-line-dot text-overflow" href="/detail/?241989.html" title="欢迎来龙餐馆">          
             <span class="badge badge-third">3</span>
-            潜伏6
+            欢迎来龙餐馆
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?260422.html" title="空枪">          
+            <span class="badge">4</span>
+            空枪
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
           <a class="top-line-dot text-overflow" href="/detail/?55217.html" title="老炮儿">          
-            <span class="badge">4</span>
+            <span class="badge">5</span>
             老炮儿
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
           <a class="top-line-dot text-overflow" href="/detail/?67051.html" title="1刑的乌鸦 特别篇">          
-            <span class="badge">5</span>
+            <span class="badge">6</span>
             1刑的乌鸦 特别篇
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?260422.html" title="空枪">          
-            <span class="badge">6</span>
-            空枪
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?269889.html" title="白狐·情缘[电影解说]">          
+          <a class="top-line-dot text-overflow" href="/detail/?268025.html" title="守护解放西7">          
             <span class="badge">7</span>
-            白狐·情缘[电影解说]
+            守护解放西7
           </a>
         </li>
          
@@ -1147,30 +1151,30 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?268242.html" title="仲夏惊魂夜">          
+          <a class="top-line-dot text-overflow" href="/detail/?269889.html" title="白狐·情缘[电影解说]">          
             <span class="badge">9</span>
-            仲夏惊魂夜
+            白狐·情缘[电影解说]
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?269292.html" title="名侦探柯南：高速公路的堕天使">          
+          <a class="top-line-dot text-overflow" href="/detail/?234226.html" title="奥德赛">          
             <span class="badge">10</span>
-            名侦探柯南：高速公路的堕天使
+            奥德赛
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?266664.html" title="街头霸王">          
+          <a class="top-line-dot text-overflow" href="/detail/?269890.html" title="芭蕾女刺客[电影解说]">          
             <span class="badge">11</span>
-            街头霸王
+            芭蕾女刺客[电影解说]
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?256364.html" title="坠落2：死点">          
+          <a class="top-line-dot text-overflow" href="/detail/?268242.html" title="仲夏惊魂夜">          
             <span class="badge">12</span>
-            坠落2：死点
+            仲夏惊魂夜
           </a>
         </li>
             
@@ -1215,6 +1219,79 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3">
           <div class="myui-vodlist__box">
+            <a class="myui-vodlist__thumb lazyload" href="/detail/?270083.html" title="甜豌豆第二季" data-original="http://pic.ry-pic.com/upload/vod/20261128-1/b61e9cd847ea6d109697ec0f8dacf493.webp">
+              <span class="play hidden-xs"></span>
+              
+              <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
+                已完结
+              </span>
+            </a>
+            <div class="myui-vodlist__detail">
+              <h4 class="title text-overflow"><a href="/detail/?270083.html" title="甜豌豆第二季">甜豌豆第二季</a></h4>
+              <p class="text text-overflow text-muted hidden-xs">
+                艾拉·珀内尔,卡拉姆·林奇,塔伊·阿特沃尔,蒂利亚纳·布克丽瓦,塔姆辛·格雷格,利娅·哈维,克里斯托弗·摩尔,蒂姆·萨缪尔斯,里什·沙阿,珍妮·沃尔瑟
+              </p>
+            </div>
+          </div>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3">
+          <div class="myui-vodlist__box">
+            <a class="myui-vodlist__thumb lazyload" href="/detail/?254729.html" title="晚酌的流派5：秋・冬篇" data-original="http://pic.ry-pic.com/upload/vod/20261003-1/7f4b8fa6399043a939191d1862061a52.webp">
+              <span class="play hidden-xs"></span>
+              
+              <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
+                更新至第09集
+              </span>
+            </a>
+            <div class="myui-vodlist__detail">
+              <h4 class="title text-overflow"><a href="/detail/?254729.html" title="晚酌的流派5：秋・冬篇">晚酌的流派5：秋・冬篇</a></h4>
+              <p class="text text-overflow text-muted hidden-xs">
+                栗山千明,武田航平,辻凪子,马场裕之,三宅康敏,冈山一,基俊介,平山祐介,北代高士,森冈丰,藤井アキト
+              </p>
+            </div>
+          </div>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3">
+          <div class="myui-vodlist__box">
+            <a class="myui-vodlist__thumb lazyload" href="/detail/?253843.html" title="妈妈发疯了" data-original="http://pic.ry-pic.com/upload/vod/20260930-1/61c8a01395ec804cfbb6271bdade20e1.webp">
+              <span class="play hidden-xs"></span>
+              
+              <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
+                更新至第45集
+              </span>
+            </a>
+            <div class="myui-vodlist__detail">
+              <h4 class="title text-overflow"><a href="/detail/?253843.html" title="妈妈发疯了">妈妈发疯了</a></h4>
+              <p class="text text-overflow text-muted hidden-xs">
+                郑敏儿,金亨奎,金姬贞,姜京宪
+              </p>
+            </div>
+          </div>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3">
+          <div class="myui-vodlist__box">
+            <a class="myui-vodlist__thumb lazyload" href="/detail/?240409.html" title="欲望的陷阱2026" data-original="http://pic.ry-pic.com/upload/vod/20260811-1/df2a8eaf829a09cdec794e2851098944.webp">
+              <span class="play hidden-xs"></span>
+              
+              <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
+                更新至第67集
+              </span>
+            </a>
+            <div class="myui-vodlist__detail">
+              <h4 class="title text-overflow"><a href="/detail/?240409.html" title="欲望的陷阱2026">欲望的陷阱2026</a></h4>
+              <p class="text text-overflow text-muted hidden-xs">
+                张瑞希,田惠媛,薛正焕,周清晨,尹海英,刘泰雄,张世铉,孙星允,徐权顺,崔载元
+              </p>
+            </div>
+          </div>
+        </li>
+        
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3  hidden-sm">
+          <div class="myui-vodlist__box">
             <a class="myui-vodlist__thumb lazyload" href="/detail/?240689.html" title="针线缘" data-original="http://pic.ry-pic.com/upload/vod/20260812-1/d707b6255d75e7b119a65473e2c5ecb5.webp">
               <span class="play hidden-xs"></span>
               
@@ -1231,7 +1308,7 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
           </div>
         </li>
          
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3">
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3  hidden-sm">
           <div class="myui-vodlist__box">
             <a class="myui-vodlist__thumb lazyload" href="/detail/?267537.html" title="文成传奇" data-original="http://pic.ry-pic.com/upload/vod/20261118-1/c61bf3865823f1e9f1d1e01b383cee8e.webp">
               <span class="play hidden-xs"></span>
@@ -1248,94 +1325,21 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
             </div>
           </div>
         </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3">
-          <div class="myui-vodlist__box">
-            <a class="myui-vodlist__thumb lazyload" href="/detail/?114736.html" title="豆腐妈妈" data-original="http://pic.ry-pic.com/upload/vod/20260326-1/0c7e041f3e2dbb2670eb67b14646f031.webp">
-              <span class="play hidden-xs"></span>
-              
-              <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                更新至第243集
-              </span>
-            </a>
-            <div class="myui-vodlist__detail">
-              <h4 class="title text-overflow"><a href="/detail/?114736.html" title="豆腐妈妈">豆腐妈妈</a></h4>
-              <p class="text text-overflow text-muted hidden-xs">
-                谢琼煖,洪都拉斯,陈仙梅,蓝苇华,苏晏霈,曾智希,曾子益,陈志强,郭忠祐,李之勤,潘奕如,范瑞君,王耿豪,吴铃山,张倩,李运庆,罗子惟,宫美乐,王晴,于浩威,马国毕,张世贤,徐千京,黄子玲,黄靖雅,李佩怡,吴政澔,黄尚禾,吴皓升
-              </p>
-            </div>
-          </div>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3">
-          <div class="myui-vodlist__box">
-            <a class="myui-vodlist__thumb lazyload" href="/detail/?268026.html" title="两京十五日" data-original="http://pic.ry-pic.com/upload/vod/20261120-1/4bfe725f59da751c143291d84e6d8d35.webp">
-              <span class="play hidden-xs"></span>
-              
-              <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                更新至第18集
-              </span>
-            </a>
-            <div class="myui-vodlist__detail">
-              <h4 class="title text-overflow"><a href="/detail/?268026.html" title="两京十五日">两京十五日</a></h4>
-              <p class="text text-overflow text-muted hidden-xs">
-                成毅,林更新,姜珮瑶,吴幸键,王和,陈数,张志坚,张国强,马少骅,黄品沅
-              </p>
-            </div>
-          </div>
-        </li>
-        
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3  hidden-sm">
-          <div class="myui-vodlist__box">
-            <a class="myui-vodlist__thumb lazyload" href="/detail/?267070.html" title="多喜一家人" data-original="http://pic.ry-pic.com/upload/vod/20261116-1/920742533e6cd30ca23c63c709230e32.webp">
-              <span class="play hidden-xs"></span>
-              
-              <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                更新至第19集
-              </span>
-            </a>
-            <div class="myui-vodlist__detail">
-              <h4 class="title text-overflow"><a href="/detail/?267070.html" title="多喜一家人">多喜一家人</a></h4>
-              <p class="text text-overflow text-muted hidden-xs">
-                梁冠华,蒋欣,李光洁,杨采钰,冯嘉怡,任重,韩童生,施京明,是安,章煜奇,康可人,张宇柠,徐梵溪,宋熹,马渝捷,田昊,马敬涵,迟兴楷,李洛伊,夏力薪,刘威,徐永革
-              </p>
-            </div>
-          </div>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3  hidden-sm">
-          <div class="myui-vodlist__box">
-            <a class="myui-vodlist__thumb lazyload" href="/detail/?269020.html" title="妈祖在人间" data-original="http://pic.ry-pic.com/upload/vod/20261124-1/8b2713f3a4c69d04c8fe2cb5bd481c72.webp">
-              <span class="play hidden-xs"></span>
-              
-              <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                更新至第06集
-              </span>
-            </a>
-            <div class="myui-vodlist__detail">
-              <h4 class="title text-overflow"><a href="/detail/?269020.html" title="妈祖在人间">妈祖在人间</a></h4>
-              <p class="text text-overflow text-muted hidden-xs">
-                王满娇,陈冠霖,吴念轩,睦媄,楚宣,王中平,韩菲,王品澔,黄登楷,梁又南,胡鸿达,徐千京,林辰唏,梁湘华,石知田,林映彤,洪言翔,李承鸿
-              </p>
-            </div>
-          </div>
-        </li>
         
       </ul>          
       <ul class="myui-vodlist__text col-pd clearfix  hidden-sm hidden-xs">
                                  
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?9443.html" title="意难忘">          
+          <a class="top-line-dot text-overflow" href="/detail/?268026.html" title="两京十五日">          
             <span class="badge badge-first">1</span>
-            意难忘
+            两京十五日
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?256700.html" title="伟大的长征">          
+          <a class="top-line-dot text-overflow" href="/detail/?44174.html" title="半径5米">          
             <span class="badge badge-second">2</span>
-            伟大的长征
+            半径5米
           </a>
         </li>
          
@@ -1347,65 +1351,65 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?268026.html" title="两京十五日">          
-            <span class="badge">4</span>
-            两京十五日
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?265843.html" title="老板的露骨取向">          
-            <span class="badge">5</span>
-            老板的露骨取向
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?44174.html" title="半径5米">          
-            <span class="badge">6</span>
-            半径5米
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
           <a class="top-line-dot text-overflow" href="/detail/?523.html" title="一刑的乌鸦">          
-            <span class="badge">7</span>
+            <span class="badge">4</span>
             一刑的乌鸦
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?264001.html" title="谷雨">          
-            <span class="badge">8</span>
-            谷雨
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
           <a class="top-line-dot text-overflow" href="/detail/?264204.html" title="今天是太阳雨">          
-            <span class="badge">9</span>
+            <span class="badge">5</span>
             今天是太阳雨
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
           <a class="top-line-dot text-overflow" href="/detail/?269565.html" title="不为人知的故事">          
-            <span class="badge">10</span>
+            <span class="badge">6</span>
             不为人知的故事
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
           <a class="top-line-dot text-overflow" href="/detail/?267070.html" title="多喜一家人">          
-            <span class="badge">11</span>
+            <span class="badge">7</span>
             多喜一家人
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?113711.html" title="逐玉">          
+          <a class="top-line-dot text-overflow" href="/detail/?258699.html" title="嫁金钗">          
+            <span class="badge">8</span>
+            嫁金钗
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?67513.html" title="玉骨遥">          
+            <span class="badge">9</span>
+            玉骨遥
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?264001.html" title="谷雨">          
+            <span class="badge">10</span>
+            谷雨
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?266657.html" title="十万狂花入梦来">          
+            <span class="badge">11</span>
+            十万狂花入梦来
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?48909.html" title="大江大河2">          
             <span class="badge">12</span>
-            逐玉
+            大江大河2
           </a>
         </li>
             
@@ -1574,65 +1578,65 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?259256.html" title="大富翁世界旅行4">          
+          <a class="top-line-dot text-overflow" href="/detail/?65561.html" title="花儿与少年第一季">          
             <span class="badge">4</span>
+            花儿与少年第一季
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?259256.html" title="大富翁世界旅行4">          
+            <span class="badge">5</span>
             大富翁世界旅行4
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?263666.html" title="男子汉的旅行法in美娜多">          
-            <span class="badge">5</span>
-            男子汉的旅行法in美娜多
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?47.html" title="亚洲新声（加更版）">          
+          <a class="top-line-dot text-overflow" href="/detail/?269896.html" title="Just Makeup2">          
             <span class="badge">6</span>
-            亚洲新声（加更版）
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?406.html" title="黄金渔场之明星电台">          
-            <span class="badge">7</span>
-            黄金渔场之明星电台
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?269.html" title="爱情保卫战">          
-            <span class="badge">8</span>
-            爱情保卫战
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?1263.html" title="效廉出发吧！">          
-            <span class="badge">9</span>
-            效廉出发吧！
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?56578.html" title="季风音乐会">          
-            <span class="badge">10</span>
-            季风音乐会
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?54.html" title="食尚玩家">          
-            <span class="badge">11</span>
-            食尚玩家
+            Just Makeup2
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
           <a class="top-line-dot text-overflow" href="/detail/?257171.html" title="现在就出发第4季">          
-            <span class="badge">12</span>
+            <span class="badge">7</span>
             现在就出发第4季
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?241327.html" title="不想睡的星期五（加更版）">          
+            <span class="badge">8</span>
+            不想睡的星期五（加更版）
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?230888.html" title="密室大逃脱第八季（加更版）">          
+            <span class="badge">9</span>
+            密室大逃脱第八季（加更版）
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?1263.html" title="效廉出发吧！">          
+            <span class="badge">10</span>
+            效廉出发吧！
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?47.html" title="亚洲新声（加更版）">          
+            <span class="badge">11</span>
+            亚洲新声（加更版）
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?492.html" title="命运好好玩">          
+            <span class="badge">12</span>
+            命运好好玩
           </a>
         </li>
             
@@ -1667,51 +1671,15 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3">
           <div class="myui-vodlist__box">
-            <a class="myui-vodlist__thumb lazyload" href="/detail/?254652.html" title="东京复仇者三天战争篇" data-original="http://pic.ry-pic.com/upload/vod/20261002-1/2bc6e2ca55e860865d337057c0de2052.webp">
+            <a class="myui-vodlist__thumb lazyload" href="/detail/?269561.html" title="穹顶之上" data-original="http://pic.ry-pic.com/upload/vod/20261126-1/4b587a48f430e7c63ccdfc7e9e5c4d60.webp">
               <span class="play hidden-xs"></span>
               
               <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                更新至第09集
+                更新至第12集
               </span>
             </a>
             <div class="myui-vodlist__detail">
-              <h4 class="title text-overflow"><a href="/detail/?254652.html" title="东京复仇者三天战争篇">东京复仇者三天战争篇</a></h4>
-              <p class="text text-overflow text-muted hidden-xs">
-                新祐树,和气杏未,逢坂良太,林勇,福西胜也,狩野翔,松冈祯丞,畠中祐,野津山幸宏,河西健吾,小野大辅,冈本信彦,寺岛拓笃,广濑裕也,武内骏辅,叶山翔太,江口拓也,榎木淳弥,花江夏树,山下诚一郎,稻田彻,内山昂辉,浪川大辅,下野纮,松风雅也,伊濑茉莉也,下鹤直幸,立花慎之介,星野贵纪,安元洋贵
-              </p>
-            </div>
-          </div>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3">
-          <div class="myui-vodlist__box">
-            <a class="myui-vodlist__thumb lazyload" href="/detail/?254651.html" title="苍蓝传承WELSH & SHEDAR" data-original="http://pic.ry-pic.com/upload/vod/20261002-1/9ae197632ac2793e2fa0a53c40aea2bf.webp">
-              <span class="play hidden-xs"></span>
-              
-              <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                更新至第09集
-              </span>
-            </a>
-            <div class="myui-vodlist__detail">
-              <h4 class="title text-overflow"><a href="/detail/?254651.html" title="苍蓝传承WELSH & SHEDAR">苍蓝传承WELSH & SHEDAR</a></h4>
-              <p class="text text-overflow text-muted hidden-xs">
-                安田陆矢,梶裕贵
-              </p>
-            </div>
-          </div>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3">
-          <div class="myui-vodlist__box">
-            <a class="myui-vodlist__thumb lazyload" href="/detail/?189.html" title="开心锤锤世界" data-original="http://pic.ry-pic.com/upload/vod/20250517-1/cfd824a914fd2f68f25d0b481c54ccd1.jpg">
-              <span class="play hidden-xs"></span>
-              
-              <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                更新至第82集
-              </span>
-            </a>
-            <div class="myui-vodlist__detail">
-              <h4 class="title text-overflow"><a href="/detail/?189.html" title="开心锤锤世界">开心锤锤世界</a></h4>
+              <h4 class="title text-overflow"><a href="/detail/?269561.html" title="穹顶之上">穹顶之上</a></h4>
               <p class="text text-overflow text-muted hidden-xs">
                 内详
               </p>
@@ -1721,17 +1689,53 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3">
           <div class="myui-vodlist__box">
-            <a class="myui-vodlist__thumb lazyload" href="/detail/?256904.html" title="某暗部的少女共栖" data-original="http://pic.ry-pic.com/upload/vod/20261009-1/1e1e8ec53e9af6cdfa2f2d3ebdae35cb.webp">
+            <a class="myui-vodlist__thumb lazyload" href="/detail/?254666.html" title="青蛙军曹☆" data-original="http://pic.ry-pic.com/upload/vod/20261003-1/e4f439864a66d35203bb334eba36ed73.webp">
               <span class="play hidden-xs"></span>
               
               <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                更新至第08集
+                更新至第09集
               </span>
             </a>
             <div class="myui-vodlist__detail">
-              <h4 class="title text-overflow"><a href="/detail/?256904.html" title="某暗部的少女共栖">某暗部的少女共栖</a></h4>
+              <h4 class="title text-overflow"><a href="/detail/?254666.html" title="青蛙军曹☆">青蛙军曹☆</a></h4>
               <p class="text text-overflow text-muted hidden-xs">
-                小清水亚美,洲崎绫,内田真礼,赤崎千夏,菱川花菜
+                小市真琴,长江里加,增田俊树,越后屋浩介,猪股慧士
+              </p>
+            </div>
+          </div>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3">
+          <div class="myui-vodlist__box">
+            <a class="myui-vodlist__thumb lazyload" href="/detail/?229537.html" title="提欧奥特曼" data-original="http://pic.ry-pic.com/upload/vod/20260704-1/dda6938fa51e0b6dbdadbe4c096affc1.webp">
+              <span class="play hidden-xs"></span>
+              
+              <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
+                更新至第20集
+              </span>
+            </a>
+            <div class="myui-vodlist__detail">
+              <h4 class="title text-overflow"><a href="/detail/?229537.html" title="提欧奥特曼">提欧奥特曼</a></h4>
+              <p class="text text-overflow text-muted hidden-xs">
+                岩崎碧,神谷天音,中田乃爱,上村侑,森本龙马,小林优,槙田雄司,福岛莉拉
+              </p>
+            </div>
+          </div>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3">
+          <div class="myui-vodlist__box">
+            <a class="myui-vodlist__thumb lazyload" href="/detail/?92589.html" title="神王序列" data-original="http://pic.ry-pic.com/upload/vod/20250826-1/8ae1cf9493233bdd745187a4908032f9.jpg">
+              <span class="play hidden-xs"></span>
+              
+              <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
+                更新至第221集
+              </span>
+            </a>
+            <div class="myui-vodlist__detail">
+              <h4 class="title text-overflow"><a href="/detail/?92589.html" title="神王序列">神王序列</a></h4>
+              <p class="text text-overflow text-muted hidden-xs">
+                内详
               </p>
             </div>
           </div>
@@ -1740,15 +1744,15 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3  hidden-sm">
           <div class="myui-vodlist__box">
-            <a class="myui-vodlist__thumb lazyload" href="/detail/?256903.html" title="萤火虫之婚" data-original="http://pic.ry-pic.com/upload/vod/20261010-1/b4a8276ed77a40b03d8c5cc92ce6f22a.jpg">
+            <a class="myui-vodlist__thumb lazyload" href="/detail/?269854.html" title="傲风" data-original="http://pic.ry-pic.com/upload/vod/20261127-1/2363f2ad00ac836735132015ccec352f.webp">
               <span class="play hidden-xs"></span>
               
               <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                更新至第08集
+                更新至第04集
               </span>
             </a>
             <div class="myui-vodlist__detail">
-              <h4 class="title text-overflow"><a href="/detail/?256903.html" title="萤火虫之婚">萤火虫之婚</a></h4>
+              <h4 class="title text-overflow"><a href="/detail/?269854.html" title="傲风">傲风</a></h4>
               <p class="text text-overflow text-muted hidden-xs">
                 内详
               </p>
@@ -1758,17 +1762,19 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-3  hidden-sm">
           <div class="myui-vodlist__box">
-            <a class="myui-vodlist__thumb lazyload" href="/detail/?254653.html" title="药屋少女的呢喃第三季" data-original="http://pic.ry-pic.com/upload/vod/20261003-1/782109a0cb776d2b0e09f6ae476900d1.webp">
+            <a class="myui-vodlist__thumb lazyload" href="/detail/?109763.html" title="光阴之外" data-original="http://pic.ry-pic.com/upload/vod/20251229-1/8def9cd81a3e24f0544fc94dfd16ee82.webp">
               <span class="play hidden-xs"></span>
-              
+              <span class="pic-tag pic-tag-top" style="background-color: #5bb7fe;">
+                2.5分
+              </span>
               <span class="pic-tag pic-tag-bottom" style="background-color: rgba(10, 22, 22, 0.8);">
-                更新至第09集
+                更新至第50集
               </span>
             </a>
             <div class="myui-vodlist__detail">
-              <h4 class="title text-overflow"><a href="/detail/?254653.html" title="药屋少女的呢喃第三季">药屋少女的呢喃第三季</a></h4>
+              <h4 class="title text-overflow"><a href="/detail/?109763.html" title="光阴之外">光阴之外</a></h4>
               <p class="text text-overflow text-muted hidden-xs">
-                悠木碧,大冢刚央,小西克幸,橘龙丸,丰永利行,内山昂辉,桐本拓哉,小清水亚美,潘惠美,七海弘希,藤原夏海,上田丽奈,岛本须美
+                内详
               </p>
             </div>
           </div>
@@ -1785,79 +1791,79 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?1330.html" title="海贼王">          
-            <span class="badge badge-second">2</span>
-            海贼王
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?45983.html" title="哆啦A梦2005">          
-            <span class="badge badge-third">3</span>
-            哆啦A梦2005
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
           <a class="top-line-dot text-overflow" href="/detail/?259.html" title="无上神帝">          
-            <span class="badge">4</span>
+            <span class="badge badge-second">2</span>
             无上神帝
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
           <a class="top-line-dot text-overflow" href="/detail/?269854.html" title="傲风">          
-            <span class="badge">5</span>
+            <span class="badge badge-third">3</span>
             傲风
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
           <a class="top-line-dot text-overflow" href="/detail/?186.html" title="斗罗大陆Ⅱ绝世唐门">          
-            <span class="badge">6</span>
+            <span class="badge">4</span>
             斗罗大陆Ⅱ绝世唐门
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?33538.html" title="兵主奇魂">          
-            <span class="badge">7</span>
-            兵主奇魂
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
           <a class="top-line-dot text-overflow" href="/detail/?18046.html" title="天命大主宰">          
-            <span class="badge">8</span>
+            <span class="badge">5</span>
             天命大主宰
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?144.html" title="宗门里除了我都是卧底">          
+          <a class="top-line-dot text-overflow" href="/detail/?56320.html" title="魔晶猎人第二季">          
+            <span class="badge">6</span>
+            魔晶猎人第二季
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?111523.html" title="史上最强炼体老祖">          
+            <span class="badge">7</span>
+            史上最强炼体老祖
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?109034.html" title="我真不是大反派啊动态漫画第1季动态漫">          
+            <span class="badge">8</span>
+            我真不是大反派啊动态漫画第1季动态漫
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?115668.html" title="神之水滴">          
             <span class="badge">9</span>
-            宗门里除了我都是卧底
+            神之水滴
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?4355.html" title="星辰变第三季">          
+          <a class="top-line-dot text-overflow" href="/detail/?269823.html" title="愚者之夜">          
             <span class="badge">10</span>
-            星辰变第三季
+            愚者之夜
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?37560.html" title="最终休止符～无止境的螺旋物语～">          
+          <a class="top-line-dot text-overflow" href="/detail/?109039.html" title="弟子修炼，我躺平！第二季动态漫">          
             <span class="badge">11</span>
-            最终休止符～无止境的螺旋物语～
+            弟子修炼，我躺平！第二季动态漫
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?38692.html" title="果宝特攻4">          
+          <a class="top-line-dot text-overflow" href="/detail/?233676.html" title="择日飞升">          
             <span class="badge">12</span>
-            果宝特攻4
+            择日飞升
           </a>
         </li>
             
@@ -1997,9 +2003,9 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
       <ul class="myui-vodlist__text col-pd clearfix  hidden-sm hidden-xs">
                                  
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?246807.html" title="苏忆穿书第七季完结篇">          
+          <a class="top-line-dot text-overflow" href="/detail/?115808.html" title="共感追凶＆我用痛觉锁定杀手">          
             <span class="badge badge-first">1</span>
-            苏忆穿书第七季完结篇
+            共感追凶＆我用痛觉锁定杀手
           </a>
         </li>
          
@@ -2011,72 +2017,72 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?269851.html" title="生存游戏：龙崽在线卖萌">          
+          <a class="top-line-dot text-overflow" href="/detail/?77188.html" title="归来的她短剧">          
             <span class="badge badge-third">3</span>
+            归来的她短剧
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?269868.html" title="诸天拍卖行，我好物倾销万域第五季">          
+            <span class="badge">4</span>
+            诸天拍卖行，我好物倾销万域第五季
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?269851.html" title="生存游戏：龙崽在线卖萌">          
+            <span class="badge">5</span>
             生存游戏：龙崽在线卖萌
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?269857.html" title="萌娃锦鲤三岁半">          
-            <span class="badge">4</span>
-            萌娃锦鲤三岁半
+          <a class="top-line-dot text-overflow" href="/detail/?269866.html" title="月色独予你">          
+            <span class="badge">6</span>
+            月色独予你
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?269894.html" title="一梦星河">          
+            <span class="badge">7</span>
+            一梦星河
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?77094.html" title="天降圣童儿子谁还耍搬砖啊">          
+            <span class="badge">8</span>
+            天降圣童儿子谁还耍搬砖啊
+          </a>
+        </li>
+         
+        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
+          <a class="top-line-dot text-overflow" href="/detail/?269871.html" title="泰城废妻，萨罗一笑万武跪服">          
+            <span class="badge">9</span>
+            泰城废妻，萨罗一笑万武跪服
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
           <a class="top-line-dot text-overflow" href="/detail/?269844.html" title="晚风赴约，与你重逢">          
-            <span class="badge">5</span>
+            <span class="badge">10</span>
             晚风赴约，与你重逢
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
           <a class="top-line-dot text-overflow" href="/detail/?269835.html" title="天才中医京枝回归，阙爷沦陷了第3季">          
-            <span class="badge">6</span>
+            <span class="badge">11</span>
             天才中医京枝回归，阙爷沦陷了第3季
           </a>
         </li>
          
         <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?269868.html" title="诸天拍卖行，我好物倾销万域第五季">          
-            <span class="badge">7</span>
-            诸天拍卖行，我好物倾销万域第五季
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?269867.html" title="慕遇甜年">          
-            <span class="badge">8</span>
-            慕遇甜年
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?77068.html" title="从养鸡种树到万界共主">          
-            <span class="badge">9</span>
-            从养鸡种树到万界共主
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?77575.html" title="凤逆天下">          
-            <span class="badge">10</span>
-            凤逆天下
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?76555.html" title="凤凰台上暮云遮">          
-            <span class="badge">11</span>
-            凤凰台上暮云遮
-          </a>
-        </li>
-         
-        <li class="col-lg-6 col-md-6 col-sm-4 col-xs-2 padding-0">
-          <a class="top-line-dot text-overflow" href="/detail/?76811.html" title="至死不渝的爱">          
+          <a class="top-line-dot text-overflow" href="/detail/?269857.html" title="萌娃锦鲤三岁半">          
             <span class="badge">12</span>
-            至死不渝的爱
+            萌娃锦鲤三岁半
           </a>
         </li>
             
@@ -2196,7 +2202,7 @@ html.dark-mode .playvip a.btn-default{background:#374151  url(/templets/default/
       <div class="col-pd text-center">  
         <p class="margin-0">
           本站所有资源均来自互联网收集，也从未参与录制、上传，若本站收录的资源侵犯了您的权益，请一定告诉我们，本站在收到邮件并确认后的24小时内删除。<br>
-联系邮箱：<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="91f0f5fcf8ffd1f3f5e8e2bff5e1f5ffe2bffee3f6">[email&#160;protected]</a><br><a target="_blank" href="/xml/rss.xml">RSS</a>|<a target="_blank" href="/xml/google.xml">sitemap</a><br>
+联系邮箱：<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="83e2e7eeeaedc3e1e7faf0ade7f3e7edf0adecf1e4">[email&#160;protected]</a><br><a target="_blank" href="/xml/rss.xml">RSS</a>|<a target="_blank" href="/xml/google.xml">sitemap</a><br>
 修罗影视 专注高清影视资源，打造沉浸式观影体验 Copyright © 2015-2026  All Rights Reserved <img src="//www.imgbed.dpdns.org/file/1791462929787_seal.BsTvWHUh.png" alt="TrustAsia 安全签章" style="width: 120px; height: auto; cursor: pointer;">
         </p>  
       </div>
@@ -2237,5 +2243,5 @@ $(".lazyload").lazyload({
         skip_invisible : false,
       })
 </script>
-  <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a613e60d696e9200',t:'MTc5NTgxMTUwOQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a613e60d696e9200',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+  <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a61708afea2f49fe',t:'MTc5NTg0NDM4NQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a61708afea2f49fe',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
